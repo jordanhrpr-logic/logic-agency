@@ -130,7 +130,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .cn{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:12px}
 .cc h3{font-size:20px;font-weight:800;line-height:1.2;margin-bottom:14px;letter-spacing:-.5px}
 .cb>p{font-size:14px;line-height:1.65;color:var(--gr);margin-bottom:24px}
-.cx{display:flex;gap:0;padding:20px 32px;margin-top:24px;background:var(--ow);border-top:1px solid var(--lt)}
+.cx{display:flex;gap:0;padding:20px 32px;margin-top:24px;background:#e8e8e8;border-top:1px solid var(--lt)}
 .cz{flex:1;text-align:center;padding:0 16px;border-right:1px solid var(--lt)}
 .cz:first-child{padding-left:0}
 .cz:last-child{border-right:none;padding-right:0}
