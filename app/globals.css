@@ -122,15 +122,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 
 /* === CASE STUDIES (HOMEPAGE) === */
 .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
-.cc{background:var(--ow);border-radius:20px;overflow:hidden;transition:all .3s}
+.cc{background:var(--ow);border-radius:20px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column}
 .cc:hover{transform:translateY(-6px);box-shadow:0 24px 64px rgba(0,0,0,.08)}
 .cm{height:200px;background:linear-gradient(135deg,var(--lt),#c8c8c8);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:rgba(0,0,0,.12);overflow:hidden}
 .cm img{width:100%;height:100%;object-fit:cover;display:block}
-.cb{padding:32px 32px 0}
+.cb{padding:32px 32px 0;flex:1;display:flex;flex-direction:column}
 .cn{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:12px}
 .cc h3{font-size:20px;font-weight:800;line-height:1.2;margin-bottom:14px;letter-spacing:-.5px}
 .cb>p{font-size:14px;line-height:1.65;color:var(--gr);margin-bottom:24px}
-.cx{display:flex;gap:0;padding:20px 0;margin:0 32px;border-top:1px solid var(--lt)}
+.cx{display:flex;gap:0;padding:20px 0;margin:0 32px;margin-top:auto;border-top:1px solid var(--lt)}
 .cz{flex:1;text-align:center;padding:0 8px}
 .cz strong{display:block;font-size:18px;font-weight:800;color:var(--o);margin-bottom:4px;white-space:nowrap}
 .cz span{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--gr);line-height:1.3}
