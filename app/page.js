@@ -50,8 +50,8 @@ export default function HomePage() {
               <p>Four vendors, three freight forwarders, and a founder managing it all from a Google Sheet. Every handoff is a failure point. We consolidate the whole chain into one accountable team.</p>
             </div>
             <div className="sit">
-              <p className="sit-q">&ldquo;We&apos;re entering the US market and need someone who knows retail, freight, and compliance.&rdquo;</p>
-              <p>International brands underestimate US retail complexity. Retailer-specific packaging specs, freight routing, customs compliance, 3PL coordination. We&apos;ve done it across 15+ countries and know where brands get burned.</p>
+              <p className="sit-q">&ldquo;We&apos;ve been DTC-only and now retail wants us in &mdash; but we have no idea how to get shelf-ready.&rdquo;</p>
+              <p>Going from DTC to retail means case packs, pallet configurations, retailer compliance, EDI, and a logistics setup your 3PL wasn&apos;t built for. We&apos;ve guided brands through their first PO to full retail rollout &mdash; and helped brands already on shelf tighten their operations.</p>
             </div>
             <div className="sit">
               <p className="sit-q">&ldquo;Our founder is spending 20 hours a week on operations instead of growing the business.&rdquo;</p>
