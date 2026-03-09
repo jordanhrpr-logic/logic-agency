@@ -91,6 +91,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .hw-n{width:64px;height:64px;border-radius:50%;background:rgba(255,96,10,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px;font-weight:800;color:var(--o)}
 .hw h3{font-size:18px;font-weight:700;margin-bottom:10px}
 .hw p{font-size:14px;line-height:1.65;color:var(--gr);max-width:300px;margin:0 auto}
+.hw-diff{text-align:center;font-size:16px;font-weight:500;font-style:italic;color:var(--gr);max-width:640px;margin:48px auto 0;line-height:1.7}
 
 /* === TIERS (HOMEPAGE) === */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -121,7 +122,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .md{font-size:13px;color:rgba(255,255,255,.75);line-height:1.5}
 
 /* === CASE STUDIES (HOMEPAGE) === */
-.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.cg{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px}
 .cc{background:var(--ow);border-radius:20px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column}
 .cc:hover{transform:translateY(-6px);box-shadow:0 24px 64px rgba(0,0,0,.08)}
 .cm{height:200px;background:linear-gradient(135deg,var(--lt),#c8c8c8);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:rgba(0,0,0,.12);overflow:hidden}
