@@ -42,7 +42,7 @@ export default function Nav({ variant = 'guide' }) {
             <a href="#results" onClick={close}>Results</a>
             {guidesDropdown}
             <a href="#faq" onClick={close}>FAQ</a>
-            <a href="#cta" className="nc" onClick={close}>Let&apos;s Talk</a>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="nc" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </>
         ) : (
           <>
@@ -51,7 +51,7 @@ export default function Nav({ variant = 'guide' }) {
             <a href="/#results" onClick={close}>Results</a>
             {guidesDropdown}
             <a href="/#faq" onClick={close}>FAQ</a>
-            <a href="/#cta" className="nc" onClick={close}>Let&apos;s Talk</a>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="nc" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </>
         )}
       </div>

@@ -92,6 +92,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .hw h3{font-size:18px;font-weight:700;margin-bottom:10px}
 .hw p{font-size:14px;line-height:1.65;color:var(--gr);max-width:300px;margin:0 auto}
 .hw-diff{text-align:center;font-size:16px;font-weight:500;font-style:italic;color:var(--gr);max-width:640px;margin:48px auto 0;line-height:1.7}
+.hw-exp{text-align:center;font-size:15px;color:var(--gr);max-width:680px;margin:12px auto 0;line-height:1.7}
+
+/* === PORTFOLIO STRIP (HOMEPAGE) === */
+.port-strip{padding-top:0!important;padding-bottom:0!important}
+.port-strip .si{max-width:100%;padding:0 40px}
+.port-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.port-item{aspect-ratio:4/3;background:var(--lt);border-radius:12px;border:1px solid rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;color:var(--gr);font-size:14px;font-weight:500}
 
 /* === TIERS (HOMEPAGE) === */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -104,6 +111,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .tier-g:hover{box-shadow:0 24px 64px rgba(255,96,10,.2)}
 .tier-badge{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:20px;padding:6px 14px;background:rgba(255,96,10,.1);border-radius:50px}
 .tier-g .tier-badge{background:var(--o);color:#fff}
+.tier-sub{font-size:13px;color:rgba(255,255,255,.55);margin:0 0 12px;line-height:1.4;font-weight:400}
 .tier h3{font-size:24px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:-.5px}
 .tier-price{font-size:15px;color:rgba(255,255,255,.6);margin-bottom:24px;display:block}
 .tier-price strong{font-size:32px;font-weight:800;color:var(--o);letter-spacing:-1px}
@@ -518,6 +526,8 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 @media(max-width:640px){
   nav{padding:0 24px}
   .hero,.sc,footer{padding-left:24px!important;padding-right:24px!important}
+  .port-strip .si{padding:0 24px}
+  .port-grid{grid-template-columns:repeat(2,1fr)}
   .hero{padding-top:120px!important}
   .ht{white-space:normal;text-align:center;font-size:11px}
   .fti{grid-template-columns:1fr;gap:32px}
