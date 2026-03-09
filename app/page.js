@@ -9,16 +9,34 @@ export const metadata = {
   keywords: 'packaging operations, retail packaging compliance, packaging sourcing, supply chain management, CPG packaging, DTC to retail packaging, fractional ops team, operations outsourcing',
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Are you a packaging company or an operations company?", "acceptedAnswer": { "@type": "Answer", "text": "Both. We design and produce packaging, but we also manage the supply chain and operations around it. Most clients start with one need and discover we can handle more. That\u2019s by design." } },
+    { "@type": "Question", "name": "I already have a packaging supplier. Why would I need Logic?", "acceptedAnswer": { "@type": "Answer", "text": "Your supplier makes boxes. We manage the system around those boxes \u2014 sourcing strategy, vendor coordination, cost optimization, retail compliance, inventory planning, and launch execution. Most of our clients still use their existing suppliers. We just make sure the whole operation runs instead of lurching from crisis to crisis." } },
+    { "@type": "Question", "name": "What does \u201cmonth to month\u201d actually mean? Can I cancel anytime?", "acceptedAnswer": { "@type": "Answer", "text": "It means exactly that. No annual contracts, no cancellation penalties. We earn your business every month. Most clients stay because the value compounds over time \u2014 the longer we work together, the more we understand your supply chain and the more leverage we create. But you are never locked in." } },
+    { "@type": "Question", "name": "We\u2019re pre-launch. Is it too early to work with Logic?", "acceptedAnswer": { "@type": "Answer", "text": "No \u2014 this is actually the best time to engage. We\u2019re currently working with a pre-seed brand building their packaging system from scratch, designed to scale from first production run into commercial volumes and retail. Starting early means you avoid the expensive rework that comes from outgrowing packaging that was only built for launch." } },
+    { "@type": "Question", "name": "How is this different from hiring a full-time ops person?", "acceptedAnswer": { "@type": "Answer", "text": "A senior ops hire in California costs $150-200K in salary plus benefits, software, and recruiting fees \u2014 easily $250K+ all in. And that one person probably won\u2019t have deep expertise in packaging engineering, global sourcing, retail compliance, and inventory management. Our retainers start at $2,500 per month and give you access to all of that from day one." } },
+    { "@type": "Question", "name": "Do you handle international sourcing and manufacturing?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We source across 15+ countries including China, Vietnam, Thailand, India, Mexico, and Turkey. We manage supplier audits, factory vetting, freight, customs compliance, and quality control. Our supply chains carry ISO, FAMA, FSC, and FDA certifications." } },
+    { "@type": "Question", "name": "What if our packaging isn\u2019t broken \u2014 we just want it to be better?", "acceptedAnswer": { "@type": "Answer", "text": "That is a great place to start. Some of our best engagements are with brands whose packaging works fine but isn\u2019t optimized. We find cost savings, improve the unboxing experience, tighten retail presentation, or redesign for sustainability \u2014 all while maintaining what already works." } },
+    { "@type": "Question", "name": "What kind of company helps with both packaging and supply chain?", "acceptedAnswer": { "@type": "Answer", "text": "Logic Agency is a full-service packaging and supply chain partner. We handle packaging design, global sourcing, production management, retail compliance, and ongoing operations \u2014 all under one team. Most companies separate these functions across multiple vendors, which creates handoff problems and cost inefficiencies. We keep it integrated so nothing falls through the cracks." } },
+    { "@type": "Question", "name": "Do I need a packaging agency or a supply chain consultant?", "acceptedAnswer": { "@type": "Answer", "text": "If your packaging and supply chain challenges are connected \u2014 and they almost always are \u2014 you need a partner who handles both. A packaging agency will design a great box but won\u2019t manage the sourcing, freight, or retail compliance behind it. A supply chain consultant will optimize your logistics but won\u2019t touch the packaging design. Logic Agency bridges both, which is why our clients typically consolidate multiple vendor relationships into one engagement with us." } },
+    { "@type": "Question", "name": "How do I find an outsourced operations team for my product brand?", "acceptedAnswer": { "@type": "Answer", "text": "Look for a partner with hands-on experience in your product category, a global supplier network, transparent pricing, and a track record with brands at your scale. Logic Agency works on monthly retainers starting at $2,500/month, with no long-term contracts. We work with brands from pre-launch through $20M+ in revenue across beauty, CPG, and tech wearables. The best way to evaluate fit is a 15-minute call." } }
+  ]
+};
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Nav variant="home" />
 
       {/* HERO */}
       <section className="hero gl">
         <div className="hi">
           <div className="ht">Packaging &middot; Supply Chain &middot; Operations</div>
-          <h1>Your packaging, supply chain, and operations team &mdash; <span className="o">without the payroll.</span></h1>
+          <h1>We help growing brands get their packaging, supply chain, and <span className="o">operations right.</span></h1>
           <p className="hero-sub">We embed into growing brands as their operational backbone. From packaging design to global sourcing to retail execution &mdash; we don&apos;t just advise, we get our hands dirty.</p>
           <div className="hb">
             <a href="mailto:jordan@logicagencyinc.com?subject=Let's Talk — Packaging %26 Supply Chain" className="bt bo">Start a Conversation &rarr;</a>
@@ -29,6 +47,20 @@ export default function HomePage() {
             <div className="trust-logos">
               <span>Adidas</span><span>Vans</span><span>Target</span><span>Disney</span><span>Puma</span><span>Paramount+</span><span>Spotify</span><span>Epicutis</span><span>A24</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PORTFOLIO STRIP */}
+      <section className="sc gl port-strip">
+        <div className="si">
+          <div className="port-grid">
+            <div className="port-item">Portfolio Image</div>
+            <div className="port-item">Portfolio Image</div>
+            <div className="port-item">Portfolio Image</div>
+            <div className="port-item">Portfolio Image</div>
+            <div className="port-item">Portfolio Image</div>
+            <div className="port-item">Portfolio Image</div>
           </div>
         </div>
       </section>
@@ -57,6 +89,10 @@ export default function HomePage() {
               <p className="sit-q">&ldquo;Our founder is spending 20 hours a week on operations instead of growing the business.&rdquo;</p>
               <p>It worked at 10K units. At 100K it&apos;s unsustainable. You need ops infrastructure but building an in-house team costs $800K+ per year. We give you the same capability on a monthly retainer.</p>
             </div>
+            <div className="sit">
+              <p className="sit-q">&ldquo;We have suppliers in 3 countries and nobody&apos;s managing the big picture.&rdquo;</p>
+              <p>Five vendors, two freight forwarders, three time zones. Every handoff is a risk. Quality is inconsistent because nobody owns the end-to-end relationship. We consolidate your supplier network, manage production across regions, and give you one point of accountability for the entire chain.</p>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -75,7 +111,7 @@ export default function HomePage() {
             </div>
             <div className="hw">
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-              <h3>Supply Chain &amp; Sourcing</h3>
+              <h3>Sourcing &amp; Production Management</h3>
               <p>Global supplier network across 15+ countries. Factory vetting, production management, freight, quality control, cost optimization. We find the right partners and manage the relationships.</p>
             </div>
             <div className="hw">
@@ -85,6 +121,7 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
+          <p className="hw-exp">20 years across 15+ countries. Hands-on experience backed by modern tools &mdash; a lean team that delivers what usually takes a department of ten.</p>
         </div>
       </section>
 
@@ -99,6 +136,7 @@ export default function HomePage() {
             {/* STARTER */}
             <div className="tier tier-s">
               <span className="tier-badge">Starter</span>
+              <p className="tier-sub">You need expert guidance before making expensive mistakes</p>
               <h3>Advisory &amp; Sourcing</h3>
               <span className="tier-price"><strong>$2.5-3K</strong> /month</span>
               <p className="tier-desc">An expert in your corner. Packaging and retail advisory on demand for brands that need guidance but aren&apos;t ready for a full operational handoff.</p>
@@ -114,6 +152,7 @@ export default function HomePage() {
             {/* GROWTH */}
             <div className="tier tier-g">
               <span className="tier-badge">Most Popular</span>
+              <p className="tier-sub">You need someone to own packaging and supply chain so you can focus on the business</p>
               <h3>Packaging Program Management</h3>
               <span className="tier-price"><strong>$5-7K</strong> /month</span>
               <p className="tier-desc">We actively own your packaging program. Sourcing, vendor coordination, retail packaging execution, and supply chain management so your team can focus on selling.</p>
@@ -130,6 +169,7 @@ export default function HomePage() {
             {/* ENTERPRISE */}
             <div className="tier tier-e">
               <span className="tier-badge">Enterprise</span>
+              <p className="tier-sub">You need a fully embedded operations team</p>
               <h3>Embedded Operations</h3>
               <span className="tier-price"><strong>$10K+</strong> /month</span>
               <p className="tier-desc">A complete supply chain and packaging operations team. We manage packaging, inventory, logistics, retail execution, and vendor operations end to end.</p>
@@ -247,7 +287,8 @@ export default function HomePage() {
           <h2>Ready to stop <span className="o">managing it all yourself?</span></h2>
           <p>Tell us what&apos;s going on with your packaging, supply chain, or operations. We&apos;ll be honest about whether we can help and which tier makes sense. No pitch deck, no pressure.</p>
           <div className="cbt">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Let's Talk — Packaging %26 Supply Chain" className="bt bo">Start a Conversation &rarr;</a>
+            <a href="mailto:jordan@logicagencyinc.com?subject=Let's Talk — Packaging %26 Supply Chain" className="bt bw">Start a Conversation &rarr;</a>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a 15-Minute Call &rarr;</a>
             <a href="tel:+13853686837" className="bt bw">Call 385.368.6837</a>
           </div>
           <span className="csb">Jordan Harper, Founder &middot; Orange County, CA &amp; Salt Lake City, UT</span>
