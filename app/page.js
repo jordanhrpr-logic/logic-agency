@@ -52,39 +52,42 @@ export default function HomePage() {
       </section>
 
       {/* PORTFOLIO STRIP */}
-      <section className="sc gl port-strip">
+      <section className="port-strip">
+        <div className="port-head">
+          <span className="port-label">Our Work</span>
+        </div>
         <div className="port-grid">
-          <div className="port-item port-wide">
+          <div className="port-item port-wide port-g1">
             <div className="port-overlay">
               <span className="port-cat">Packaging Design</span>
               <span className="port-name">Premium Skincare System</span>
             </div>
           </div>
-          <div className="port-item">
+          <div className="port-item port-g2">
             <div className="port-overlay">
               <span className="port-cat">Retail Packaging</span>
               <span className="port-name">Shelf-Ready Display</span>
             </div>
           </div>
-          <div className="port-item port-tall">
+          <div className="port-item port-tall port-g3">
             <div className="port-overlay">
               <span className="port-cat">Supply Chain</span>
               <span className="port-name">Global Sourcing Program</span>
             </div>
           </div>
-          <div className="port-item">
+          <div className="port-item port-g4">
             <div className="port-overlay">
               <span className="port-cat">Brand Packaging</span>
               <span className="port-name">Product Launch Kit</span>
             </div>
           </div>
-          <div className="port-item port-wide">
+          <div className="port-item port-wide port-g5">
             <div className="port-overlay">
               <span className="port-cat">Operations</span>
               <span className="port-name">Multi-SKU Expansion</span>
             </div>
           </div>
-          <div className="port-item">
+          <div className="port-item port-g6">
             <div className="port-overlay">
               <span className="port-cat">Tech Hardware</span>
               <span className="port-name">Classroom Audio System</span>
