@@ -167,7 +167,7 @@ export default function HomePage() {
           <p className="ss">From startup launches to enterprise packaging programs, here&apos;s what operational partnership looks like.</p>
           <FadeIn className="cg">
             <div className="cc">
-              <div className="cm">Epicutis Photo</div>
+              <div className="cm"><img src="/images/epicutis.jpg" alt="Epicutis premium skincare packaging by Logic Agency" /></div>
               <div className="cb">
                 <div className="cn">Premium Skincare &middot; Enterprise Tier</div>
                 <h3>From 3 SKUs to 21+ With Full Packaging Operations</h3>
@@ -176,7 +176,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm">Audio Enhancement Photo</div>
+              <div className="cm"><img src="/images/audio-enhancement.jpg" alt="Audio enhancement classroom microphone packaging by Logic Agency" /></div>
               <div className="cb">
                 <div className="cn">B2B Hardware &middot; Growth Tier</div>
                 <h3>Packaging System That Serves as a Product Hub</h3>
@@ -185,7 +185,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm">Gesine Photo</div>
+              <div className="cm"><img src="/images/gesine.jpg" alt="Gesine pre-seed brand packaging by Logic Agency" /></div>
               <div className="cb">
                 <div className="cn">Pre-Seed Startup &middot; Growth Tier</div>
                 <h3>Packaging Built for Launch and Built to Scale</h3>
