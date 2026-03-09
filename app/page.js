@@ -52,7 +52,7 @@ export default function HomePage() {
       </section>
 
       {/* PORTFOLIO STRIP */}
-      <section className="port-strip">
+      <section className="gl port-strip">
         <div className="port-head">
           <span className="port-label">Our Work</span>
         </div>
