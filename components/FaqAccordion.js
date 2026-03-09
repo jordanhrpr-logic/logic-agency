@@ -4,6 +4,10 @@ import { useCallback } from 'react';
 
 const faqData = [
   {
+    q: "Are you a packaging company or an operations company?",
+    a: "Both. We design and produce packaging, but we also manage the supply chain and operations around it. Most clients start with one need and discover we can handle more. That's by design."
+  },
+  {
     q: "I already have a packaging supplier. Why would I need Logic?",
     a: "Your supplier makes boxes. We manage the system around those boxes — sourcing strategy, vendor coordination, cost optimization, retail compliance, inventory planning, and launch execution. Most of our clients still use their existing suppliers. We just make sure the whole operation runs instead of lurching from crisis to crisis."
   },

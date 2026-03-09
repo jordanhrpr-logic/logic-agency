@@ -10,7 +10,7 @@ export default function FooterHome() {
             </svg>
             <span>Logic Agency Inc.</span>
           </a>
-          <p>Your outsourced packaging and supply chain ops team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.</p>
+          <p>Your outsourced packaging, supply chain, and operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.</p>
         </div>
         <div className="fc">
           <h4>Services</h4>
@@ -23,7 +23,7 @@ export default function FooterHome() {
         <div className="fc">
           <h4>Company</h4>
           <a href="/#results">Client Work</a>
-          <a href="/#how">About</a>
+          <a href="/#pillars">What We Do</a>
           <a href="/#cta">Contact</a>
         </div>
         <div className="fc">
