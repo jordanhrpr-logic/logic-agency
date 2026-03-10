@@ -496,7 +496,7 @@ export default function RetailReadinessBible() {
           <h2>Want someone to own this <span className="o">checklist for you?</span></h2>
           <p>This is exactly what our Growth and Enterprise tiers are built for &mdash; the operational infrastructure that gets you into retail and keeps you there. We&apos;ve taken brands through every phase of this checklist. Tell us where you are and we&apos;ll tell you what comes next.</p>
           <div className="cta-btns">
-            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
+            <a href="mailto:jordan@logicagencyinc.com?subject=Retail Readiness — Let's Talk" className="bt bo">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
