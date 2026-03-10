@@ -3,6 +3,12 @@ import './globals.css';
 export const metadata = {
   title: 'Logic Agency Inc. — Packaging & Supply Chain Ops for Scaling Brands',
   description: 'Logic Agency is your outsourced packaging and supply chain operations team. Monthly retainer packages for brands in beauty, wellness, CPG, and tech wearables.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
