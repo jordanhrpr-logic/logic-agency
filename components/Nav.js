@@ -13,6 +13,7 @@ export default function Nav({ variant = 'guide' }) {
       <div className="dd-menu">
         <div className="dd-panel">
           <a href="/guides/retail-readiness" onClick={close}>The Retail Readiness Bible</a>
+          <a href="/guides/first-90-days-in-retail" onClick={close}>Your First 90 Days in Retail</a>
           <a href="/guides/retail-ready-packaging" onClick={close}>Getting Your Packaging Retail-Ready</a>
           <a href="/guides/packaging-cost-reduction" onClick={close}>Packaging Cost Reduction</a>
           <a href="/guides/packaging-system-that-scales" onClick={close}>Building a Packaging System That Scales</a>
