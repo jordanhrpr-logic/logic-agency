@@ -39,7 +39,7 @@ export default function HomePage() {
           <h1>We help growing brands get their packaging, supply chain, and <span className="o">operations right.</span></h1>
           <p className="hero-sub">We embed into growing brands as their operational backbone. From packaging design to global sourcing to retail execution &mdash; we don&apos;t just advise, we get our hands dirty.</p>
           <div className="hb">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Let's Talk — Packaging %26 Supply Chain" className="bt bo">Start a Conversation &rarr;</a>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="#pricing" className="bt bg">See Pricing</a>
           </div>
           <div className="trust">
@@ -312,7 +312,7 @@ export default function HomePage() {
           <h2>Ready to stop <span className="o">managing it all yourself?</span></h2>
           <p>Tell us what&apos;s going on with your packaging, supply chain, or operations. We&apos;ll be honest about whether we can help and which tier makes sense. No pitch deck, no pressure.</p>
           <div className="cbt">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Let's Talk — Packaging %26 Supply Chain" className="bt bw">Start a Conversation &rarr;</a>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bw" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a 15-Minute Call &rarr;</a>
             <a href="tel:+13853686837" className="bt bw">Call 385.368.6837</a>
           </div>
