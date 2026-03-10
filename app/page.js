@@ -266,7 +266,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm"></div>
+              <div className="cm"><img src="/images/haldirams.jpg" alt="Haldiram's US retail packaging by Logic Agency" /></div>
               <div className="cb">
                 <div className="cn">Supply Chain + Market Entry &middot; Enterprise Tier</div>
                 <h3>US Mainstream Retail Entry for Global Snack Brand</h3>
