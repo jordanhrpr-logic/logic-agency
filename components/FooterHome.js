@@ -29,7 +29,7 @@ export default function FooterHome() {
         <div className="fc">
           <h4>Contact</h4>
           <a href="mailto:jordan@logicagencyinc.com">jordan@logicagencyinc.com</a>
-          <a href="tel:+13853686837">385.368.6837</a>
+          <a href="tel:+18018996836">+1 (801) 899-6836</a>
           <a href="#">Orange County, CA</a>
           <a href="#">Salt Lake City, UT</a>
         </div>
