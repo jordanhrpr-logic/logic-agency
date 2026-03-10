@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
+import EmailButton from '@/components/EmailButton';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -218,7 +219,7 @@ export default function RetailReadyPackaging() {
           <h2>Staring at a retail deadline and your packaging <span className="o">isn&apos;t ready?</span></h2>
           <p>This is exactly what our Growth and Enterprise tiers are built for. We&apos;ve taken brands from DTC-only to retail shelf in under 90 days. Tell us what you&apos;re dealing with and we&apos;ll be honest about whether we can help.</p>
           <div className="cta-btns">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Retail-Ready Packaging — Let's Talk" className="bt bo">Start a Conversation &rarr;</a>
+            <EmailButton subject="Retail-Ready Packaging — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>

@@ -48,6 +48,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .bw{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
 .bw:hover{border-color:rgba(255,255,255,.6);transform:translateY(-2px)}
 
+/* === EMAIL BUTTON DROPDOWN === */
+.email-wrap{position:relative;display:inline-flex}
+.email-dd{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#2A2A2A;border-radius:10px;border:1px solid rgba(255,255,255,.08);box-shadow:0 12px 32px rgba(0,0,0,.5);overflow:hidden;z-index:500;white-space:nowrap}
+.email-dd a{display:block;color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;font-weight:500;padding:12px 24px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .15s,color .15s}
+.email-dd a:last-child{border-bottom:none}
+.email-dd a:hover{background:rgba(255,255,255,.08);color:var(--o)}
+
 /* === UTILITY CLASSES === */
 .o{color:var(--o)}.b{color:var(--bl)}
 
