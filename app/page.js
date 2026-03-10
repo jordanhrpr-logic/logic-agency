@@ -87,12 +87,6 @@ export default function HomePage() {
               <span className="port-name">U.S. Mainstream Retail Launch</span>
             </div>
           </div>
-          <div className="port-item port-g6">
-            <div className="port-overlay">
-              <span className="port-cat">Tech Hardware</span>
-              <span className="port-name">Classroom Audio System</span>
-            </div>
-          </div>
         </div>
       </section>
 
