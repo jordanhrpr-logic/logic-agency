@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
+import EmailButton from '@/components/EmailButton';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -257,7 +258,7 @@ export default function PackagingCostReduction() {
           <h2>Know your packaging costs <span className="o">more than it should?</span></h2>
           <p>Cost optimization is built into every tier we offer. At Starter level we advise on sourcing strategy. At Growth and Enterprise we actively manage the cost reduction roadmap as your packaging program partner. Tell us what you&apos;re dealing with.</p>
           <div className="cta-btns">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Cost Reduction — Let's Talk" className="bt bo">Start a Conversation &rarr;</a>
+            <EmailButton subject="Cost Reduction — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>

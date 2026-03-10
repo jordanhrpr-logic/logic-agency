@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
+import EmailButton from '@/components/EmailButton';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -273,7 +274,7 @@ export default function PackagingSystemThatScales() {
           <h2>Ready to build packaging that <span className="o">grows with you?</span></h2>
           <p>Whether you&apos;re pre-launch or scaling past 500K units, our tiers match where you are right now. Tell us your stage and we&apos;ll tell you exactly what the next step looks like.</p>
           <div className="cta-btns">
-            <a href="mailto:jordan@logicagencyinc.com?subject=Packaging System — Let's Talk" className="bt bo">Start a Conversation &rarr;</a>
+            <EmailButton subject="Packaging System — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
