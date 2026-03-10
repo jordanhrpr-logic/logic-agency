@@ -107,7 +107,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-g3{background:linear-gradient(145deg,#c2bab2 0%,#a8a098 50%,#908880 100%)}
 .port-g4{background:linear-gradient(145deg,#c9c0b8 0%,#b0a898 50%,#988f80 100%)}
 .port-g5{background:linear-gradient(145deg,#b0b8c0 0%,#9098a0 50%,#788088 100%)}
-.port-g6{background:linear-gradient(145deg,#c4bcb0 0%,#a8a090 50%,#908878 100%)}
 .port-item::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(20,20,20,.75) 100%);opacity:0;transition:opacity .5s ease;z-index:1}
 .port-item:hover{transform:scale(1.03)}
 .port-item:hover::before{opacity:1}
