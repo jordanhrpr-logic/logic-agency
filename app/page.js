@@ -147,7 +147,7 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
-          <p className="hw-exp">20 years across 15+ countries. Hands-on experience backed by modern tools &mdash; a lean team that delivers what usually takes a department of ten.</p>
+          <p className="hw-exp">20 years across 15+ countries. Hands-on experience backed by AI-powered tools and custom-built operational systems. We don&apos;t just manage your operations &mdash; we build infrastructure that gets smarter and compounds in value over time.</p>
         </div>
       </section>
 
@@ -198,7 +198,7 @@ export default function HomePage() {
               <p className="tier-sub">You need a fully embedded operations team</p>
               <h3>Embedded Operations</h3>
               <span className="tier-price"><strong>$10K+</strong> /month</span>
-              <p className="tier-desc">A complete supply chain and packaging operations team. We manage packaging, inventory, logistics, retail execution, and vendor operations end to end.</p>
+              <p className="tier-desc">A complete supply chain and packaging operations team &mdash; plus custom-built systems that make your operations smarter over time. We manage packaging, inventory, logistics, retail execution, and vendor operations end to end.</p>
               <ul className="tier-list">
                 <li>Everything in Growth</li>
                 <li>Inventory management and demand planning</li>
@@ -206,6 +206,7 @@ export default function HomePage() {
                 <li>Import/export coordination</li>
                 <li>Retail launch strategy and sales support</li>
                 <li>Dedicated ops lead</li>
+                <li>Custom operational systems &mdash; automated forecasting, inventory alerts, supplier dashboards, and AI-powered workflow tools built for your business</li>
               </ul>
               <p className="tier-for">Best for: Brands at scale, international market entrants, or companies replacing an in-house ops team.</p>
             </div>
