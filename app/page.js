@@ -317,7 +317,6 @@ export default function HomePage() {
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a 15-Minute Call &rarr;</a>
             <a href="tel:+13853686837" className="bt bw">Call 385.368.6837</a>
           </div>
-          <span className="csb">Jordan Harper, Founder &middot; Orange County, CA &amp; Salt Lake City, UT</span>
         </div>
       </section>
 
