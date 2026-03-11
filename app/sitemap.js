@@ -9,5 +9,6 @@ export default function sitemap() {
     { url: `${baseUrl}/guides/packaging-sourcing`, lastModified: new Date('2025-02-01') },
     { url: `${baseUrl}/guides/retail-readiness`, lastModified: new Date('2025-02-01') },
     { url: `${baseUrl}/guides/first-90-days-in-retail`, lastModified: new Date('2025-03-01') },
+    { url: `${baseUrl}/guides/ops-team-without-hiring`, lastModified: new Date('2025-03-01') },
   ];
 }
