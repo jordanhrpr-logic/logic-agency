@@ -67,6 +67,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/packaging-system-that-scales',
   },
+  openGraph: {
+    title: 'Building a Packaging System That Scales',
+    description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
+    url: 'https://logicagencyinc.com/guides/packaging-system-that-scales',
+    images: [{ url: 'https://logicagencyinc.com/images/og-packaging-system-that-scales.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Building a Packaging System That Scales',
+    description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
+    images: ['https://logicagencyinc.com/images/og-packaging-system-that-scales.jpg'],
+  },
 };
 
 export default function PackagingSystemThatScales() {

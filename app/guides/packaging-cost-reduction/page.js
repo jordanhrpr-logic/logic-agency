@@ -67,6 +67,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/packaging-cost-reduction',
   },
+  openGraph: {
+    title: 'Packaging Cost Reduction Without Sacrificing Brand',
+    description: 'Where packaging margin actually leaks and how brands typically save 15-30% without downgrading quality.',
+    url: 'https://logicagencyinc.com/guides/packaging-cost-reduction',
+    images: [{ url: 'https://logicagencyinc.com/images/og-packaging-cost-reduction.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Packaging Cost Reduction Without Sacrificing Brand',
+    description: 'Where packaging margin actually leaks and how brands typically save 15-30% without downgrading quality.',
+    images: ['https://logicagencyinc.com/images/og-packaging-cost-reduction.jpg'],
+  },
 };
 
 export default function PackagingCostReduction() {
