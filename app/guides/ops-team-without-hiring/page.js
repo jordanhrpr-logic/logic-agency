@@ -83,6 +83,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
   },
+  openGraph: {
+    title: 'How to Build an Ops Team Without Hiring One',
+    description: 'AI tools + fractional expertise for CPG brands. Includes a prompt library for operators.',
+    url: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
+    images: [{ url: 'https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Build an Ops Team Without Hiring One',
+    description: 'AI tools + fractional expertise for CPG brands. Includes a prompt library for operators.',
+    images: ['https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg'],
+  },
 };
 
 export default function OpsTeamWithoutHiring() {

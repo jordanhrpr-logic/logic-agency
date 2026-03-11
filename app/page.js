@@ -8,6 +8,18 @@ export const metadata = {
   title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
   description: 'Logic Agency is your outsourced packaging, supply chain, and operations team. Monthly retainer packages for brands in beauty, wellness, CPG, and tech wearables. From packaging design to global sourcing to retail execution.',
   keywords: 'packaging operations, retail packaging compliance, packaging sourcing, supply chain management, CPG packaging, DTC to retail packaging, fractional ops team, operations outsourcing',
+  openGraph: {
+    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
+    description: 'Your outsourced packaging, supply chain, and operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    url: 'https://logicagencyinc.com',
+    images: [{ url: 'https://logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
+    description: 'Your outsourced packaging, supply chain, and operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    images: ['https://logicagencyinc.com/images/og-homepage.jpg'],
+  },
 };
 
 const faqSchema = {

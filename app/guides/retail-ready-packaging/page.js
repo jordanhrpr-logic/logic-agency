@@ -46,6 +46,18 @@ export const metadata = {
   description: 'Everything brands need to know before their first retail PO: case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
   keywords: 'retail packaging requirements, retail-ready packaging, case pack requirements, pallet configuration, Target packaging requirements, Walmart packaging compliance, retail packaging compliance, DTC to retail packaging',
   alternates: { canonical: 'https://logicagencyinc.com/guides/retail-ready-packaging' },
+  openGraph: {
+    title: 'Getting Your Packaging Retail-Ready',
+    description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
+    url: 'https://logicagencyinc.com/guides/retail-ready-packaging',
+    images: [{ url: 'https://logicagencyinc.com/images/og-retail-ready-packaging.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Getting Your Packaging Retail-Ready',
+    description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
+    images: ['https://logicagencyinc.com/images/og-retail-ready-packaging.jpg'],
+  },
 };
 
 export default function RetailReadyPackaging() {

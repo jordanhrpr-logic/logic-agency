@@ -75,6 +75,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/first-90-days-in-retail',
   },
+  openGraph: {
+    title: 'Your First 90 Days in Retail',
+    description: 'A week-by-week account of what actually happens after a retailer says yes — the chaos, the surprises, and the operational reality.',
+    url: 'https://logicagencyinc.com/guides/first-90-days-in-retail',
+    images: [{ url: 'https://logicagencyinc.com/images/og-first-90-days-in-retail.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Your First 90 Days in Retail',
+    description: 'A week-by-week account of what actually happens after a retailer says yes — the chaos, the surprises, and the operational reality.',
+    images: ['https://logicagencyinc.com/images/og-first-90-days-in-retail.jpg'],
+  },
 };
 
 export default function First90DaysInRetail() {

@@ -75,6 +75,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/retail-readiness',
   },
+  openGraph: {
+    title: 'The Retail Readiness Bible',
+    description: 'The complete operational playbook for launching into retail. Packaging, supply chain, compliance, and a 60-point checklist.',
+    url: 'https://logicagencyinc.com/guides/retail-readiness',
+    images: [{ url: 'https://logicagencyinc.com/images/og-retail-readiness.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Retail Readiness Bible',
+    description: 'The complete operational playbook for launching into retail. Packaging, supply chain, compliance, and a 60-point checklist.',
+    images: ['https://logicagencyinc.com/images/og-retail-readiness.jpg'],
+  },
 };
 
 export default function RetailReadinessBible() {
