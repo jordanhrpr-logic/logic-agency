@@ -93,7 +93,7 @@ export default function HomePage() {
               <span className="port-name">Shelf-Ready Display</span>
             </div>
           </div>
-          <div className="port-item port-tall port-g3">
+          <div className="port-item port-g3">
             <div className="port-overlay">
               <span className="port-cat">Supply Chain</span>
               <span className="port-name">Global Sourcing Program</span>
@@ -109,6 +109,12 @@ export default function HomePage() {
             <div className="port-overlay">
               <span className="port-cat">Operations</span>
               <span className="port-name">U.S. Mainstream Retail Launch</span>
+            </div>
+          </div>
+          <div className="port-item port-g6">
+            <div className="port-overlay">
+              <span className="port-cat">Fulfillment</span>
+              <span className="port-name">Direct-to-Consumer Packaging</span>
             </div>
           </div>
         </div>
