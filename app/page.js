@@ -58,7 +58,15 @@ export default function HomePage() {
           <div className="trust">
             <span className="trust-label">Trusted by</span>
             <div className="trust-logos">
-              <span>Adidas</span><span>Vans</span><span>Target</span><span>Disney</span><span>Puma</span><span>Paramount+</span><span>Spotify</span><span>Epicutis</span><span>A24</span>
+              <img src="/images/logos/haldirams.svg" alt="Haldirams" className="trust-logo" />
+              <img src="/images/logos/epicutis.svg" alt="Epicutis" className="trust-logo" />
+              <img src="/images/logos/paramount.svg" alt="Paramount+" className="trust-logo" />
+              <img src="/images/logos/target.svg" alt="Target" className="trust-logo" />
+              <img src="/images/logos/spotify.svg" alt="Spotify" className="trust-logo" />
+              <img src="/images/logos/a24.svg" alt="A24" className="trust-logo" />
+              <img src="/images/logos/vans.svg" alt="Vans" className="trust-logo" />
+              <img src="/images/logos/adidas.svg" alt="Adidas" className="trust-logo" />
+              <img src="/images/logos/echo-water.svg" alt="Echo Water" className="trust-logo" />
             </div>
           </div>
         </div>
