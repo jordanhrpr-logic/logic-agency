@@ -105,7 +105,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-strip{padding:0;background-color:var(--ow)}
 .port-head{text-align:center;padding:64px 0 32px}
 .port-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--o)}
-.port-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:340px;gap:20px;padding:0 40px 64px}
+.port-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:380px 300px;gap:20px;padding:0 40px 64px}
 .port-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
 .port-wide{grid-column:span 2}
 .port-g1{background:url('/images/port-skincare.jpg') center/cover;background-color:#2A2A2A}
