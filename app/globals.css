@@ -108,12 +108,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:340px;gap:20px;padding:0 40px 64px}
 .port-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
 .port-wide{grid-column:span 2}
-.port-tall{grid-row:span 2}
 .port-g1{background:url('/images/port-skincare.jpg') center/cover;background-color:#2A2A2A}
 .port-g2{background:url('/images/port-retail.jpg') center/cover;background-color:#2A2A2A}
 .port-g3{background:url('/images/port-sourcing.jpg') center/cover;background-color:#2A2A2A}
 .port-g4{background:url('/images/port-launch.jpg') center/cover;background-color:#2A2A2A}
 .port-g5{background:url('/images/port-us-retail.jpg') center/cover;background-color:#2A2A2A}
+.port-g6{background:url('/images/port-dtc.jpg') center/cover;background-color:#2A2A2A}
 .port-item::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(20,20,20,.75) 100%);opacity:0;transition:opacity .5s ease;z-index:1}
 .port-item:hover{transform:scale(1.03)}
 .port-item:hover::before{opacity:1}
@@ -606,7 +606,6 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .port-head{padding:48px 0 24px}
   .port-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px;padding:0 16px 48px;gap:12px}
   .port-wide{grid-column:span 1}
-  .port-tall{grid-row:span 1}
   .port-name{font-size:16px}
   .port-overlay{padding:20px}
   .hero{padding-top:120px!important}
