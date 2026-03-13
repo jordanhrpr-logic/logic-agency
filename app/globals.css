@@ -80,8 +80,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .hb{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
 .trust{display:flex;flex-direction:column;gap:24px;padding-top:40px;border-top:1px solid var(--lt)}
 .trust-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#999}
-.trust-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:32px 40px;align-items:center;justify-items:center}
-.trust-logo{height:44px;width:auto;max-width:100%;transition:all .3s}
+.trust-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:48px 40px;align-items:center;justify-items:center}
+.trust-logo{height:100px;width:auto;max-width:100%;transition:all .3s}
 
 /* === SITUATIONS GRID (HOMEPAGE) === */
 .sit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
@@ -581,7 +581,7 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .hw-grid{grid-template-columns:1fr}
   .fti{grid-template-columns:1fr 1fr}
   .trust-logos{grid-template-columns:repeat(4,1fr);gap:24px 32px}
-  .trust-logo{height:36px}
+  .trust-logo{height:80px}
 }
 @media(max-width:768px){
   .m-grid{grid-template-columns:1fr;gap:24px}
@@ -615,7 +615,7 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .fbt{flex-direction:column;gap:8px}
   .trust{flex-direction:column;align-items:flex-start;gap:16px}
   .trust-logos{grid-template-columns:repeat(3,1fr);gap:20px 24px}
-  .trust-logo{height:28px}
+  .trust-logo{height:60px}
   .cx{padding:16px 24px}
   .cz strong{font-size:16px}
   .cz span{font-size:11px}
