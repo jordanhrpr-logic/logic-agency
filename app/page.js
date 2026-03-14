@@ -50,7 +50,7 @@ export default function HomePage() {
         <div className="hi">
           <div className="ht">Retail Packaging &amp; Supply Chain Operations</div>
           <h1>We get brands on shelf and <span className="o">keep them there.</span></h1>
-          <p className="hero-sub">Retail-ready packaging, supply chain management, and shelf execution for brands selling into Target, Walmart, and every channel in between. We don&apos;t just advise &mdash; we embed into your team and run it.</p>
+          <p className="hero-sub">Retail-ready packaging, supply chain management, and commercial packaging solutions for brands selling into Target, Walmart, and every channel in between. We don&apos;t just advise &mdash; we embed into your team and run it.</p>
           <div className="hb">
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="#pricing" className="bt bg">See Pricing</a>
@@ -125,7 +125,7 @@ export default function HomePage() {
         <div className="si">
           <div className="sl">Capabilities</div>
           <div className="or"></div>
-          <h2 className="sh">Everything between your product and <span className="o">the shelf.</span></h2>
+          <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
           <FadeIn className="cap-grid">
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
@@ -135,9 +135,9 @@ export default function HomePage() {
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Production management &amp; QC</span></div>
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Supply chain buildout &amp; optimization</span></div>
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Inventory management &amp; demand planning</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Shelf strategy &amp; retail presentation</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Shelf strategy &amp; commercial presentation</span></div>
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>3PL &amp; fulfillment coordination</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>DTC-to-retail transition</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>DTC-to-retail &amp; B2B channel packaging</span></div>
           </FadeIn>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default function HomePage() {
                 <li>New SKU development and launches</li>
                 <li>Weekly strategy syncs</li>
               </ul>
-              <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail relationships or entering new channels.</p>
+              <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail or commercial relationships, or entering new channels.</p>
             </div>
             {/* ENTERPRISE */}
             <div className="tier tier-e">
@@ -297,7 +297,7 @@ export default function HomePage() {
             <div className="cc">
               <div className="cm"><img src="/images/audio-enhancement.jpg" alt="Audio enhancement classroom microphone packaging by Logic Agency" /></div>
               <div className="cb">
-                <div className="cn">Packaging + Sourcing &middot; Growth Tier</div>
+                <div className="cn">B2B Commercial Packaging &middot; Growth Tier</div>
                 <h3>Packaging System That Serves as a Product Hub</h3>
                 <p>Created a packaging system for classroom microphone equipment that functions as a daily-use hub, not just a shipping container. Premium overseas production at the same landed cost.</p>
                 <div className="cx"><div className="cz"><strong>20%</strong><span>Shipping Saved</span></div><div className="cz"><strong>$0</strong><span>Upgrade Cost</span></div><div className="cz"><strong>4+</strong><span>SKUs Expanded</span></div></div>
@@ -342,8 +342,8 @@ export default function HomePage() {
               <p>Food, beverage, household. Retail-ready packaging that passes buyer review, meets compliance specs, and moves on shelf from day one.</p>
             </div>
             <div className="ind">
-              <h3>Tech &amp; Wearables</h3>
-              <p>Consumer electronics, wearable devices, hardware. Retail packaging systems that protect sensitive components, pass retailer testing, and deliver brand experience on shelf.</p>
+              <h3>Tech, Hardware &amp; B2B Products</h3>
+              <p>Consumer electronics, wearable devices, commercial hardware. Packaging systems for retail shelves and B2B channels &mdash; built to protect sensitive components and deliver brand experience wherever products are sold.</p>
             </div>
           </FadeIn>
         </div>
