@@ -128,87 +128,78 @@ export default function HomePage() {
           <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
           <FadeIn className="hub-wrap">
-            <svg viewBox="0 0 600 520" className="hub-svg" fill="none">
+            <svg viewBox="0 0 600 500" className="hub-svg" fill="none">
               <defs>
-                {/* Glow filter for hub circles */}
-                <filter id="hub-glow" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
-                  <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 0.4 0 0 0  0 0 0 0 0  0 0 0 0.4 0"/>
-                  <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                {/* Orange glow — used on hub circles */}
+                <filter id="hg" x="-60%" y="-60%" width="220%" height="220%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="b"/>
+                  <feFlood floodColor="#FF600A" floodOpacity="0.35" result="c"/>
+                  <feComposite in="c" in2="b" operator="in" result="s"/>
+                  <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
                 </filter>
-                {/* Glow for node dots */}
-                <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
-                  <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 0.4 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/>
-                  <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                {/* Orange glow — nodes */}
+                <filter id="ng" x="-150%" y="-150%" width="400%" height="400%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="b"/>
+                  <feFlood floodColor="#FF600A" floodOpacity="0.5" result="c"/>
+                  <feComposite in="c" in2="b" operator="in" result="s"/>
+                  <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
                 </filter>
-                {/* Gradient for spoke lines — fades from hub outward */}
-                <linearGradient id="spoke-top" x1="0" y1="1" x2="0" y2="0">
-                  <stop offset="0%" stopColor="#FF600A" stopOpacity="0.35"/>
-                  <stop offset="100%" stopColor="#FF600A" stopOpacity="0.08"/>
-                </linearGradient>
-                <linearGradient id="spoke-bl" x1="0.6" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#FF600A" stopOpacity="0.3"/>
-                  <stop offset="100%" stopColor="#FF600A" stopOpacity="0.06"/>
-                </linearGradient>
-                <linearGradient id="spoke-br" x1="0.4" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#FF600A" stopOpacity="0.3"/>
-                  <stop offset="100%" stopColor="#FF600A" stopOpacity="0.06"/>
-                </linearGradient>
-                {/* Subtle fill for intersection area */}
-                <radialGradient id="intersect-glow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#FF600A" stopOpacity="0.08"/>
-                  <stop offset="100%" stopColor="#FF600A" stopOpacity="0"/>
-                </radialGradient>
+                {/* Larger soft glow for retail node */}
+                <filter id="rg" x="-200%" y="-200%" width="500%" height="500%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/>
+                  <feFlood floodColor="#FF600A" floodOpacity="0.4" result="c"/>
+                  <feComposite in="c" in2="b" operator="in" result="s"/>
+                  <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
               </defs>
 
-              {/* Subtle concentric pulse rings from center */}
-              <circle cx="300" cy="250" r="100" stroke="rgba(255,96,10,.06)" strokeWidth="1"/>
-              <circle cx="300" cy="250" r="150" stroke="rgba(255,96,10,.04)" strokeWidth="1"/>
-              <circle cx="300" cy="250" r="210" stroke="rgba(255,96,10,.025)" strokeWidth="1"/>
+              {/* Subtle orbit rings */}
+              <circle cx="300" cy="240" r="108" stroke="rgba(255,96,10,.05)" strokeWidth="1" strokeDasharray="4 8"/>
+              <circle cx="300" cy="240" r="170" stroke="rgba(255,96,10,.04)" strokeWidth="1" strokeDasharray="2 10"/>
 
-              {/* Spoke lines — gradient, thicker */}
-              <line x1="300" y1="190" x2="300" y2="88" stroke="url(#spoke-top)" strokeWidth="2"/>
-              <line x1="255" y1="290" x2="130" y2="400" stroke="url(#spoke-bl)" strokeWidth="2"/>
-              <line x1="345" y1="290" x2="470" y2="400" stroke="url(#spoke-br)" strokeWidth="2"/>
+              {/* Spoke lines — start from circle edges, animated flow dots */}
+              <line x1="300" y1="182" x2="300" y2="82" stroke="rgba(255,96,10,.2)" strokeWidth="1.5"/>
+              <line x1="300" y1="182" x2="300" y2="82" stroke="#FF600A" strokeWidth="1.5" strokeDasharray="3 17" className="hub-flow"/>
+              <line x1="228" y1="290" x2="115" y2="410" stroke="rgba(255,96,10,.15)" strokeWidth="1.5"/>
+              <line x1="228" y1="290" x2="115" y2="410" stroke="#FF600A" strokeWidth="1.5" strokeDasharray="3 17" className="hub-flow"/>
+              <line x1="372" y1="290" x2="485" y2="410" stroke="rgba(255,96,10,.15)" strokeWidth="1.5"/>
+              <line x1="372" y1="290" x2="485" y2="410" stroke="#FF600A" strokeWidth="1.5" strokeDasharray="3 17" className="hub-flow"/>
 
-              {/* Hub background — clean mask over spoke lines */}
-              <ellipse cx="300" cy="250" rx="88" ry="70" fill="#2A2A2A"/>
-
-              {/* Intersection glow */}
-              <ellipse cx="300" cy="250" rx="30" ry="58" fill="url(#intersect-glow)"/>
-
-              {/* Hub circles — logo motif with glow */}
-              <g filter="url(#hub-glow)">
-                <circle cx="270" cy="250" r="58" stroke="#FF600A" strokeWidth="2.5"/>
-                <circle cx="330" cy="250" r="58" stroke="#FF600A" strokeWidth="2.5"/>
+              {/* Hub circles with warm orange glow */}
+              <g filter="url(#hg)">
+                <circle cx="268" cy="240" r="62" stroke="#FF600A" strokeWidth="2.5"/>
+                <circle cx="332" cy="240" r="62" stroke="#FF600A" strokeWidth="2.5"/>
               </g>
+
+              {/* Intersection highlight — subtle bright seam */}
+              <ellipse cx="300" cy="240" rx="28" ry="56" stroke="#FF600A" strokeWidth="0" fill="rgba(255,96,10,.06)"/>
 
               {/* Hub labels */}
-              <text x="248" y="254" fill="#FF600A" fontSize="14" fontWeight="800" textAnchor="middle" letterSpacing="2.5" style={{fontFamily:'Poppins,sans-serif'}}>LOGIC</text>
-              <text x="352" y="244" fill="rgba(255,255,255,.75)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>YOUR</text>
-              <text x="352" y="262" fill="rgba(255,255,255,.75)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>BRAND</text>
+              <text x="244" y="244" fill="#FF600A" fontSize="15" fontWeight="800" textAnchor="middle" letterSpacing="3" style={{fontFamily:'Poppins,sans-serif'}}>LOGIC</text>
+              <text x="356" y="234" fill="rgba(255,255,255,.7)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2.5" style={{fontFamily:'Poppins,sans-serif'}}>YOUR</text>
+              <text x="356" y="254" fill="rgba(255,255,255,.7)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2.5" style={{fontFamily:'Poppins,sans-serif'}}>BRAND</text>
 
-              {/* ---- RETAIL NODE (top center, dominant) ---- */}
-              <g filter="url(#node-glow)">
-                <circle cx="300" cy="68" r="10" fill="#FF600A"/>
+              {/* ---- RETAIL NODE (top, dominant) ---- */}
+              <g filter="url(#rg)">
+                <circle cx="300" cy="58" r="12" fill="#FF600A"/>
               </g>
-              <circle cx="300" cy="68" r="18" stroke="#FF600A" strokeWidth="1.5" strokeOpacity="0.3"/>
-              <text x="300" y="36" fill="#fff" fontSize="16" fontWeight="800" textAnchor="middle" letterSpacing="3" style={{fontFamily:'Poppins,sans-serif'}}>RETAIL</text>
+              <circle cx="300" cy="58" r="22" stroke="#FF600A" strokeWidth="1" strokeOpacity="0.3"/>
+              <circle cx="300" cy="58" r="32" stroke="#FF600A" strokeWidth="0.5" strokeOpacity="0.12"/>
+              <text x="300" y="14" fill="#fff" fontSize="17" fontWeight="800" textAnchor="middle" letterSpacing="4" style={{fontFamily:'Poppins,sans-serif'}}>RETAIL</text>
 
               {/* ---- B2B / COMMERCIAL NODE (bottom left) ---- */}
-              <g filter="url(#node-glow)">
-                <circle cx="115" cy="420" r="8" fill="#FF600A"/>
+              <g filter="url(#ng)">
+                <circle cx="115" cy="425" r="9" fill="#FF600A"/>
               </g>
-              <circle cx="115" cy="420" r="15" stroke="#FF600A" strokeWidth="1.5" strokeOpacity="0.25"/>
-              <text x="115" y="454" fill="rgba(255,255,255,.85)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>B2B / COMMERCIAL</text>
+              <circle cx="115" cy="425" r="18" stroke="#FF600A" strokeWidth="1" strokeOpacity="0.25"/>
+              <text x="115" y="462" fill="rgba(255,255,255,.8)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>B2B / COMMERCIAL</text>
 
               {/* ---- DTC / MARKETPLACE NODE (bottom right) ---- */}
-              <g filter="url(#node-glow)">
-                <circle cx="485" cy="420" r="8" fill="#FF600A"/>
+              <g filter="url(#ng)">
+                <circle cx="485" cy="425" r="9" fill="#FF600A"/>
               </g>
-              <circle cx="485" cy="420" r="15" stroke="#FF600A" strokeWidth="1.5" strokeOpacity="0.25"/>
-              <text x="485" y="454" fill="rgba(255,255,255,.85)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>DTC / MARKETPLACE</text>
+              <circle cx="485" cy="425" r="18" stroke="#FF600A" strokeWidth="1" strokeOpacity="0.25"/>
+              <text x="485" y="462" fill="rgba(255,255,255,.8)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>DTC / MARKETPLACE</text>
             </svg>
           </FadeIn>
           <FadeIn className="cap-grid">
