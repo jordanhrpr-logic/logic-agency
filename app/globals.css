@@ -123,17 +123,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-item:hover .port-cat{opacity:1}
 .port-name{display:block;font-size:22px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.15}
 
-/* === CHANNEL BADGES === */
-.ch-badges{display:flex;justify-content:center;gap:12px;margin-top:40px;flex-wrap:wrap}
-.ch-badge{padding:10px 24px;border:1px solid rgba(255,96,10,.35);border-radius:50px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1.5px;background:rgba(255,96,10,.05);transition:all .3s;cursor:pointer;font-family:inherit;appearance:none;-webkit-appearance:none;outline:none}
-.ch-badge:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(255,96,10,.15);border-color:rgba(255,96,10,.6);background:rgba(255,96,10,.1)}
-.ch-active{background:var(--o);color:#fff;border-color:var(--o)}
-.ch-active:hover{background:var(--od);border-color:var(--od)}
+/* === CAPABILITY ACCORDION === */
+.cap-acc-wrap{margin-top:48px;max-width:800px}
+.cap-acc{border-bottom:1px solid rgba(255,255,255,.1);padding:28px 0;cursor:pointer}
+.cap-acc:first-child{border-top:1px solid rgba(255,255,255,.1)}
+.cap-hd{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.cap-hd h3{font-size:17px;font-weight:700;line-height:1.4;color:#fff;transition:color .2s}
+.cap-acc:hover .cap-hd h3{color:var(--o)}
+.cap-tg{width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
+.cap-tg svg{width:14px;height:14px;stroke:var(--o);transition:transform .3s}
+.cap-acc.op .cap-tg svg{transform:rotate(45deg)}
+.cap-acc.op .cap-tg{background:var(--o)}
+.cap-acc.op .cap-tg svg{stroke:#fff}
+.cap-bd{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+.cap-acc.op .cap-bd{max-height:800px;padding-top:16px}
 
 /* === CAPABILITIES (HOMEPAGE) === */
-.cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;margin-top:48px}
-.cap-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:opacity .3s,transform .3s}
-.cap-dim{opacity:.15;transform:scale(.98);pointer-events:none}
+.cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 48px;margin-top:0}
+.cap-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .cap-icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.15);display:flex;align-items:center;justify-content:center}
 .cap-item span{font-size:17px;font-weight:600;color:rgba(255,255,255,.9);line-height:1.4}
 
@@ -615,8 +622,6 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .dd-panel a{padding:12px 20px;font-size:14px;text-align:center}
 }
 @media(max-width:640px){
-  .ch-badges{gap:8px}
-  .ch-badge{font-size:12px;padding:8px 18px}
   .cap-grid{grid-template-columns:1fr}
   .cap-item span{font-size:15px}
   nav{padding:0 24px}
