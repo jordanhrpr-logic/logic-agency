@@ -234,6 +234,7 @@ export default function RetailReadyPackaging() {
             <EmailButton subject="Retail-Ready Packaging — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
+          <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>

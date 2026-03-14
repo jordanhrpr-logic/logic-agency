@@ -218,6 +218,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .ctb h2{font-size:clamp(36px,4.5vw,56px);font-weight:800;line-height:1.1;letter-spacing:-2px;margin-bottom:20px;color:#fff}
 .ctb>p{font-size:18px;color:rgba(255,255,255,.8);margin-bottom:36px;line-height:1.7}
 .cbt{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.hero-dl{display:block;text-align:center;margin-top:20px;font-size:14px;font-weight:600;color:var(--o);text-decoration:none;transition:opacity .2s}
+.hero-dl:hover{text-decoration:underline;opacity:.85}
+.cta-dl{display:block;text-align:center;margin-top:20px;font-size:14px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;transition:opacity .2s}
+.cta-dl:hover{text-decoration:underline;color:#fff}
 .csb{margin-top:20px;font-size:13px;color:rgba(255,255,255,.6);display:block}
 
 /* === FOOTER (HOMEPAGE) === */
