@@ -127,65 +127,27 @@ export default function HomePage() {
           <div className="or"></div>
           <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
-          <FadeIn className="hub-wrap">
-            <svg viewBox="0 0 600 490" className="hub-svg" fill="none">
-              <defs>
-                {/* Subtle orange glow — hub only */}
-                <filter id="hg" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="b"/>
-                  <feFlood floodColor="#FF600A" floodOpacity="0.2" result="c"/>
-                  <feComposite in="c" in2="b" operator="in" result="s"/>
-                  <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-              </defs>
-
-              {/* ---- DASHED CONNECTOR LINES ---- */}
-              <line x1="300" y1="172" x2="300" y2="102" stroke="rgba(255,96,10,.2)" strokeWidth="1" strokeDasharray="6 6"/>
-              <line x1="228" y1="296" x2="134" y2="396" stroke="rgba(255,96,10,.2)" strokeWidth="1" strokeDasharray="6 6"/>
-              <line x1="372" y1="296" x2="466" y2="396" stroke="rgba(255,96,10,.2)" strokeWidth="1" strokeDasharray="6 6"/>
-
-              {/* ---- HUB: two overlapping filled circles ---- */}
-              <g filter="url(#hg)">
-                <circle cx="264" cy="240" r="68" fill="rgba(255,96,10,.06)" stroke="#FF600A" strokeWidth="2.5"/>
-                <circle cx="336" cy="240" r="68" fill="rgba(255,96,10,.06)" stroke="#FF600A" strokeWidth="2.5"/>
-              </g>
-
-              {/* Intersection overlay */}
-              <ellipse cx="300" cy="240" rx="30" ry="62" fill="rgba(255,96,10,.05)"/>
-
-              {/* Hub labels */}
-              <text x="238" y="244" fill="#FF600A" fontSize="16" fontWeight="800" textAnchor="middle" letterSpacing="3.5" style={{fontFamily:'Poppins,sans-serif'}}>LOGIC</text>
-              <text x="362" y="234" fill="rgba(255,255,255,.65)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2.5" style={{fontFamily:'Poppins,sans-serif'}}>YOUR</text>
-              <text x="362" y="254" fill="rgba(255,255,255,.65)" fontSize="13" fontWeight="700" textAnchor="middle" letterSpacing="2.5" style={{fontFamily:'Poppins,sans-serif'}}>BRAND</text>
-
-              {/* ---- RETAIL NODE (top, largest) ---- */}
-              <circle cx="300" cy="68" r="34" fill="rgba(255,96,10,.07)" stroke="#FF600A" strokeWidth="1.5"/>
-              {/* Package box icon */}
-              <rect x="288" y="57" width="24" height="18" rx="2" stroke="rgba(255,255,255,.8)" strokeWidth="1.5" fill="none"/>
-              <line x1="288" y1="63" x2="312" y2="63" stroke="rgba(255,255,255,.8)" strokeWidth="1.5"/>
-              <line x1="300" y1="63" x2="300" y2="75" stroke="rgba(255,255,255,.8)" strokeWidth="1.5"/>
-              {/* Label above */}
-              <text x="300" y="22" fill="#fff" fontSize="15" fontWeight="800" textAnchor="middle" letterSpacing="4" style={{fontFamily:'Poppins,sans-serif'}}>RETAIL</text>
-
-              {/* ---- B2B / COMMERCIAL NODE (bottom left) ---- */}
-              <circle cx="110" cy="420" r="28" fill="rgba(255,96,10,.07)" stroke="#FF600A" strokeWidth="1.5"/>
-              {/* Building icon */}
-              <rect x="99" y="410" width="22" height="18" rx="1" stroke="rgba(255,255,255,.8)" strokeWidth="1.5" fill="none"/>
-              <line x1="99" y1="416" x2="121" y2="416" stroke="rgba(255,255,255,.8)" strokeWidth="1.5"/>
-              <line x1="106" y1="416" x2="106" y2="428" stroke="rgba(255,255,255,.7)" strokeWidth="1.2"/>
-              <line x1="114" y1="416" x2="114" y2="428" stroke="rgba(255,255,255,.7)" strokeWidth="1.2"/>
-              {/* Label below */}
-              <text x="110" y="464" fill="rgba(255,255,255,.8)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>B2B / COMMERCIAL</text>
-
-              {/* ---- DTC / MARKETPLACE NODE (bottom right) ---- */}
-              <circle cx="490" cy="420" r="28" fill="rgba(255,96,10,.07)" stroke="#FF600A" strokeWidth="1.5"/>
-              {/* Cart icon */}
-              <polyline points="479,412 483,412 490,427 500,427" stroke="rgba(255,255,255,.8)" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="490" cy="431" r="2" stroke="rgba(255,255,255,.7)" strokeWidth="1.2" fill="none"/>
-              <circle cx="498" cy="431" r="2" stroke="rgba(255,255,255,.7)" strokeWidth="1.2" fill="none"/>
-              {/* Label below */}
-              <text x="490" y="464" fill="rgba(255,255,255,.8)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>DTC / MARKETPLACE</text>
-            </svg>
+          <FadeIn className="flow-strip">
+            <div className="flow-node flow-brand">
+              <div className="flow-node-label">YOUR BRAND</div>
+            </div>
+            <div className="flow-conn">
+              <svg width="100%" height="2" preserveAspectRatio="none"><line x1="0" y1="1" x2="100%" y2="1" stroke="rgba(255,96,10,.35)" strokeWidth="1.5" strokeDasharray="6 5"/></svg>
+              <svg className="flow-arrow-tip" viewBox="0 0 10 10" width="10" height="10"><polygon points="0,0 10,5 0,10" fill="var(--o)"/></svg>
+            </div>
+            <div className="flow-node flow-logic">
+              <svg viewBox="0 0 40 40" fill="none" width="28" height="28"><circle cx="15" cy="20" r="12" stroke="#FF600A" strokeWidth="2.5"/><circle cx="25" cy="20" r="12" stroke="#FF600A" strokeWidth="2.5"/></svg>
+              <div className="flow-node-label">LOGIC</div>
+            </div>
+            <div className="flow-conn">
+              <svg width="100%" height="2" preserveAspectRatio="none"><line x1="0" y1="1" x2="100%" y2="1" stroke="rgba(255,96,10,.35)" strokeWidth="1.5" strokeDasharray="6 5"/></svg>
+              <svg className="flow-arrow-tip" viewBox="0 0 10 10" width="10" height="10"><polygon points="0,0 10,5 0,10" fill="var(--o)"/></svg>
+            </div>
+            <div className="flow-channels">
+              <span className="flow-ch">Retail</span>
+              <span className="flow-ch">B2B / Commercial</span>
+              <span className="flow-ch">DTC / Marketplace</span>
+            </div>
           </FadeIn>
           <FadeIn className="cap-grid">
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
