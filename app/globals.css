@@ -123,18 +123,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-item:hover .port-cat{opacity:1}
 .port-name{display:block;font-size:22px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.15}
 
-/* === FLOW STRIP === */
-.flow-strip{display:flex;align-items:center;margin:56px auto 0;max-width:720px;gap:0}
-.flow-node{display:flex;flex-direction:column;align-items:center;gap:10px;flex-shrink:0}
-.flow-node-label{font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.7)}
-.flow-brand{padding:20px 28px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.03)}
-.flow-logic{padding:20px 32px;border:2px solid var(--o);border-radius:14px;background:rgba(255,96,10,.06)}
-.flow-logic .flow-node-label{color:var(--o);font-size:13px;letter-spacing:3px}
-.flow-conn{display:flex;align-items:center;flex:1;min-width:32px;position:relative;padding:0 2px}
-.flow-conn svg:first-child{flex:1}
-.flow-arrow-tip{flex-shrink:0;opacity:.6}
-.flow-channels{display:flex;flex-direction:column;gap:8px;flex-shrink:0}
-.flow-ch{display:block;padding:10px 22px;border:1px solid rgba(255,96,10,.3);border-radius:50px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1px;white-space:nowrap;background:rgba(255,96,10,.04)}
+/* === CHANNEL BADGES === */
+.ch-badges{display:flex;justify-content:center;gap:12px;margin-top:40px;flex-wrap:wrap}
+.ch-badge{padding:10px 24px;border:1px solid rgba(255,96,10,.35);border-radius:50px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1.5px;background:rgba(255,96,10,.05)}
 
 /* === CAPABILITIES (HOMEPAGE) === */
 .cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;margin-top:48px}
@@ -620,10 +611,8 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .dd-panel a{padding:12px 20px;font-size:14px;text-align:center}
 }
 @media(max-width:640px){
-  .flow-strip{flex-direction:column;gap:16px;max-width:280px}
-  .flow-conn{transform:rotate(90deg);min-height:24px;min-width:unset;width:40px}
-  .flow-channels{align-items:center;width:100%}
-  .flow-ch{text-align:center;width:100%}
+  .ch-badges{gap:8px}
+  .ch-badge{font-size:12px;padding:8px 18px}
   .cap-grid{grid-template-columns:1fr}
   .cap-item span{font-size:15px}
   nav{padding:0 24px}

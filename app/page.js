@@ -127,27 +127,10 @@ export default function HomePage() {
           <div className="or"></div>
           <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
-          <FadeIn className="flow-strip">
-            <div className="flow-node flow-brand">
-              <div className="flow-node-label">YOUR BRAND</div>
-            </div>
-            <div className="flow-conn">
-              <svg width="100%" height="2" preserveAspectRatio="none"><line x1="0" y1="1" x2="100%" y2="1" stroke="rgba(255,96,10,.35)" strokeWidth="1.5" strokeDasharray="6 5"/></svg>
-              <svg className="flow-arrow-tip" viewBox="0 0 10 10" width="10" height="10"><polygon points="0,0 10,5 0,10" fill="var(--o)"/></svg>
-            </div>
-            <div className="flow-node flow-logic">
-              <svg viewBox="0 0 40 40" fill="none" width="28" height="28"><circle cx="15" cy="20" r="12" stroke="#FF600A" strokeWidth="2.5"/><circle cx="25" cy="20" r="12" stroke="#FF600A" strokeWidth="2.5"/></svg>
-              <div className="flow-node-label">LOGIC</div>
-            </div>
-            <div className="flow-conn">
-              <svg width="100%" height="2" preserveAspectRatio="none"><line x1="0" y1="1" x2="100%" y2="1" stroke="rgba(255,96,10,.35)" strokeWidth="1.5" strokeDasharray="6 5"/></svg>
-              <svg className="flow-arrow-tip" viewBox="0 0 10 10" width="10" height="10"><polygon points="0,0 10,5 0,10" fill="var(--o)"/></svg>
-            </div>
-            <div className="flow-channels">
-              <span className="flow-ch">Retail</span>
-              <span className="flow-ch">B2B / Commercial</span>
-              <span className="flow-ch">DTC / Marketplace</span>
-            </div>
+          <FadeIn className="ch-badges">
+            <span className="ch-badge">Retail</span>
+            <span className="ch-badge">B2B / Commercial</span>
+            <span className="ch-badge">DTC / Marketplace</span>
           </FadeIn>
           <FadeIn className="cap-grid">
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
