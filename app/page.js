@@ -127,6 +127,44 @@ export default function HomePage() {
           <div className="or"></div>
           <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
+          <FadeIn className="hub-wrap">
+            <svg viewBox="0 0 500 400" className="hub-svg" fill="none">
+              <defs>
+                <marker id="hub-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0 1L8 5L0 9z" fill="#FF600A"/>
+                </marker>
+              </defs>
+
+              {/* Spoke lines — hub to nodes */}
+              <line x1="250" y1="172" x2="250" y2="82" stroke="rgba(255,255,255,.18)" strokeWidth="1.5" markerEnd="url(#hub-arrow)"/>
+              <line x1="210" y1="255" x2="115" y2="332" stroke="rgba(255,255,255,.18)" strokeWidth="1.5" markerEnd="url(#hub-arrow)"/>
+              <line x1="290" y1="255" x2="385" y2="332" stroke="rgba(255,255,255,.18)" strokeWidth="1.5" markerEnd="url(#hub-arrow)"/>
+
+              {/* Hub background — covers spoke line overlap */}
+              <ellipse cx="250" cy="220" rx="72" ry="55" fill="#2A2A2A"/>
+
+              {/* Hub circles — logo motif */}
+              <circle cx="230" cy="220" r="48" stroke="#FF600A" strokeWidth="2.5"/>
+              <circle cx="270" cy="220" r="48" stroke="#FF600A" strokeWidth="2.5"/>
+
+              {/* Hub labels */}
+              <text x="212" y="224" fill="#FF600A" fontSize="11" fontWeight="700" textAnchor="middle" letterSpacing="1.5" style={{fontFamily:'Poppins,sans-serif'}}>LOGIC</text>
+              <text x="288" y="218" fill="rgba(255,255,255,.8)" fontSize="10" fontWeight="700" textAnchor="middle" letterSpacing="1.5" style={{fontFamily:'Poppins,sans-serif'}}>YOUR</text>
+              <text x="288" y="232" fill="rgba(255,255,255,.8)" fontSize="10" fontWeight="700" textAnchor="middle" letterSpacing="1.5" style={{fontFamily:'Poppins,sans-serif'}}>BRAND</text>
+
+              {/* Retail node — top center, largest */}
+              <circle cx="250" cy="60" r="9" fill="#FF600A"/>
+              <text x="250" y="38" fill="#fff" fontSize="14" fontWeight="700" textAnchor="middle" letterSpacing="2" style={{fontFamily:'Poppins,sans-serif'}}>RETAIL</text>
+
+              {/* B2B / Commercial node — bottom left */}
+              <circle cx="95" cy="350" r="7" fill="#FF600A"/>
+              <text x="95" y="378" fill="rgba(255,255,255,.85)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="1.5" style={{fontFamily:'Poppins,sans-serif'}}>B2B / COMMERCIAL</text>
+
+              {/* DTC / Marketplace node — bottom right */}
+              <circle cx="405" cy="350" r="7" fill="#FF600A"/>
+              <text x="405" y="378" fill="rgba(255,255,255,.85)" fontSize="12" fontWeight="700" textAnchor="middle" letterSpacing="1.5" style={{fontFamily:'Poppins,sans-serif'}}>DTC / MARKETPLACE</text>
+            </svg>
+          </FadeIn>
           <FadeIn className="cap-grid">
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
             <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retailer compliance (Target, Walmart, Costco, Amazon)</span></div>
