@@ -2,6 +2,7 @@ import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import FadeIn from '@/components/FadeIn';
 import FaqAccordion from '@/components/FaqAccordion';
+import CapFilter from '@/components/CapFilter';
 import EmailButton from '@/components/EmailButton';
 
 export const metadata = {
@@ -127,22 +128,8 @@ export default function HomePage() {
           <div className="or"></div>
           <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
           <p className="ss">One team. No handoffs.</p>
-          <FadeIn className="ch-badges">
-            <span className="ch-badge">Retail</span>
-            <span className="ch-badge">B2B / Commercial</span>
-            <span className="ch-badge">DTC / Marketplace</span>
-          </FadeIn>
-          <FadeIn className="cap-grid">
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retailer compliance (Target, Walmart, Costco, Amazon)</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Case pack &amp; pallet configuration</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Global sourcing across 15+ countries</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Production management &amp; QC</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Supply chain buildout &amp; optimization</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Inventory management &amp; demand planning</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Shelf strategy &amp; commercial presentation</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>3PL &amp; fulfillment coordination</span></div>
-            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>DTC-to-retail &amp; B2B channel packaging</span></div>
+          <FadeIn>
+            <CapFilter />
           </FadeIn>
         </div>
       </section>

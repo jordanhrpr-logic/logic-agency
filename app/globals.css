@@ -125,12 +125,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 
 /* === CHANNEL BADGES === */
 .ch-badges{display:flex;justify-content:center;gap:12px;margin-top:40px;flex-wrap:wrap}
-.ch-badge{padding:10px 24px;border:1px solid rgba(255,96,10,.35);border-radius:50px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1.5px;background:rgba(255,96,10,.05);transition:all .3s;cursor:default}
+.ch-badge{padding:10px 24px;border:1px solid rgba(255,96,10,.35);border-radius:50px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1.5px;background:rgba(255,96,10,.05);transition:all .3s;cursor:pointer;font-family:inherit;appearance:none;-webkit-appearance:none;outline:none}
 .ch-badge:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(255,96,10,.15);border-color:rgba(255,96,10,.6);background:rgba(255,96,10,.1)}
+.ch-active{background:var(--o);color:#fff;border-color:var(--o)}
+.ch-active:hover{background:var(--od);border-color:var(--od)}
 
 /* === CAPABILITIES (HOMEPAGE) === */
 .cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;margin-top:48px}
-.cap-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.cap-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:opacity .3s,transform .3s}
+.cap-dim{opacity:.15;transform:scale(.98);pointer-events:none}
 .cap-icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.15);display:flex;align-items:center;justify-content:center}
 .cap-item span{font-size:17px;font-weight:600;color:rgba(255,255,255,.9);line-height:1.4}
 
