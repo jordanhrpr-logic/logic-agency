@@ -56,7 +56,7 @@ export default function HomePage() {
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="#pricing" className="bt bg">See Pricing</a>
           </div>
-          <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="hero-dl" target="_blank" rel="noopener noreferrer">Or download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/Logic-Agency-Retail-Readiness-Checklist.pdf" className="hero-dl" target="_blank" rel="noopener noreferrer">Or download the free Retail Readiness Checklist &rarr;</a>
           <div className="trust">
             <span className="trust-label">Trusted by</span>
             <div className="trust-logos">
@@ -362,7 +362,7 @@ export default function HomePage() {
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a 15-Minute Call &rarr;</a>
             <a href="tel:+18018996836" className="bt bw">Call +1 (801) 899-6836</a>
           </div>
-          <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/Logic-Agency-Retail-Readiness-Checklist.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free Retail Readiness Checklist &rarr;</a>
         </div>
       </section>
 
