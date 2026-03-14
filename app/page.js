@@ -113,8 +113,8 @@ export default function HomePage() {
           </div>
           <div className="port-item port-g6">
             <div className="port-overlay">
-              <span className="port-cat">Fulfillment</span>
-              <span className="port-name">Direct-to-Consumer Packaging</span>
+              <span className="port-cat">Logistics</span>
+              <span className="port-name">Warehouse Operations</span>
             </div>
           </div>
         </div>
