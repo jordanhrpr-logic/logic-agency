@@ -5,19 +5,19 @@ import FaqAccordion from '@/components/FaqAccordion';
 import EmailButton from '@/components/EmailButton';
 
 export const metadata = {
-  title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
-  description: 'Logic Agency is your outsourced packaging, supply chain, and operations team. Monthly retainer packages for brands in beauty, wellness, CPG, and tech wearables. From packaging design to global sourcing to retail execution.',
+  title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
+  description: 'Logic Agency is your outsourced retail packaging and supply chain operations team. From retail-ready packaging to shelf execution — monthly retainers for brands in beauty, CPG, and tech wearables.',
   keywords: 'packaging operations, retail packaging compliance, packaging sourcing, supply chain management, CPG packaging, DTC to retail packaging, fractional ops team, operations outsourcing',
   openGraph: {
-    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
-    description: 'Your outsourced packaging, supply chain, and operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
+    description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
     url: 'https://logicagencyinc.com',
     images: [{ url: 'https://logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
-    description: 'Your outsourced packaging, supply chain, and operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
+    description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
     images: ['https://logicagencyinc.com/images/og-homepage.jpg'],
   },
 };
@@ -26,7 +26,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Are you a packaging company or an operations company?", "acceptedAnswer": { "@type": "Answer", "text": "Both. We design and produce packaging, but we also manage the supply chain and operations around it. Most clients start with one need and discover we can handle more. That\u2019s by design." } },
+    { "@type": "Question", "name": "Are you a packaging company or an operations company?", "acceptedAnswer": { "@type": "Answer", "text": "Both \u2014 with a focus on retail. We design and produce retail-ready packaging, and we manage the supply chain and operations that get it on shelf. Most clients start with one need and discover we can handle more. That\u2019s by design." } },
     { "@type": "Question", "name": "I already have a packaging supplier. Why would I need Logic?", "acceptedAnswer": { "@type": "Answer", "text": "Your supplier makes boxes. We manage the system around those boxes \u2014 sourcing strategy, vendor coordination, cost optimization, retail compliance, inventory planning, and launch execution. Most of our clients still use their existing suppliers. We just make sure the whole operation runs instead of lurching from crisis to crisis." } },
     { "@type": "Question", "name": "What does \u201cmonth to month\u201d actually mean? Can I cancel anytime?", "acceptedAnswer": { "@type": "Answer", "text": "It means exactly that. No annual contracts, no cancellation penalties. We earn your business every month. Most clients stay because the value compounds over time \u2014 the longer we work together, the more we understand your supply chain and the more leverage we create. But you are never locked in." } },
     { "@type": "Question", "name": "We\u2019re pre-launch. Is it too early to work with Logic?", "acceptedAnswer": { "@type": "Answer", "text": "No \u2014 this is actually the best time to engage. We\u2019re currently working with a pre-seed brand building their packaging system from scratch, designed to scale from first production run into commercial volumes and retail. Starting early means you avoid the expensive rework that comes from outgrowing packaging that was only built for launch." } },
@@ -48,9 +48,9 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero gl">
         <div className="hi">
-          <div className="ht">Packaging &middot; Supply Chain &middot; Operations</div>
-          <h1>We help growing brands get their packaging, supply chain, and <span className="o">operations right.</span></h1>
-          <p className="hero-sub">We embed into growing brands as their operational backbone. From packaging design to global sourcing to retail execution &mdash; we don&apos;t just advise, we get our hands dirty.</p>
+          <div className="ht">Retail Packaging &amp; Supply Chain Operations</div>
+          <h1>We get brands on shelf and <span className="o">keep them there.</span></h1>
+          <p className="hero-sub">Retail-ready packaging, supply chain management, and shelf execution for brands selling into Target, Walmart, and every channel in between. We don&apos;t just advise &mdash; we embed into your team and run it.</p>
           <div className="hb">
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="#pricing" className="bt bg">See Pricing</a>
@@ -120,6 +120,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CAPABILITIES */}
+      <section className="sc dks gd">
+        <div className="si">
+          <div className="sl">Capabilities</div>
+          <div className="or"></div>
+          <h2 className="sh">Everything between your product and <span className="o">the shelf.</span></h2>
+          <p className="ss">One team. No handoffs.</p>
+          <FadeIn className="cap-grid">
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retail-ready packaging design &amp; engineering</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Retailer compliance (Target, Walmart, Costco, Amazon)</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Case pack &amp; pallet configuration</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Global sourcing across 15+ countries</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Production management &amp; QC</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Supply chain buildout &amp; optimization</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Inventory management &amp; demand planning</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>Shelf strategy &amp; retail presentation</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>3PL &amp; fulfillment coordination</span></div>
+            <div className="cap-item"><div className="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg></div><span>DTC-to-retail transition</span></div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* SITUATIONS */}
       <section id="situations" className="sc gl">
         <div className="si">
@@ -157,12 +179,12 @@ export default function HomePage() {
         <div className="si">
           <div className="sl">What We Do</div>
           <div className="or"></div>
-          <h2 className="sh">Three pillars. <span className="o">One operational team.</span></h2>
+          <h2 className="sh">Three pillars. <span className="o">One retail-ready team.</span></h2>
           <FadeIn className="hw-grid">
             <div className="hw">
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
               <h3>Packaging Design &amp; Engineering</h3>
-              <p>Structural design, prototyping, retail packaging, displays, shelf strategy. Every design is built with manufacturing and retail constraints already solved.</p>
+              <p>Structural design, prototyping, retail-ready packaging, shelf displays, planogram strategy. Every design is built with retailer specs and manufacturing constraints already solved.</p>
             </div>
             <div className="hw">
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
@@ -172,7 +194,7 @@ export default function HomePage() {
             <div className="hw">
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
               <h3>Operations &amp; Retail Execution</h3>
-              <p>Inventory planning, retail compliance, go-to-market execution, 3PL coordination, demand forecasting. The infrastructure that lets brands scale without building a 10-person ops team.</p>
+              <p>Retail compliance, inventory planning, go-to-market execution, 3PL coordination, demand forecasting. The infrastructure that gets brands on shelf and keeps them there.</p>
             </div>
           </FadeIn>
           <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
@@ -185,7 +207,7 @@ export default function HomePage() {
         <div className="si">
           <div className="sl">Plans</div>
           <div className="or"></div>
-          <h2 className="sh">A packaging, supply chain, and ops team at a <span className="o">fraction of the cost.</span></h2>
+          <h2 className="sh">A retail packaging and supply chain team at a <span className="o">fraction of the cost.</span></h2>
           <p className="ss">Month-to-month. No long-term contracts. Scope that flexes with your business.</p>
           <FadeIn className="tiers">
             {/* STARTER */}
@@ -194,15 +216,15 @@ export default function HomePage() {
               <p className="tier-sub">You need expert guidance before making expensive mistakes</p>
               <h3>Advisory &amp; Sourcing</h3>
               <span className="tier-price"><strong>$2.5-3K</strong> /month</span>
-              <p className="tier-desc">An expert in your corner. Packaging and retail advisory on demand for brands that need guidance but aren&apos;t ready for a full operational handoff.</p>
+              <p className="tier-desc">An expert in your corner. Retail packaging advisory and sourcing on demand for brands that need guidance but aren&apos;t ready for a full operational handoff.</p>
               <ul className="tier-list">
                 <li>Packaging sourcing and vendor management</li>
                 <li>Material and structural recommendations</li>
-                <li>Retail packaging guidance</li>
+                <li>Retail compliance and packaging guidance</li>
                 <li>Cost analysis and optimization</li>
                 <li>Dedicated Slack/email access</li>
               </ul>
-              <p className="tier-for">Best for: Early-stage brands with 1-5 SKUs preparing for their first production runs or retail conversations.</p>
+              <p className="tier-for">Best for: Early-stage brands with 1-5 SKUs preparing for first production runs or retail buyer conversations.</p>
             </div>
             {/* GROWTH */}
             <div className="tier tier-g">
@@ -227,7 +249,7 @@ export default function HomePage() {
               <p className="tier-sub">You need a fully embedded operations team</p>
               <h3>Embedded Operations</h3>
               <span className="tier-price"><strong>$10K+</strong> /month</span>
-              <p className="tier-desc">A complete supply chain and packaging operations team &mdash; plus custom-built systems that make your operations smarter over time. We manage packaging, inventory, logistics, retail execution, and vendor operations end to end.</p>
+              <p className="tier-desc">A complete supply chain and packaging operations team &mdash; plus custom-built systems that make your operations smarter over time. We manage retail packaging, inventory, logistics, shelf execution, and vendor operations end to end.</p>
               <ul className="tier-list">
                 <li>Everything in Growth</li>
                 <li>Inventory management and demand planning</li>
@@ -261,12 +283,12 @@ export default function HomePage() {
           <div className="sl">Client Work</div>
           <div className="or"></div>
           <h2 className="sh">Real brands. <span className="o">Real results.</span></h2>
-          <p className="ss">From startup launches to enterprise operations, here&apos;s what embedded partnership looks like.</p>
+          <p className="ss">From first retail PO to enterprise operations, here&apos;s what embedded partnership looks like.</p>
           <FadeIn className="cg">
             <div className="cc">
               <div className="cm"><img src="/images/epicutis.jpg" alt="Epicutis premium skincare packaging by Logic Agency" /></div>
               <div className="cb">
-                <div className="cn">Packaging + Operations &middot; Enterprise Tier</div>
+                <div className="cn">Retail Packaging + Operations &middot; Enterprise Tier</div>
                 <h3>From 3 SKUs to 21+ With Full Packaging Operations</h3>
                 <p>We own the entire packaging program for Epicutis &mdash; sourcing, engineering, vendor management, and a managed inventory system that cut time from order to cash.</p>
                 <div className="cx"><div className="cz"><strong>7x</strong><span>SKU Growth</span></div><div className="cz"><strong>15%</strong><span>Cost Savings</span></div><div className="cz"><strong>90-Day</strong><span>Inventory Plan</span></div></div>
@@ -313,15 +335,15 @@ export default function HomePage() {
           <FadeIn className="ind-grid">
             <div className="ind">
               <h3>Beauty &amp; Wellness</h3>
-              <p>Skincare, cosmetics, personal care, supplements. Packaging that protects formulations and communicates premium positioning.</p>
+              <p>Skincare, cosmetics, personal care, supplements. Retail-ready packaging that protects formulations, meets retailer compliance, and wins shelf space.</p>
             </div>
             <div className="ind">
               <h3>Consumer Packaged Goods</h3>
-              <p>Food, beverage, household. Retail-ready packaging that meets compliance requirements and moves on shelf.</p>
+              <p>Food, beverage, household. Retail-ready packaging that passes buyer review, meets compliance specs, and moves on shelf from day one.</p>
             </div>
             <div className="ind">
               <h3>Tech &amp; Wearables</h3>
-              <p>Consumer electronics, wearable devices, hardware. Packaging systems that protect sensitive components and deliver brand experience.</p>
+              <p>Consumer electronics, wearable devices, hardware. Retail packaging systems that protect sensitive components, pass retailer testing, and deliver brand experience on shelf.</p>
             </div>
           </FadeIn>
         </div>
@@ -340,8 +362,8 @@ export default function HomePage() {
       {/* CTA */}
       <section id="cta" className="sc dks gd ctsc">
         <div className="ctb">
-          <h2>Ready to stop <span className="o">managing it all yourself?</span></h2>
-          <p>Tell us what&apos;s going on with your packaging, supply chain, or operations. We&apos;ll be honest about whether we can help and which tier makes sense. No pitch deck, no pressure.</p>
+          <h2>Ready to get <span className="o">retail-ready?</span></h2>
+          <p>Tell us where you are with retail &mdash; first PO, scaling channels, or rebuilding a system that isn&apos;t working. We&apos;ll be honest about whether we can help and which tier makes sense.</p>
           <div className="cbt">
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bw">Start a Conversation &rarr;</EmailButton>
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a 15-Minute Call &rarr;</a>

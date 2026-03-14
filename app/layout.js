@@ -2,8 +2,8 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
-  title: 'Logic Agency Inc. — Packaging & Supply Chain Ops for Scaling Brands',
-  description: 'Logic Agency is your outsourced packaging and supply chain operations team. Monthly retainer packages for brands in beauty, wellness, CPG, and tech wearables.',
+  title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Ops for Scaling Brands',
+  description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
