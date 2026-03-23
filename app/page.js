@@ -211,15 +211,7 @@ export default function HomePage() {
               <p className="tier-sub">We guide. You execute.</p>
               <h3>Advisory</h3>
               <span className="tier-price"><strong>$2.5-3K</strong> /month</span>
-              <p className="tier-desc">An expert in your corner. We assess your operations, identify the gaps, and give you a clear plan built by operators who&apos;ve done this hundreds of times. You execute with confidence.</p>
-              <ul className="tier-list">
-                <li>Operational assessment and gap analysis</li>
-                <li>Packaging sourcing and vendor recommendations</li>
-                <li>Retail compliance and readiness guidance</li>
-                <li>Cost analysis and optimization strategy</li>
-                <li>Dedicated Slack/email access</li>
-                <li>AI-powered tools and templates for your team</li>
-              </ul>
+              <p className="tier-desc">An expert in your corner. We assess your operations, identify the gaps, and give you a clear plan built by operators who&apos;ve done this hundreds of times. You execute with confidence knowing the playbook was built from real experience, not theory.</p>
               <p className="tier-for">Best for: Brands preparing for first production runs, first retail conversations, or needing expert eyes on a specific challenge.</p>
             </div>
             {/* ACTIVE MANAGEMENT */}
@@ -228,15 +220,7 @@ export default function HomePage() {
               <p className="tier-sub">We own a workstream. You focus on the business.</p>
               <h3>Active Management</h3>
               <span className="tier-price"><strong>$5-7K</strong> /month</span>
-              <p className="tier-desc">We take direct ownership of one or two operational areas and run them. You stop managing the day-to-day and start getting weekly updates on what we handled.</p>
-              <ul className="tier-list">
-                <li>Everything in Advisory</li>
-                <li>Direct ownership of packaging, sourcing, or fulfillment</li>
-                <li>Supplier negotiations and QC management</li>
-                <li>Retail compliance execution and new SKU launches</li>
-                <li>Custom dashboards and reporting</li>
-                <li>Weekly strategy syncs</li>
-              </ul>
+              <p className="tier-desc">We take direct ownership of one or two operational areas and run them. You stop managing the day-to-day and start getting weekly updates on what we handled. This is where most clients land after seeing what Advisory uncovers.</p>
               <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail or commercial relationships. You&apos;ve outgrown managing everything yourself.</p>
             </div>
             {/* EMBEDDED */}
@@ -245,19 +229,11 @@ export default function HomePage() {
               <p className="tier-sub">We are your ops team.</p>
               <h3>Embedded Operations</h3>
               <span className="tier-price"><strong>$10K+</strong> /month</span>
-              <p className="tier-desc">Full operational ownership across packaging, supply chain, and fulfillment. A dedicated ops lead, custom AI systems, and infrastructure that makes your business permanently better.</p>
-              <ul className="tier-list">
-                <li>Everything in Active Management</li>
-                <li>Full supply chain and fulfillment ownership</li>
-                <li>Dedicated ops lead embedded in your business</li>
-                <li>Inventory management and demand planning</li>
-                <li>Retail launch strategy and sales support</li>
-                <li>Custom AI systems: forecasting, alerts, dashboards, and workflow tools built for your business</li>
-              </ul>
+              <p className="tier-desc">Full operational ownership with a dedicated ops lead, custom AI systems, and infrastructure that makes your business permanently better. The capability of a full ops department without the $800K+ annual cost of building one.</p>
               <p className="tier-for">Best for: Brands at scale, entering major retail, or replacing an in-house ops team.</p>
             </div>
           </FadeIn>
-          <p className="tier-custom">Not sure which tier? Most engagements are custom-scoped after a 15-minute call. We&apos;ll tell you exactly what yours would include.</p>
+          <p className="tier-custom">Every tier has access to our full capabilities. What changes is how much we own and how deeply we embed. Most clients start with Advisory and expand as we prove the value.</p>
           <div style={{textAlign:'center',marginTop:'20px'}}>
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
           </div>
