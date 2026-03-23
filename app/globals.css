@@ -123,26 +123,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-item:hover .port-cat{opacity:1}
 .port-name{display:block;font-size:22px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.15}
 
-/* === CAPABILITY ACCORDION === */
-.cap-acc-wrap{margin-top:48px;max-width:800px}
-.cap-acc{border-bottom:1px solid rgba(255,255,255,.1);padding:28px 0;cursor:pointer}
-.cap-acc:first-child{border-top:1px solid rgba(255,255,255,.1)}
-.cap-hd{display:flex;justify-content:space-between;align-items:center;gap:20px}
-.cap-hd h3{font-size:17px;font-weight:700;line-height:1.4;color:#fff;transition:color .2s}
-.cap-acc:hover .cap-hd h3{color:var(--o)}
-.cap-tg{width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
-.cap-tg svg{width:14px;height:14px;stroke:var(--o);transition:transform .3s}
-.cap-acc.op .cap-tg svg{transform:rotate(45deg)}
-.cap-acc.op .cap-tg{background:var(--o)}
-.cap-acc.op .cap-tg svg{stroke:#fff}
-.cap-bd{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
-.cap-acc.op .cap-bd{max-height:800px;padding-top:16px}
-
+/* === UNIFIED CAPABILITIES === */
+.cap-unified{margin-top:16px;max-width:900px}
+.cap-group{margin-bottom:40px}
+.cap-group-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.1)}
 /* === CAPABILITIES (HOMEPAGE) === */
-.cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 48px;margin-top:0}
-.cap-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.cap-icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.15);display:flex;align-items:center;justify-content:center}
-.cap-item span{font-size:17px;font-weight:600;color:rgba(255,255,255,.9);line-height:1.4}
+.cap-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:0}
+.cap-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.cap-icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:rgba(255,96,10,.15);display:flex;align-items:center;justify-content:center;margin-top:2px}
+.cap-content{display:flex;flex-direction:column;gap:6px}
+.cap-content span{font-size:15px;font-weight:500;color:rgba(255,255,255,.9);line-height:1.4}
+.cap-tags{display:flex;gap:6px;flex-wrap:wrap}
+.cap-tag{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;padding:3px 8px;border-radius:4px;line-height:1}
+.cap-tag-retail{background:rgba(255,96,10,.15);color:var(--o)}
+.cap-tag-b2b{background:rgba(0,85,255,.15);color:#4488ff}
+.cap-tag-dtc{background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)}
+/* === PILLAR CHANNEL TAGS === */
+.hw-channels{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--o);margin-bottom:12px}
+/* === TIER CUSTOM CTA === */
+.tier-custom{text-align:center;font-size:15px;color:rgba(255,255,255,.6);margin-top:40px;line-height:1.6;font-style:italic}
 
 /* === TIERS (HOMEPAGE) === */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -627,7 +626,7 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 }
 @media(max-width:640px){
   .cap-grid{grid-template-columns:1fr}
-  .cap-item span{font-size:15px}
+  .cap-content span{font-size:14px}
   nav{padding:0 24px}
   .hero,.sc,footer{padding-left:24px!important;padding-right:24px!important}
   .port-head{padding:48px 0 24px}
