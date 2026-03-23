@@ -1,87 +1,65 @@
 'use client';
-import { useCallback } from 'react';
-
-const channels = [
+const capabilities = [
   {
-    id: 'retail',
-    label: 'Retail',
-    caps: [
-      'Retail-ready packaging design & structural engineering',
-      'Retailer compliance — Target, Walmart, Costco, Amazon',
-      'Case pack, inner pack & pallet configuration',
-      'Shelf-ready & planogram-optimized packaging',
-      'UPC, labeling & regulatory requirements',
-      'Shelf strategy & commercial sell-through presentation',
-      'Global sourcing across 15+ countries',
-      'Production management & quality control',
-      'Supply chain buildout & optimization',
-      'Inventory management & demand planning',
-      '3PL & fulfillment coordination',
-      'Cost reduction without sacrificing brand',
+    group: 'Packaging',
+    items: [
+      { cap: 'Retail-ready packaging design & structural engineering', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Retailer compliance specs: Target, Walmart, Costco, Amazon', ch: ['Retail'] },
+      { cap: 'Case pack, inner pack & pallet configuration', ch: ['Retail', 'B2B'] },
+      { cap: 'Shelf-ready & planogram-optimized packaging', ch: ['Retail'] },
+      { cap: 'UPC, labeling & regulatory requirements', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Branded unboxing & subscription packaging', ch: ['DTC'] },
+      { cap: 'Amazon FBA prep & marketplace compliance', ch: ['DTC'] },
+      { cap: 'Commercial & wholesale packaging systems', ch: ['B2B'] },
+      { cap: 'Private label & co-manufacturing packaging', ch: ['B2B'] },
     ],
   },
   {
-    id: 'b2b',
-    label: 'B2B / Commercial',
-    caps: [
-      'Commercial & wholesale packaging systems',
-      'Private label & co-manufacturing packaging',
-      'Vendor onboarding & compliance documentation',
-      'Shelf strategy & commercial sell-through presentation',
-      'Global sourcing across 15+ countries',
-      'Production management & quality control',
-      'Supply chain buildout & optimization',
-      'Inventory management & demand planning',
-      '3PL & fulfillment coordination',
-      'Cost reduction without sacrificing brand',
+    group: 'Sourcing & Production',
+    items: [
+      { cap: 'Global sourcing across 15+ countries', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Factory vetting & supplier audits', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Production management & quality control', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Cost analysis, negotiation & optimization', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Freight, customs & import/export coordination', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Vendor onboarding & compliance documentation', ch: ['B2B'] },
     ],
   },
   {
-    id: 'dtc',
-    label: 'DTC / Marketplace',
-    caps: [
-      'Amazon FBA prep & marketplace compliance',
-      'Branded unboxing & subscription packaging',
-      'DIM weight optimization & shipping cost reduction',
-      'Global sourcing across 15+ countries',
-      'Production management & quality control',
-      'Supply chain buildout & optimization',
-      'Inventory management & demand planning',
-      '3PL & fulfillment coordination',
-      'Cost reduction without sacrificing brand',
+    group: 'Operations & Systems',
+    items: [
+      { cap: 'Supply chain buildout & optimization', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Inventory management & demand forecasting', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: '3PL & fulfillment coordination', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Retail launch strategy & go-to-market execution', ch: ['Retail'] },
+      { cap: 'EDI integration & PO workflow automation', ch: ['Retail'] },
+      { cap: 'DIM weight optimization & shipping cost reduction', ch: ['DTC'] },
+      { cap: 'AI-powered operational dashboards & alert systems', ch: ['Retail', 'B2B', 'DTC'] },
+      { cap: 'Custom forecasting models built on your data', ch: ['Retail', 'B2B', 'DTC'] },
     ],
   },
 ];
-
 const check = <svg viewBox="0 0 24 24" fill="none" stroke="#FF600A" strokeWidth="2.5" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>;
-
 export default function CapFilter() {
-  const handleClick = useCallback((e) => {
-    e.currentTarget.classList.toggle('op');
-  }, []);
-
   return (
-    <div className="cap-acc-wrap">
-      {channels.map(ch => (
-        <div key={ch.id} className="cap-acc" onClick={handleClick}>
-          <div className="cap-hd">
-            <h3>{ch.label}</h3>
-            <div className="cap-tg">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <line x1="12" y1="5" x2="12" y2="19" />
-                <line x1="5" y1="12" x2="19" y2="12" />
-              </svg>
-            </div>
-          </div>
-          <div className="cap-bd">
-            <div className="cap-grid">
-              {ch.caps.map((cap, i) => (
-                <div key={i} className="cap-item">
-                  <div className="cap-icon">{check}</div>
-                  <span>{cap}</span>
+    <div className="cap-unified">
+      {capabilities.map(group => (
+        <div key={group.group} className="cap-group">
+          <h3 className="cap-group-title">{group.group}</h3>
+          <div className="cap-grid">
+            {group.items.map((item, i) => (
+              <div key={i} className="cap-item">
+                <div className="cap-icon">{check}</div>
+                <div className="cap-content">
+                  <span>{item.cap}</span>
+                  <div className="cap-tags">
+                    {item.ch.map(c => (
+                      <span key={c} className={`cap-tag cap-tag-${c.toLowerCase()}`}>{c}</span>
+                    ))}
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       ))}

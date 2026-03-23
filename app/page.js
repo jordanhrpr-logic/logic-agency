@@ -6,19 +6,19 @@ import CapFilter from '@/components/CapFilter';
 import EmailButton from '@/components/EmailButton';
 
 export const metadata = {
-  title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
-  description: 'Logic Agency is your outsourced retail packaging and supply chain operations team. From retail-ready packaging to shelf execution — monthly retainers for brands in beauty, CPG, and tech wearables.',
-  keywords: 'packaging operations, retail packaging compliance, packaging sourcing, supply chain management, CPG packaging, DTC to retail packaging, fractional ops team, operations outsourcing',
+  title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
+  description: 'Logic Agency is your embedded packaging, supply chain, and operations team for brands selling into retail, B2B, and DTC. 20 years of execution experience backed by AI-powered systems. Monthly retainers starting at $2,500.',
+  keywords: 'packaging operations, retail packaging compliance, packaging sourcing, supply chain management, CPG packaging, DTC to retail packaging, fractional ops team, operations outsourcing, DTC packaging, B2B packaging, AI operations',
   openGraph: {
-    title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
-    description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
+    description: 'Logic Agency is your embedded packaging, supply chain, and operations team for brands selling into retail, B2B, and DTC. 20 years of execution experience backed by AI-powered systems. Monthly retainers starting at $2,500.',
     url: 'https://logicagencyinc.com',
     images: [{ url: 'https://logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Logic Agency Inc. — Retail Packaging & Supply Chain Operations for Scaling Brands',
-    description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
+    title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
+    description: 'Logic Agency is your embedded packaging, supply chain, and operations team for brands selling into retail, B2B, and DTC. 20 years of execution experience backed by AI-powered systems. Monthly retainers starting at $2,500.',
     images: ['https://logicagencyinc.com/images/og-homepage.jpg'],
   },
 };
@@ -49,9 +49,9 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero gl">
         <div className="hi">
-          <div className="ht">Retail Packaging &amp; Supply Chain Operations</div>
+          <div className="ht">Packaging &middot; Supply Chain &middot; Operations</div>
           <h1>We get brands on shelf and <span className="o">keep them there.</span></h1>
-          <p className="hero-sub">Retail-ready packaging, supply chain management, and commercial packaging solutions for brands selling into Target, Walmart, and every channel in between. We don&apos;t just advise &mdash; we embed into your team and run it.</p>
+          <p className="hero-sub">Packaging, supply chain, and operations for brands selling into retail, B2B, and direct to consumer. We embed into your team with 20 years of execution experience and AI-powered systems that make your operations permanently better.</p>
           <div className="hb">
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="#pricing" className="bt bg">See Pricing</a>
@@ -122,19 +122,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CAPABILITIES */}
+      {/* WHAT WE DO — consolidated capabilities + AI throughline */}
+      <section id="pillars" className="sc wh">
+        <div className="si">
+          <div className="sl">What We Do</div>
+          <div className="or"></div>
+          <h2 className="sh">Experience that builds systems. <span className="o">Systems that build leverage.</span></h2>
+          <p className="ss" style={{maxWidth:'720px'}}>Every capability below is delivered by operators who have lived these problems for 20 years, now backed by AI systems and workflows we build specifically for your business. You get the expertise of an embedded ops team and the compounding leverage of custom-built operational intelligence.</p>
+          <p className="hw-exp" style={{marginTop:'0',marginBottom:'56px'}}>We know where AI accelerates &mdash; forecasting, compliance checks, inventory modeling, supplier tracking &mdash; and where humans are irreplaceable: design, negotiation, relationships, and the judgment calls that require context no model has. You get both. That&apos;s how we stay leaner than agencies twice our size and pass that efficiency directly to you.</p>
+          <FadeIn className="hw-grid">
+            <div className="hw">
+              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
+              <h3>Packaging Design &amp; Engineering</h3>
+              <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
+              <p>Structural design, prototyping, shelf displays, planogram strategy, and retailer-specific compliance specs. Every design is engineered for manufacturing constraints, shipping efficiency, and the shelf it&apos;s going to live on. This is where human creativity leads &mdash; our designers work with real materials, real retail environments, and real brand context.</p>
+            </div>
+            <div className="hw">
+              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+              <h3>Sourcing &amp; Production Management</h3>
+              <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
+              <p>Global supplier network across 15+ countries. Factory vetting, production management, freight, quality control, cost optimization. AI-powered supplier tracking and cost modeling help us move faster and catch problems earlier, but the relationships are human.</p>
+            </div>
+            <div className="hw">
+              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+              <h3>Operations &amp; Retail Execution</h3>
+              <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
+              <p>Retail compliance, inventory planning, go-to-market execution, 3PL coordination, demand forecasting, and EDI integration. This is where AI compounds the most &mdash; custom forecasting models, automated compliance checking, and operational dashboards built on your actual data.</p>
+            </div>
+          </FadeIn>
+          <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
+        </div>
+      </section>
+      {/* UNIFIED CAPABILITIES */}
       <section className="sc dks gd">
         <div className="si">
-          <div className="sl">Capabilities</div>
-          <div className="or"></div>
-          <h2 className="sh">Everything between your product and <span className="o">the customer.</span></h2>
-          <p className="ss">One team. No handoffs.</p>
           <FadeIn>
             <CapFilter />
           </FadeIn>
         </div>
       </section>
-
       {/* SITUATIONS */}
       <section id="situations" className="sc gl">
         <div className="si">
@@ -163,35 +189,11 @@ export default function HomePage() {
               <p className="sit-q">&ldquo;We have suppliers in 3 countries and nobody&apos;s managing the big picture.&rdquo;</p>
               <p>Five vendors, two freight forwarders, three time zones. Every handoff is a risk. Quality is inconsistent because nobody owns the end-to-end relationship. We consolidate your supplier network, manage production across regions, and give you one point of accountability for the entire chain.</p>
             </div>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* THREE PILLARS */}
-      <section id="pillars" className="sc wh">
-        <div className="si">
-          <div className="sl">What We Do</div>
-          <div className="or"></div>
-          <h2 className="sh">Three pillars. <span className="o">One retail-ready team.</span></h2>
-          <FadeIn className="hw-grid">
-            <div className="hw">
-              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
-              <h3>Packaging Design &amp; Engineering</h3>
-              <p>Structural design, prototyping, retail-ready packaging, shelf displays, planogram strategy. Every design is built with retailer specs and manufacturing constraints already solved.</p>
-            </div>
-            <div className="hw">
-              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-              <h3>Sourcing &amp; Production Management</h3>
-              <p>Global supplier network across 15+ countries. Factory vetting, production management, freight, quality control, cost optimization. We find the right partners and manage the relationships.</p>
-            </div>
-            <div className="hw">
-              <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
-              <h3>Operations &amp; Retail Execution</h3>
-              <p>Retail compliance, inventory planning, go-to-market execution, 3PL coordination, demand forecasting. The infrastructure that gets brands on shelf and keeps them there.</p>
+            <div className="sit">
+              <p className="sit-q">&ldquo;We&apos;ve been using ChatGPT for ops questions but it doesn&apos;t actually know our supply chain.&rdquo;</p>
+              <p>Generic AI gives generic answers. It doesn&apos;t know your 3PL&apos;s lead times, your manufacturer&apos;s production cycle, or the difference between a KeHE routing guide and a UNFI routing guide. We build operational AI trained on real packaging data, freight patterns, and retail compliance rules &mdash; because we&apos;ve lived them. Your tools should know your business. Ours do.</p>
             </div>
           </FadeIn>
-          <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
-          <p className="hw-exp">20 years across 15+ countries. Hands-on experience backed by AI-powered tools and custom-built operational systems. We don&apos;t just manage your operations &mdash; we build infrastructure that gets smarter and compounds in value over time.</p>
         </div>
       </section>
 
@@ -200,61 +202,65 @@ export default function HomePage() {
         <div className="si">
           <div className="sl">Plans</div>
           <div className="or"></div>
-          <h2 className="sh">A retail packaging and supply chain team at a <span className="o">fraction of the cost.</span></h2>
-          <p className="ss">Month-to-month. No long-term contracts. Scope that flexes with your business.</p>
+          <h2 className="sh">Start with what you need. <span className="o">Scale when you&apos;re ready.</span></h2>
+          <p className="ss">Month-to-month. No long-term contracts. Every engagement is custom-scoped to your business. Most clients start with Advisory and expand as we prove the value.</p>
           <FadeIn className="tiers">
-            {/* STARTER */}
+            {/* ADVISORY */}
             <div className="tier tier-s">
-              <span className="tier-badge">Starter</span>
-              <p className="tier-sub">You need expert guidance before making expensive mistakes</p>
-              <h3>Advisory &amp; Sourcing</h3>
+              <span className="tier-badge">Advisory</span>
+              <p className="tier-sub">We guide. You execute.</p>
+              <h3>Advisory</h3>
               <span className="tier-price"><strong>$2.5-3K</strong> /month</span>
-              <p className="tier-desc">An expert in your corner. Retail packaging advisory and sourcing on demand for brands that need guidance but aren&apos;t ready for a full operational handoff.</p>
+              <p className="tier-desc">An expert in your corner. We assess your operations, identify the gaps, and give you a clear plan built by operators who&apos;ve done this hundreds of times. You execute with confidence.</p>
               <ul className="tier-list">
-                <li>Packaging sourcing and vendor management</li>
-                <li>Material and structural recommendations</li>
-                <li>Retail compliance and packaging guidance</li>
-                <li>Cost analysis and optimization</li>
+                <li>Operational assessment and gap analysis</li>
+                <li>Packaging sourcing and vendor recommendations</li>
+                <li>Retail compliance and readiness guidance</li>
+                <li>Cost analysis and optimization strategy</li>
                 <li>Dedicated Slack/email access</li>
+                <li>AI-powered tools and templates for your team</li>
               </ul>
-              <p className="tier-for">Best for: Early-stage brands with 1-5 SKUs preparing for first production runs or retail buyer conversations.</p>
+              <p className="tier-for">Best for: Brands preparing for first production runs, first retail conversations, or needing expert eyes on a specific challenge.</p>
             </div>
-            {/* GROWTH */}
+            {/* ACTIVE MANAGEMENT */}
             <div className="tier tier-g">
               <span className="tier-badge">Most Popular</span>
-              <p className="tier-sub">You need someone to own packaging and supply chain so you can focus on the business</p>
-              <h3>Packaging Program Management</h3>
+              <p className="tier-sub">We own a workstream. You focus on the business.</p>
+              <h3>Active Management</h3>
               <span className="tier-price"><strong>$5-7K</strong> /month</span>
-              <p className="tier-desc">We actively own your packaging program. Sourcing, vendor coordination, retail packaging execution, and supply chain management so your team can focus on selling.</p>
+              <p className="tier-desc">We take direct ownership of one or two operational areas and run them. You stop managing the day-to-day and start getting weekly updates on what we handled.</p>
               <ul className="tier-list">
-                <li>Everything in Starter</li>
-                <li>Full packaging program ownership</li>
-                <li>Supplier negotiations and QC</li>
-                <li>Retail compliance and shelf-readiness</li>
-                <li>New SKU development and launches</li>
+                <li>Everything in Advisory</li>
+                <li>Direct ownership of packaging, sourcing, or fulfillment</li>
+                <li>Supplier negotiations and QC management</li>
+                <li>Retail compliance execution and new SKU launches</li>
+                <li>Custom dashboards and reporting</li>
                 <li>Weekly strategy syncs</li>
               </ul>
-              <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail or commercial relationships, or entering new channels.</p>
+              <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail or commercial relationships. You&apos;ve outgrown managing everything yourself.</p>
             </div>
-            {/* ENTERPRISE */}
+            {/* EMBEDDED */}
             <div className="tier tier-e">
-              <span className="tier-badge">Enterprise</span>
-              <p className="tier-sub">You need a fully embedded operations team</p>
+              <span className="tier-badge">Embedded</span>
+              <p className="tier-sub">We are your ops team.</p>
               <h3>Embedded Operations</h3>
               <span className="tier-price"><strong>$10K+</strong> /month</span>
-              <p className="tier-desc">A complete supply chain and packaging operations team &mdash; plus custom-built systems that make your operations smarter over time. We manage retail packaging, inventory, logistics, shelf execution, and vendor operations end to end.</p>
+              <p className="tier-desc">Full operational ownership across packaging, supply chain, and fulfillment. A dedicated ops lead, custom AI systems, and infrastructure that makes your business permanently better.</p>
               <ul className="tier-list">
-                <li>Everything in Growth</li>
+                <li>Everything in Active Management</li>
+                <li>Full supply chain and fulfillment ownership</li>
+                <li>Dedicated ops lead embedded in your business</li>
                 <li>Inventory management and demand planning</li>
-                <li>3PL and fulfillment oversight</li>
-                <li>Import/export coordination</li>
                 <li>Retail launch strategy and sales support</li>
-                <li>Dedicated ops lead</li>
-                <li>Custom operational systems &mdash; automated forecasting, inventory alerts, supplier dashboards, and AI-powered workflow tools built for your business</li>
+                <li>Custom AI systems: forecasting, alerts, dashboards, and workflow tools built for your business</li>
               </ul>
-              <p className="tier-for">Best for: Brands at scale, international market entrants, or companies replacing an in-house ops team.</p>
+              <p className="tier-for">Best for: Brands at scale, entering major retail, or replacing an in-house ops team.</p>
             </div>
           </FadeIn>
+          <p className="tier-custom">Not sure which tier? Most engagements are custom-scoped after a 15-minute call. We&apos;ll tell you exactly what yours would include.</p>
+          <div style={{textAlign:'center',marginTop:'20px'}}>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
+          </div>
         </div>
       </section>
 
