@@ -124,12 +124,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .port-name{display:block;font-size:22px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.15}
 
 /* === UNIFIED CAPABILITIES === */
-.cap-unified{margin-top:16px;max-width:900px}
+.cap-unified{margin-top:16px;max-width:1100px}
 .cap-group{margin-bottom:40px}
 .cap-group-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.1)}
 /* === CAPABILITIES (HOMEPAGE) === */
-.cap-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:0}
-.cap-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 24px;margin-top:0}
+.cap-item{display:flex;align-items:flex-start;gap:14px;padding:16px;border-radius:10px;background:rgba(255,255,255,.04)}
 .cap-icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:rgba(255,96,10,.15);display:flex;align-items:center;justify-content:center;margin-top:2px}
 .cap-content{display:flex;flex-direction:column;gap:6px}
 .cap-content span{font-size:15px;font-weight:500;color:rgba(255,255,255,.9);line-height:1.4}
