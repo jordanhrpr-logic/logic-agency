@@ -140,6 +140,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .cap-tag-dtc{background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)}
 /* === PILLAR CHANNEL TAGS === */
 .hw-channels{font-size:12px;font-weight:600;letter-spacing:1px;color:var(--o);margin-bottom:12px}
+.hw-toggle{display:none}
 /* === TIER CUSTOM CTA === */
 .tier-custom{text-align:center;font-size:15px;color:rgba(255,255,255,.6);margin-top:40px;line-height:1.6;font-style:italic}
 
@@ -602,7 +603,18 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .tiers{grid-template-columns:1fr}
   .m-grid{grid-template-columns:repeat(2,1fr);gap:32px}
   .cg{grid-template-columns:1fr}
-  .hw-grid{grid-template-columns:1fr}
+  .hw-grid{grid-template-columns:1fr;gap:0}
+  .hw{text-align:left;cursor:pointer;padding:24px 0;border-bottom:1px solid var(--lt);position:relative}
+  .hw:first-child{border-top:1px solid var(--lt)}
+  .hw-n{margin:0 0 12px}
+  .hw h3{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .hw p{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;margin:0;max-width:none}
+  .hw.hw-open p{max-height:400px;padding-top:12px}
+  .hw-toggle{display:flex;width:32px;height:32px;border-radius:50%;background:rgba(255,96,10,.1);align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;position:absolute;top:24px;right:0}
+  .hw-toggle svg{width:14px;height:14px;stroke:var(--o);transition:transform .3s}
+  .hw.hw-open .hw-toggle svg{transform:rotate(45deg)}
+  .hw.hw-open .hw-toggle{background:var(--o)}
+  .hw.hw-open .hw-toggle svg{stroke:#fff}
   .fti{grid-template-columns:1fr 1fr}
   .trust-logos{grid-template-columns:repeat(4,1fr);gap:24px 32px}
   .trust-logo{height:80px}

@@ -4,6 +4,7 @@ import FadeIn from '@/components/FadeIn';
 import FaqAccordion from '@/components/FaqAccordion';
 import CapFilter from '@/components/CapFilter';
 import EmailButton from '@/components/EmailButton';
+import HwAccordion from '@/components/HwAccordion';
 
 export const metadata = {
   title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
@@ -131,24 +132,24 @@ export default function HomePage() {
           <p className="ss" style={{maxWidth:'720px'}}>Every capability below is delivered by operators who have lived these problems for 20 years, now backed by AI systems and workflows we build specifically for your business. You get the expertise of an embedded ops team and the compounding leverage of custom-built operational intelligence.</p>
           <p className="hw-exp" style={{marginTop:'0',marginBottom:'56px'}}>We know where AI accelerates &mdash; forecasting, compliance checks, inventory modeling, supplier tracking &mdash; and where humans are irreplaceable: design, negotiation, relationships, and the judgment calls that require context no model has. You get both. That&apos;s how we stay leaner than agencies twice our size and pass that efficiency directly to you.</p>
           <FadeIn className="hw-grid">
-            <div className="hw">
+            <HwAccordion>
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>
               <h3>Packaging Design &amp; Engineering</h3>
               <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
               <p>Structural design, prototyping, shelf displays, planogram strategy, and retailer-specific compliance specs. Every design is engineered for manufacturing constraints, shipping efficiency, and the shelf it&apos;s going to live on. This is where human creativity leads &mdash; our designers work with real materials, real retail environments, and real brand context.</p>
-            </div>
-            <div className="hw">
+            </HwAccordion>
+            <HwAccordion>
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
               <h3>Sourcing &amp; Production Management</h3>
               <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
               <p>Global supplier network across 15+ countries. Factory vetting, production management, freight, quality control, cost optimization. AI-powered supplier tracking and cost modeling help us move faster and catch problems earlier, but the relationships are human.</p>
-            </div>
-            <div className="hw">
+            </HwAccordion>
+            <HwAccordion>
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
               <h3>Operations &amp; Retail Execution</h3>
               <div className="hw-channels">Retail &middot; B2B &middot; DTC</div>
               <p>Retail compliance, inventory planning, go-to-market execution, 3PL coordination, demand forecasting, and EDI integration. This is where AI compounds the most &mdash; custom forecasting models, automated compliance checking, and operational dashboards built on your actual data.</p>
-            </div>
+            </HwAccordion>
           </FadeIn>
           <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
         </div>
