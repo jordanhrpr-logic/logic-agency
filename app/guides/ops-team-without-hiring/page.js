@@ -5,7 +5,7 @@ import EmailButton from '@/components/EmailButton';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The $800K Question: What a Modern Ops Team Actually Looks Like for CPG Brands",
+  "headline": "The Operator's Guide to AI That Actually Works for CPG Operations",
   "description": "A practical guide for CPG operators on using LLMs and AI agents for supply chain, inventory, sourcing, and operations — with a prompt library, hallucination warnings, and guidance on when AI isn't enough.",
   "author": {
     "@type": "Organization",
@@ -77,22 +77,22 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'The $800K Question: What a Modern Ops Team Actually Looks Like — Logic Agency Inc.',
-  description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
+  title: 'The Operator\'s Guide to AI That Actually Works — Logic Agency Inc.',
+  description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
   keywords: 'how to use AI for operations, ChatGPT for supply chain, AI tools for CPG brands, outsourced operations CPG, fractional ops team, do I need a VP of operations, AI prompts for inventory management, Claude for business operations, AI agents for CPG, LLM for supply chain',
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
   },
   openGraph: {
-    title: 'The $800K Question: What a Modern Ops Team Actually Looks Like',
-    description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
+    title: 'The Operator\'s Guide to AI That Actually Works',
+    description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
     url: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
     images: [{ url: 'https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The $800K Question: What a Modern Ops Team Actually Looks Like',
-    description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
+    title: 'The Operator\'s Guide to AI That Actually Works',
+    description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
     images: ['https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg'],
   },
 };
@@ -108,8 +108,8 @@ export default function OpsTeamWithoutHiring() {
       <section className="a-hero gl">
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
-          <h1>The $800K Question: <span className="o">What a Modern Ops Team Actually Looks Like</span></h1>
-          <p className="a-lede">A full in-house ops team costs $600-830K per year for a $5-20M CPG brand. But AI tools that didn&apos;t exist two years ago now handle 60-70% of the analytical work. This isn&apos;t about replacing people. It&apos;s about building a system where AI does the analysis and humans do the judgment, relationships, and execution. The result is a 2-3 person operation that performs like a team of 10.</p>
+          <h1>The Operator&apos;s Guide to AI <span className="o">That Actually Works</span></h1>
+          <p className="a-lede">There are things you can do in 90 seconds today that took half a day last year. Landed cost comparisons. Safety stock calculations. Supplier RFQs. Tech packs. Not because AI is magic. Because these tools are genuinely good at the boring analytical work that eats your week. This guide shows you exactly what works, what doesn&apos;t, and where you still need a human.</p>
           <div className="a-meta">
             <span><strong>Logic Agency Inc.</strong></span>
             <span>22 min read</span>
