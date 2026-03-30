@@ -5,7 +5,7 @@ import EmailButton from '@/components/EmailButton';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "How to Build an Ops Team Without Hiring One: AI Tools + Fractional Expertise for CPG Brands",
+  "headline": "The $800K Question: What a Modern Ops Team Actually Looks Like for CPG Brands",
   "description": "A practical guide for CPG operators on using LLMs and AI agents for supply chain, inventory, sourcing, and operations — with a prompt library, hallucination warnings, and guidance on when AI isn't enough.",
   "author": {
     "@type": "Organization",
@@ -77,22 +77,22 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'How to Build an Ops Team Without Hiring One — AI Tools + Fractional Expertise for CPG Brands — Logic Agency Inc.',
-  description: 'A practical guide for CPG brand operators: how to use Claude, ChatGPT, and AI agents for supply chain, inventory, sourcing, and day-to-day operations — plus when you need the human layer. Includes a prompt library for operators.',
+  title: 'The $800K Question: What a Modern Ops Team Actually Looks Like — Logic Agency Inc.',
+  description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
   keywords: 'how to use AI for operations, ChatGPT for supply chain, AI tools for CPG brands, outsourced operations CPG, fractional ops team, do I need a VP of operations, AI prompts for inventory management, Claude for business operations, AI agents for CPG, LLM for supply chain',
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
   },
   openGraph: {
-    title: 'How to Build an Ops Team Without Hiring One',
-    description: 'AI tools + fractional expertise for CPG brands. Includes a prompt library for operators.',
+    title: 'The $800K Question: What a Modern Ops Team Actually Looks Like',
+    description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
     url: 'https://logicagencyinc.com/guides/ops-team-without-hiring',
     images: [{ url: 'https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Build an Ops Team Without Hiring One',
-    description: 'AI tools + fractional expertise for CPG brands. Includes a prompt library for operators.',
+    title: 'The $800K Question: What a Modern Ops Team Actually Looks Like',
+    description: 'A full ops team costs $600-830K/yr. Here\'s how $5-20M CPG brands build modern operations with AI tools and fractional expertise.',
     images: ['https://logicagencyinc.com/images/og-ops-team-without-hiring.jpg'],
   },
 };
@@ -108,8 +108,8 @@ export default function OpsTeamWithoutHiring() {
       <section className="a-hero gl">
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
-          <h1>How to Build an Ops Team <span className="o">Without Hiring One</span></h1>
-          <p className="a-lede">A VP of Operations costs $250K. A supply chain manager costs $150K. A packaging engineer costs $120K. Or &mdash; you could combine AI tools that didn&apos;t exist two years ago with fractional expertise that scales with your business. Here&apos;s how modern CPG brands are running operations that punch way above their headcount.</p>
+          <h1>The $800K Question: <span className="o">What a Modern Ops Team Actually Looks Like</span></h1>
+          <p className="a-lede">A full in-house ops team costs $600-830K per year for a $5-20M CPG brand. But AI tools that didn&apos;t exist two years ago now handle 60-70% of the analytical work. This isn&apos;t about replacing people. It&apos;s about building a system where AI does the analysis and humans do the judgment, relationships, and execution. The result is a 2-3 person operation that performs like a team of 10.</p>
           <div className="a-meta">
             <span><strong>Logic Agency Inc.</strong></span>
             <span>22 min read</span>
@@ -125,8 +125,8 @@ export default function OpsTeamWithoutHiring() {
           <ul className="toc-list">
             <li><a href="#math">The Math: Hiring vs. The Modern Alternative</a></li>
             <li><a href="#ai-ops">What AI Can Actually Do for Your Operations Today</a></li>
-            <li><a href="#prompts">The Operator&apos;s Prompt Library</a></li>
             <li><a href="#hallucinations">Where AI Lies: Avoiding Hallucinations in Operations</a></li>
+            <li><a href="#prompts">The Operator&apos;s Prompt Library</a></li>
             <li><a href="#agents">AI Agents and Tools for CPG Operators</a></li>
             <li><a href="#human">What AI Can&apos;t Do: The Human Layer</a></li>
             <li><a href="#stack">The Modern Ops Stack</a></li>
@@ -166,7 +166,7 @@ export default function OpsTeamWithoutHiring() {
             <div className="hvb-row">
               <div>Ops Analyst</div>
               <div className="r">$80-100K/yr</div>
-              <div className="g">AI does 80% of this job today</div>
+              <div className="g">You automate 80% of this with AI today</div>
             </div>
             <div className="hvb-row">
               <div>Benefits, software, recruiting</div>
@@ -184,7 +184,7 @@ export default function OpsTeamWithoutHiring() {
           <p>The question isn&apos;t &ldquo;should I hire an ops team?&rdquo; The question is &ldquo;what parts of operations require a human, and what parts can be handled by AI tools paired with fractional expertise?&rdquo;</p>
 
           <div className="callout">
-            <p><strong>The mindset shift:</strong> You&apos;re not replacing people with robots. You&apos;re building a lean operational system where AI handles the analysis, modeling, and documentation &mdash; and humans handle the judgment, relationships, and execution that AI can&apos;t touch. The result is a 2-3 person operation that performs like a team of 10.</p>
+            <p><strong>The mindset shift:</strong> You&apos;re not replacing people with robots. You&apos;re building a lean operational system where AI handles the analysis, modeling, and documentation while humans handle the judgment, relationships, and execution that AI can&apos;t touch. The result is a 2-3 person operation that performs like a team of 10.</p>
           </div>
 
           {/* SECTION 2 */}
@@ -201,15 +201,56 @@ export default function OpsTeamWithoutHiring() {
           <p>RFQ drafts, supplier onboarding checklists, QC inspection criteria, production briefs, and follow-up templates. AI won&apos;t negotiate for you, but it can draft every piece of communication in your supplier workflow at a professional level. Especially useful for international suppliers where precision and clarity in language matter.</p>
 
           <h3>Compliance Research</h3>
-          <p>Retailer requirements, FDA labeling rules, sustainability certifications, packaging regulations by market. AI can synthesize complex regulatory information and tell you what applies to your specific product and channel. Always verify critical compliance details with the official source &mdash; but AI gets you 90% there in minutes instead of hours.</p>
+          <p>Retailer requirements, FDA labeling rules, sustainability certifications, packaging regulations by market. You can synthesize complex regulatory information in minutes using Claude or ChatGPT, and zero in on what applies to your specific product and channel. Always verify critical compliance details with the official source, but you get 90% there in minutes instead of hours.</p>
 
           <h3>Documentation and SOPs</h3>
-          <p>Tech packs, bills of materials, standard operating procedures, process documentation. Give AI your packaging specs in any format and it will produce a clean, organized tech pack. Describe your fulfillment process and it will write the SOP. This is the work that never gets done because nobody has time &mdash; AI removes the excuse.</p>
+          <p>Tech packs, bills of materials, standard operating procedures, process documentation. Give AI your packaging specs in any format and it will produce a clean, organized tech pack. Describe your fulfillment process and it will write the SOP. This is the work that never gets done because nobody has time. You lose the excuse.</p>
 
           <h3>Retail Readiness Prep</h3>
           <p>Case pack calculations, pallet configurations, routing guide interpretation, chargeback risk assessment. Upload a retailer&apos;s routing guide and ask the AI to summarize every specification that affects your product. It will produce a compliance checklist specific to your situation in minutes.</p>
 
           {/* SECTION 3 */}
+          <h2 id="hallucinations">Where AI Lies: Avoiding Hallucinations in Operations</h2>
+          <p>AI hallucinations aren&apos;t just an academic problem. In operations, a hallucinated number can cost you real money. An LLM that confidently tells you the customs duty rate on corrugated packaging from Vietnam is 3.5% &mdash; when it&apos;s actually 0% &mdash; will blow up your landed cost model. An AI that invents a retailer&apos;s case pack requirement will get you a chargeback.</p>
+          <p><strong>Three rules that prevent expensive mistakes:</strong></p>
+
+          <h3>Rule 1: Never trust AI-generated numbers without verification</h3>
+          <p>Always ask the LLM to show its calculations step by step. If it&apos;s doing math &mdash; safety stock formulas, landed cost, margin analysis &mdash; verify the formula and spot-check the arithmetic. LLMs are surprisingly good at math when they show their work, and surprisingly bad when they skip steps. The simple fix: add &ldquo;show all calculations step by step&rdquo; to every quantitative prompt.</p>
+
+          <h3>Rule 2: Never use AI for real-time data</h3>
+          <p>LLMs don&apos;t know today&apos;s ocean freight rates, current tariff schedules, your supplier&apos;s latest pricing, or what the Fed did this morning. Any prompt that requires current data should include that data from you. Ask &ldquo;calculate the landed cost using these freight rates I got today&rdquo; &mdash; never &ldquo;what does it cost to ship from Shenzhen right now?&rdquo;</p>
+
+          <h3>Rule 3: Provide your data, don&apos;t ask AI to estimate</h3>
+          <p>An LLM analyzing your actual sales CSV will give you useful insights. An LLM estimating &ldquo;what a typical CPG brand sells&rdquo; will give you fiction. The more real data you feed into a prompt, the more reliable the output. The less data you provide, the more the AI fills gaps with plausible-sounding fabrication.</p>
+
+          <div className="hal-grid">
+            <div className="hal danger">
+              <div className="hal-tag">High hallucination risk</div>
+              <h4>Current pricing and rates</h4>
+              <p>Freight rates, tariff percentages, material costs, supplier pricing. AI will confidently invent these numbers. Always use your own current quotes and data.</p>
+            </div>
+            <div className="hal danger">
+              <div className="hal-tag">High hallucination risk</div>
+              <h4>Specific retailer requirements</h4>
+              <p>AI may generate plausible-sounding but incorrect case pack specs, pallet requirements, or compliance details. Always verify against the actual routing guide.</p>
+            </div>
+            <div className="hal safe">
+              <div className="hal-tag">Low hallucination risk</div>
+              <h4>Math and formulas</h4>
+              <p>Safety stock calculations, landed cost math, margin analysis. Reliable when you provide the inputs and ask it to show work. Verify the formula is correct, then trust the arithmetic.</p>
+            </div>
+            <div className="hal safe">
+              <div className="hal-tag">Low hallucination risk</div>
+              <h4>Document generation</h4>
+              <p>Tech packs, SOPs, RFQs, checklists. You get professionally structured documents from the information you provide. The content comes from you, the structure comes from AI.</p>
+            </div>
+          </div>
+
+          <div className="callout warn">
+            <p><strong>The most dangerous hallucination pattern:</strong> AI that responds with specific numbers and cites no source. &ldquo;The standard duty rate for this product is 4.2%&rdquo; &mdash; where did that come from? If the AI can&apos;t point to a source, treat the number as fabricated until you verify it. Real operations run on real numbers, not AI confidence.</p>
+          </div>
+
+          {/* SECTION 4 */}
           <h2 id="prompts">The Operator&apos;s Prompt Library</h2>
           <p>These are prompts you can paste directly into Claude or ChatGPT. They&apos;re built from the patterns we use in our own operations.</p>
 
@@ -335,7 +376,7 @@ Regulatory: [FDA, recycling symbols, country of origin, etc.]
 Include sections for: dieline specifications, material specifications, print specifications, assembly instructions, quality acceptance criteria (AQL level, critical defects, major defects, minor defects), and shipping/storage requirements.
 
 Format it as a professional document that I could send to any manufacturer and they could produce from it without additional clarification.`}</div>
-            <p className="prompt-note"><strong>Why this works:</strong> The tech pack is the most important document in your packaging system &mdash; it&apos;s the spec sheet that any manufacturer can produce from. Most brands don&apos;t have one because writing it is tedious. AI removes the tedium and produces a professional document in minutes.</p>
+            <p className="prompt-note"><strong>Why this works:</strong> The tech pack is the most important document in your packaging system. It&apos;s the spec sheet that any manufacturer can produce from. Most brands don&apos;t have one because writing it is tedious. You eliminate the tedium and produce a professional document in minutes.</p>
           </div>
 
           <div className="prompt-card">
@@ -461,47 +502,6 @@ Be specific and cite sources where possible. Flag any information that may be ou
             <p className="prompt-note"><strong>Why this works:</strong> KeHE and UNFI are the gateway to natural and specialty grocery, but their compliance requirements catch new brands off guard. The chargebacks alone can destroy your margin if you&apos;re not prepared. Use this with Claude&apos;s web search enabled to get the most current requirements &mdash; distributor policies change frequently. Then verify every critical detail directly with your KeHE/UNFI rep before shipping. This prompt gives you the playbook; your rep confirms the current rules.</p>
           </div>
 
-          {/* SECTION 4 */}
-          <h2 id="hallucinations">Where AI Lies: Avoiding Hallucinations in Operations</h2>
-          <p>AI hallucinations aren&apos;t just an academic problem. In operations, a hallucinated number can cost you real money. An LLM that confidently tells you the customs duty rate on corrugated packaging from Vietnam is 3.5% &mdash; when it&apos;s actually 0% &mdash; will blow up your landed cost model. An AI that invents a retailer&apos;s case pack requirement will get you a chargeback.</p>
-          <p><strong>Three rules that prevent expensive mistakes:</strong></p>
-
-          <h3>Rule 1: Never trust AI-generated numbers without verification</h3>
-          <p>Always ask the LLM to show its calculations step by step. If it&apos;s doing math &mdash; safety stock formulas, landed cost, margin analysis &mdash; verify the formula and spot-check the arithmetic. LLMs are surprisingly good at math when they show their work, and surprisingly bad when they skip steps. The simple fix: add &ldquo;show all calculations step by step&rdquo; to every quantitative prompt.</p>
-
-          <h3>Rule 2: Never use AI for real-time data</h3>
-          <p>LLMs don&apos;t know today&apos;s ocean freight rates, current tariff schedules, your supplier&apos;s latest pricing, or what the Fed did this morning. Any prompt that requires current data should include that data from you. Ask &ldquo;calculate the landed cost using these freight rates I got today&rdquo; &mdash; never &ldquo;what does it cost to ship from Shenzhen right now?&rdquo;</p>
-
-          <h3>Rule 3: Provide your data, don&apos;t ask AI to estimate</h3>
-          <p>An LLM analyzing your actual sales CSV will give you useful insights. An LLM estimating &ldquo;what a typical CPG brand sells&rdquo; will give you fiction. The more real data you feed into a prompt, the more reliable the output. The less data you provide, the more the AI fills gaps with plausible-sounding fabrication.</p>
-
-          <div className="hal-grid">
-            <div className="hal danger">
-              <div className="hal-tag">High hallucination risk</div>
-              <h4>Current pricing and rates</h4>
-              <p>Freight rates, tariff percentages, material costs, supplier pricing. AI will confidently invent these numbers. Always use your own current quotes and data.</p>
-            </div>
-            <div className="hal danger">
-              <div className="hal-tag">High hallucination risk</div>
-              <h4>Specific retailer requirements</h4>
-              <p>AI may generate plausible-sounding but incorrect case pack specs, pallet requirements, or compliance details. Always verify against the actual routing guide.</p>
-            </div>
-            <div className="hal safe">
-              <div className="hal-tag">Low hallucination risk</div>
-              <h4>Math and formulas</h4>
-              <p>Safety stock calculations, landed cost math, margin analysis. Reliable when you provide the inputs and ask it to show work. Verify the formula is correct, then trust the arithmetic.</p>
-            </div>
-            <div className="hal safe">
-              <div className="hal-tag">Low hallucination risk</div>
-              <h4>Document generation</h4>
-              <p>Tech packs, SOPs, RFQs, checklists. AI excels at structuring information you provide into professional formats. The content comes from you, the structure comes from AI.</p>
-            </div>
-          </div>
-
-          <div className="callout warn">
-            <p><strong>The most dangerous hallucination pattern:</strong> AI that responds with specific numbers and cites no source. &ldquo;The standard duty rate for this product is 4.2%&rdquo; &mdash; where did that come from? If the AI can&apos;t point to a source, treat the number as fabricated until you verify it. Real operations run on real numbers, not AI confidence.</p>
-          </div>
-
           {/* SECTION 5 */}
           <h2 id="agents">AI Agents and Tools for CPG Operators</h2>
           <p>Beyond chat-based LLMs, there&apos;s a new category of AI tools that work directly with your files, your data, and your workflows. These aren&apos;t futuristic &mdash; they&apos;re available today and practical for operators who aren&apos;t AI experts.</p>
@@ -529,7 +529,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
             </div>
           </div>
 
-          <h3>Getting Started Without Being an AI Expert</h3>
+          <h3>Getting Started This Week</h3>
           <p>You don&apos;t need to understand how LLMs work to use them for operations. You need to understand your operations and be able to describe what you need clearly. That&apos;s it.</p>
           <p><strong>Week 1:</strong> Start with a single task. Pick the most time-consuming analytical task you do regularly &mdash; maybe it&apos;s comparing supplier quotes, or calculating reorder points, or drafting vendor communications. Use one of the prompts above and see what happens. Spend 30 minutes.</p>
           <p><strong>Week 2:</strong> Try Claude Cowork with a real file. Give it your most important spreadsheet and ask it a question you&apos;ve been wondering about. &ldquo;What patterns do you see in my sales data?&rdquo; or &ldquo;Calculate my true landed cost for each SKU including all the costs in this sheet.&rdquo;</p>
@@ -537,12 +537,12 @@ Be specific and cite sources where possible. Flag any information that may be ou
           <p><strong>Week 4:</strong> Identify what AI can&apos;t help with. After three weeks of using these tools, you&apos;ll have a clear picture of where AI saves you hours and where you still need human expertise. That clarity is the foundation for building your lean ops stack.</p>
 
           <div className="callout ai">
-            <p><strong>The real unlock:</strong> AI doesn&apos;t replace operational thinking &mdash; it accelerates it. The operator who understands their supply chain and can describe problems clearly will get 10x more value from AI than someone who types &ldquo;help me with operations.&rdquo; Your domain expertise is the input. AI is the multiplier.</p>
+            <p><strong>The real unlock:</strong> AI doesn&apos;t replace operational thinking. It accelerates it. The operator who understands their supply chain and can describe problems clearly will get 10x more value from AI than someone who types &ldquo;help me with operations.&rdquo; Your domain expertise is the input. AI is the multiplier.</p>
           </div>
 
           {/* SECTION 6 */}
           <h2 id="human">What AI Can&apos;t Do: The Human Layer</h2>
-          <p>After all the prompts and tools and agents, here&apos;s the honest truth: AI handles maybe 40-50% of what an ops team does. The other 50-60% requires things AI fundamentally cannot provide.</p>
+          <p>After all the prompts and tools and agents, here&apos;s the honest truth: these tools handle maybe 40-50% of what an ops team does. The other 50-60% requires things AI fundamentally cannot provide.</p>
 
           <h3>Judgment Under Uncertainty</h3>
           <p>Your manufacturer just told you there&apos;s a 2-week delay. Do you air-freight at 4x cost to protect a retail delivery window, or do you call the buyer and negotiate? AI can model both scenarios. A human makes the call &mdash; factoring in the relationship, the buyer&apos;s personality, your cash position, and whether this retailer is worth $15,000 in expedited freight. That judgment comes from experience, not algorithms.</p>
@@ -571,7 +571,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
               <span className="stack-badge layer-ai">AI Layer</span>
               <div className="stack-content">
                 <h4>Analysis &amp; Modeling</h4>
-                <p>Demand forecasting, cost modeling, landed cost analysis, margin optimization, scenario planning. AI handles the math and generates the options. Run daily or weekly with updated data.</p>
+                <p>Demand forecasting, cost modeling, landed cost analysis, margin optimization, scenario planning. You run the math and generate options in seconds. Run daily or weekly with updated data.</p>
               </div>
             </div>
 
@@ -579,7 +579,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
               <span className="stack-badge layer-ai">AI Layer</span>
               <div className="stack-content">
                 <h4>Documentation &amp; Communication</h4>
-                <p>Tech packs, SOPs, RFQs, supplier briefs, compliance checklists, inventory reports. AI generates and maintains the documentation that keeps operations organized. Updated continuously.</p>
+                <p>Tech packs, SOPs, RFQs, supplier briefs, compliance checklists, inventory reports. You generate and maintain the documentation that keeps operations organized. Updated continuously.</p>
               </div>
             </div>
 
@@ -587,7 +587,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
               <span className="stack-badge layer-both">AI + Human</span>
               <div className="stack-content">
                 <h4>Monitoring &amp; Alerts</h4>
-                <p>Inventory levels, supplier lead times, freight tracking, compliance deadlines. AI monitors the data and flags exceptions. Humans evaluate the flags and decide what action to take.</p>
+                <p>Inventory levels, supplier lead times, freight tracking, compliance deadlines. Your tools monitor the data and flag exceptions. Humans evaluate the flags and decide what action to take.</p>
               </div>
             </div>
 
@@ -622,7 +622,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
       <section className="cta-band gd">
         <div className="cta-inner">
           <h2>Ready to build your <span className="o">modern ops stack?</span></h2>
-          <p>We help brands set up the AI tools, build the workflows, and provide the human expertise layer. Whether you need a full fractional operations team or just help getting started with AI-powered operations &mdash; we&apos;ll be honest about what you actually need.</p>
+          <p>Your operations can run leaner and faster without building a massive team. We build the systems, manage the vendors, and execute the playbook. AI tools are part of how we do it. Whether you need a full fractional operations team or a partner to get your ops stack dialed in, we&apos;ll be honest about what you actually need.</p>
           <div className="cta-btns">
             <EmailButton subject="Modern Ops Stack — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
