@@ -123,13 +123,14 @@ export default function OpsTeamWithoutHiring() {
         <div className="toc">
           <h3>What&apos;s Inside</h3>
           <ul className="toc-list">
-            <li><a href="#math">The Math: Hiring vs. The Modern Alternative</a></li>
+            <li><a href="#week">What Your Week Looks Like With AI</a></li>
             <li><a href="#ai-ops">What AI Can Actually Do for Your Operations Today</a></li>
             <li><a href="#hallucinations">Where AI Lies: Avoiding Hallucinations in Operations</a></li>
             <li><a href="#prompts">The Operator&apos;s Prompt Library</a></li>
             <li><a href="#agents">AI Agents and Tools for CPG Operators</a></li>
             <li><a href="#human">What AI Can&apos;t Do: The Human Layer</a></li>
             <li><a href="#stack">The Modern Ops Stack</a></li>
+            <li><a href="#business-case">For Founders: The Business Case</a></li>
           </ul>
         </div>
       </div>
@@ -139,52 +140,35 @@ export default function OpsTeamWithoutHiring() {
         <div className="article-inner">
 
           {/* SECTION 1 */}
-          <h2 id="math">The Math: Hiring vs. The Modern Alternative</h2>
-          <p>Let&apos;s start with what most $5-20M CPG brands think they need: an in-house operations team. Here&apos;s what that actually costs in 2025:</p>
+          <h2 id="week">What Your Week Looks Like With AI</h2>
+          <p>These are real tasks from real operations. Every one of them used to eat hours. Now they take minutes. The difference isn&apos;t theoretical. It&apos;s the gap between running operations reactively and running them with leverage.</p>
 
-          <div className="hvb">
-            <div className="hvb-header">
-              <div>Role</div>
-              <div>In-House Cost</div>
-              <div>Modern Alternative</div>
-            </div>
-            <div className="hvb-row">
-              <div>VP of Operations</div>
-              <div className="r">$200-250K/yr</div>
-              <div className="g">AI tools + fractional partner</div>
-            </div>
-            <div className="hvb-row">
-              <div>Supply Chain Manager</div>
-              <div className="r">$120-150K/yr</div>
-              <div className="g">AI analysis + outsourced execution</div>
-            </div>
-            <div className="hvb-row">
-              <div>Packaging Engineer</div>
-              <div className="r">$100-130K/yr</div>
-              <div className="g">Fractional packaging expertise</div>
-            </div>
-            <div className="hvb-row">
-              <div>Ops Analyst</div>
-              <div className="r">$80-100K/yr</div>
-              <div className="g">You automate 80% of this with AI today</div>
-            </div>
-            <div className="hvb-row">
-              <div>Benefits, software, recruiting</div>
-              <div className="r">$100-150K/yr</div>
-              <div className="g">Included in retainer</div>
-            </div>
-            <div className="hvb-row">
-              <div>Total annual cost</div>
-              <div className="r">$600K-830K</div>
-              <div className="b">$30-120K (retainer + AI tools)</div>
-            </div>
-          </div>
+          <h3>Landed Cost Comparison</h3>
+          <p><strong>Before:</strong> Pull quotes from two suppliers, open a spreadsheet, manually calculate duty, freight, drayage, brokerage, and customs for each. Double-check the math. Realize you forgot tooling amortization. Start over. Total time: 2-3 hours.</p>
+          <p><strong>Now:</strong> Paste both quotes into Claude with the landed cost prompt from this guide. Get a complete side-by-side comparison with breakeven volume in 90 seconds. Change one variable and regenerate instantly.</p>
 
-          <p>That&apos;s not a rounding error. It&apos;s a 5-10x difference. And the gap isn&apos;t because the modern alternative is worse &mdash; it&apos;s because AI tools have eliminated the need for a full-time human to do analytical work that used to consume 60-70% of an ops team&apos;s time.</p>
-          <p>The question isn&apos;t &ldquo;should I hire an ops team?&rdquo; The question is &ldquo;what parts of operations require a human, and what parts can be handled by AI tools paired with fractional expertise?&rdquo;</p>
+          <h3>Safety Stock and Reorder Calculation</h3>
+          <p><strong>Before:</strong> Export sales data from your 3PL or Shopify. Build a formula in Excel. Google the safety stock formula because you can never remember it. Manually calculate for each SKU. Total time: 1-2 hours per SKU review.</p>
+          <p><strong>Now:</strong> Drop your sales CSV into Claude and ask it to calculate safety stock, reorder points, and flag any SKUs below threshold. Every SKU, every formula shown, in under 2 minutes.</p>
+
+          <h3>Supplier RFQ</h3>
+          <p><strong>Before:</strong> Write the email from scratch every time. Forget to ask about tooling ownership or QC process. Send it, then realize you didn&apos;t specify volume tiers. Send a follow-up that makes you look disorganized. Total time: 30-45 minutes per supplier.</p>
+          <p><strong>Now:</strong> Use the RFQ prompt with your specs filled in. Get a professional, complete RFQ that covers every question experienced sourcing teams ask. Total time: 3 minutes.</p>
+
+          <h3>Routing Guide Compliance Check</h3>
+          <p><strong>Before:</strong> Read 60 pages of a retailer&apos;s routing guide. Highlight what applies to your product. Build a checklist in a Google Doc. Miss the pallet height restriction on page 47. Discover it when you get a $2,500 chargeback. Total time: 3-4 hours (plus the chargeback).</p>
+          <p><strong>Now:</strong> Upload the routing guide and your product specs. Get a compliance checklist specific to your product with pallet configurations calculated. Total time: 5 minutes.</p>
+
+          <h3>Tech Pack Creation</h3>
+          <p><strong>Before:</strong> Hire a freelancer or try to build it yourself in InDesign. Go back and forth on specs for a week. End up with something that&apos;s 80% right but missing QC criteria. Total time: 1-2 weeks.</p>
+          <p><strong>Now:</strong> Feed your packaging specs into the tech pack prompt. Get a structured document with dieline specs, material specs, print specs, assembly instructions, and QC criteria. Review and refine in one sitting. Total time: 20 minutes.</p>
+
+          <h3>Competitive Landscape Research</h3>
+          <p><strong>Before:</strong> Spend a Saturday walking store aisles, browsing competitor websites, and building a spreadsheet of who&apos;s where at what price point. Still not confident you found everyone. Total time: 4-6 hours.</p>
+          <p><strong>Now:</strong> Use the competitive landscape prompt with Claude&apos;s web search. Get a structured analysis of your top competitors, which retailers carry them, pricing, positioning, and white space opportunities. Verify with a quick store visit. Total time: 10 minutes for the research, 1 hour for the store walk.</p>
 
           <div className="callout">
-            <p><strong>The mindset shift:</strong> You&apos;re not replacing people with robots. You&apos;re building a lean operational system where AI handles the analysis, modeling, and documentation while humans handle the judgment, relationships, and execution that AI can&apos;t touch. The result is a 2-3 person operation that performs like a team of 10.</p>
+            <p><strong>Notice the pattern.</strong> AI didn&apos;t make any decisions in those examples. You did. AI handled the data processing, the formatting, the calculations, and the document generation. You provided the context, evaluated the output, and decided what to do with it. That&apos;s the model.</p>
           </div>
 
           {/* SECTION 2 */}
@@ -613,6 +597,56 @@ Be specific and cite sources where possible. Flag any information that may be ou
 
           <div className="callout">
             <p><strong>The question to ask yourself:</strong> How many hours per week do you spend on operations that aren&apos;t growing the business? If the answer is more than 10, you&apos;ve outgrown the founder-does-everything model. The next step isn&apos;t hiring a $250K VP. It&apos;s building a modern ops stack &mdash; AI for the analysis, a fractional partner for the execution, and your time back to focus on what only you can do.</p>
+          </div>
+
+          {/* SECTION 8 */}
+          <h2 id="business-case">For Founders: The Business Case</h2>
+          <p>If you&apos;re evaluating the numbers, here&apos;s what most $5-20M CPG brands are looking at when they compare building an in-house ops team vs. a modern alternative.</p>
+          <p>Let&apos;s start with what most $5-20M CPG brands think they need: an in-house operations team. Here&apos;s what that actually costs in 2025:</p>
+
+          <div className="hvb">
+            <div className="hvb-header">
+              <div>Role</div>
+              <div>In-House Cost</div>
+              <div>Modern Alternative</div>
+            </div>
+            <div className="hvb-row">
+              <div>VP of Operations</div>
+              <div className="r">$200-250K/yr</div>
+              <div className="g">AI tools + fractional partner</div>
+            </div>
+            <div className="hvb-row">
+              <div>Supply Chain Manager</div>
+              <div className="r">$120-150K/yr</div>
+              <div className="g">AI analysis + outsourced execution</div>
+            </div>
+            <div className="hvb-row">
+              <div>Packaging Engineer</div>
+              <div className="r">$100-130K/yr</div>
+              <div className="g">Fractional packaging expertise</div>
+            </div>
+            <div className="hvb-row">
+              <div>Ops Analyst</div>
+              <div className="r">$80-100K/yr</div>
+              <div className="g">You automate 80% of this with AI today</div>
+            </div>
+            <div className="hvb-row">
+              <div>Benefits, software, recruiting</div>
+              <div className="r">$100-150K/yr</div>
+              <div className="g">Included in retainer</div>
+            </div>
+            <div className="hvb-row">
+              <div>Total annual cost</div>
+              <div className="r">$600K-830K</div>
+              <div className="b">$30-120K (retainer + AI tools)</div>
+            </div>
+          </div>
+
+          <p>That&apos;s not a rounding error. It&apos;s a 5-10x difference. And the gap isn&apos;t because the modern alternative is worse &mdash; it&apos;s because AI tools have eliminated the need for a full-time human to do analytical work that used to consume 60-70% of an ops team&apos;s time.</p>
+          <p>The question isn&apos;t &ldquo;should I hire an ops team?&rdquo; The question is &ldquo;what parts of operations require a human, and what parts can be handled by AI tools paired with fractional expertise?&rdquo;</p>
+
+          <div className="callout">
+            <p><strong>The mindset shift:</strong> You&apos;re not replacing people with robots. You&apos;re building a lean operational system where AI handles the analysis, modeling, and documentation while humans handle the judgment, relationships, and execution that AI can&apos;t touch. The result is a 2-3 person operation that performs like a team of 10.</p>
           </div>
 
         </div>
