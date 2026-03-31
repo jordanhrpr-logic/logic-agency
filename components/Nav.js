@@ -18,7 +18,7 @@ export default function Nav({ variant = 'guide' }) {
           <a href="/guides/packaging-cost-reduction" onClick={close}>Packaging Cost Reduction</a>
           <a href="/guides/packaging-system-that-scales" onClick={close}>Building a Packaging System That Scales</a>
           <a href="/guides/packaging-sourcing" onClick={close}>How to Source Packaging</a>
-          <a href="/guides/ops-team-without-hiring" onClick={close}>The Operator&apos;s Guide to AI</a>
+          <a href="/guides/ai-for-cpg-operations" onClick={close}>The Operator&apos;s Guide to AI</a>
         </div>
       </div>
     </div>
