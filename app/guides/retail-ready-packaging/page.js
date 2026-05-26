@@ -11,7 +11,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Logic Agency Inc." },
   "mainEntityOfPage": "https://logicagencyinc.com/guides/retail-ready-packaging",
   "datePublished": "2025-02-01",
-  "dateModified": "2025-02-01"
+  "dateModified": "2026-05-26"
 };
 
 const faqSchema = {

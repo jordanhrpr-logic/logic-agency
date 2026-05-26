@@ -18,7 +18,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": "https://logicagencyinc.com/guides/retail-readiness",
   "datePublished": "2025-02-01",
-  "dateModified": "2025-02-01"
+  "dateModified": "2026-05-26"
 };
 
 const faqSchema = {
