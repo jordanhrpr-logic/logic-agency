@@ -18,7 +18,7 @@ const articleSchema = {
   },
   "mainEntityOfPage": "https://logicagencyinc.com/guides/ai-for-cpg-operations",
   "datePublished": "2025-03-01",
-  "dateModified": "2025-03-01"
+  "dateModified": "2026-05-26"
 };
 
 const faqSchema = {
