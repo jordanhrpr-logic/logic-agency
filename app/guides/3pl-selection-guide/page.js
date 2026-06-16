@@ -130,7 +130,7 @@ export default function Page() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>3PL Selection Guide for Consumer <span className="o">Product Brands</span></h1>
-          <p className="a-lede">Choosing the right fulfillment partner is one of the highest-leverage operational decisions a scaling CPG brand makes—and most brands make it too late, under the wrong criteria. Here is the evaluation framework that actually predicts 3PL performance.</p>
+          <p className="a-lede">Choosing a 3PL for a CPG brand comes down to six evaluation criteria: channel fit (DTC vs. retail), technology (WMS, real-time inventory, EDI), geography, retail compliance experience, pricing structure, and red-flag detection. Most brands optimize for the lowest pick-and-pack rate and discover too late that they picked a 3PL that can&apos;t handle their actual channel mix.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated Jun 2026</span>

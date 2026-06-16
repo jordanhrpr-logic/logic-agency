@@ -14,11 +14,12 @@ export default function Nav({ variant = 'guide' }) {
         <div className="dd-panel">
           <a href="/guides/retail-readiness" onClick={close}>The Retail Readiness Bible</a>
           <a href="/guides/first-90-days-in-retail" onClick={close}>Your First 90 Days in Retail</a>
-          <a href="/guides/retail-ready-packaging" onClick={close}>Getting Your Packaging Retail-Ready</a>
+          <a href="/guides/fractional-supply-chain-operations" onClick={close}>Fractional Supply Chain Operations</a>
+          <a href="/guides/dtc-to-retail-supply-chain" onClick={close}>DTC to Retail Supply Chain</a>
+          <a href="/guides/retail-chargebacks" onClick={close}>Retail Chargebacks Explained</a>
           <a href="/guides/packaging-cost-reduction" onClick={close}>Packaging Cost Reduction</a>
-          <a href="/guides/packaging-system-that-scales" onClick={close}>Building a Packaging System That Scales</a>
-          <a href="/guides/packaging-sourcing" onClick={close}>How to Source Packaging</a>
-          <a href="/guides/ai-for-cpg-operations" onClick={close}>The Operator&apos;s Guide to AI</a>
+          <a href="/guides/3pl-selection-guide" onClick={close}>3PL Selection Guide</a>
+          <a href="/guides" onClick={close} style={{fontWeight:700,color:'var(--o)'}}>View all guides &rarr;</a>
         </div>
       </div>
     </div>
@@ -43,6 +44,7 @@ export default function Nav({ variant = 'guide' }) {
             <a href="#pricing" onClick={close}>Pricing</a>
             <a href="#results" onClick={close}>Results</a>
             {guidesDropdown}
+            <a href="/blog" onClick={close}>Blog</a>
             <a href="#faq" onClick={close}>FAQ</a>
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="nc" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </>
@@ -52,6 +54,7 @@ export default function Nav({ variant = 'guide' }) {
             <a href="/#pricing" onClick={close}>Pricing</a>
             <a href="/#results" onClick={close}>Results</a>
             {guidesDropdown}
+            <a href="/blog" onClick={close}>Blog</a>
             <a href="/#faq" onClick={close}>FAQ</a>
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="nc" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </>

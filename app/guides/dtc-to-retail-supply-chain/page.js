@@ -130,7 +130,7 @@ export default function Page() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>DTC to Retail Supply Chain: What Most Brands Get Wrong Before Their <span className="o">First PO</span></h1>
-          <p className="a-lede">The DTC-to-retail supply chain transition fails brands at a predictable rate. The product is usually fine. The failure happens in the back half: operations, logistics, compliance, and the dozen system requirements that retail demands before a single unit hits a shelf.</p>
+          <p className="a-lede">The DTC-to-retail supply chain transition requires five new systems most DTC brands don&apos;t have: inventory forecasting built for 10&ndash;16 week lead times, retail-compliant packaging, EDI infrastructure, a retail-capable 3PL, and a vendor compliance program. The brands that get them wrong absorb 3&ndash;7% of first-year retail revenue in chargebacks. The ones that get them right build all five before the buyer says yes.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated Jun 2026</span>
