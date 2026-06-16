@@ -83,6 +83,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fractional COO vs. Full-Time Hire: A Real Cost Comparison",
+      "item": "https://logicagencyinc.com/guides/fractional-coo-vs-full-time-hire"
+    }
+  ]
+};
 export default function Page() {
   return (
     <>
@@ -93,6 +117,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Nav variant="guide" />
@@ -105,6 +133,7 @@ export default function Page() {
           <p className="a-lede">A fractional COO for CPG brands typically costs $30,000–$120,000 per year. A full in-house operations function can cost $600,000–$830,000+. Here is the real comparison—including the hidden costs most brands miss when making this decision.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated Jun 2026</span>
             <span>12 min read</span>
             <span>Guides</span>
           </div>
@@ -157,7 +186,9 @@ export default function Page() {
           <p>A simple test: write down the 10 operating problems you need solved in the next 90 days and label each. If most fall into one or two categories, a full-time hire may be right. If they spread across six or seven, you probably need operating coverage&mdash;not a single hire.</p>
           <div className="callout"><p><strong>The hybrid path:</strong> Use fractional support to build the operating system first, define the role, stabilize vendors, document workflows. Then hire into a cleaner role. The eventual hire starts with a system instead of cleanup&mdash;and that is a better use of senior talent.</p></div>
         </div>
-      </div>
+      
+          <p className="pac-xlink">When fractional operations covers packaging specifically — sourcing, engineering, and retail-compliance — <a href="https://www.logic-pac.com/capabilities">Logic Pac&apos;s packaging capabilities</a> integrate directly with the Agency ops retainer.</p>
+</div>
 
       {/* CTA */}
       <section className="cta-band gd">

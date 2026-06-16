@@ -776,6 +776,18 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .prompt-box{font-size:12px;padding:16px}
 }
 
+/* ── Cross-Domain Pac Link callout ─────────────────────────────── */
+.pac-xlink {
+  background: #fff;
+  border-left: 3px solid var(--o);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 20px;
+  margin: 40px 0;
+  font-size: 15px;
+  color: var(--gr);
+}
+.pac-xlink a { color: var(--o); font-weight: 600; }
+
 /* ── Guides Index Grid ──────────────────────────────────────────── */
 .guides-grid {
   display: grid;

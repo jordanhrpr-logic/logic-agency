@@ -83,6 +83,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "DTC to Retail Supply Chain: What Most Brands Get Wrong",
+      "item": "https://logicagencyinc.com/guides/dtc-to-retail-supply-chain"
+    }
+  ]
+};
 export default function Page() {
   return (
     <>
@@ -93,6 +117,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Nav variant="guide" />
@@ -105,6 +133,7 @@ export default function Page() {
           <p className="a-lede">The DTC-to-retail supply chain transition fails brands at a predictable rate. The product is usually fine. The failure happens in the back half: operations, logistics, compliance, and the dozen system requirements that retail demands before a single unit hits a shelf.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated Jun 2026</span>
             <span>12 min read</span>
             <span>Guides</span>
           </div>
@@ -147,7 +176,9 @@ export default function Page() {
             </tbody>
           </table>
         </div>
-      </div>
+      
+          <p className="pac-xlink">Retail-ready packaging — case packs, pallet specs, compliant labeling — is the most common first-order operational surprise. See <a href="https://www.logic-pac.com/guides/concept-to-shelf-timeline">Logic Pac&apos;s concept-to-shelf timeline</a> for what custom packaging development requires before your first retailer shipment.</p>
+</div>
 
       {/* CTA */}
       <section className="cta-band gd">

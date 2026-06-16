@@ -81,6 +81,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Building a Packaging System That Scales",
+      "item": "https://logicagencyinc.com/guides/packaging-system-that-scales"
+    }
+  ]
+};
 export default function PackagingSystemThatScales() {
   return (
     <>
@@ -92,17 +116,22 @@ export default function PackagingSystemThatScales() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <Nav variant="guide" />
 
       {/* HERO */}
       <section className="a-hero gl">
         <div className="a-hero-inner">
-          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
+          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Building a Packaging System <span className="o">That Scales</span></h1>
           <p className="a-lede">Most brands solve packaging the same way: find a supplier, get a quote, order boxes. It works at 5,000 units. At 50,000 it starts cracking. At 500,000 it breaks completely. The difference between brands that scale smoothly and those that hit a wall is whether they built a packaging system or just ordered packaging.</p>
           <div className="a-meta">
-            <span><strong>Logic Agency Inc.</strong></span>
+            <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated May 2026</span>
             <span>14 min read</span>
             <span>Guides</span>
           </div>

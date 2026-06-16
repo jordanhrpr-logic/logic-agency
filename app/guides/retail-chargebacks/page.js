@@ -83,6 +83,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Retail Chargebacks Explained: The CPG Brand's Guide to Prevention and Recovery",
+      "item": "https://logicagencyinc.com/guides/retail-chargebacks"
+    }
+  ]
+};
 export default function Page() {
   return (
     <>
@@ -93,6 +117,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Nav variant="guide" />
@@ -105,6 +133,7 @@ export default function Page() {
           <p className="a-lede">Retail chargebacks are automatic penalty deductions—not invoices you can dispute—and first-year brands commonly absorb 3–7% of total retail revenue in preventable violations. Here is what causes them, what they cost, and a prevention framework that works.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated Jun 2026</span>
             <span>12 min read</span>
             <span>Guides</span>
           </div>
@@ -146,7 +175,9 @@ export default function Page() {
           </div>
           <p>Budget 2&ndash;5% of first-year retail revenue for deductions even with strong compliance, then work to drive it below 1% by Year 2. Treat it as a cost of retail education in the first season, and a system failure if it persists into Year 2.</p>
         </div>
-      </div>
+      
+          <p className="pac-xlink">Pallet labels, carton dimensions, and case pack specs are among the most common chargeback triggers. <a href="https://www.logic-pac.com/guides/concept-to-shelf-timeline">Logic Pac&apos;s packaging development guide</a> covers retailer-compliant structural specs from the manufacturing side.</p>
+</div>
 
       {/* CTA */}
       <section className="cta-band gd">

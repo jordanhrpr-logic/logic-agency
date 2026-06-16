@@ -83,6 +83,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "3PL Selection Guide for Consumer Product Brands",
+      "item": "https://logicagencyinc.com/guides/3pl-selection-guide"
+    }
+  ]
+};
 export default function Page() {
   return (
     <>
@@ -93,6 +117,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Nav variant="guide" />
@@ -105,6 +133,7 @@ export default function Page() {
           <p className="a-lede">Choosing the right fulfillment partner is one of the highest-leverage operational decisions a scaling CPG brand makes—and most brands make it too late, under the wrong criteria. Here is the evaluation framework that actually predicts 3PL performance.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated Jun 2026</span>
             <span>12 min read</span>
             <span>Guides</span>
           </div>
@@ -156,7 +185,9 @@ export default function Page() {
           <div className="audit-step"><div className="audit-n">1&ndash;3 months</div><div><h4>EDI and systems re-integration time</h4><p>Retail trading partner EDI connections must be re-established with the new warehouse. Each retailer connection requires testing. Errors during this window create chargebacks.</p></div></div>
           <div className="callout"><p><strong>The best time to evaluate your 3PL is before you need to switch.</strong> Annual reviews against current performance data are better than reactive searches during a crisis. Our <a href="/guides/retail-readiness">Retail Readiness Bible</a> includes the 3PL evaluation criteria that matter most for retail channel compliance.</p></div>
         </div>
-      </div>
+      
+          <p className="pac-xlink">Packaging design directly affects 3PL efficiency — carton dimensions, pallet configurations, and master carton specs all touch warehouse workflows. See <a href="https://www.logic-pac.com/capabilities">Logic Pac&apos;s packaging capabilities</a> for how packaging engineering feeds into logistics planning.</p>
+</div>
 
       {/* CTA */}
       <section className="cta-band gd">

@@ -89,6 +89,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Retail Readiness Bible: Everything You Need to Launch and Scale in Retail",
+      "item": "https://logicagencyinc.com/guides/retail-readiness"
+    }
+  ]
+};
 export default function RetailReadinessBible() {
   return (
     <>
@@ -100,17 +124,22 @@ export default function RetailReadinessBible() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <Nav variant="guide" />
 
       {/* HERO */}
       <section className="a-hero gl">
         <div className="a-hero-inner">
-          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
+          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>The Retail Readiness <span className="o">Bible</span></h1>
           <p className="a-lede">Getting a buyer to say yes is the easy part. The hard part is everything that happens next &mdash; packaging, supply chain, inventory, compliance, economics, and the operational infrastructure that determines whether you&apos;re still on shelf in 12 months or burned through cash and out of stock by month three. This is the complete playbook.</p>
           <div className="a-meta">
-            <span><strong>Logic Agency Inc.</strong></span>
+            <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated May 2026</span>
             <span>25 min read</span>
             <span>Comprehensive Guide</span>
           </div>

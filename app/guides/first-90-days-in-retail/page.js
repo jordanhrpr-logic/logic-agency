@@ -89,6 +89,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The CPG Brand's First 90 Days in Retail",
+      "item": "https://logicagencyinc.com/guides/first-90-days-in-retail"
+    }
+  ]
+};
 export default function First90DaysInRetail() {
   return (
     <>
@@ -99,11 +123,12 @@ export default function First90DaysInRetail() {
       {/* HERO */}
       <section className="a-hero gl">
         <div className="a-hero-inner">
-          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
+          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Your First 90 Days <span className="o">in Retail</span></h1>
           <p className="a-lede">A buyer just said yes. Your DTC brand is going into retail stores. Congratulations &mdash; and buckle up. The next 90 days will be the most operationally intense period your brand has ever been through. Here&apos;s what actually happens, week by week, told by people who&apos;ve done it dozens of times.</p>
           <div className="a-meta">
-            <span><strong>Logic Agency Inc.</strong></span>
+            <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated May 2026</span>
             <span>20 min read</span>
             <span>Guides</span>
           </div>
