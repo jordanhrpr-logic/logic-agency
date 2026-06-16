@@ -420,7 +420,7 @@ export default function PackagingSourcingGuide() {
           <h2>Need sourcing expertise <span className="o">without the learning curve?</span></h2>
           <p>We source packaging across 15+ countries with direct factory relationships, ISO/FAMA/FSC/FDA certified supply chains, and 20 years of doing this. Our Starter tier gives you sourcing advisory from day one. Tell us what you&apos;re looking for.</p>
           <div className="cta-btns">
-            <EmailButton subject="Packaging Sourcing — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>

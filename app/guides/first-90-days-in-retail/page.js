@@ -409,7 +409,7 @@ export default function First90DaysInRetail() {
           <h2>About to launch into retail <span className="o">and feeling the heat?</span></h2>
           <p>We&apos;ve guided brands through their first 90 days and through their fiftieth retail shipment. Whether you&apos;re staring at a routing guide for the first time or trying to fix an operation that&apos;s already in motion &mdash; tell us where you are.</p>
           <div className="cta-btns">
-            <EmailButton subject="Retail Launch — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>

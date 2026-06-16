@@ -691,7 +691,7 @@ Be specific and cite sources where possible. Flag any information that may be ou
           <h2>Ready to build your <span className="o">modern ops stack?</span></h2>
           <p>Your operations can run leaner and faster without building a massive team. We build the systems, manage the vendors, and execute the playbook. AI tools are part of how we do it. Whether you need a full fractional operations team or a partner to get your ops stack dialed in, we&apos;ll be honest about what you actually need.</p>
           <div className="cta-btns">
-            <EmailButton subject="Modern Ops Stack — Let's Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>
