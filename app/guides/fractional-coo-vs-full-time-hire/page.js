@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -190,6 +191,14 @@ export default function Page() {
           <p className="pac-xlink">When fractional operations covers packaging specifically — sourcing, engineering, and retail-compliance — <a href="https://www.logic-pac.com/capabilities">Logic Pac&apos;s packaging capabilities</a> integrate directly with the Agency ops retainer.</p>
 </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'How much does a fractional COO cost for a CPG brand?', a: 'A fractional COO or fractional operations team typically costs $30,000-$120,000 per year. The range depends on whether the work is advisory, active management, or embedded execution.' }, { q: 'How much does a full-time VP of Operations cost?', a: 'A senior VP of Operations can cost $220,000-$350,000 all-in. A full operations function with supporting roles can reach $600,000-$830,000+ per year.' }, { q: 'Is a fractional COO the same as a consultant?', a: 'No. A consultant usually diagnoses and recommends. A fractional COO or operations team should own execution, manage vendors, build systems, and stay accountable to outcomes.' }, { q: 'When should a brand hire full-time instead of fractional?', a: 'Hire full-time when the role is permanent, clearly defined, and large enough for one person to own every day. Use fractional support when the scope is cross-functional or still changing.' }, { q: 'Can a fractional team help us hire a full-time operations leader later?', a: 'Yes. A fractional team can define the role, document systems, and stabilize the operating environment so the eventual hire starts with structure instead of cleanup.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

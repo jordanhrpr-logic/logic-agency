@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -309,6 +310,14 @@ export default function PackagingSystemThatScales() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'When should a startup invest in professional packaging?', a: 'Before your first production run, not after. The decisions you make at launch — structural design, material selection, tooling, supplier choice — either scale with you or require expensive rework later. A packaging system designed for scale from the start costs marginally more upfront but avoids the retooling, redesign, and rebranding costs that catch most brands between 50K and 200K units.' }, { q: 'What is the difference between ordering packaging and building a packaging system?', a: 'Ordering packaging is transactional: you find a supplier, get a quote, place an order. A packaging system is the complete infrastructure — structural specs that survive production and transit, supplier relationships with backup options, scalable designs that work at 10K and 500K units without retooling, documentation (tech packs, BOMs, spec sheets) that any manufacturer can produce from, and retail-readiness built in from the start even if you\'re DTC today.' }, { q: 'How much does it cost to build an in-house packaging operations team?', a: 'A senior packaging or operations hire costs $150-200K in salary in major US markets, plus benefits, software, recruiting fees, and onboarding time — easily $250K+ all in for one person. That person likely won\'t have deep expertise across packaging engineering, global sourcing, retail compliance, and inventory management. An outsourced packaging operations retainer starts at $2,500 per month and provides access to all of those capabilities from day one.' }, { q: 'What are the stages of packaging maturity for growing brands?', a: 'Stage 1 (Survival, 0-50K units): Get packaging that works, ships, and represents the brand. Speed matters more than optimization. Stage 2 (Systematization, 50K-500K units): Lock in suppliers, formalize specs, start optimizing for cost and efficiency. This is where most brands stall. Stage 3 (Optimization, 500K+ units): Continuous cost reduction, DIM weight optimization, sustainability improvements, and multi-channel packaging variants.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

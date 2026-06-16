@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -405,6 +406,14 @@ export default function PackagingSourcingGuide() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'Should I source packaging domestically or overseas?', a: 'It depends on volume, timeline, and complexity. Domestic sourcing is better for small runs under 10,000 units, fast turnarounds under 4 weeks, and simple structures. International sourcing (particularly Asia) is better for volumes above 25,000 units, complex structures like rigid boxes or custom molded inserts, premium finishes at lower cost, and when you have 8-12 weeks of lead time. Most brands at scale use both — domestic for fast-turn and low-volume SKUs, international for high-volume primary packaging. The decision should be based on a full landed cost comparison, not just unit price.' }, { q: 'What is the difference between a packaging broker and a manufacturer?', a: 'A manufacturer owns the factory and production equipment. A broker sources from manufacturers on your behalf and adds a margin. A trading company in Asia operates similarly to a broker but may represent multiple factories. The key question is how many layers are between you and the factory floor. Each layer adds cost and reduces your control over quality and timing. Direct manufacturer relationships give you better pricing and quality control but require more sourcing expertise. Brokers offer convenience but obscure the true cost structure.' }, { q: 'What is a typical MOQ for custom packaging?', a: 'MOQs vary dramatically by packaging type, material, and region. Domestic folding cartons typically start at 1,000-5,000 units. Domestic corrugated can go as low as 500. International (Asia) folding cartons typically start at 5,000-10,000 units, with rigid boxes at 3,000-5,000. Custom molded packaging often requires 10,000+ units. These are starting points — pricing improves significantly at 25,000 and 50,000 unit tiers. Be cautious of suppliers with unusually low MOQs, as they may be quoting stock packaging with minimal customization.' }, { q: 'How do I calculate the true landed cost of packaging?', a: 'Landed cost includes unit production cost, tooling amortized across the order, freight (ocean, air, or ground), customs duties and tariffs, customs brokerage fees, drayage from port to warehouse, inspection and quality control costs, warehousing, and insurance. For international sourcing, freight and duties typically add 15-30% on top of the unit price. The only accurate comparison between domestic and international suppliers is a full landed cost calculation — comparing unit prices alone is misleading.' }, { q: 'What are red flags when choosing a packaging supplier?', a: 'Key red flags include: quoting without asking about your product specifications or supply chain requirements, unable or unwilling to provide factory audit documentation or certifications, pricing that is dramatically lower than all other quotes (suggesting hidden fees, bait-and-switch, or quality shortcuts), no clear quality control process or inspection protocols, requiring full payment upfront with no milestone structure, unwillingness to provide client references, and vague lead time estimates without production scheduling detail.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

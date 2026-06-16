@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -397,6 +398,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What is the difference between DTC and wholesale margins?', a: 'DTC margins are based on selling directly to the customer at full retail price. Wholesale margins are based on selling to a retailer at a lower wholesale price, often 40-60% below MSRP depending on the retailer\'s margin requirements.' }, { q: 'Why do DTC brands lose margin when they enter retail?', a: 'DTC brands lose margin in retail because the retailer needs margin, payment terms are longer, freight and compliance costs change, and chargebacks, deductions, trade spend, or distributor fees may apply.' }, { q: 'What wholesale margin should a CPG brand target?', a: 'The right wholesale margin depends on category, but many CPG brands need enough room to cover product cost, packaging, freight, 3PL handling, deductions, trade spend, and overhead while still protecting cash contribution. If the model does not work after a 2-5% deduction reserve, it is too tight.' }, { q: 'How do chargebacks affect retail margin?', a: 'Chargebacks reduce the payment a brand receives from the retailer. A $20 wholesale item with a $0.60 deduction reserve has already lost 3 points of wholesale revenue before overhead.' }, { q: 'When does retail make sense for a DTC brand?', a: 'Retail makes sense when the brand has stable COGS, enough inventory funding, packaging that works at shelf and in distribution, a compliance-ready 3PL, and a margin model that still works after freight, terms, deductions, and promotions.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

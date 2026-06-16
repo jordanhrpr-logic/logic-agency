@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -532,6 +533,14 @@ export default function RetailReadinessBible() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What do I need to sell my product in retail stores?', a: 'To sell in retail stores you need: retail-compliant packaging (case packs, pallet configurations, compliant barcodes and labeling), a supply chain that can deliver on retailer timelines (typically 60-90 day replenishment cycles), inventory forecasting and safety stock planning, EDI/ASN capability for order processing, a cost model that maintains margin after retailer markup and trade spend, and compliance with the specific retailer\\u2019s vendor onboarding requirements. Most brands underestimate the operational infrastructure required and focus only on getting the buyer to say yes.' }, { q: 'How long does it take to launch a product in retail?', a: 'From retailer commitment to product on shelf typically takes 4-8 months. The timeline includes vendor onboarding and compliance setup (2-4 weeks), packaging development or adaptation for retail (6-10 weeks), production run (4-8 weeks), freight and logistics (2-6 weeks depending on domestic vs international), and distribution center receiving and store allocation (2-4 weeks). Brands that begin packaging and supply chain preparation before receiving a PO can compress this to 3-4 months.' }, { q: 'How do I forecast inventory for retail?', a: 'Retail inventory forecasting requires understanding the retailer\\u2019s initial order (pipeline fill), expected weekly sell-through velocity, replenishment cycle time (how often they reorder), your production and freight lead times, and seasonal patterns in your category. The critical calculation is safety stock: the buffer inventory you must maintain to avoid stockouts between reorders. A common formula is safety stock = (maximum daily sales \\u00d7 maximum lead time) minus (average daily sales \\u00d7 average lead time). Under-forecasting leads to stockouts and lost shelf space. Over-forecasting ties up cash in excess inventory.' }, { q: 'What is the difference between DTC and retail economics?', a: 'In DTC you capture the full retail price minus COGS and fulfillment. In retail, your revenue is the wholesale price (typically 40-55% of retail), minus trade spend (retailer fees, slotting, promotions averaging 10-25% of wholesale), minus retail-specific packaging and logistics costs. A product with 70% gross margin in DTC may have 25-40% gross margin through retail. Brands that don\\u2019t model retail economics before committing to a retailer often discover their margin doesn\\u2019t support the channel after they\\u2019ve already invested in packaging, inventory, and onboarding.' }, { q: 'What are the most common reasons brands fail at retail?', a: 'The most common retail failures are operational, not product-related: running out of stock and losing shelf placement, packaging that fails retailer compliance (triggering chargebacks), underestimating the cash required for inventory investment, not having supply chain infrastructure to meet replenishment timelines, and pricing that doesn\\u2019t sustain margin after wholesale and trade spend. Most of these are preventable with proper planning before the first PO ships.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

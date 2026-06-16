@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -394,6 +395,14 @@ export default function First90DaysInRetail() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'How long does it take to launch a CPG product in retail?', a: 'From a retailer saying yes to product on shelf typically takes 3-6 months. The first 30 days are vendor onboarding and packaging preparation. Days 30-60 are production, quality control, and logistics setup. Days 60-90 are shipping, receiving at the retailer\\u2019s distribution center, and store allocation. Most brands underestimate this timeline because they focus on the buyer meeting and don\\u2019t plan for the operational build that follows.' }, { q: 'What is the biggest surprise for brands launching in retail for the first time?', a: 'The cash outlay. Brands are used to DTC economics where customers pay at checkout. Retail requires investing heavily in inventory, packaging, freight, and compliance 3-5 months before the retailer pays you \\u2014 and retailers pay on Net 30-90 terms. A $200,000 initial retail order might require $80-120,000 in upfront investment that you won\\u2019t see revenue on for 5-8 months. The second biggest surprise is chargebacks \\u2014 financial penalties for packaging, labeling, or shipping errors that can range from $200 to $40,000 per violation.' }, { q: 'What should I do first after a retailer agrees to carry my product?', a: 'Immediately start three workstreams in parallel: vendor onboarding (EDI setup, insurance, compliance paperwork), packaging assessment (does your current packaging meet the retailer\\u2019s case pack, pallet, barcode, and labeling specs), and financial modeling (can your margin sustain wholesale pricing, trade spend, and chargebacks). Do not wait until the official PO arrives to begin \\u2014 the timeline starts the moment the buyer says yes, and most brands lose 2-4 critical weeks by waiting.' }, { q: 'What are the most common mistakes brands make in their first retail launch?', a: 'The five most common mistakes are: waiting for the official PO before starting preparation (costs you 2-4 weeks), not reading the routing guide in detail (leads to chargebacks on the first shipment), underestimating inventory investment (causes cash flow crises), not having a replenishment plan before the first order ships (leads to stockouts within 60 days), and treating retail packaging as a minor modification of DTC packaging (it\\u2019s a fundamentally different system requiring case packs, pallet configurations, and compliance specs).' }, { q: 'How much inventory do I need for my first retail order?', a: 'Your first order (pipeline fill) stocks the retailer\\u2019s distribution center and fills shelves across all locations. Calculate: units per store \\u00d7 number of stores + 20% DC buffer. For example, 500 stores \\u00d7 6 units per store = 3,000 on shelf + 600 buffer = 3,600 units. But you also need to immediately plan your second order \\u2014 production lead times mean you should place your reorder within 2-3 weeks of your first shipment to avoid a stockout gap.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

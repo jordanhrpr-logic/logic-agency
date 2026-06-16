@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -179,6 +180,14 @@ export default function Page() {
           <p className="pac-xlink">Pallet labels, carton dimensions, and case pack specs are among the most common chargeback triggers. <a href="https://www.logic-pac.com/guides/concept-to-shelf-timeline">Logic Pac&apos;s packaging development guide</a> covers retailer-compliant structural specs from the manufacturing side.</p>
 </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What are retail chargebacks?', a: 'Retail chargebacks are financial penalties that retailers subtract directly from your payment when a shipment violates their compliance requirements. They are automatic deductions, not invoices, and typically range from $100-$500+ per violation.' }, { q: 'How much do retail chargebacks cost CPG brands?', a: 'First-year brands commonly absorb 3-7% of their total retail revenue in preventable chargebacks. Well-prepared brands with compliance systems keep it under 1%.' }, { q: 'What causes most retail chargebacks?', a: 'The most common causes are late or missing ASN transmission, routing guide violations, pallet non-compliance, label errors, and late delivery. All are preventable with proper setup.' }, { q: 'How do you dispute a retail chargeback?', a: 'Most retailers have a dispute process in their vendor portal. Calculate the net recovery value (deduction minus time and documentation cost). Disputes under $200 are usually not worth the effort; disputes over $500 with clear documentation usually are.' }, { q: 'When should you absorb a chargeback vs. dispute it?', a: 'Absorb chargebacks when the recovery value is low, when the violation was your error, or when the dispute process is more expensive than the deduction. Dispute when there is clear documentation that the violation did not occur or the retailer made an error in applying the deduction.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -38,10 +39,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What's Next",
+      "name": "When should a CPG brand start diversifying its suppliers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vendor diversification isn't a one-time project. It's an operational discipline that evolves as your brand scales, enters new channels, and expands into new geographies. The brands that build diversification into their supply chain early — before a disruption forces their hand — spend less, recover faster, and negotiate from a stronger position. If your supply chain depends on a single supplier for any critical component, the clock is running on a disruption you can't predict. [Start a conversation](https://www.logicagencyinc.com/services?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=vendor_diversification_cta) with our team to evaluate your supplier risk and build a diversification plan that fits your scale and growth trajectory. *About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. He has managed supply chains across 15 countries and helped brands scale from DTC-only to Target, Walmart, Costco, and Sephora.*"
+        "text": "The trigger points are: revenue above $5M, SKU count above 20, entry into a retail channel, or any single component representing more than 30% of your product cost. Practically, if a supplier failure would delay a shipment by more than 4 weeks, you are single-source dependent and should be qualifying a backup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 80/20 dual-sourcing framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 80/20 framework means giving your primary supplier 80% of volume and your secondary supplier 20%. The secondary supplier stays active — meaning they receive real purchase orders, not just samples — so they maintain production readiness. This keeps the primary relationship strong while ensuring the backup can actually execute when needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does supplier diversification cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Secondary suppliers typically charge a 3–8% premium on the volume they receive because their production runs are smaller. That premium is the cost of supply chain insurance. Compare it to a single-source disruption: a missed retail launch can cost $80,000–$665,000+ in lost revenue and penalty fees. The insurance math is not close."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What components should you diversify first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prioritize components with lead times over 8 weeks, single-factory production, components representing more than 30% of product cost, and any item where quality variation would affect the consumer experience. For most CPG brands, primary packaging (bottles, jars, tubes) and secondary packaging (folding cartons, rigid boxes) are the highest-risk single-source dependencies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you qualify a secondary packaging supplier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Qualification requires three things: (1) a production sample run using your exact specs — not just a capability review; (2) a full review of lead time, MOQ, payment terms, and quality standards; (3) a small real purchase order so you verify execution, not just capability. A supplier that has only been sampled is not a qualified backup. You need a documented production run before you can call them ready."
       }
     }
   ]
@@ -347,6 +380,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What\'s Next', a: 'Vendor diversification isn\'t a one-time project. It\'s an operational discipline that evolves as your brand scales, enters new channels, and expands into new geographies. The brands that build diversification into their supply chain early — before a disruption forces their hand — spend less, recover faster, and negotiate from a stronger position. If your supply chain depends on a single supplier for any critical component, the clock is running on a disruption you can\'t predict. [Start a conversation](https://www.logicagencyinc.com/services?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=vendor_diversification_cta) with our team to evaluate your supplier risk and build a diversification plan that fits your scale and growth trajectory. *About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. He has managed supply chains across 15 countries and helped brands scale from DTC-only to Target, Walmart, Costco, and Sephora.*' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

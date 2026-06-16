@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -425,6 +426,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'When should a startup hire a VP of Operations?', a: 'A startup should hire a VP of Operations when operations work is permanent, daily, cross-functional, and large enough for one senior leader to own full-time. For many CPG brands, that happens after retail becomes a recurring channel.' }, { q: 'What revenue level supports a VP of Operations?', a: 'Many CPG brands start considering a VP of Operations around $20M-$50M in revenue. Brands below that range may still need senior operations help, but fractional support often makes more sense first.' }, { q: 'How much does a VP of Operations cost?', a: 'A senior VP of Operations can cost $220,000-$350,000 all-in. A complete operations function with support roles can reach $600,000-$830,000+ annually.' }, { q: 'What should a VP of Operations own?', a: 'A VP of Operations should own supplier performance, production planning, logistics, inventory, fulfillment, retail compliance, reporting, and the operating systems that connect those areas.' }, { q: 'What if we need operations help but are not ready to hire?', a: 'Use fractional operations, advisory support, or a focused project to stabilize the system first. That can define the eventual full-time role and reduce the risk of hiring into chaos. **Hire When the Role Is Clear** The right time to hire a VP of Operations is not the first time operations hurts. It is when the work is permanent, the scope is clear, and the business can support the role. Until then, build the system. Document the work. Reduce the chaos. Get senior operating support where the company actually needs it. If you are trying to decide whether to hire full-time or use fractional support first, our [services page](https://www.logicagencyinc.com/services?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=vp_ops_services_cta) explains how Logic Agency supports sourcing, packaging, logistics, inventory, and retail execution for scaling brands. If packaging and supplier issues are part of the decision, start with [How to Source Packaging Without Getting Burned](https://www.logicagencyinc.com/guides/packaging-sourcing?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=vp_ops_packaging_sourcing). **Author bio:** Jordan Harper is the founder of Logic Agency, a fractional supply chain operations partner for scaling consumer product brands. Logic helps founders build the operating capability they need before adding permanent overhead too early.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

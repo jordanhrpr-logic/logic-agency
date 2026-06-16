@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -193,11 +194,18 @@ export default function Page() {
             <div className="save-item"><div className="save-pct">Hire Full-Time</div><h4>Stable, permanent, clearly defined</h4><p>The work is consistent, the role is large enough for one person, and the business can absorb the cost without starving growth.</p></div>
           </div>
           <p>Many brands use a hybrid path: fractional support to build the operating system first, then hire into a cleaner role later. The fractional team defines the role, documents the systems, stabilizes vendors, and makes the eventual hire more successful.</p>
-        </div>
-      
           <p className="pac-xlink">For packaging-specific sourcing support — structural design, global manufacturing, MOQ negotiation — see how <a href="https://www.logic-pac.com/capabilities">Logic Pac handles custom packaging development</a> alongside the ops work.</p>
-</div>
+        </div>
+      </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What is fractional supply chain operations?', a: 'Fractional supply chain operations is an embedded operating model where a brand uses an outside team to manage sourcing, packaging, logistics, inventory, fulfillment, and retail execution without hiring a full in-house operations department.' }, { q: 'How much does fractional supply chain operations cost?', a: 'Most fractional supply chain retainers range from $30,000-$120,000 per year. A full in-house operations function can cost $600,000-$830,000+ per year once salary, benefits, recruiting, tools, and supporting roles are included.' }, { q: 'Is fractional operations the same as supply chain consulting?', a: 'No. Consulting usually diagnoses problems and recommends a plan. Fractional operations should own execution, manage vendors, build systems, and stay accountable for results.' }, { q: 'When should a CPG brand use a fractional operations team?', a: 'A CPG brand should consider fractional operations when it is growing SKUs, entering retail, managing multiple suppliers, struggling with inventory, or relying on the founder to handle operational problems directly.' }, { q: 'What should happen in the first 30 days with a fractional team?', a: 'The first 30 days should include an operational audit, vendor review, inventory and fulfillment assessment, cost baseline, quick-win identification, and a clear operating plan for the next 60-90 days.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

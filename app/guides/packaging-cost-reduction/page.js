@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -293,6 +294,14 @@ export default function PackagingCostReduction() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'How much can you save on packaging costs without reducing quality?', a: 'Most brands can find 15-30% savings through DIM weight optimization, material right-sizing, supplier consolidation, and landed cost analysis. The savings come from eliminating waste and inefficiency, not downgrading materials or brand experience. Common quick wins include right-sizing boxes to reduce DIM weight overages (often 20%+ shipping savings) and consolidating suppliers to remove markup stacking.' }, { q: 'What is DIM weight and why does it increase packaging costs?', a: 'DIM (dimensional) weight is a shipping pricing method that charges based on package volume rather than actual weight. Carriers calculate DIM weight by multiplying length x width x height and dividing by a DIM factor (usually 139 for domestic, 166 for international). If your DIM weight exceeds actual weight, you\'re paying for air. Oversized packaging is one of the most common and fixable cost drivers — right-sizing can reduce shipping costs by 20% or more.' }, { q: 'What is a packaging cost audit?', a: 'A packaging cost audit maps every component of your packaging (primary, secondary, tertiary, inserts, labels, tape) and calculates the true landed cost per unit — not just the supplier quote, but materials, tooling amortization, freight, DIM weight overage, damage rates, rework charges, and warehousing. Most brands only track unit cost from their supplier, which misses 30-50% of true packaging spend.' }, { q: 'Can you get premium packaging manufactured overseas at the same cost as domestic?', a: 'Yes, in many cases. Overseas manufacturing (particularly in Asia) can produce higher-quality packaging at a lower unit cost, and when freight is factored in, the total landed cost can match or beat domestic pricing. The key is running a full landed cost comparison that includes tooling, production, ocean freight, customs, and drayage — not just comparing unit prices. Logic Agency achieved this for Audio Enhancement, upgrading to premium overseas packaging at $0 additional landed cost.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
