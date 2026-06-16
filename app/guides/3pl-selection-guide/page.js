@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -189,6 +190,14 @@ export default function Page() {
           <p className="pac-xlink">Packaging design directly affects 3PL efficiency — carton dimensions, pallet configurations, and master carton specs all touch warehouse workflows. See <a href="https://www.logic-pac.com/capabilities">Logic Pac&apos;s packaging capabilities</a> for how packaging engineering feeds into logistics planning.</p>
 </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What should I look for in a 3PL for a CPG brand?', a: 'Evaluate channel fit (DTC vs. retail), technology (WMS capabilities, real-time inventory, ASN filing), geography, retail compliance experience with your target retailers, pricing structure, and value-added services. The cheapest fulfillment quote can become expensive if it creates chargebacks, inventory errors, or poor customer experience.' }, { q: 'How long does it take to switch 3PLs?', a: 'Switching 3PLs takes 60-90 days minimum for a smooth transition. That includes integration setup, inventory transfer, parallel operation, and compliance testing with retail trading partners.' }, { q: 'What is the difference between DTC and retail fulfillment?', a: 'DTC fulfillment picks individual orders. Retail fulfillment builds case packs, generates compliant pallet labels, files advance shipping notices (ASN) to retailer portals, and adheres to routing guide requirements. Not all DTC 3PLs have retail capability.' }, { q: 'What inventory accuracy rate should I require from a 3PL?', a: 'Require at least 99.5% inventory accuracy. Modern 3PLs with proper WMS systems should be able to demonstrate this. Anything lower will create consistent discrepancies between system counts and actual inventory.' }, { q: 'What is a 3PL minimum monthly fee?', a: 'Most 3PLs charge a minimum monthly fee regardless of your volume. This is the floor you pay even in a slow month. Understand the break-even order volume before signing, especially for brands with seasonal demand.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

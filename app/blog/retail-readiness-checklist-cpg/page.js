@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -29,6 +30,53 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
     { "@type": "ListItem", "position": 3, "name": "Retail Readiness Checklist: Everything You Need Before the First PO", "item": "https://logicagencyinc.com/blog/retail-readiness-checklist-cpg" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a retail readiness checklist for CPG brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A retail readiness checklist covers six categories: packaging compliance (case packs, barcodes, pallet specs), EDI and technology setup (850/856/810 documents, ASN automation), inventory planning (safety stock, reorder points), logistics configuration (3PL, routing guide), documentation (vendor onboarding, insurance), and financial preparation (working capital, chargeback reserve). A brand that completes all six before their first PO avoids the $50,000–$200,000 in first-year mistakes that under-prepared brands absorb."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to become retail-ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a dedicated operations team, retail readiness typically takes 60–90 days from commitment to first shipment. Without operational support, most brands need 4–6 months. The critical path items are EDI setup (4–8 weeks), packaging compliance review and revision (4–10 weeks), and vendor onboarding (2–4 weeks). These workstreams can run in parallel, not sequentially."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the most common retail compliance failures?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The top three are: (1) case pack errors — wrong count, wrong dimensions, wrong labeling; (2) late or missing ASNs — most retailers require transmission within 2 hours of pickup; (3) routing guide violations — using unapproved carriers or delivery methods. These three categories account for the majority of first-shipment chargebacks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should a CPG brand budget for first-year retail chargebacks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Budget 2–5% of first-year retail revenue for deductions and chargebacks, even with strong compliance. Well-prepared brands typically see 1–3% in practice. First-year brands without operational support commonly absorb more. The reserve should decrease as your operation proves itself over 2–3 reorder cycles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is EDI and does every retailer require it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EDI (Electronic Data Interchange) is the system retailers use to transmit purchase orders, receive advance ship notices, and process invoices electronically. Most mid-to-large retailers require EDI — including Target, Walmart, Whole Foods, Kroger, Ulta, and Sephora. Setup takes 4–8 weeks and costs $500–$2,000 per trading partner plus monthly fees."
+      }
+    }
   ]
 };
 
@@ -64,6 +112,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <Nav variant="guide" />
@@ -392,6 +444,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What is a retail readiness checklist for CPG brands?', a: 'A retail readiness checklist covers six categories: packaging compliance (case packs, barcodes, pallet specs), EDI and technology setup (850/856/810 documents, ASN automation), inventory planning (safety stock, reorder points), logistics configuration (3PL, routing guide), documentation (vendor onboarding, insurance), and financial preparation (working capital, chargeback reserve). A brand that completes all six before their first PO avoids the $50,000–$200,000 in first-year mistakes that under-prepared brands absorb.' }, { q: 'How long does it take to become retail-ready?', a: 'With a dedicated operations team, retail readiness typically takes 60–90 days from commitment to first shipment. Without operational support, most brands need 4–6 months. The critical path items are EDI setup (4–8 weeks), packaging compliance review and revision (4–10 weeks), and vendor onboarding (2–4 weeks). These workstreams can run in parallel, not sequentially.' }, { q: 'What are the most common retail compliance failures?', a: 'The top three are: (1) case pack errors — wrong count, wrong dimensions, wrong labeling; (2) late or missing ASNs — most retailers require transmission within 2 hours of pickup; (3) routing guide violations — using unapproved carriers or delivery methods. These three categories account for the majority of first-shipment chargebacks.' }, { q: 'How much should a CPG brand budget for first-year retail chargebacks?', a: 'Budget 2–5% of first-year retail revenue for deductions and chargebacks, even with strong compliance. Well-prepared brands typically see 1–3% in practice. First-year brands without operational support commonly absorb more. The reserve should decrease as your operation proves itself over 2–3 reorder cycles.' }, { q: 'What is EDI and does every retailer require it?', a: 'EDI (Electronic Data Interchange) is the system retailers use to transmit purchase orders, receive advance ship notices, and process invoices electronically. Most mid-to-large retailers require EDI — including Target, Walmart, Whole Foods, Kroger, Ulta, and Sephora. Setup takes 4–8 weeks and costs $500–$2,000 per trading partner plus monthly fees.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

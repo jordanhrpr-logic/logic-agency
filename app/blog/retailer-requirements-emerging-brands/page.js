@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -29,6 +30,53 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
     { "@type": "ListItem", "position": 3, "name": "What Retailers Actually Want from Emerging Brands", "item": "https://logicagencyinc.com/blog/retailer-requirements-emerging-brands" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do retail buyers look for in emerging brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retail buyers evaluate six things: category fit (does this brand fit a gap in the planogram?), margin structure (can the retailer make their required margin?), demand proof (is there evidence customers want this product?), operational readiness (can the brand ship on time, every time?), marketing support (will the brand drive consumers to the shelf?), and compliance documentation (vendor paperwork, insurance, EDI). Brands that get POs address all six. Brands that only address one or two — usually product and brand story — often don't."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What margin do retailers require from emerging brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margin requirements vary by category and channel. Beauty and personal care typically require 50–55% retailer margin, meaning the brand's wholesale price is 45–50% of MSRP. Natural food and beverage typically requires 35–45% retailer margin. Mass market retailers (Target, Walmart) require higher margins than specialty retailers (Whole Foods, Ulta). These numbers compress further when distributor fees (3–7%) or broker fees are involved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What proof of demand do retailers want to see?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retailers want to see sell-through data from existing channels. DTC revenue, Amazon BSR rank, and velocity data from smaller retail accounts all count. Awards, press coverage, and social following are supporting signals — not primary evidence. The strongest proof is documented sell-through velocity: how many units per week per location in a comparable retail environment. If you have this, lead with it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you get a product into a major retailer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The path is: get in front of the right buyer with the right category pitch, have strong proof of demand, pass the margin and compliance review, and be operationally ready to deliver. Practically, this means having a retail-compliant product, proven demand data, a 3PL with retail distribution capability, EDI capability, and a product margin that works at wholesale pricing. Most brands that fail to get shelf space either lack demand proof or aren't operationally ready to deliver at retail scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does retail vendor onboarding take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retailer vendor onboarding typically takes 4–12 weeks after a buyer says yes. This includes completing vendor paperwork, insurance and liability documentation, EDI setup and testing, compliance review of packaging and labeling, and item setup in the retailer's system. Starting this process before the PO is signed — not after — compresses the timeline and reduces the risk of compliance-related delays."
+      }
+    }
   ]
 };
 
@@ -64,6 +112,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <Nav variant="guide" />
@@ -370,6 +422,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What do retail buyers look for in emerging brands?', a: 'Retail buyers evaluate six things: category fit (does this brand fit a gap in the planogram?), margin structure (can the retailer make their required margin?), demand proof (is there evidence customers want this product?), operational readiness (can the brand ship on time, every time?), marketing support (will the brand drive consumers to the shelf?), and compliance documentation (vendor paperwork, insurance, EDI). Brands that get POs address all six. Brands that only address one or two — usually product and brand story — often don\'t.' }, { q: 'What margin do retailers require from emerging brands?', a: 'Margin requirements vary by category and channel. Beauty and personal care typically require 50–55% retailer margin, meaning the brand\'s wholesale price is 45–50% of MSRP. Natural food and beverage typically requires 35–45% retailer margin. Mass market retailers (Target, Walmart) require higher margins than specialty retailers (Whole Foods, Ulta). These numbers compress further when distributor fees (3–7%) or broker fees are involved.' }, { q: 'What proof of demand do retailers want to see?', a: 'Retailers want to see sell-through data from existing channels. DTC revenue, Amazon BSR rank, and velocity data from smaller retail accounts all count. Awards, press coverage, and social following are supporting signals — not primary evidence. The strongest proof is documented sell-through velocity: how many units per week per location in a comparable retail environment. If you have this, lead with it.' }, { q: 'How do you get a product into a major retailer?', a: 'The path is: get in front of the right buyer with the right category pitch, have strong proof of demand, pass the margin and compliance review, and be operationally ready to deliver. Practically, this means having a retail-compliant product, proven demand data, a 3PL with retail distribution capability, EDI capability, and a product margin that works at wholesale pricing. Most brands that fail to get shelf space either lack demand proof or aren\'t operationally ready to deliver at retail scale.' }, { q: 'How long does retail vendor onboarding take?', a: 'Retailer vendor onboarding typically takes 4–12 weeks after a buyer says yes. This includes completing vendor paperwork, insurance and liability documentation, EDI setup and testing, compliance review of packaging and labeling, and item setup in the retailer\'s system. Starting this process before the PO is signed — not after — compresses the timeline and reduces the risk of compliance-related delays.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

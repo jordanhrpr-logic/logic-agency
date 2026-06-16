@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -180,6 +181,14 @@ export default function Page() {
           <p className="pac-xlink">Retail-ready packaging — case packs, pallet specs, compliant labeling — is the most common first-order operational surprise. See <a href="https://www.logic-pac.com/guides/concept-to-shelf-timeline">Logic Pac&apos;s concept-to-shelf timeline</a> for what custom packaging development requires before your first retailer shipment.</p>
 </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'How long does the DTC to retail supply chain transition take?', a: 'Getting retail-ready typically takes 3-6 months of focused operational work. That includes packaging redesign for retail specs, EDI setup, 3PL evaluation, and vendor compliance infrastructure. Brands that compress this timeline generate chargebacks and lose shelf placement faster than they earn it.' }, { q: 'What does retail packaging compliance require?', a: 'Retailers require specific case pack configurations, pallet stacking heights, barcode placement, label specs, and case label formats. These vary by retailer and must be confirmed against each retailer\'s vendor compliance guide before production runs.' }, { q: 'What is a vendor compliance guide?', a: 'A vendor compliance guide is a document published by each major retailer that specifies their shipping, packaging, labeling, EDI, and logistics requirements. Violations generate automatic financial penalties called chargebacks.' }, { q: 'What does DTC to retail supply chain transition cost?', a: 'The cost of getting retail-ready (packaging updates, EDI setup, 3PL transition, compliance infrastructure) is typically 10-30x less than the cost of a failed first season from chargebacks, lost shelf placement, and emergency fixes.' }, { q: 'Can a DTC brand use the same 3PL for retail?', a: 'Maybe, but confirm before assuming. Retail B2B fulfillment requires case pack building, compliant pallet labeling, ASN filing, and carrier routing compliance that many DTC-focused 3PLs are not configured for.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">

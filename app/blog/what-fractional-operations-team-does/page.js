@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -572,6 +573,14 @@ export default function Page() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What does a fractional operations team do for a CPG brand?', a: 'A fractional operations team manages sourcing, packaging, logistics, inventory, fulfillment, retail compliance, vendor communication, and operating systems without requiring the brand to hire a full in-house team.' }, { q: 'What happens in the first 30 days of a fractional operations engagement?', a: 'The first 30 days usually include an operations audit, vendor review, landed cost baseline, inventory assessment, fulfillment review, compliance gap check, and quick-win plan.' }, { q: 'Does a fractional operations team replace internal staff?', a: 'Not always. It can replace missing operations capability temporarily, support a lean internal team, or build the systems a future full-time hire will inherit.' }, { q: 'How is fractional operations different from consulting?', a: 'Consulting usually recommends. Fractional operations executes. The team should manage vendors, coordinate projects, fix systems, and stay accountable to operating outcomes.' }, { q: 'What should stay in-house?', a: 'Product vision, brand standards, budget approvals, channel strategy, and final decisions should stay with the brand. The fractional team should own operating execution and reporting. **The Work Should Be Concrete** The easiest way to evaluate fractional operations is simple: can the partner tell you exactly what they do in the first 30 days? If the answer is vague, the work will be vague. You should hear specifics. Vendor audit. Inventory baseline. Packaging cost model. 3PL review. Retail compliance map. Reporting cadence. Quick wins. Ownership. That is what separates operations from theater. Logic Agency works with scaling consumer product brands that need the capability of an operations team before they are ready to build the full function in-house. See how we support sourcing, packaging, logistics, fulfillment, and retail execution on our [services page](https://www.logicagencyinc.com/services?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fractional_team_services_cta). For a deeper look at how packaging becomes part of the operating system, start with [Building a Packaging System That Scales](https://www.logicagencyinc.com/guides/packaging-system-that-scales?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=fractional_team_packaging_system). **Author bio:** Jordan Harper is the founder of Logic Agency, a fractional supply chain operations partner for scaling consumer product brands. Logic helps brands build the operating systems behind sourcing, packaging, fulfillment, inventory, and retail growth.' }]} />
+        </div>
+      </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">

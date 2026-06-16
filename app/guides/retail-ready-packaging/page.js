@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import EmailButton from '@/components/EmailButton';
+import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -251,6 +252,14 @@ export default function RetailReadyPackaging() {
         </div>
       </div>
 
+      
+      {/* FAQ */}
+      <section className="guide-faq-section">
+        <div className="guide-faq-inner">
+          <h2>Frequently Asked Questions</h2>
+          <GuideFaqAccordion items={[{ q: 'What does retail-ready packaging mean?', a: 'Retail-ready packaging is packaging that meets a specific retailer\'s compliance requirements for sale in their stores. This includes correct case pack configurations, pallet specifications, UPC/barcode placement, labeling requirements, and structural durability for retail supply chain handling. Requirements vary by retailer.' }, { q: 'How long does it take to get packaging retail-ready?', a: 'The full timeline from design to delivery is typically 14-22 weeks: 3-4 weeks for structural design and prototyping, 2-3 weeks for supplier sourcing, 4-8 weeks for production, and 4-6 weeks for ocean freight if sourcing internationally. Brands should start packaging development before receiving a PO, not after.' }, { q: 'What are common retailer packaging chargebacks?', a: 'Common chargebacks include incorrect case pack quantities, wrong pallet configurations, missing or incorrect UPC barcodes, non-compliant labeling, late shipments due to packaging delays, and packaging that doesn\'t survive retail distribution. Chargebacks typically range from $200 to $10,000+ per violation depending on the retailer.' }, { q: 'What is the difference between DTC packaging and retail packaging?', a: 'DTC packaging ships one unit directly to a consumer and prioritizes unboxing experience. Retail packaging must survive a multi-stage supply chain (warehouse to distribution center to store shelf), fit into standardized case packs and pallet configurations, include retail-compliant barcodes and labeling, and compete visually on shelf alongside competitors. Most DTC packaging fails retail requirements on structural durability, case pack fit, and barcode compliance.' }]} />
+        </div>
+      </section>
       <section className="cta-band gd">
         <div className="cta-inner">
           <h2>Staring at a retail deadline and your packaging <span className="o">isn&apos;t ready?</span></h2>
