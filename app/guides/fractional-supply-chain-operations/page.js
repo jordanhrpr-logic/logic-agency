@@ -212,7 +212,7 @@ export default function Page() {
           <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
-            <EmailButton subject="Fractional Supply Chain Operations for CPG Brands — Let&apos;s Talk" className="bt bo">Start a Conversation &rarr;</EmailButton>
+            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
           <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>

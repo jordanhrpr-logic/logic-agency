@@ -393,7 +393,7 @@ export default function Page() {
         <div className="cta-band-inner">
           <h2>Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
-          <EmailButton className="bo" label="Book a Call" />
+          <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>
       </section>
 

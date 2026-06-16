@@ -415,7 +415,7 @@ export default function Page() {
 
           <p>Getting into retail is an operational challenge as much as a brand challenge. We&apos;ve helped brands prepare for and navigate the retailer onboarding process &mdash; from buyer pitch through first PO and sustained shelf performance. Our fractional operations model gives emerging brands access to 20+ years of retail experience and <a href="/guides/retail-ready-packaging">retail-ready packaging</a> capabilities at $30&ndash;120K/yr &mdash; a fraction of the $600&ndash;830K cost of building it in-house.</p>
 
-          <p><a href="/contact">Start a Conversation →</a></p>
+          <p><a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a></p>
 
           <p><em>About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. With 20+ years of retail and eCommerce experience and manufacturing relationships in 15+ countries, he&apos;s helped brands like Epicutis achieve 7x SKU growth (3 to 21+ SKUs) while reducing costs 15% and scaling to 1M+ units/year.</em></p>
 
@@ -435,7 +435,7 @@ export default function Page() {
         <div className="cta-band-inner">
           <h2>Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
-          <EmailButton className="bo" label="Book a Call" />
+          <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>
       </section>
 

@@ -437,7 +437,7 @@ export default function Page() {
 
           <p>If you&apos;re preparing for your first retail launch &mdash; or recovering from a rough first season &mdash; we&apos;ve helped brands navigate this process from pre-PO through sustained retail performance. Our fractional model means you get 20+ years of retail operations experience without the $600K+ overhead of building it in-house.</p>
 
-          <p><a href="/contact">Start a Conversation →</a></p>
+          <p><a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a></p>
 
           <p><em>About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. With 20+ years of retail and eCommerce experience and manufacturing relationships in 15+ countries, he&apos;s helped brands like Epicutis scale from 3 to 21+ SKUs while reducing costs 15%.</em></p>
 
@@ -457,7 +457,7 @@ export default function Page() {
         <div className="cta-band-inner">
           <h2>Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
-          <EmailButton className="bo" label="Book a Call" />
+          <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>
       </section>
 
