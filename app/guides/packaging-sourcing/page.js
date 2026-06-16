@@ -89,6 +89,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Source Packaging Without Getting Burned",
+      "item": "https://logicagencyinc.com/guides/packaging-sourcing"
+    }
+  ]
+};
 export default function PackagingSourcingGuide() {
   return (
     <>
@@ -100,17 +124,22 @@ export default function PackagingSourcingGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <Nav variant="guide" />
 
       {/* HERO */}
       <section className="a-hero gl">
         <div className="a-hero-inner">
-          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
+          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>How to Source Packaging <span className="o">Without Getting Burned</span></h1>
           <p className="a-lede">The internet will give you a thousand packaging suppliers. What it won&apos;t give you is the framework for choosing the right one &mdash; or knowing whether you&apos;re talking to a manufacturer, a broker, or a trading company marking up someone else&apos;s factory. Here&apos;s how sourcing actually works after 20 years and 15+ countries of doing it.</p>
           <div className="a-meta">
-            <span><strong>Logic Agency Inc.</strong></span>
+            <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated May 2026</span>
             <span>16 min read</span>
             <span>Guides</span>
           </div>

@@ -83,6 +83,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fractional Supply Chain Operations: What It Is and When It Works",
+      "item": "https://logicagencyinc.com/guides/fractional-supply-chain-operations"
+    }
+  ]
+};
 export default function Page() {
   return (
     <>
@@ -93,6 +117,10 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Nav variant="guide" />
@@ -105,6 +133,7 @@ export default function Page() {
           <p className="a-lede">Fractional supply chain operations means using an embedded team to manage sourcing, packaging, logistics, fulfillment, inventory, and retail execution without hiring a $600K–$830K in-house department. Here’s what the model actually covers, what it costs, and when it beats a full-time hire.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated Jun 2026</span>
             <span>12 min read</span>
             <span>Guides</span>
           </div>
@@ -165,7 +194,9 @@ export default function Page() {
           </div>
           <p>Many brands use a hybrid path: fractional support to build the operating system first, then hire into a cleaner role later. The fractional team defines the role, documents the systems, stabilizes vendors, and makes the eventual hire more successful.</p>
         </div>
-      </div>
+      
+          <p className="pac-xlink">For packaging-specific sourcing support — structural design, global manufacturing, MOQ negotiation — see how <a href="https://www.logic-pac.com/capabilities">Logic Pac handles custom packaging development</a> alongside the ops work.</p>
+</div>
 
       {/* CTA */}
       <section className="cta-band gd">

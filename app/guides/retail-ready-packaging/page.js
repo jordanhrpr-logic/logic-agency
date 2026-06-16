@@ -60,6 +60,30 @@ export const metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Logic Agency",
+      "item": "https://logicagencyinc.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://logicagencyinc.com/guides"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Getting Your Packaging Retail-Ready",
+      "item": "https://logicagencyinc.com/guides/retail-ready-packaging"
+    }
+  ]
+};
 export default function RetailReadyPackaging() {
   return (
     <>
@@ -70,11 +94,12 @@ export default function RetailReadyPackaging() {
 
       <section className="a-hero gl">
         <div className="a-hero-inner">
-          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; Guides</div>
+          <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Getting Your Packaging <span className="o">Retail-Ready</span></h1>
           <p className="a-lede">You just landed a retail opportunity. Maybe it&apos;s a regional chain, maybe it&apos;s Target. Either way, you have 60&ndash;90 days to figure out packaging specs you&apos;ve never dealt with before. Your DTC packaging won&apos;t work. Here&apos;s what you actually need to know.</p>
           <div className="a-meta">
-            <span><strong>Logic Agency Inc.</strong></span>
+            <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
+            <span>Updated May 2026</span>
             <span>15 min read</span>
             <span>Guides</span>
           </div>
