@@ -1,6 +1,5 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
-import EmailButton from '@/components/EmailButton';
 
 const collectionSchema = {
   "@context": "https://schema.org",
@@ -21,6 +20,36 @@ export const metadata = {
   alternates: { canonical: 'https://logicagencyinc.com/blog' },
 };
 
+const posts = [
+  { href: '/blog/retail-margin-compression-dtc-wholesale', img: '/images/port-launch.jpg', alt: 'Retail margin economics for consumer brands', tag: 'Economics', time: '10 min read', title: 'DTC vs Retail Margins: What Founders Discover After the First PO', desc: 'A brand healthy at 65–70% DTC gross margin can land at 20–40% contribution margin in retail. Here’s the full cost stack — and how to model it before you say yes to a buyer.' },
+  { href: '/blog/how-to-get-products-into-retail-stores', img: '/images/port-retail.jpg', alt: 'Getting consumer products into Target, Walmart, and Costco', tag: 'Retail Entry', time: '14 min read', title: 'How to Get Your Products Into Target, Walmart, and Costco', desc: 'Getting products into retail stores takes 12–18 months. The brands that make it through prepare operations before the pitch, not after the buyer says yes.' },
+  { href: '/blog/dtc-to-retail-supply-chain', img: '/images/port-skincare.jpg', alt: 'DTC to retail supply chain transition for CPG brands', tag: 'Supply Chain', time: '12 min read', title: 'DTC to Retail Supply Chain: What Most Brands Get Wrong', desc: 'DTC supply chains and retail supply chains are fundamentally different operating architectures. The 5 systems every brand needs before signing a retail PO.' },
+  { href: '/blog/dtc-to-retail-transition-checklist', img: '/images/haldirams.jpg', alt: '60-point DTC to retail transition checklist for CPG brands', tag: 'Retail Launch', time: '15 min read', title: 'The Complete DTC-to-Retail Transition Checklist (60-Point Pre-PO Guide)', desc: 'Six operational categories: GS1 setup, EDI, case packs, routing guide compliance, wholesale margins, and inventory planning. Brands that miss these absorb $50K–$200K in first-year mistakes.' },
+  { href: '/blog/first-90-days-retail-operations-playbook', img: '/images/og-first-90-days-in-retail.jpg', alt: 'First 90 days in retail operations playbook', tag: 'Retail Operations', time: '13 min read', title: 'The First 90 Days in Retail: An Operations Playbook', desc: 'The first 90 days determine whether you earn a reorder or create operational noise. A week-by-week playbook for compliance, shipping, sell-through, and replenishment.' },
+  { href: '/blog/retailer-requirements-emerging-brands', img: '/images/port-us-retail.jpg', alt: 'What retail buyers actually want from emerging brands', tag: 'Retail Launch', time: '11 min read', title: 'What Retailers Actually Want from Emerging Brands', desc: 'Retail buyers evaluate category fit, margin structure, velocity proof, operational readiness, and compliance documentation before placing a first PO.' },
+  { href: '/blog/retail-readiness-checklist-cpg', img: '/images/haldirams.jpg', alt: 'Retail readiness checklist for CPG brands', tag: 'Retail Launch', time: '12 min read', title: 'Retail Readiness Checklist: Everything You Need Before the First PO', desc: 'Six operational pillars covering packaging, EDI, inventory, logistics, documentation, and financials. Brands that skip steps absorb $50,000–$200,000 in first-year mistakes.' },
+  { href: '/blog/routing-guide-compliance-retail', img: '/images/port-retail.jpg', alt: 'Retail routing guide compliance for CPG brands', tag: 'Compliance', time: '10 min read', title: 'Retail Routing Guide Compliance: What Every Brand Gets Wrong', desc: 'Routing guide compliance means shipping exactly the way a retailer tells you to ship. Most brands get it wrong because nobody reads the full guide before the first PO moves.' },
+  { href: '/blog/edi-setup-small-brands', img: '/images/port-sourcing.jpg', alt: 'EDI setup guide for small consumer brands entering retail', tag: 'EDI & Tech', time: '11 min read', title: 'EDI Setup for Small Brands: A Plain-English Guide', desc: 'EDI setup costs $150–$500/month and takes 4–8 weeks. Here’s what the four core transactions do, how to avoid the most expensive mistakes, and which providers work best for small brands.' },
+  { href: '/blog/edi-compliance-consumer-brands', img: '/images/port-launch.jpg', alt: 'EDI compliance management for consumer brands after retail go-live', tag: 'EDI & Tech', time: '14 min read', title: 'EDI Compliance: Maintaining Your Retailer Scorecard After Go-Live', desc: 'Most brands get the initial setup right. Where compliance breaks down is months 3–12, when oversight drops and the retailer’s compliance team is watching more closely than the brand is.' },
+  { href: '/blog/retail-chargebacks-cpg-brands', img: '/images/port-retail.jpg', alt: 'Retail chargebacks explained for CPG brands', tag: 'Compliance', time: '12 min read', title: 'Retail Chargebacks Explained: The CPG Brand’s Guide', desc: 'Chargebacks are penalty deductions retailers subtract directly from your payment. First-year brands typically absorb an estimated 3–7% of retail revenue in preventable deductions.' },
+  { href: '/blog/retail-chargebacks-prevention-guide', img: '/images/og-retail-readiness.jpg', alt: 'Pre-shipment audit to prevent retail chargebacks', tag: 'Compliance', time: '15 min read', title: 'Retail Chargeback Prevention: The Pre-Shipment Audit Every CPG Brand Needs', desc: 'The most expensive chargebacks are the ones you paid for twice — once for the violation, once to fix the process. Prevention is cheaper than response. By a significant margin.' },
+  { href: '/blog/retail-inventory-planning-90-day', img: '/images/port-sourcing.jpg', alt: 'Retail inventory planning for CPG brands first 90 days', tag: 'Inventory', time: '11 min read', title: 'Retail Inventory Planning: Building the 90-Day Forecast Before Your First PO', desc: 'Retail inventory planning means building a 90-day model before the first PO ships: pipeline fill, safety stock, reorder trigger, and production lead time. Month one looks fine. Months 4–6 are where weak planning shows up.' },
+  { href: '/blog/inventory-management-beauty-brands', img: '/images/port-skincare.jpg', alt: 'Inventory management for beauty and skincare brands', tag: 'Inventory', time: '11 min read', title: 'Inventory Management for Beauty Brands', desc: 'Beauty inventory is harder than most CPG categories — shade proliferation, expiration dates, 12–16 week lead times, and multi-channel demand. Here’s the framework that actually works.' },
+  { href: '/blog/how-to-switch-3pl-without-losing-retail', img: '/images/port-us-retail.jpg', alt: 'How to switch 3PL providers without losing retail accounts', tag: 'Logistics', time: '12 min read', title: 'How to Switch 3PLs Without Losing a Retail Account', desc: 'Switching 3PLs is an operating-system migration, not a vendor change. The mistake is moving inventory before proving the order flow. Here’s the parallel-run transition plan.' },
+  { href: '/blog/operations-packaging-scaling-brands', img: '/images/port-launch.jpg', alt: 'How packaging and supply chain operations work together to scale brands', tag: 'Operations', time: '11 min read', title: 'How Operations and Packaging Work Together to Scale a Brand', desc: 'Case pack configuration affects freight cost. Material selection affects returns. Packaging dimensions affect warehouse efficiency. Brands managing these in silos typically absorb significant hidden costs.' },
+  { href: '/blog/packaging-partner-vs-vendor', img: '/images/port-sourcing.jpg', alt: 'Packaging partner vs packaging vendor comparison for CPG brands', tag: 'Packaging', time: '11 min read', title: 'Packaging Partner vs. Packaging Vendor: Why the Distinction Determines Your Margins', desc: 'A vendor produces what you spec. A partner shapes the decisions before the spec exists. The vendor model works for commodity packaging. The partner model is the difference between hitting your retail launch and missing it.' },
+  { href: '/blog/reduce-packaging-costs-without-sacrificing-quality', img: '/images/epicutis.jpg', alt: 'How to reduce packaging costs without downgrading brand quality', tag: 'Packaging', time: '11 min read', title: 'How to Reduce Packaging Costs Without Sacrificing Brand Quality', desc: 'Seven proven levers for reducing CPG packaging costs without downgrading the brand experience — DIM weight, finish engineering, vendor consolidation, and more. Artilect achieved 20% cost reduction without consumer-facing changes.' },
+  { href: '/blog/packaging-cost-per-unit-benchmarks', img: '/images/port-skincare.jpg', alt: 'Packaging cost per unit benchmarks by product category', tag: 'Packaging', time: '11 min read', title: 'Packaging Cost Per Unit Benchmarks by Category', desc: 'Beauty and skincare: $1.50–$8.00 per unit. Food and beverage: $0.30–$3.00. Supplements: $0.80–$4.00. Consumer electronics: $2.00–$12.00. Real ranges by category with COGS guidance.' },
+  { href: '/blog/global-packaging-sourcing', img: '/images/port-sourcing.jpg', alt: 'How to source packaging overseas internationally for CPG brands', tag: 'Sourcing', time: '17 min read', title: 'How to Source Packaging Overseas: A Practical Guide', desc: 'International packaging typically runs an estimated 30–60% less per unit than domestic equivalents. The full sourcing cycle runs 16–24 weeks. Here’s every step from RFQ to customs clearance.' },
+  { href: '/blog/vendor-diversification-strategy-cpg-brands', img: '/images/port-us-retail.jpg', alt: 'Vendor diversification strategy for consumer product brands', tag: 'Supply Chain', time: '10 min read', title: 'Vendor Diversification: When and How to Stop Single-Sourcing', desc: 'Single-source supply chains break. When they do, the cost is a missed retail launch or a stockout on your hero SKU. The 80/20 dual-sourcing framework for CPG brands.' },
+  { href: '/blog/supply-chain-audit-what-it-finds', img: '/images/port-launch.jpg', alt: 'What a supply chain audit finds for CPG brands', tag: 'Operations', time: '12 min read', title: 'What a Supply Chain Audit Actually Finds', desc: 'A supply chain audit identifies where growth is being slowed by hidden cost, supplier risk, inventory gaps, and freight waste. At Logic Agency, it starts the same way every time: show us the last 12 months of landed cost by SKU.' },
+  { href: '/blog/supply-chain-technology-stack', img: '/images/port-sourcing.jpg', alt: 'Supply chain technology stack for scaling CPG brands', tag: 'Technology', time: '14 min read', title: 'The Supply Chain Tech Stack for Scaling CPG Brands', desc: 'Five systems cover roughly 90% of what a $5–20M CPG brand needs: OMS, WMS, EDI provider, forecasting tool, supplier portal. Each has a clear revenue trigger. Get the sequence right and you build operational leverage.' },
+  { href: '/blog/fractional-supply-chain-operations', img: '/images/epicutis.jpg', alt: 'Fractional supply chain operations for CPG brands', tag: 'Fractional Ops', time: '13 min read', title: 'The Case for Fractional Supply Chain Operations', desc: 'Fractional supply chain operations means using an embedded team to manage sourcing, packaging, logistics, and retail execution without hiring the full in-house department. $30K–$120K/year vs. $600K–$830K.' },
+  { href: '/blog/fractional-coo-vs-full-time-hire', img: '/images/port-launch.jpg', alt: 'Fractional COO vs full-time hire for consumer product brands', tag: 'Fractional Ops', time: '12 min read', title: 'Fractional COO vs. Full-Time Hire: A Real Cost Comparison', desc: 'A fractional COO for CPG brands usually costs $30K–$120K per year, while a full in-house operations function can cost $600K–$830K+. The right choice depends on the actual work, not the job title.' },
+  { href: '/blog/what-fractional-operations-team-does', img: '/images/audio-enhancement.jpg', alt: 'What a fractional operations team does for consumer brands week by week', tag: 'Fractional Ops', time: '10 min read', title: 'What a Fractional Operations Team Actually Does', desc: 'Most founders hear "fractional ops" and ask: what do they actually do every week? Here’s the practical answer — audit, system-build, vendor management, and reporting without the $600K department.' },
+  { href: '/blog/when-to-hire-vp-operations-cpg', img: '/images/gesine.jpg', alt: 'When to hire VP of operations for a consumer product brand', tag: 'Leadership', time: '10 min read', title: 'When Should a CPG Brand Hire a VP of Operations?', desc: 'A CPG brand should hire a VP of Operations when the work is permanent, cross-functional, and large enough for one senior leader to own every day. Most brands aren’t ready the first time they feel operational pain.' },
+];
+
 export default function BlogIndex() {
   return (
     <>
@@ -35,75 +64,24 @@ export default function BlogIndex() {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--o)', marginBottom: '16px' }}>Logic Agency</p>
           <h1 style={{ fontSize: 'clamp(32px,5vw,52px)', fontWeight: 900, lineHeight: 1.05, letterSpacing: '-2px', color: '#fff', margin: '0 0 20px' }}>Operations Insights</h1>
-          <p style={{ fontSize: '18px', lineHeight: 1.65, color: 'rgba(255,255,255,.75)', maxWidth: '580px', margin: 0 }}>Practical advice on supply chain, retail launch, packaging economics, and fractional operations — for brands scaling from $5M to $20M+ in revenue.</p>
+          <p style={{ fontSize: '18px', lineHeight: 1.65, color: 'rgba(255,255,255,.75)', maxWidth: '580px', margin: 0 }}>Practical advice on supply chain, retail launch, packaging economics, and fractional operations &mdash; for brands scaling from $5M to $20M+ in revenue.</p>
         </div>
       </section>
 
       {/* BLOG GRID */}
       <div className="blog-grid">
-            <a href="/blog/retail-margin-compression-dtc-wholesale" className="blog-card">
-              <img src="/images/port-launch.jpg" alt="Consumer product brand evaluating retail expansion economics" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Economics &middot; 10 min read</div>
-                <h2>DTC vs Retail Margins: What Founders Discover After the First PO</h2>
-                <p>A brand healthy at 65–70% DTC gross margin can land at 20–40% contribution margin in retail. Here's the full cost stack — and how to model it before you say yes to a buyer.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/retailer-requirements-emerging-brands" className="blog-card">
-              <img src="/images/port-retail.jpg" alt="Retail buyer requirements and onboarding for emerging consumer brands" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Retail Launch &middot; 11 min read</div>
-                <h2>What Retailers Actually Want from Emerging Brands</h2>
-                <p>Retail buyers evaluate category fit, margin structure, velocity proof, operational readiness, and compliance documentation before placing a first PO. Most brands focus on the wrong things.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/inventory-management-beauty-brands" className="blog-card">
-              <img src="/images/port-skincare.jpg" alt="Beauty brand inventory management across DTC and retail channels" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Operations &middot; 11 min read</div>
-                <h2>Inventory Management for Beauty Brands</h2>
-                <p>Beauty inventory is harder than most CPG categories — shade proliferation, expiration dates, 12–16 week lead times, and multi-channel demand. Here's the framework that actually works.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/what-fractional-operations-team-does" className="blog-card">
-              <img src="/images/epicutis.jpg" alt="Logic Agency fractional operations team at work for Epicutis skincare brand" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Fractional Ops &middot; 10 min read</div>
-                <h2>What a Fractional Operations Team Actually Does</h2>
-                <p>Most founders hear "fractional ops" and ask: what do they actually do every week? Here's the practical answer — audit, system-build, vendor management, and reporting without the $600K department.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/when-to-hire-vp-operations-cpg" className="blog-card">
-              <img src="/images/port-sourcing.jpg" alt="Supply chain operations leadership decision for consumer product brand" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Leadership &middot; 10 min read</div>
-                <h2>When Should a CPG Brand Hire a VP of Operations?</h2>
-                <p>A CPG brand should hire a VP of Operations when the work is permanent, cross-functional, and large enough for one senior leader to own every day. Most brands aren't ready the first time they feel operational pain.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/retail-readiness-checklist-cpg" className="blog-card">
-              <img src="/images/haldirams.jpg" alt="Haldiram's US retail launch — Logic Agency retail readiness in practice" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Retail Launch &middot; 12 min read</div>
-                <h2>Retail Readiness Checklist: Everything You Need Before the First PO</h2>
-                <p>A retail readiness checklist for CPG brands covers six operational categories — packaging, EDI, inventory, logistics, documentation, and financials. Brands that skip steps absorb $50,000–$200,000 in first-year mistakes.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
-            <a href="/blog/vendor-diversification-strategy-cpg-brands" className="blog-card">
-              <img src="/images/port-us-retail.jpg" alt="Supply chain vendor diversification strategy for consumer product brands" className="blog-card-img" />
-              <div className="blog-card-body">
-                <div className="blog-card-tag">Supply Chain &middot; 10 min read</div>
-                <h2>Vendor Diversification Strategy for CPG Brands</h2>
-                <p>Single-source supply chains break — and when they do, the cost isn't a line item. It's a missed retail launch or a stockout on your hero SKU. Here's the 80/20 dual-sourcing framework.</p>
-                <span className="blog-card-link">Read Article &rarr;</span>
-              </div>
-            </a>
+        {posts.map(p => (
+          <a key={p.href} href={p.href} className="blog-card">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={p.img} alt={p.alt} className="blog-card-img" />
+            <div className="blog-card-body">
+              <div className="blog-card-tag">{p.tag} &middot; {p.time}</div>
+              <h2>{p.title}</h2>
+              <p>{p.desc}</p>
+              <span className="blog-card-link">Read Article &rarr;</span>
+            </div>
+          </a>
+        ))}
       </div>
 
       {/* CTA */}
