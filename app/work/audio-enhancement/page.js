@@ -246,7 +246,7 @@ export default function AudioEnhancementCaseStudy() {
               <div className="chart-label">Week 9&ndash;10<br />Qualify</div>
               <div className="chart-label">Week 11+<br />Scale</div>
             </div>
-            <div className="chart-note">[ Illustrative timeline &mdash; actual durations are client-specific. Chart placeholder. ]</div>
+            <div className="chart-note">[ Illustrative timeline &mdash; actual durations are client-specific. ]</div>
           </div>
 
           <h2>The Outcome: Operational Continuity Through a Supplier Change</h2>
