@@ -11,6 +11,12 @@ export default function sitemap() {
     { url: `${baseUrl}/work/audio-enhancement`, lastModified: d20 },
     { url: `${baseUrl}/work/epicutis`, lastModified: d20 },
     { url: `${baseUrl}/blog`, lastModified: d17 },
+    // Blog — Transcript-backed operational lessons
+    { url: `${baseUrl}/blog/retail-operations-audit`, lastModified: d22 },
+    { url: `${baseUrl}/blog/retail-fill-rate-scorecard`, lastModified: d22 },
+    { url: `${baseUrl}/blog/sps-commerce-integration-checklist`, lastModified: d22 },
+    { url: `${baseUrl}/blog/packaging-cost-reduction-case-study`, lastModified: d22 },
+    { url: `${baseUrl}/blog/us-market-entry-retail-operations`, lastModified: d22 },
     // Blog — Case-study-derived operational lessons
     { url: `${baseUrl}/blog/supplier-transition-strategy-scaling-brands`, lastModified: d22 },
     { url: `${baseUrl}/blog/outgrowing-first-manufacturer`, lastModified: d22 },
