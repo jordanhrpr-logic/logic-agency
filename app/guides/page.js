@@ -13,6 +13,11 @@ export const metadata = {
     description: 'Operational guides for scaling brands: retail readiness, packaging cost, 3PL selection, retail chargebacks, and more.',
     url: 'https://www.logicagencyinc.com/guides',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
+    description: 'Operational guides for scaling brands: retail readiness, packaging cost, 3PL selection, retail chargebacks, and more.',
+  },
 };
 
 export default function GuidesIndex() {

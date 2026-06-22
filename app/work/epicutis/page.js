@@ -60,6 +60,16 @@ export const metadata = {
     description: 'Epicutis came to Logic with a box. The relationship expanded into managed inventory, logistics normalization, and a packaging system that helped the brand grow from 3 to 21+ SKUs without adding headcount.',
     url: 'https://www.logicagencyinc.com/work/epicutis',
     type: 'article',
+    publishedTime: '2026-06-16',
+    modifiedTime: '2026-06-22',
+    authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/work/epicutis/epicutis-kits-group-grey.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Logic Helped Epicutis Build the Packaging System Behind a Larger Growth Plan',
+    description: 'Epicutis came to Logic with a box. The relationship expanded into managed inventory, logistics normalization, and a packaging system that helped the brand grow from 3 to 21+ SKUs.',
+    images: ['https://www.logicagencyinc.com/images/work/epicutis/epicutis-kits-group-grey.jpg'],
   },
 };
 

@@ -8,7 +8,7 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-WWFEYSH2M3';
 export const metadata = {
   title: {
     default: 'Logic Agency Inc. — Retail Packaging & Supply Chain Ops for Scaling Brands',
-    template: '%s | Logic Agency Inc.',
+    template: '%s',
   },
   description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
   metadataBase: new URL('https://www.logicagencyinc.com'),

@@ -18,6 +18,17 @@ export const metadata = {
   title: 'Blog — Supply Chain & Retail Operations for CPG Brands — Logic Agency Inc.',
   description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for consumer product brands doing $5M–$20M in revenue.',
   alternates: { canonical: 'https://www.logicagencyinc.com/blog' },
+  openGraph: {
+    title: 'Logic Agency Blog — Supply Chain & Retail Operations',
+    description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for scaling consumer product brands.',
+    url: 'https://www.logicagencyinc.com/blog',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Logic Agency Blog — Supply Chain & Retail Operations',
+    description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for scaling consumer product brands.',
+  },
 };
 
 const posts = [
