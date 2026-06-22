@@ -17,6 +17,11 @@ export default function sitemap() {
     { url: `${baseUrl}/blog/sps-commerce-integration-checklist`, lastModified: d22 },
     { url: `${baseUrl}/blog/packaging-cost-reduction-case-study`, lastModified: d22 },
     { url: `${baseUrl}/blog/us-market-entry-retail-operations`, lastModified: d22 },
+    { url: `${baseUrl}/blog/kehe-compliance-requirements`, lastModified: d22 },
+    { url: `${baseUrl}/blog/retail-operations-roadmap`, lastModified: d22 },
+    { url: `${baseUrl}/blog/small-parcel-vs-ltl-retail-distribution`, lastModified: d22 },
+    { url: `${baseUrl}/blog/packaging-overhaul-roadmap`, lastModified: d22 },
+    { url: `${baseUrl}/blog/packaging-design-supply-chain-partner`, lastModified: d22 },
     // Blog — Case-study-derived operational lessons
     { url: `${baseUrl}/blog/supplier-transition-strategy-scaling-brands`, lastModified: d22 },
     { url: `${baseUrl}/blog/outgrowing-first-manufacturer`, lastModified: d22 },
