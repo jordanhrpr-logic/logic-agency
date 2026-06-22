@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/retail-chargebacks",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/retail-chargebacks",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -70,12 +70,12 @@ export const metadata = {
   description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
   keywords: 'retail chargebacks CPG, retailer chargebacks explained, retail compliance penalties, chargeback prevention CPG, retailer deductions small brands',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/retail-chargebacks',
+    canonical: 'https://www.logicagencyinc.com/guides/retail-chargebacks',
   },
   openGraph: {
     title: 'Retail Chargebacks for CPG Brands: Prevention Guide',
     description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
-    url: 'https://logicagencyinc.com/guides/retail-chargebacks',
+    url: 'https://www.logicagencyinc.com/guides/retail-chargebacks',
   },
   twitter: {
     card: 'summary_large_image',
@@ -92,19 +92,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Retail Chargebacks Explained: The CPG Brand's Guide to Prevention and Recovery",
-      "item": "https://logicagencyinc.com/guides/retail-chargebacks"
+      "item": "https://www.logicagencyinc.com/guides/retail-chargebacks"
     }
   ]
 };

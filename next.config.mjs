@@ -3,6 +3,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'logicagencyinc.com' }],
+        destination: 'https://www.logicagencyinc.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/blog/what-fractional-operations-team-does',
         destination: '/blog/fractional-supply-chain-operations',
         permanent: true,

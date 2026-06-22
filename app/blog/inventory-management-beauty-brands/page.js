@@ -11,14 +11,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/inventory-management-beauty-brands",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/inventory-management-beauty-brands",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -27,9 +27,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Inventory Management for Beauty Brands", "item": "https://logicagencyinc.com/blog/inventory-management-beauty-brands" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Inventory Management for Beauty Brands", "item": "https://www.logicagencyinc.com/blog/inventory-management-beauty-brands" }
   ]
 };
 
@@ -85,12 +85,12 @@ export const metadata = {
   description: 'Beauty inventory is harder than most CPG categories — shade proliferation, expiration dates, 12–16 week lead times, and multi-channel demand. Here\'s the framework that actually works.',
   keywords: 'inventory management beauty brand, inventory planning CPG, beauty brand inventory systems, safety stock planning beauty',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/inventory-management-beauty-brands',
+    canonical: 'https://www.logicagencyinc.com/blog/inventory-management-beauty-brands',
   },
   openGraph: {
     title: 'Inventory Management for Beauty Brands: From Spreadsheets to Retail-Ready Systems',
     description: 'Beauty inventory is harder than most CPG categories — shade proliferation, expiration dates, 12–16 week lead times, and multi-channel demand. Here\'s the framework that actually works.',
-    url: 'https://logicagencyinc.com/blog/inventory-management-beauty-brands',
+    url: 'https://www.logicagencyinc.com/blog/inventory-management-beauty-brands',
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],

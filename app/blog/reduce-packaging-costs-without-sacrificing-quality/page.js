@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How to Reduce Packaging Costs Without Sacrificing Brand Quality", "item": "https://logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "How to Reduce Packaging Costs Without Sacrificing Brand Quality", "item": "https://www.logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'Seven proven levers for reducing CPG packaging costs without downgrading brand experience — DIM weight, finish engineering, and vendor consolidation.',
   keywords: 'reduce packaging costs CPG brand, packaging cost reduction strategies, cutting packaging costs without quality loss, packaging cost optimization CPG, DIM weight packaging savings, packaging spend CPG brand',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality',
+    canonical: 'https://www.logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality',
   },
   openGraph: {
     title: 'How to Reduce Packaging Costs Without Sacrificing Brand Quality',
     description: 'Seven proven levers for reducing CPG packaging costs without downgrading brand experience — DIM weight, finish engineering, and vendor consolidation.',
-    url: 'https://logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality',
+    url: 'https://www.logicagencyinc.com/blog/reduce-packaging-costs-without-sacrificing-quality',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/fractional-supply-chain-operations",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/fractional-supply-chain-operations",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -70,12 +70,12 @@ export const metadata = {
   description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
   keywords: 'fractional supply chain operations, outsourced supply chain management, fractional COO CPG, supply chain consultant vs full-time hire, operations team cost CPG',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/fractional-supply-chain-operations',
+    canonical: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
   },
   openGraph: {
     title: 'Fractional Supply Chain Operations for CPG Brands',
     description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
-    url: 'https://logicagencyinc.com/guides/fractional-supply-chain-operations',
+    url: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
   },
   twitter: {
     card: 'summary_large_image',
@@ -92,19 +92,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Fractional Supply Chain Operations: What It Is and When It Works",
-      "item": "https://logicagencyinc.com/guides/fractional-supply-chain-operations"
+      "item": "https://www.logicagencyinc.com/guides/fractional-supply-chain-operations"
     }
   ]
 };

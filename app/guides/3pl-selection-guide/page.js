@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/3pl-selection-guide",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/3pl-selection-guide",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -70,12 +70,12 @@ export const metadata = {
   description: '3PL selection guide for CPG brands: how to evaluate fulfillment partners on channel fit, retail compliance, pricing, transition risk, and red flags before signing.',
   keywords: '3PL selection guide CPG, how to choose a 3PL, 3PL for consumer brands, fulfillment partner selection, 3PL evaluation checklist, warehouse selection small brand',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/3pl-selection-guide',
+    canonical: 'https://www.logicagencyinc.com/guides/3pl-selection-guide',
   },
   openGraph: {
     title: '3PL Selection Guide for CPG Brands',
     description: '3PL selection guide for CPG brands: how to evaluate fulfillment partners on channel fit, retail compliance, pricing, transition risk, and red flags before signing.',
-    url: 'https://logicagencyinc.com/guides/3pl-selection-guide',
+    url: 'https://www.logicagencyinc.com/guides/3pl-selection-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -92,19 +92,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "3PL Selection Guide for Consumer Product Brands",
-      "item": "https://logicagencyinc.com/guides/3pl-selection-guide"
+      "item": "https://www.logicagencyinc.com/guides/3pl-selection-guide"
     }
   ]
 };

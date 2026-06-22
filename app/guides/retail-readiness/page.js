@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/retail-readiness",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/retail-readiness",
   "datePublished": "2025-02-01",
   "dateModified": "2026-05-26"
 };
@@ -74,19 +74,19 @@ export const metadata = {
   description: 'The complete operational playbook for launching into retail: packaging, supply chain, inventory forecasting, retailer compliance, cost modeling, and a 60-point checklist from pre-PO through scale.',
   keywords: 'how to launch product in retail, retail launch checklist, retail readiness guide, what do I need to sell in retail stores, DTC to retail transition, retail launch plan, retail supply chain, retail inventory forecasting, retail packaging checklist',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/retail-readiness',
+    canonical: 'https://www.logicagencyinc.com/guides/retail-readiness',
   },
   openGraph: {
     title: 'The Retail Readiness Bible',
     description: 'The complete operational playbook for launching into retail. Packaging, supply chain, compliance, and a 60-point checklist.',
-    url: 'https://logicagencyinc.com/guides/retail-readiness',
-    images: [{ url: 'https://logicagencyinc.com/images/og-retail-readiness.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/retail-readiness',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-readiness.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Retail Readiness Bible',
     description: 'The complete operational playbook for launching into retail. Packaging, supply chain, compliance, and a 60-point checklist.',
-    images: ['https://logicagencyinc.com/images/og-retail-readiness.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-retail-readiness.jpg'],
   },
 };
 
@@ -98,19 +98,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "The Retail Readiness Bible: Everything You Need to Launch and Scale in Retail",
-      "item": "https://logicagencyinc.com/guides/retail-readiness"
+      "item": "https://www.logicagencyinc.com/guides/retail-readiness"
     }
   ]
 };

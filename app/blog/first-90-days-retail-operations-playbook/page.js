@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/first-90-days-retail-operations-playbook",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/first-90-days-retail-operations-playbook",
   "datePublished": "2026-06-16",
   "dateModified": "2026-06-16"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "The First 90 Days in Retail: An Operations Playbook", "item": "https://logicagencyinc.com/blog/first-90-days-retail-operations-playbook" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "The First 90 Days in Retail: An Operations Playbook", "item": "https://www.logicagencyinc.com/blog/first-90-days-retail-operations-playbook" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'The first 90 days in retail decide whether a brand earns a reorder. A week-by-week playbook for compliance, shipping, sell-through, and replenishment.',
   keywords: 'first 90 days retail operations, retail launch operations checklist, scaling DTC to retail, retail operations planning consumer brands, first retail PO operations',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/first-90-days-retail-operations-playbook',
+    canonical: 'https://www.logicagencyinc.com/blog/first-90-days-retail-operations-playbook',
   },
   openGraph: {
     title: 'The First 90 Days in Retail: An Operations Playbook',
     description: 'The first 90 days in retail decide whether a brand earns a reorder. A week-by-week playbook for compliance, shipping, sell-through, and replenishment.',
-    url: 'https://logicagencyinc.com/blog/first-90-days-retail-operations-playbook',
+    url: 'https://www.logicagencyinc.com/blog/first-90-days-retail-operations-playbook',
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],

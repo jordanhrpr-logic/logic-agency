@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/dtc-to-retail-transition-checklist",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/dtc-to-retail-transition-checklist",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "The Complete DTC-to-Retail Transition Checklist", "item": "https://logicagencyinc.com/blog/dtc-to-retail-transition-checklist" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "The Complete DTC-to-Retail Transition Checklist", "item": "https://www.logicagencyinc.com/blog/dtc-to-retail-transition-checklist" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'A complete DTC-to-retail checklist: GS1 setup, EDI, case packs, routing guide compliance, wholesale margins, and inventory planning for the first retail PO.',
   keywords: 'DTC to retail transition checklist, retail readiness checklist CPG, DTC to retail supply chain checklist, wholesale transition checklist, retail launch preparation checklist, how to prepare for first retail purchase order',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/dtc-to-retail-transition-checklist',
+    canonical: 'https://www.logicagencyinc.com/blog/dtc-to-retail-transition-checklist',
   },
   openGraph: {
     title: 'The Complete DTC-to-Retail Transition Checklist (60-Point Pre-PO Guide)',
     description: 'A complete DTC-to-retail checklist: GS1 setup, EDI, case packs, routing guide compliance, wholesale margins, and inventory planning for the first retail PO.',
-    url: 'https://logicagencyinc.com/blog/dtc-to-retail-transition-checklist',
+    url: 'https://www.logicagencyinc.com/blog/dtc-to-retail-transition-checklist',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

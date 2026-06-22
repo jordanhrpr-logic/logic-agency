@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/packaging-system-that-scales",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/packaging-system-that-scales",
   "datePublished": "2025-02-01",
   "dateModified": "2026-05-26"
 };
@@ -62,23 +62,23 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Building a Packaging System That Scales — Logic Agency Inc.',
-  description: 'The difference between ordering packaging and building a packaging system. Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
+  title: 'Packaging System That Scales | Logic Agency',
+  description: 'A scalable packaging system standardizes specs, suppliers, documentation, cost controls, and retail readiness before SKU growth creates chaos.',
   keywords: 'packaging for startup, packaging development process, scaling packaging, DTC to retail packaging, packaging system for growing brand, when to hire packaging operations, packaging from prototype to production',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/packaging-system-that-scales',
+    canonical: 'https://www.logicagencyinc.com/guides/packaging-system-that-scales',
   },
   openGraph: {
     title: 'Building a Packaging System That Scales',
     description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
-    url: 'https://logicagencyinc.com/guides/packaging-system-that-scales',
-    images: [{ url: 'https://logicagencyinc.com/images/og-packaging-system-that-scales.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/packaging-system-that-scales',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-packaging-system-that-scales.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Building a Packaging System That Scales',
     description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
-    images: ['https://logicagencyinc.com/images/og-packaging-system-that-scales.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-packaging-system-that-scales.jpg'],
   },
 };
 
@@ -90,19 +90,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Building a Packaging System That Scales",
-      "item": "https://logicagencyinc.com/guides/packaging-system-that-scales"
+      "item": "https://www.logicagencyinc.com/guides/packaging-system-that-scales"
     }
   ]
 };
@@ -129,7 +129,7 @@ export default function PackagingSystemThatScales() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Building a Packaging System <span className="o">That Scales</span></h1>
-          <p className="a-lede">Most brands solve packaging the same way: find a supplier, get a quote, order boxes. It works at 5,000 units. At 50,000 it starts cracking. At 500,000 it breaks completely. The difference between brands that scale smoothly and those that hit a wall is whether they built a packaging system or just ordered packaging.</p>
+          <p className="a-lede">A scalable packaging system standardizes structural specs, supplier options, documentation, cost controls, inventory planning, and retail readiness before SKU growth creates chaos. Ordering packaging solves the next run; building the system protects the next stage of growth.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated May 2026</span>
@@ -142,6 +142,16 @@ export default function PackagingSystemThatScales() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
+
+          <div className="b-takeaways">
+            <p>Key Takeaways</p>
+            <ul>
+              <li>A packaging system is infrastructure, not a single box order.</li>
+              <li>Specs, tech packs, BOMs, and backup suppliers reduce dependency risk.</li>
+              <li>Stage 1 packaging decisions often create Stage 2 cost and scale problems.</li>
+              <li>Retail-readiness should be built before the brand needs retail packaging.</li>
+            </ul>
+          </div>
 
           {/* SECTION 1 */}
           <h2>What a &ldquo;Packaging System&rdquo; Actually Is</h2>

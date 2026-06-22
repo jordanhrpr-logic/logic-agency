@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/ai-for-cpg-operations",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/ai-for-cpg-operations",
   "datePublished": "2025-03-01",
   "dateModified": "2026-05-26"
 };
@@ -82,19 +82,19 @@ export const metadata = {
   description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
   keywords: 'how to use AI for operations, ChatGPT for supply chain, AI tools for CPG brands, outsourced operations CPG, fractional ops team, do I need a VP of operations, AI prompts for inventory management, Claude for business operations, AI agents for CPG, LLM for supply chain',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/ai-for-cpg-operations',
+    canonical: 'https://www.logicagencyinc.com/guides/ai-for-cpg-operations',
   },
   openGraph: {
     title: 'The Operator\'s Guide to AI That Actually Works',
     description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
-    url: 'https://logicagencyinc.com/guides/ai-for-cpg-operations',
-    images: [{ url: 'https://logicagencyinc.com/images/og-ai-for-cpg-operations.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/ai-for-cpg-operations',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-ai-for-cpg-operations.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Operator\'s Guide to AI That Actually Works',
     description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
-    images: ['https://logicagencyinc.com/images/og-ai-for-cpg-operations.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-ai-for-cpg-operations.jpg'],
   },
 };
 
@@ -106,19 +106,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "The Operator's Guide to AI for CPG Operations",
-      "item": "https://logicagencyinc.com/guides/ai-for-cpg-operations"
+      "item": "https://www.logicagencyinc.com/guides/ai-for-cpg-operations"
     }
   ]
 };

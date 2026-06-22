@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/packaging-cost-reduction",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/packaging-cost-reduction",
   "datePublished": "2025-02-01",
   "dateModified": "2026-05-26"
 };
@@ -62,23 +62,23 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Cost Reduction Without Sacrificing Brand — Logic Agency Inc.',
-  description: 'Where packaging margin actually leaks — DIM weight, material over-engineering, supplier markup stacking, rework, and emergency freight — and how brands typically save 15-30% without downgrading quality.',
+  title: 'Packaging Cost Reduction Guide | Logic Agency',
+  description: 'Packaging cost reduction starts with landed cost, DIM weight, materials, supplier markup, rework, and emergency freight before cutting quality.',
   keywords: 'reduce packaging costs, packaging cost optimization, DIM weight optimization, packaging COGS reduction, cheaper packaging without looking cheap, packaging cost per unit, packaging cost audit, landed cost packaging',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/packaging-cost-reduction',
+    canonical: 'https://www.logicagencyinc.com/guides/packaging-cost-reduction',
   },
   openGraph: {
     title: 'Packaging Cost Reduction Without Sacrificing Brand',
     description: 'Where packaging margin actually leaks and how brands typically save 15-30% without downgrading quality.',
-    url: 'https://logicagencyinc.com/guides/packaging-cost-reduction',
-    images: [{ url: 'https://logicagencyinc.com/images/og-packaging-cost-reduction.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/packaging-cost-reduction',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-packaging-cost-reduction.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Packaging Cost Reduction Without Sacrificing Brand',
     description: 'Where packaging margin actually leaks and how brands typically save 15-30% without downgrading quality.',
-    images: ['https://logicagencyinc.com/images/og-packaging-cost-reduction.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-packaging-cost-reduction.jpg'],
   },
 };
 
@@ -90,19 +90,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Packaging Cost Reduction Without Sacrificing Brand",
-      "item": "https://logicagencyinc.com/guides/packaging-cost-reduction"
+      "item": "https://www.logicagencyinc.com/guides/packaging-cost-reduction"
     }
   ]
 };
@@ -129,7 +129,7 @@ export default function PackagingCostReduction() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Packaging Cost Reduction <span className="o">Without Sacrificing Brand</span></h1>
-          <p className="a-lede">Most brands know their packaging unit cost. Almost none know their true landed cost &mdash; the total of materials, tooling, freight, DIM weight overages, damage rates, rework, and warehousing. That gap is where margin silently disappears.</p>
+          <p className="a-lede">Packaging cost reduction starts with true landed cost: materials, tooling, freight, DIM weight overages, damage rates, rework, warehousing, and emergency shipping. The best savings come from removing waste in the system before cutting quality from the pack.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated May 2026</span>
@@ -142,6 +142,16 @@ export default function PackagingCostReduction() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
+
+          <div className="b-takeaways">
+            <p>Key Takeaways</p>
+            <ul>
+              <li>Supplier unit price is only one part of packaging cost.</li>
+              <li>DIM weight, rework, emergency freight, and markup stacking often create the largest leaks.</li>
+              <li>Cost reduction should start with landed cost analysis, not cheaper materials.</li>
+              <li>Most brands can find savings without weakening the brand experience.</li>
+            </ul>
+          </div>
 
           {/* SECTION 1 */}
           <h2>The Five Hidden Cost Drivers</h2>

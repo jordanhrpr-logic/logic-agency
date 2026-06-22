@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How to Switch 3PLs Without Losing a Retail Account", "item": "https://logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "How to Switch 3PLs Without Losing a Retail Account", "item": "https://www.logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail" }
   ]
 };
 
@@ -84,12 +84,12 @@ export const metadata = {
   description: 'A practical 3PL switching guide for CPG brands: when to leave, how to parallel-run the transition, protect retail POs, and avoid fulfillment disruption.',
   keywords: 'how to switch 3PL, switching 3PL providers, 3PL transition plan, retail fulfillment transition, change warehouse provider, 3PL migration CPG',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail',
+    canonical: 'https://www.logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail',
   },
   openGraph: {
     title: 'How to Switch 3PLs Without Losing a Retail Account',
     description: 'A practical 3PL switching guide for CPG brands: when to leave, how to parallel-run the transition, protect retail POs, and avoid fulfillment disruption.',
-    url: 'https://logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail',
+    url: 'https://www.logicagencyinc.com/blog/how-to-switch-3pl-without-losing-retail',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

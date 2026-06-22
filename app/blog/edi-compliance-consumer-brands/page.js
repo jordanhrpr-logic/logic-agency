@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/edi-compliance-consumer-brands",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/edi-compliance-consumer-brands",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "EDI Compliance for Consumer Brands: Maintaining Your Retailer Scorecard After Go-Live", "item": "https://logicagencyinc.com/blog/edi-compliance-consumer-brands" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "EDI Compliance for Consumer Brands: Maintaining Your Retailer Scorecard After Go-Live", "item": "https://www.logicagencyinc.com/blog/edi-compliance-consumer-brands" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: "EDI compliance doesn't end at setup. Learn the failure modes, monthly audit framework, and dispute process that protect your retail margins after go-live.",
   keywords: 'EDI compliance consumer brands, EDI chargeback prevention retail, EDI compliance audit CPG, retail vendor compliance scorecard, ASN compliance retail, EDI failure modes retail brands',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/edi-compliance-consumer-brands',
+    canonical: 'https://www.logicagencyinc.com/blog/edi-compliance-consumer-brands',
   },
   openGraph: {
     title: 'EDI Compliance for Consumer Brands: Maintaining Your Retailer Scorecard After Go-Live',
     description: "EDI compliance doesn't end at setup. Learn the failure modes, monthly audit framework, and dispute process that protect your retail margins after go-live.",
-    url: 'https://logicagencyinc.com/blog/edi-compliance-consumer-brands',
+    url: 'https://www.logicagencyinc.com/blog/edi-compliance-consumer-brands',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/dtc-to-retail-supply-chain",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/dtc-to-retail-supply-chain",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "DTC to Retail Supply Chain: What Brands Get Wrong", "item": "https://logicagencyinc.com/blog/dtc-to-retail-supply-chain" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "DTC to Retail Supply Chain: What Brands Get Wrong", "item": "https://www.logicagencyinc.com/blog/dtc-to-retail-supply-chain" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.',
   keywords: 'DTC to retail supply chain, scaling supply chain CPG, retail launch supply chain, supply chain for growing brand, retail compliance CPG',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/dtc-to-retail-supply-chain',
+    canonical: 'https://www.logicagencyinc.com/blog/dtc-to-retail-supply-chain',
   },
   openGraph: {
     title: 'DTC to Retail Supply Chain: What Most Brands Get Wrong Before Their First PO',
     description: 'DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.',
-    url: 'https://logicagencyinc.com/blog/dtc-to-retail-supply-chain',
+    url: 'https://www.logicagencyinc.com/blog/dtc-to-retail-supply-chain',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

@@ -6,12 +6,12 @@ export const metadata = {
   description: 'In-depth operational guides for scaling consumer product brands: retail readiness, packaging cost reduction, 3PL selection, retail chargebacks, DTC-to-retail transition, and fractional operations.',
   keywords: 'supply chain guides CPG, packaging guides brand, retail readiness guide, 3PL selection guide, retail chargebacks guide, DTC to retail guide, fractional supply chain',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides',
+    canonical: 'https://www.logicagencyinc.com/guides',
   },
   openGraph: {
     title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
     description: 'Operational guides for scaling brands: retail readiness, packaging cost, 3PL selection, retail chargebacks, and more.',
-    url: 'https://logicagencyinc.com/guides',
+    url: 'https://www.logicagencyinc.com/guides',
   },
 };
 

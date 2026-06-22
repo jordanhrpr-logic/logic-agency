@@ -11,13 +11,13 @@ export const metadata = {
     template: '%s | Logic Agency Inc.',
   },
   description: 'Your outsourced retail packaging and supply chain operations team. Monthly retainers for brands in beauty, wellness, CPG, and tech wearables.',
-  metadataBase: new URL('https://logicagencyinc.com'),
+  metadataBase: new URL('https://www.logicagencyinc.com'),
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     title: 'Logic Agency Inc. — Outsourced Packaging & Supply Chain Ops',
     description: 'Monthly retainer packaging and supply chain operations for brands in beauty, wellness, CPG, and tech wearables. $2,500-$10,000+/month.',
-    url: 'https://logicagencyinc.com/',
+    url: 'https://www.logicagencyinc.com/',
     siteName: 'Logic Agency Inc.',
   },
   twitter: {

@@ -8,9 +8,9 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Getting Your Packaging Retail-Ready: What Brands Need to Know Before Their First PO",
   "description": "A comprehensive guide to retail packaging requirements including case packs, pallet configurations, retailer compliance specs, and the real timeline for getting shelf-ready.",
-  "author": { "@type": "Organization", "name": "Logic Agency Inc.", "url": "https://logicagencyinc.com" },
+  "author": { "@type": "Organization", "name": "Logic Agency Inc.", "url": "https://www.logicagencyinc.com" },
   "publisher": { "@type": "Organization", "name": "Logic Agency Inc." },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/retail-ready-packaging",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/retail-ready-packaging",
   "datePublished": "2025-02-01",
   "dateModified": "2026-05-26"
 };
@@ -43,21 +43,21 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Getting Your Packaging Retail-Ready — Logic Agency Inc.',
-  description: 'Everything brands need to know before their first retail PO: case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
+  title: 'Retail-Ready Packaging Guide | Logic Agency',
+  description: 'Retail-ready packaging means compliant case packs, pallet specs, barcode placement, labels, and timelines before the first PO ships.',
   keywords: 'retail packaging requirements, retail-ready packaging, case pack requirements, pallet configuration, Target packaging requirements, Walmart packaging compliance, retail packaging compliance, DTC to retail packaging',
-  alternates: { canonical: 'https://logicagencyinc.com/guides/retail-ready-packaging' },
+  alternates: { canonical: 'https://www.logicagencyinc.com/guides/retail-ready-packaging' },
   openGraph: {
     title: 'Getting Your Packaging Retail-Ready',
     description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
-    url: 'https://logicagencyinc.com/guides/retail-ready-packaging',
-    images: [{ url: 'https://logicagencyinc.com/images/og-retail-ready-packaging.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/retail-ready-packaging',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-ready-packaging.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Getting Your Packaging Retail-Ready',
     description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
-    images: ['https://logicagencyinc.com/images/og-retail-ready-packaging.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-retail-ready-packaging.jpg'],
   },
 };
 
@@ -69,19 +69,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Getting Your Packaging Retail-Ready",
-      "item": "https://logicagencyinc.com/guides/retail-ready-packaging"
+      "item": "https://www.logicagencyinc.com/guides/retail-ready-packaging"
     }
   ]
 };
@@ -90,6 +90,7 @@ export default function RetailReadyPackaging() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <Nav variant="guide" />
 
@@ -97,7 +98,7 @@ export default function RetailReadyPackaging() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Getting Your Packaging <span className="o">Retail-Ready</span></h1>
-          <p className="a-lede">You just landed a retail opportunity. Maybe it&apos;s a regional chain, maybe it&apos;s Target. Either way, you have 60&ndash;90 days to figure out packaging specs you&apos;ve never dealt with before. Your DTC packaging won&apos;t work. Here&apos;s what you actually need to know.</p>
+          <p className="a-lede">Retail-ready packaging means your primary pack, case pack, pallet configuration, barcode placement, labels, and shipment documentation all meet the retailer&apos;s receiving rules before the first PO ships. Your DTC packaging usually is not enough.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated May 2026</span>
@@ -109,6 +110,16 @@ export default function RetailReadyPackaging() {
 
       <div className="article gl">
         <div className="article-inner">
+
+          <div className="b-takeaways">
+            <p>Key Takeaways</p>
+            <ul>
+              <li>Retail-ready packaging covers primary, secondary, and pallet-level requirements.</li>
+              <li>Most first-time retail chargebacks start with case pack, barcode, label, or pallet mistakes.</li>
+              <li>Packaging should be checked against the routing guide before production, not after the PO arrives.</li>
+              <li>DTC unboxing requirements and retail receiving requirements are different operating systems.</li>
+            </ul>
+          </div>
 
           <h2>What &ldquo;Retail-Ready&rdquo; Actually Means</h2>
 

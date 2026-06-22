@@ -30,9 +30,9 @@ const caseStudySchema = {
   '@type': 'Article',
   headline: 'How Logic Helped Epicutis Build the Packaging System Behind a Larger Growth Plan',
   description: 'Epicutis came to Logic with a narrow packaging need. Over time, the relationship expanded into packaging development, managed inventory, warehouse operations, and logistics normalization.',
-  author: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://logicagencyinc.com' },
-  publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://logicagencyinc.com' },
-  mainEntityOfPage: 'https://logicagencyinc.com/work/epicutis',
+  author: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
+  publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
+  mainEntityOfPage: 'https://www.logicagencyinc.com/work/epicutis',
   datePublished: '2026-06-16',
   dateModified: '2026-06-22',
   keywords: ['packaging operations', 'managed inventory', 'fractional supply chain', 'CPG scaling', 'logistics normalization'],
@@ -53,12 +53,12 @@ export const metadata = {
   description: 'How Logic Agency helped Epicutis build the packaging system behind a multi-year growth plan: managed inventory, normalized logistics, and operational lift across 3 to 21+ SKUs.',
   keywords: 'Epicutis case study, packaging operations management, managed inventory program, CPG packaging supply chain, fractional supply chain operations',
   alternates: {
-    canonical: 'https://logicagencyinc.com/work/epicutis',
+    canonical: 'https://www.logicagencyinc.com/work/epicutis',
   },
   openGraph: {
     title: 'How Logic Helped Epicutis Build the Packaging System Behind a Larger Growth Plan',
     description: 'Epicutis came to Logic with a box. The relationship expanded into managed inventory, logistics normalization, and a packaging system that helped the brand grow from 3 to 21+ SKUs without adding headcount.',
-    url: 'https://logicagencyinc.com/work/epicutis',
+    url: 'https://www.logicagencyinc.com/work/epicutis',
     type: 'article',
   },
 };

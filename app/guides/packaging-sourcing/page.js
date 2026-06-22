@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/packaging-sourcing",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/packaging-sourcing",
   "datePublished": "2025-02-01",
   "dateModified": "2026-05-26"
 };
@@ -70,23 +70,23 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'How to Source Packaging Without Getting Burned — Logic Agency Inc.',
-  description: 'The real decision framework for packaging sourcing: domestic vs. international, brokers vs. manufacturers, factory vetting, MOQ traps, landed cost math, and red flags in supplier quoting.',
+  title: 'Packaging Sourcing Guide | Logic Agency',
+  description: 'Packaging sourcing requires supplier type clarity, MOQ math, factory vetting, landed cost comparison, quality control, and backup capacity.',
   keywords: 'packaging suppliers, where to source packaging, custom packaging sourcing, domestic vs overseas packaging, packaging manufacturer, packaging supplier for cosmetics, how to find packaging supplier, packaging sourcing China, packaging MOQ, packaging factory audit',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/packaging-sourcing',
+    canonical: 'https://www.logicagencyinc.com/guides/packaging-sourcing',
   },
   openGraph: {
     title: 'How to Source Packaging Without Getting Burned',
     description: 'Domestic vs. international, brokers vs. manufacturers, factory vetting, MOQ traps, landed cost math, and red flags.',
-    url: 'https://logicagencyinc.com/guides/packaging-sourcing',
-    images: [{ url: 'https://logicagencyinc.com/images/og-packaging-sourcing.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/packaging-sourcing',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-packaging-sourcing.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Source Packaging Without Getting Burned',
     description: 'Domestic vs. international, brokers vs. manufacturers, factory vetting, MOQ traps, landed cost math, and red flags.',
-    images: ['https://logicagencyinc.com/images/og-packaging-sourcing.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-packaging-sourcing.jpg'],
   },
 };
 
@@ -98,19 +98,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "How to Source Packaging Without Getting Burned",
-      "item": "https://logicagencyinc.com/guides/packaging-sourcing"
+      "item": "https://www.logicagencyinc.com/guides/packaging-sourcing"
     }
   ]
 };
@@ -137,7 +137,7 @@ export default function PackagingSourcingGuide() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>How to Source Packaging <span className="o">Without Getting Burned</span></h1>
-          <p className="a-lede">The internet will give you a thousand packaging suppliers. What it won&apos;t give you is the framework for choosing the right one &mdash; or knowing whether you&apos;re talking to a manufacturer, a broker, or a trading company marking up someone else&apos;s factory. Here&apos;s how sourcing actually works after 20 years and 15+ countries of doing it.</p>
+          <p className="a-lede">Packaging sourcing requires knowing who is actually making the pack, how MOQ and landed cost change the economics, whether the factory can meet quality standards, and what backup capacity exists if the first supplier misses. A low quote is not a sourcing strategy.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated May 2026</span>
@@ -150,6 +150,16 @@ export default function PackagingSourcingGuide() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
+
+          <div className="b-takeaways">
+            <p>Key Takeaways</p>
+            <ul>
+              <li>Know whether you are dealing with a manufacturer, broker, or trading company.</li>
+              <li>Compare suppliers by landed cost, not quote price.</li>
+              <li>MOQ, lead time, tooling, and quality control should be reviewed together.</li>
+              <li>Backup suppliers matter before the first supplier creates a production gap.</li>
+            </ul>
+          </div>
 
           {/* SECTION 1 */}
           <h2>Know Who You&apos;re Actually Talking To</h2>

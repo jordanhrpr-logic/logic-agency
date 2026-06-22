@@ -33,14 +33,14 @@ const caseStudySchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/work/audio-enhancement",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/work/audio-enhancement",
   "datePublished": "2026-06-16",
   "dateModified": "2026-06-20",
   "keywords": ["supplier transition", "supply chain management", "quality control", "fractional supply chain", "CPG operations"]
@@ -50,9 +50,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Client Work", "item": "https://logicagencyinc.com/#results" },
-    { "@type": "ListItem", "position": 3, "name": "Audio Enhancement", "item": "https://logicagencyinc.com/work/audio-enhancement" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Client Work", "item": "https://www.logicagencyinc.com/#results" },
+    { "@type": "ListItem", "position": 3, "name": "Audio Enhancement", "item": "https://www.logicagencyinc.com/work/audio-enhancement" }
   ]
 };
 
@@ -100,12 +100,12 @@ export const metadata = {
   description: 'How Logic Agency helped Audio Enhancement qualify a new manufacturing partner and protect product quality through a supplier transition — keeping growth on track.',
   keywords: 'supply chain supplier transition, packaging manufacturer qualification, product quality management CPG, fractional supply chain operations',
   alternates: {
-    canonical: 'https://logicagencyinc.com/work/audio-enhancement',
+    canonical: 'https://www.logicagencyinc.com/work/audio-enhancement',
   },
   openGraph: {
     title: 'How Logic Helped Audio Enhancement Remove a Supplier Bottleneck and Protect Product Growth',
     description: 'Audio Enhancement had outgrown the supplier behind a visible product component. Logic stabilized quality and managed the transition to a manufacturing partner that could support scale.',
-    url: 'https://logicagencyinc.com/work/audio-enhancement',
+    url: 'https://www.logicagencyinc.com/work/audio-enhancement',
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],

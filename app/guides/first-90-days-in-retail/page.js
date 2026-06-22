@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/first-90-days-in-retail",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/first-90-days-in-retail",
   "datePublished": "2025-03-01",
   "dateModified": "2026-05-26"
 };
@@ -70,23 +70,23 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'The CPG Brand\u2019s First 90 Days in Retail \u2014 Logic Agency Inc.',
-  description: 'A week-by-week account of what actually happens after a retailer says yes. The chaos, the surprises, and the operational reality nobody warns you about \u2014 from brands that have lived it.',
+  title: 'First 90 Days in Retail | Logic Agency',
+  description: 'The first 90 days in retail require vendor onboarding, packaging checks, inventory planning, routing compliance, and reorder timing.',
   keywords: 'how to launch in retail, first retail order, CPG retail launch plan, DTC to retail transition, first 90 days retail, retail launch timeline, getting into retail stores, retail launch checklist CPG, selling to retailers for the first time',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/first-90-days-in-retail',
+    canonical: 'https://www.logicagencyinc.com/guides/first-90-days-in-retail',
   },
   openGraph: {
     title: 'Your First 90 Days in Retail',
     description: 'A week-by-week account of what actually happens after a retailer says yes — the chaos, the surprises, and the operational reality.',
-    url: 'https://logicagencyinc.com/guides/first-90-days-in-retail',
-    images: [{ url: 'https://logicagencyinc.com/images/og-first-90-days-in-retail.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com/guides/first-90-days-in-retail',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-first-90-days-in-retail.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Your First 90 Days in Retail',
     description: 'A week-by-week account of what actually happens after a retailer says yes — the chaos, the surprises, and the operational reality.',
-    images: ['https://logicagencyinc.com/images/og-first-90-days-in-retail.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-first-90-days-in-retail.jpg'],
   },
 };
 
@@ -98,19 +98,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "The CPG Brand's First 90 Days in Retail",
-      "item": "https://logicagencyinc.com/guides/first-90-days-in-retail"
+      "item": "https://www.logicagencyinc.com/guides/first-90-days-in-retail"
     }
   ]
 };
@@ -119,6 +119,7 @@ export default function First90DaysInRetail() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Nav variant="guide" />
 
       {/* HERO */}
@@ -126,7 +127,7 @@ export default function First90DaysInRetail() {
         <div className="a-hero-inner">
           <div className="breadcrumb"><a href="/">Logic Agency</a> &nbsp;/&nbsp; <a href="/guides">Guides</a></div>
           <h1>Your First 90 Days <span className="o">in Retail</span></h1>
-          <p className="a-lede">A buyer just said yes. Your DTC brand is going into retail stores. Congratulations &mdash; and buckle up. The next 90 days will be the most operationally intense period your brand has ever been through. Here&apos;s what actually happens, week by week, told by people who&apos;ve done it dozens of times.</p>
+          <p className="a-lede">The first 90 days in retail are the operating window between buyer approval and stable replenishment: vendor onboarding, packaging compliance, inventory build, routing setup, first shipment, and reorder planning. The brands that win the reorder start this work before the official PO arrives.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Updated May 2026</span>
@@ -151,6 +152,16 @@ export default function First90DaysInRetail() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
+
+          <div className="b-takeaways">
+            <p>Key Takeaways</p>
+            <ul>
+              <li>The first 90 days are about operational readiness, not celebration.</li>
+              <li>Vendor onboarding, EDI, packaging, inventory, and routing must move in parallel.</li>
+              <li>Retail cash flow breaks when brands fund inventory before modeling payment terms.</li>
+              <li>The reorder plan should be built before the first shipment leaves the warehouse.</li>
+            </ul>
+          </div>
 
           <h2>Before We Start: The Feeling Nobody Prepares You For</h2>
           <p>You spent months &mdash; maybe years &mdash; trying to get a retail buyer to say yes. You pitched, you sampled, you followed up, you waited. And now they said yes.</p>

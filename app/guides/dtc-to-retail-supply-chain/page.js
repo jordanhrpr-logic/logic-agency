@@ -7,17 +7,17 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "DTC to Retail Supply Chain: What Most Brands Get Wrong Before Their First PO",
-  "description": "DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.",
+  "description": "A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.",
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/dtc-to-retail-supply-chain",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -66,21 +66,21 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'DTC to Retail Supply Chain Transition Guide — Logic Agency Inc.',
-  description: 'DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.',
+  title: 'DTC to Retail Supply Chain Guide | Logic Agency',
+  description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
   keywords: 'DTC to retail supply chain, retail launch supply chain, scaling supply chain CPG, retail compliance CPG, retail readiness checklist, retail launch preparation',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/dtc-to-retail-supply-chain',
+    canonical: 'https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain',
   },
   openGraph: {
     title: 'DTC to Retail Supply Chain Transition Guide',
-    description: 'DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.',
-    url: 'https://logicagencyinc.com/guides/dtc-to-retail-supply-chain',
+    description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
+    url: 'https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DTC to Retail Supply Chain Transition Guide',
-    description: 'DTC to retail supply chain transition: the 5 systems you need before your first PO, retail margin compression math, and a readiness checklist for CPG brands.',
+    description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
   },
 };
 
@@ -92,19 +92,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "DTC to Retail Supply Chain: What Most Brands Get Wrong",
-      "item": "https://logicagencyinc.com/guides/dtc-to-retail-supply-chain"
+      "item": "https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain"
     }
   ]
 };

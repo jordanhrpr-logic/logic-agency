@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/routing-guide-compliance-retail",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/routing-guide-compliance-retail",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Retail Routing Guide Compliance: What Every Brand Gets Wrong", "item": "https://logicagencyinc.com/blog/routing-guide-compliance-retail" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Retail Routing Guide Compliance: What Every Brand Gets Wrong", "item": "https://www.logicagencyinc.com/blog/routing-guide-compliance-retail" }
   ]
 };
 
@@ -84,12 +84,12 @@ export const metadata = {
   description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
   keywords: 'retail routing guide compliance, routing guide compliance, retail chargeback prevention, CPG routing guide, ASN timing retail, retail shipment compliance',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/routing-guide-compliance-retail',
+    canonical: 'https://www.logicagencyinc.com/blog/routing-guide-compliance-retail',
   },
   openGraph: {
     title: 'Retail Routing Guide Compliance: What Every Brand Gets Wrong',
     description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
-    url: 'https://logicagencyinc.com/blog/routing-guide-compliance-retail',
+    url: 'https://www.logicagencyinc.com/blog/routing-guide-compliance-retail',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

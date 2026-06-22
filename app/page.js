@@ -13,14 +13,14 @@ export const metadata = {
   openGraph: {
     title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
     description: 'Logic Agency is your embedded packaging, supply chain, and operations team for brands selling into retail, B2B, and DTC. 20 years of execution experience backed by AI-powered systems. Monthly retainers starting at $2,500.',
-    url: 'https://logicagencyinc.com',
-    images: [{ url: 'https://logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
+    url: 'https://www.logicagencyinc.com',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Logic Agency Inc. — Packaging, Supply Chain & Operations for Scaling Brands',
     description: 'Logic Agency is your embedded packaging, supply chain, and operations team for brands selling into retail, B2B, and DTC. 20 years of execution experience backed by AI-powered systems. Monthly retainers starting at $2,500.',
-    images: ['https://logicagencyinc.com/images/og-homepage.jpg'],
+    images: ['https://www.logicagencyinc.com/images/og-homepage.jpg'],
   },
 };
 

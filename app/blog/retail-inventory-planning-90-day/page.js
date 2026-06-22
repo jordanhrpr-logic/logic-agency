@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/retail-inventory-planning-90-day",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/retail-inventory-planning-90-day",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Retail Inventory Planning: Building the 90-Day Forecast Before Your First PO", "item": "https://logicagencyinc.com/blog/retail-inventory-planning-90-day" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Retail Inventory Planning: Building the 90-Day Forecast Before Your First PO", "item": "https://www.logicagencyinc.com/blog/retail-inventory-planning-90-day" }
   ]
 };
 
@@ -84,12 +84,12 @@ export const metadata = {
   description: 'A practical retail inventory planning guide for CPG brands: pipeline fill, safety stock, reorder triggers, production lead times, and 90-day forecasting.',
   keywords: 'retail inventory planning CPG, retail inventory forecast, first retail PO inventory planning, CPG inventory planning, safety stock retail launch, reorder point calculation CPG',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/retail-inventory-planning-90-day',
+    canonical: 'https://www.logicagencyinc.com/blog/retail-inventory-planning-90-day',
   },
   openGraph: {
     title: 'Retail Inventory Planning: Building the 90-Day Forecast Before Your First PO',
     description: 'A practical retail inventory planning guide for CPG brands: pipeline fill, safety stock, reorder triggers, production lead times, and 90-day forecasting.',
-    url: 'https://logicagencyinc.com/blog/retail-inventory-planning-90-day',
+    url: 'https://www.logicagencyinc.com/blog/retail-inventory-planning-90-day',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

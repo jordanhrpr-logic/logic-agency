@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://logicagencyinc.com';
+  const baseUrl = 'https://www.logicagencyinc.com';
   const d15 = new Date('2026-06-15');
   const d16 = new Date('2026-06-16');
   const d17 = new Date('2026-06-17');

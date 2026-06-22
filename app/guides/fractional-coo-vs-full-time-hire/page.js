@@ -11,13 +11,13 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc."
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/guides/fractional-coo-vs-full-time-hire",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -70,12 +70,12 @@ export const metadata = {
   description: 'Fractional COO vs full-time hire: real cost ranges, what each covers, hidden costs founders miss, and a decision framework for scaling CPG brands.',
   keywords: 'fractional COO CPG brands, supply chain consultant vs full-time hire, operations team cost CPG, when to hire VP operations, outsourced supply chain management',
   alternates: {
-    canonical: 'https://logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
+    canonical: 'https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
   },
   openGraph: {
     title: 'Fractional COO vs Full-Time Hire for CPG Brands',
     description: 'Fractional COO vs full-time hire: real cost ranges, what each covers, hidden costs founders miss, and a decision framework for scaling CPG brands.',
-    url: 'https://logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
+    url: 'https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
   },
   twitter: {
     card: 'summary_large_image',
@@ -92,19 +92,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Logic Agency",
-      "item": "https://logicagencyinc.com"
+      "item": "https://www.logicagencyinc.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Guides",
-      "item": "https://logicagencyinc.com/guides"
+      "item": "https://www.logicagencyinc.com/guides"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Fractional COO vs. Full-Time Hire: A Real Cost Comparison",
-      "item": "https://logicagencyinc.com/guides/fractional-coo-vs-full-time-hire"
+      "item": "https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire"
     }
   ]
 };

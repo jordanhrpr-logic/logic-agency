@@ -11,14 +11,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/retailer-requirements-emerging-brands",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/retailer-requirements-emerging-brands",
   "datePublished": "2026-06-15",
   "dateModified": "2026-06-15"
 };
@@ -27,9 +27,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "What Retailers Actually Want from Emerging Brands", "item": "https://logicagencyinc.com/blog/retailer-requirements-emerging-brands" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "What Retailers Actually Want from Emerging Brands", "item": "https://www.logicagencyinc.com/blog/retailer-requirements-emerging-brands" }
   ]
 };
 
@@ -85,12 +85,12 @@ export const metadata = {
   description: 'Retail buyers evaluate category fit, margin structure, velocity proof, operational readiness, and compliance documentation before placing a first PO. Most brands focus on the wrong things.',
   keywords: 'retailer onboarding requirements, how to get into retail, what retailers look for in brands, retail buyer expectations',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/retailer-requirements-emerging-brands',
+    canonical: 'https://www.logicagencyinc.com/blog/retailer-requirements-emerging-brands',
   },
   openGraph: {
     title: 'What Retailers Actually Want from Emerging Brands: Inside the Buyer\'s Mind',
     description: 'Retail buyers evaluate category fit, margin structure, velocity proof, operational readiness, and compliance documentation before placing a first PO. Most brands focus on the wrong things.',
-    url: 'https://logicagencyinc.com/blog/retailer-requirements-emerging-brands',
+    url: 'https://www.logicagencyinc.com/blog/retailer-requirements-emerging-brands',
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],

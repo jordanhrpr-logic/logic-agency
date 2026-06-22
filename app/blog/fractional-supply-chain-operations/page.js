@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/fractional-supply-chain-operations",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/fractional-supply-chain-operations",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Fractional Supply Chain Operations for CPG Brands", "item": "https://logicagencyinc.com/blog/fractional-supply-chain-operations" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Fractional Supply Chain Operations for CPG Brands", "item": "https://www.logicagencyinc.com/blog/fractional-supply-chain-operations" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG.',
   keywords: 'fractional supply chain operations, fractional COO for CPG brands, outsourced supply chain management beauty brands, supply chain consultant vs full-time hire, fractional operations team CPG',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/fractional-supply-chain-operations',
+    canonical: 'https://www.logicagencyinc.com/blog/fractional-supply-chain-operations',
   },
   openGraph: {
     title: 'Fractional Supply Chain Operations: What It Is and When It Works',
     description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG.',
-    url: 'https://logicagencyinc.com/blog/fractional-supply-chain-operations',
+    url: 'https://www.logicagencyinc.com/blog/fractional-supply-chain-operations',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

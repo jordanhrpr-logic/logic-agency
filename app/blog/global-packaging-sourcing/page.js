@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/global-packaging-sourcing",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/global-packaging-sourcing",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How to Source Packaging Overseas: A CPG Brand's Practical Guide", "item": "https://logicagencyinc.com/blog/global-packaging-sourcing" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "How to Source Packaging Overseas: A CPG Brand's Practical Guide", "item": "https://www.logicagencyinc.com/blog/global-packaging-sourcing" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'The real process for sourcing packaging internationally — RFQ through customs, quality control, IP protection, and when to stay domestic. Real cost data.',
   keywords: 'how to source packaging overseas, overseas packaging supplier, international packaging sourcing, packaging factory China, CPG packaging sourcing guide, domestic vs overseas packaging, packaging cost savings overseas',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/global-packaging-sourcing',
+    canonical: 'https://www.logicagencyinc.com/blog/global-packaging-sourcing',
   },
   openGraph: {
     title: "How to Source Packaging Overseas: A CPG Brand's Practical Guide",
     description: 'The real process for sourcing packaging internationally — RFQ through customs, quality control, IP protection, and when to stay domestic. Real cost data.',
-    url: 'https://logicagencyinc.com/blog/global-packaging-sourcing',
+    url: 'https://www.logicagencyinc.com/blog/global-packaging-sourcing',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

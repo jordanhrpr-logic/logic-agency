@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/supply-chain-technology-stack",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/supply-chain-technology-stack",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "The Supply Chain Technology Stack for Scaling CPG Brands: What You Actually Need", "item": "https://logicagencyinc.com/blog/supply-chain-technology-stack" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "The Supply Chain Technology Stack for Scaling CPG Brands: What You Actually Need", "item": "https://www.logicagencyinc.com/blog/supply-chain-technology-stack" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'The supply chain technology stack a $5-20M CPG brand actually needs — OMS, WMS, EDI, forecasting tools — with costs, timelines, and revenue-stage guidance.',
   keywords: 'supply chain technology CPG brands, supply chain software for small brands, OMS for CPG brands, WMS for consumer brands, EDI provider small business, inventory forecasting software CPG, supply chain tools DTC to retail',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/supply-chain-technology-stack',
+    canonical: 'https://www.logicagencyinc.com/blog/supply-chain-technology-stack',
   },
   openGraph: {
     title: 'The Supply Chain Technology Stack for Scaling CPG Brands: What You Actually Need',
     description: 'The supply chain technology stack a $5-20M CPG brand actually needs — OMS, WMS, EDI, forecasting tools — with costs, timelines, and revenue-stage guidance.',
-    url: 'https://logicagencyinc.com/blog/supply-chain-technology-stack',
+    url: 'https://www.logicagencyinc.com/blog/supply-chain-technology-stack',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

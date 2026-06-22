@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks",
   "datePublished": "2026-06-17",
   "dateModified": "2026-06-17"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Packaging Cost Per Unit Benchmarks", "item": "https://logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "Packaging Cost Per Unit Benchmarks", "item": "https://www.logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'Packaging cost per unit benchmarks by category: beauty, food, supplements, electronics, spirits, and jewelry. Real cost ranges, COGS percentages, and when cheap packaging costs more.',
   keywords: 'packaging cost per unit benchmark, how much should packaging cost per unit, packaging budget percentage, beauty packaging cost ranges, CPG packaging spend benchmarks',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks',
+    canonical: 'https://www.logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks',
   },
   openGraph: {
     title: 'Packaging Cost Per Unit Benchmarks by Product Category',
     description: 'Packaging cost per unit benchmarks by category: beauty, food, supplements, electronics, spirits, and jewelry. Real cost ranges, COGS percentages, and when cheap packaging costs more.',
-    url: 'https://logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks',
+    url: 'https://www.logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks',
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],

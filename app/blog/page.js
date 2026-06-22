@@ -6,18 +6,18 @@ const collectionSchema = {
   "@type": "Blog",
   "name": "Logic Agency Blog",
   "description": "Operational advice on supply chain, retail launch, packaging, and fractional operations for consumer product brands.",
-  "url": "https://logicagencyinc.com/blog",
+  "url": "https://www.logicagencyinc.com/blog",
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   }
 };
 
 export const metadata = {
   title: 'Blog — Supply Chain & Retail Operations for CPG Brands — Logic Agency Inc.',
   description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for consumer product brands doing $5M–$20M in revenue.',
-  alternates: { canonical: 'https://logicagencyinc.com/blog' },
+  alternates: { canonical: 'https://www.logicagencyinc.com/blog' },
 };
 
 const posts = [

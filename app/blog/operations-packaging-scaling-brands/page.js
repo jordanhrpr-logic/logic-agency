@@ -10,14 +10,14 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com"
   },
-  "mainEntityOfPage": "https://logicagencyinc.com/blog/operations-packaging-scaling-brands",
+  "mainEntityOfPage": "https://www.logicagencyinc.com/blog/operations-packaging-scaling-brands",
   "datePublished": "2026-06-16",
   "dateModified": "2026-06-16"
 };
@@ -26,9 +26,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://logicagencyinc.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How Operations and Packaging Work Together to Scale a Consumer Product Brand", "item": "https://logicagencyinc.com/blog/operations-packaging-scaling-brands" }
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": "How Operations and Packaging Work Together to Scale a Consumer Product Brand", "item": "https://www.logicagencyinc.com/blog/operations-packaging-scaling-brands" }
   ]
 };
 
@@ -92,12 +92,12 @@ export const metadata = {
   description: 'How integrated packaging and supply chain decisions stop costing scaling consumer brands an estimated 15-25% in margin in the brands we audit regularly.',
   keywords: 'packaging and supply chain management, packaging operations management, one stop packaging and operations, scaling brand operations, packaging and fulfillment optimization',
   alternates: {
-    canonical: 'https://logicagencyinc.com/blog/operations-packaging-scaling-brands',
+    canonical: 'https://www.logicagencyinc.com/blog/operations-packaging-scaling-brands',
   },
   openGraph: {
     title: 'How Operations and Packaging Work Together to Scale a Consumer Product Brand',
     description: 'How integrated packaging and supply chain decisions stop costing scaling consumer brands an estimated 15-25% in margin in the brands we audit regularly.',
-    url: 'https://logicagencyinc.com/blog/operations-packaging-scaling-brands',
+    url: 'https://www.logicagencyinc.com/blog/operations-packaging-scaling-brands',
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
