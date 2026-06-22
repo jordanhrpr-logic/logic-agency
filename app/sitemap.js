@@ -4,12 +4,19 @@ export default function sitemap() {
   const d16 = new Date('2026-06-16');
   const d17 = new Date('2026-06-17');
   const d20 = new Date('2026-06-20');
+  const d22 = new Date('2026-06-22');
 
   return [
     { url: baseUrl, lastModified: d15 },
     { url: `${baseUrl}/work/audio-enhancement`, lastModified: d20 },
     { url: `${baseUrl}/work/epicutis`, lastModified: d20 },
     { url: `${baseUrl}/blog`, lastModified: d17 },
+    // Blog — Case-study-derived operational lessons
+    { url: `${baseUrl}/blog/supplier-transition-strategy-scaling-brands`, lastModified: d22 },
+    { url: `${baseUrl}/blog/outgrowing-first-manufacturer`, lastModified: d22 },
+    { url: `${baseUrl}/blog/managed-packaging-inventory-program`, lastModified: d22 },
+    { url: `${baseUrl}/blog/packaging-operations-sku-growth`, lastModified: d22 },
+    { url: `${baseUrl}/blog/quality-containment-supplier-transition`, lastModified: d22 },
     // Blog — Batch 1 (original 7)
     { url: `${baseUrl}/blog/retail-margin-compression-dtc-wholesale`, lastModified: d15 },
     { url: `${baseUrl}/blog/retailer-requirements-emerging-brands`, lastModified: d15 },
