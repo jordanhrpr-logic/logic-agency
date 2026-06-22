@@ -24,7 +24,6 @@ export default function sitemap() {
     { url: `${baseUrl}/blog/packaging-design-supply-chain-partner`, lastModified: d22 },
     // Blog — Case-study-derived operational lessons
     { url: `${baseUrl}/blog/supplier-transition-strategy-scaling-brands`, lastModified: d22 },
-    { url: `${baseUrl}/blog/outgrowing-first-manufacturer`, lastModified: d22 },
     { url: `${baseUrl}/blog/managed-packaging-inventory-program`, lastModified: d22 },
     { url: `${baseUrl}/blog/packaging-operations-sku-growth`, lastModified: d22 },
     { url: `${baseUrl}/blog/quality-containment-supplier-transition`, lastModified: d22 },
@@ -32,9 +31,6 @@ export default function sitemap() {
     { url: `${baseUrl}/blog/retail-margin-compression-dtc-wholesale`, lastModified: d15 },
     { url: `${baseUrl}/blog/retailer-requirements-emerging-brands`, lastModified: d15 },
     { url: `${baseUrl}/blog/inventory-management-beauty-brands`, lastModified: d15 },
-    { url: `${baseUrl}/blog/what-fractional-operations-team-does`, lastModified: d15 },
-    { url: `${baseUrl}/blog/when-to-hire-vp-operations-cpg`, lastModified: d15 },
-    { url: `${baseUrl}/blog/retail-readiness-checklist-cpg`, lastModified: d15 },
     { url: `${baseUrl}/blog/vendor-diversification-strategy-cpg-brands`, lastModified: d15 },
     // Blog — Batch 2 (5 posts)
     { url: `${baseUrl}/blog/edi-setup-small-brands`, lastModified: d16 },
@@ -55,7 +51,6 @@ export default function sitemap() {
     { url: `${baseUrl}/blog/global-packaging-sourcing`, lastModified: d17 },
     { url: `${baseUrl}/blog/supply-chain-technology-stack`, lastModified: d17 },
     // Blog — Batch C (5 posts)
-    { url: `${baseUrl}/blog/retail-chargebacks-cpg-brands`, lastModified: d17 },
     { url: `${baseUrl}/blog/fractional-supply-chain-operations`, lastModified: d17 },
     { url: `${baseUrl}/blog/fractional-coo-vs-full-time-hire`, lastModified: d17 },
     { url: `${baseUrl}/blog/dtc-to-retail-supply-chain`, lastModified: d17 },
