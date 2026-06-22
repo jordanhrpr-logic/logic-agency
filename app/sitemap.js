@@ -8,6 +8,7 @@ export default function sitemap() {
   return [
     { url: baseUrl, lastModified: d15 },
     { url: `${baseUrl}/work/audio-enhancement`, lastModified: d20 },
+    { url: `${baseUrl}/work/epicutis`, lastModified: d20 },
     { url: `${baseUrl}/blog`, lastModified: d17 },
     // Blog — Batch 1 (original 7)
     { url: `${baseUrl}/blog/retail-margin-compression-dtc-wholesale`, lastModified: d15 },
