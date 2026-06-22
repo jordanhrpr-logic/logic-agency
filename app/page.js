@@ -277,6 +277,7 @@ export default function HomePage() {
                 <h3>Packaging System That Serves as a Product Hub</h3>
                 <p>Created a packaging system for classroom microphone equipment that functions as a daily-use hub, not just a shipping container. Premium overseas production at the same landed cost.</p>
                 <div className="cx"><div className="cz"><strong>20%</strong><span>Shipping Saved</span></div><div className="cz"><strong>$0</strong><span>Upgrade Cost</span></div><div className="cz"><strong>4+</strong><span>SKUs Expanded</span></div></div>
+                <a href="/work/audio-enhancement" className="case-card-link">View Case Study &rarr;</a>
               </div>
             </div>
             <div className="cc">
