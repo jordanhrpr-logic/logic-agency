@@ -268,6 +268,7 @@ export default function HomePage() {
                 <h3>From 3 SKUs to 21+ With Full Packaging Operations</h3>
                 <p>We own the entire packaging program for Epicutis &mdash; sourcing, engineering, vendor management, and a managed inventory system that cut time from order to cash.</p>
                 <div className="cx"><div className="cz"><strong>7x</strong><span>SKU Growth</span></div><div className="cz"><strong>15%</strong><span>Cost Savings</span></div><div className="cz"><strong>90-Day</strong><span>Inventory Plan</span></div></div>
+                <a href="/work/epicutis" className="case-card-link">View Case Study &rarr;</a>
               </div>
             </div>
             <div className="cc">
