@@ -48,6 +48,16 @@ const faqSchema = {
   })),
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Logic Agency', item: 'https://www.logicagencyinc.com' },
+    { '@type': 'ListItem', position: 2, name: 'Client Work', item: 'https://www.logicagencyinc.com/#results' },
+    { '@type': 'ListItem', position: 3, name: 'Epicutis', item: 'https://www.logicagencyinc.com/work/epicutis' },
+  ],
+};
+
 export const metadata = {
   title: 'Epicutis Case Study | Logic Agency',
   description: 'How Logic Agency helped Epicutis build the packaging system behind a multi-year growth plan: managed inventory, normalized logistics, and operational lift across 3 to 21+ SKUs.',
@@ -78,6 +88,7 @@ export default function EpicutisCaseStudy() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Nav variant="guide" />
 
       <section className="cs-hero">
