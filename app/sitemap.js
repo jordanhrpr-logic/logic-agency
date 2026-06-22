@@ -3,9 +3,11 @@ export default function sitemap() {
   const d15 = new Date('2026-06-15');
   const d16 = new Date('2026-06-16');
   const d17 = new Date('2026-06-17');
+  const d20 = new Date('2026-06-20');
 
   return [
     { url: baseUrl, lastModified: d15 },
+    { url: `${baseUrl}/work/audio-enhancement`, lastModified: d20 },
     { url: `${baseUrl}/blog`, lastModified: d17 },
     // Blog — Batch 1 (original 7)
     { url: `${baseUrl}/blog/retail-margin-compression-dtc-wholesale`, lastModified: d15 },
