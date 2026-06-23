@@ -68,5 +68,6 @@ export default function sitemap() {
     { url: `${baseUrl}/guides/dtc-to-retail-supply-chain`, lastModified: new Date('2026-06-15') },
     { url: `${baseUrl}/guides/retail-chargebacks`, lastModified: new Date('2026-06-15') },
     { url: `${baseUrl}/guides/3pl-selection-guide`, lastModified: new Date('2026-06-15') },
+    { url: `${baseUrl}/guides/retail-readiness-scorecard`, lastModified: new Date('2026-06-23') },
   ];
 }

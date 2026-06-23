@@ -550,7 +550,7 @@ export default function RetailReadinessBible() {
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
-          <a href="https://drive.google.com/file/d/1v78gxZkoNjz4sk5bO-MCFMx6sob5jROp/view" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/guides/retail-readiness-scorecard" className="cta-dl">Download the free 40-Point Readiness Scorecard &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>
