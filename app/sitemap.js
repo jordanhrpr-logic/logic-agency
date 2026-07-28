@@ -69,5 +69,7 @@ export default function sitemap() {
     { url: `${baseUrl}/guides/retail-chargebacks`, lastModified: new Date('2026-06-15') },
     { url: `${baseUrl}/guides/3pl-selection-guide`, lastModified: new Date('2026-06-15') },
     { url: `${baseUrl}/guides/retail-readiness-scorecard`, lastModified: new Date('2026-06-23') },
+    { url: `${baseUrl}/guides/cpg-working-capital-playbook`, lastModified: new Date('2026-07-27') },
+    { url: `${baseUrl}/guides/landed-cost-playbook`, lastModified: new Date('2026-07-27') },
   ];
 }
