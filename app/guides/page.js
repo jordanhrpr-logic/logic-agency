@@ -3,8 +3,8 @@ import FooterHome from '@/components/FooterHome';
 
 export const metadata = {
   title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
-  description: 'In-depth operational guides for scaling consumer product brands: retail readiness, packaging cost reduction, 3PL selection, retail chargebacks, DTC-to-retail transition, and fractional operations.',
-  keywords: 'supply chain guides CPG, packaging guides brand, retail readiness guide, 3PL selection guide, retail chargebacks guide, DTC to retail guide, fractional supply chain',
+  description: 'In-depth operational guides for scaling consumer product brands: retail readiness, packaging cost reduction, 3PL selection, retail chargebacks, DTC-to-retail transition, fractional operations, working capital, and landed cost.',
+  keywords: 'supply chain guides CPG, packaging guides brand, retail readiness guide, 3PL selection guide, retail chargebacks guide, DTC to retail guide, fractional supply chain, CPG working capital, landed cost CPG',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides',
   },
@@ -133,6 +133,22 @@ export default function GuidesIndex() {
                 <p className="guide-meta">12 min read</p>
                 <h2>3PL Selection Guide for Consumer Product Brands</h2>
                 <p>How to evaluate fulfillment partners on channel fit, retail compliance, pricing structure, and red flags — before signing a long-term contract.</p>
+                <span className="guide-link">Read the guide &rarr;</span>
+              </div>
+            </a>
+            <a href="/guides/cpg-working-capital-playbook" className="guide-card">
+              <div className="guide-card-inner">
+                <p className="guide-meta">14 min read</p>
+                <h2>The CPG Working Capital Playbook</h2>
+                <p>Loss problem or timing problem? The 90&ndash;180 day cash conversion cycle, gross-to-net deduction math, and non-dilutive funding tools for CPG brands.</p>
+                <span className="guide-link">Read the guide &rarr;</span>
+              </div>
+            </a>
+            <a href="/guides/landed-cost-playbook" className="guide-card">
+              <div className="guide-card-inner">
+                <p className="guide-meta">12 min read</p>
+                <h2>Landed Cost Playbook for CPG Brands</h2>
+                <p>The 6-line cost stack between your supplier quote and your P&amp;L &mdash; freight, duties, DIM weight, tooling, warehousing &mdash; and what the July 2026 USPS DIM changes are already costing you.</p>
                 <span className="guide-link">Read the guide &rarr;</span>
               </div>
             </a>
