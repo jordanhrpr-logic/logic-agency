@@ -2,6 +2,10 @@ import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 import EmailButton from '@/components/EmailButton';
+import GuideTabs from '@/components/GuideTabs';
+import GuideStickyToc from '@/components/GuideStickyToc';
+import GuideMarginChips from '@/components/GuideMarginChips';
+import GuideScrollReveal from '@/components/GuideScrollReveal';
 
 const SITE = 'https://www.logicagencyinc.com';
 
@@ -298,11 +302,11 @@ function Block({ block }) {
         </div>
       );
 
-    case 'diagram':
-      return (
-        <figure style={{ margin: '40px 0' }}>
+    case 'diagram': {
+      const figure = (
+        <>
           <div
-            className="guide-diagram"
+            className={`guide-diagram${block.animate ? ' guide-diagram-animate' : ''}`}
             style={{
               background: block.background || 'var(--dk)',
               borderRadius: 16,
@@ -316,8 +320,85 @@ function Block({ block }) {
               {block.caption}
             </figcaption>
           )}
-        </figure>
+        </>
       );
+      if (block.animate) {
+        return (
+          <GuideScrollReveal className="guide-diagram-reveal">
+            <figure style={{ margin: '40px 0' }}>{figure}</figure>
+          </GuideScrollReveal>
+        );
+      }
+      return <figure style={{ margin: '40px 0' }}>{figure}</figure>;
+    }
+
+    case 'tabs':
+      return <GuideTabs label={block.label} tabs={block.tabs} />;
+
+    case 'revealCards':
+      return (
+        <div className="reveal-grid">
+          {block.items.map((card, i) => (
+            <details className="reveal-card" key={i}>
+              <summary className="reveal-card-summary">
+                {card.tag && <span className="reveal-card-tag">{card.tag}</span>}
+                <span className="reveal-card-title">{card.title}</span>
+                <span className="reveal-card-hint" aria-hidden="true">
+                  <span className="reveal-card-preview">{card.preview || 'Details'}</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                </span>
+              </summary>
+              <div
+                className="reveal-card-body"
+                dangerouslySetInnerHTML={{ __html: card.body }}
+              />
+            </details>
+          ))}
+        </div>
+      );
+
+    case 'example':
+      return (
+        <details className="worked-example">
+          <summary>
+            <span className="we-label">Worked example</span>
+            <span className="we-title">{block.title}</span>
+            <span className="we-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </span>
+          </summary>
+          <div className="we-body">
+            {block.body?.map((line, i) => (
+              <p key={i} dangerouslySetInnerHTML={{ __html: line }} />
+            ))}
+            {block.rows && (
+              <div className="we-rows">
+                {block.rows.map((r, i) => (
+                  <div className="we-row" key={i}>
+                    <div className="we-row-label" dangerouslySetInnerHTML={{ __html: r.label }} />
+                    <div
+                      className={`we-row-val${r.tone ? ' ' + r.tone : ''}`}
+                      dangerouslySetInnerHTML={{ __html: r.value }}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+            {block.result && (
+              <div className="we-result" dangerouslySetInnerHTML={{ __html: block.result }} />
+            )}
+          </div>
+        </details>
+      );
+
+    case 'chips':
+      return <GuideMarginChips {...block} />;
 
     default:
       return null;
@@ -357,7 +438,10 @@ export default function EvergreenGuidePage({ guide }) {
         </div>
       </section>
 
-      <div className="article gl">
+      <div className={`article gl${guide.stickyToc ? ' article-with-sticky-toc' : ''}`}>
+        {guide.stickyToc && (
+          <GuideStickyToc sections={guide.sections} />
+        )}
         <div className="article-inner">
           {guide.tldr && (
             <div className="wired" style={{ marginTop: 0, marginBottom: 48 }}>
