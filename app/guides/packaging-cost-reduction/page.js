@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "Packaging Cost Reduction Without Sacrificing Brand",
   "description": "A guide to finding 15-30% packaging savings through DIM weight optimization, material right-sizing, supplier consolidation, and landed cost analysis — without downgrading quality.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -62,13 +63,16 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Cost Reduction Guide | Logic Agency',
+  title: 'Packaging Cost Reduction Guide — Logic Agency Inc.',
   description: 'Packaging cost reduction starts with landed cost, DIM weight, materials, supplier markup, rework, and emergency freight before cutting quality.',
   keywords: 'reduce packaging costs, packaging cost optimization, DIM weight optimization, packaging COGS reduction, cheaper packaging without looking cheap, packaging cost per unit, packaging cost audit, landed cost packaging',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-cost-reduction',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-02-01',
+    authors: ['Jordan Harper'],
     title: 'Packaging Cost Reduction Without Sacrificing Brand',
     description: 'Where packaging margin actually leaks and how brands typically save 15-30% without downgrading quality.',
     url: 'https://www.logicagencyinc.com/guides/packaging-cost-reduction',

@@ -11,6 +11,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -93,11 +94,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vendor Diversification Strategy for CPG Brands: When Single-Sourcing Breaks',
     description: 'Single-source supply chains break — and when they do, the cost isn\'t a line item. It\'s a missed retail launch or a stockout on your hero SKU. Here\'s the 80/20 dual-sourcing framework.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 
@@ -227,6 +230,8 @@ export default function Page() {
               <li>Capable of scaling to 50&ndash;70% of your production volume within 4&ndash;6 weeks if the primary supplier fails</li>
           </ul>
 
+          <p className="b-note">&rarr; For a structured approach to evaluating new manufacturing partners, see our <a href="/guides/co-manufacturer-selection">Co-Manufacturer Selection Guide</a>.</p>
+
           <h2 id="how-to-qualify-a-secondary-supplier">How to Qualify a Secondary Supplier</h2>
 
           <p>Qualification is the step most brands skip &mdash; they identify a backup supplier in theory but never qualify them in practice. When a disruption hits, they discover that the "backup" hasn&apos;t been tooled, hasn&apos;t produced to their spec, and can&apos;t deliver at the quality standard they need. Qualifying now, before you need them, is the entire point.</p>
@@ -345,7 +350,7 @@ export default function Page() {
 
           <p>The brands that navigated the last five years of supply chain disruption without missing a beat didn&apos;t predict the disruptions. They had alternatives ready.</p>
 
-          <p className="b-note">&rarr; For a comprehensive look at how fractional operations teams provide built-in diversification, visit our <a href="/services">services page</a>.</p>
+          <p className="b-note">&rarr; For a comprehensive look at how fractional operations teams provide built-in diversification, visit our <a href="/#services">services page</a>.</p>
 
           <h2 id="frequently-asked-questions" className="b-faq-h">Frequently Asked Questions</h2>
 
@@ -373,7 +378,7 @@ export default function Page() {
 
           <p>Vendor diversification isn&apos;t a one-time project. It&apos;s an operational discipline that evolves as your brand scales, enters new channels, and expands into new geographies. The brands that build diversification into their supply chain early &mdash; before a disruption forces their hand &mdash; spend less, recover faster, and negotiate from a stronger position.</p>
 
-          <p>If your supply chain depends on a single supplier for any critical component, the clock is running on a disruption you can&apos;t predict. <a href="/services">Start a conversation</a> with our team to evaluate your supplier risk and build a diversification plan that fits your scale and growth trajectory.</p>
+          <p>If your supply chain depends on a single supplier for any critical component, the clock is running on a disruption you can&apos;t predict. <a href="/#services">Start a conversation</a> with our team to evaluate your supplier risk and build a diversification plan that fits your scale and growth trajectory.</p>
 
           <p><em>About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. He has managed supply chains across 15 countries and helped brands scale from DTC-only to Target, Walmart, Costco, and Sephora.</em></p>
 

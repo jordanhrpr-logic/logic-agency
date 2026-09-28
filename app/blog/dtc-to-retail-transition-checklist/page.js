@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'DTC to Retail Checklist: 60 Items Before Your First PO | Logic Agency',
+  title: 'DTC to Retail Checklist: 60 Items Before Your First PO — Logic Agency Inc.',
   description: 'A complete DTC-to-retail checklist: GS1 setup, EDI, case packs, routing guide compliance, wholesale margins, and inventory planning for the first retail PO.',
   keywords: 'DTC to retail transition checklist, retail readiness checklist CPG, DTC to retail supply chain checklist, wholesale transition checklist, retail launch preparation checklist, how to prepare for first retail purchase order',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-dtc-to-retail-transition-checklist.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Complete DTC-to-Retail Transition Checklist (60-Point Pre-PO Guide)',
     description: 'A complete DTC-to-retail checklist: GS1 setup, EDI, case packs, routing guide compliance, wholesale margins, and inventory planning for the first retail PO.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-dtc-to-retail-transition-checklist.jpg'],
   },
 };
 

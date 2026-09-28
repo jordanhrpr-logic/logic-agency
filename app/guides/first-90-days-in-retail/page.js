@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "The CPG Brand's First 90 Days in Retail",
   "description": "A week-by-week account of what actually happens after a retailer says yes — packaging, compliance, inventory, logistics, and the operational reality that nobody warns first-time retail brands about.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -70,13 +71,16 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'First 90 Days in Retail | Logic Agency',
+  title: 'First 90 Days in Retail — Logic Agency Inc.',
   description: 'The first 90 days in retail require vendor onboarding, packaging checks, inventory planning, routing compliance, and reorder timing.',
   keywords: 'how to launch in retail, first retail order, CPG retail launch plan, DTC to retail transition, first 90 days retail, retail launch timeline, getting into retail stores, retail launch checklist CPG, selling to retailers for the first time',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/first-90-days-in-retail',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-03-01',
+    authors: ['Jordan Harper'],
     title: 'Your First 90 Days in Retail',
     description: 'A week-by-week account of what actually happens after a retailer says yes — the chaos, the surprises, and the operational reality.',
     url: 'https://www.logicagencyinc.com/guides/first-90-days-in-retail',

@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'First 90 Days Retail Operations Playbook | Logic Agency',
+  title: 'First 90 Days Retail Operations Playbook — Logic Agency Inc.',
   description: 'The first 90 days in retail decide whether a brand earns a reorder. A week-by-week playbook for compliance, shipping, sell-through, and replenishment.',
   keywords: 'first 90 days retail operations, retail launch operations checklist, scaling DTC to retail, retail operations planning consumer brands, first retail PO operations',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The First 90 Days in Retail: An Operations Playbook',
     description: 'The first 90 days in retail decide whether a brand earns a reorder. A week-by-week playbook for compliance, shipping, sell-through, and replenishment.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

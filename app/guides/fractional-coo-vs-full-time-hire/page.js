@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "Fractional COO vs. Full-Time Hire: A Real Cost Comparison",
   "description": "Fractional COO vs full-time hire: real cost ranges, what each covers, hidden costs founders miss, and a decision framework for scaling CPG brands.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -73,9 +74,13 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-15',
+    authors: ['Jordan Harper'],
     title: 'Fractional COO vs Full-Time Hire for CPG Brands',
     description: 'Fractional COO vs full-time hire: real cost ranges, what each covers, hidden costs founders miss, and a decision framework for scaling CPG brands.',
     url: 'https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-fractional-coo-vs-full-time-hire.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

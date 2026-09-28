@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging & Supply Chain Management Together | Logic Agency',
+  title: 'Packaging & Supply Chain Management Together — Logic Agency Inc.',
   description: 'How integrated packaging and supply chain decisions stop costing scaling consumer brands an estimated 15-25% in margin in the brands we audit regularly.',
   keywords: 'packaging and supply chain management, packaging operations management, one stop packaging and operations, scaling brand operations, packaging and fulfillment optimization',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Operations and Packaging Work Together to Scale a Consumer Product Brand',
     description: 'How integrated packaging and supply chain decisions stop costing scaling consumer brands an estimated 15-25% in margin in the brands we audit regularly.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

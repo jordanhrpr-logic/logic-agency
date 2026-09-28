@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "Building a Packaging System That Scales",
   "description": "How growing brands build packaging systems that work at 10K units and 500K units — the three stages of packaging maturity, critical early decisions, and when to stop managing packaging yourself.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -62,13 +63,16 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging System That Scales | Logic Agency',
+  title: 'Packaging System That Scales — Logic Agency Inc.',
   description: 'A scalable packaging system standardizes specs, suppliers, documentation, cost controls, and retail readiness before SKU growth creates chaos.',
   keywords: 'packaging for startup, packaging development process, scaling packaging, DTC to retail packaging, packaging system for growing brand, when to hire packaging operations, packaging from prototype to production',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-system-that-scales',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-02-01',
+    authors: ['Jordan Harper'],
     title: 'Building a Packaging System That Scales',
     description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop DIY-ing.',
     url: 'https://www.logicagencyinc.com/guides/packaging-system-that-scales',

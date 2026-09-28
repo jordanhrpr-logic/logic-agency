@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "3PL Selection Guide for Consumer Product Brands",
   "description": "3PL selection guide for CPG brands: how to evaluate fulfillment partners on channel fit, retail compliance, pricing, transition risk, and red flags before signing.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -73,9 +74,13 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/3pl-selection-guide',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-15',
+    authors: ['Jordan Harper'],
     title: '3PL Selection Guide for CPG Brands',
     description: '3PL selection guide for CPG brands: how to evaluate fulfillment partners on channel fit, retail compliance, pricing, transition risk, and red flags before signing.',
     url: 'https://www.logicagencyinc.com/guides/3pl-selection-guide',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-3pl-selection-guide.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -12,14 +12,15 @@ export default function Nav({ variant = 'guide' }) {
       <span className="nav-dd-label">Guides <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 5l3 3 3-3" /></svg></span>
       <div className="dd-menu">
         <div className="dd-panel">
-          <a href="/guides/retail-readiness" onClick={close}>The Retail Readiness Bible</a>
           <a href="/guides/first-90-days-in-retail" onClick={close}>Your First 90 Days in Retail</a>
-          <a href="/guides/fractional-supply-chain-operations" onClick={close}>Fractional Supply Chain Operations</a>
-          <a href="/guides/dtc-to-retail-supply-chain" onClick={close}>DTC to Retail Supply Chain</a>
-          <a href="/guides/retail-chargebacks" onClick={close}>Retail Chargebacks Explained</a>
+          <a href="/guides/retail-readiness" onClick={close}>The Retail Readiness Bible</a>
           <a href="/guides/packaging-cost-reduction" onClick={close}>Packaging Cost Reduction</a>
-          <a href="/guides/3pl-selection-guide" onClick={close}>3PL Selection Guide</a>
-          <a href="/guides" onClick={close} style={{fontWeight:700,color:'var(--o)'}}>View all guides &rarr;</a>
+          <a href="/guides/fractional-supply-chain-operations" onClick={close}>Fractional Supply Chain Operations</a>
+          <a href="/guides/retail-chargebacks" onClick={close}>Retail Chargebacks Explained</a>
+          <a href="/guides/co-manufacturer-selection" onClick={close}>Co-Manufacturer Selection</a>
+          <a href="/guides/cpg-demand-forecasting" onClick={close}>Demand Forecasting for CPG</a>
+          <a href="/guides/cpg-gross-margin-playbook" onClick={close}>Gross Margin Playbook</a>
+          <a href="/guides" onClick={close} style={{fontWeight:700,color:'var(--o)'}}>View all 26 guides &rarr;</a>
         </div>
       </div>
     </div>

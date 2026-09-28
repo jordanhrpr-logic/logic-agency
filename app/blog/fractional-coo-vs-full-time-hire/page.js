@@ -30,7 +30,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: title,
   description,
-  author: { '@type': 'Person', name: 'Jordan Harper', url: 'https://www.logicagencyinc.com' },
+  author: { '@type': 'Person', name: 'Jordan Harper', jobTitle: 'Founder & CEO', url: 'https://www.logicagencyinc.com' },
   publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
   mainEntityOfPage: pageUrl,
   datePublished: '2026-06-17',
@@ -58,7 +58,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Hiring Ops Too Early | Logic Agency',
+  title: 'Hiring Ops Too Early — Logic Agency Inc.',
   description,
   keywords: 'hiring VP of Operations too early, fractional COO timing, operations hire CPG brand, when to hire VP operations startup',
   alternates: { canonical: pageUrl },
@@ -70,11 +70,13 @@ export const metadata = {
     publishedTime: '2026-06-17',
     modifiedTime: '2026-06-22',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -80,7 +81,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail Routing Guide Compliance for CPG Brands | Logic Agency',
+  title: 'Retail Routing Guide Compliance for CPG Brands — Logic Agency Inc.',
   description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
   keywords: 'retail routing guide compliance, routing guide compliance, retail chargeback prevention, CPG routing guide, ASN timing retail, retail shipment compliance',
   alternates: {
@@ -93,11 +94,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Retail Routing Guide Compliance: What Every Brand Gets Wrong',
     description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

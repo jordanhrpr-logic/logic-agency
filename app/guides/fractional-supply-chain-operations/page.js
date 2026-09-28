@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "Fractional Supply Chain Operations: What It Is and When It Works",
   "description": "Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -73,9 +74,13 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-15',
+    authors: ['Jordan Harper'],
     title: 'Fractional Supply Chain Operations for CPG Brands',
     description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
     url: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-fractional-supply-chain-operations.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

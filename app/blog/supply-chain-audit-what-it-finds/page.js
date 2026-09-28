@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -80,7 +81,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'What a Supply Chain Audit Finds | Logic Agency',
+  title: 'What a Supply Chain Audit Finds — Logic Agency Inc.',
   description: 'A practical supply chain audit guide for CPG brands: landed cost gaps, supplier risk, freight waste, inventory issues, packaging cost leaks, and next steps.',
   keywords: 'supply chain audit CPG brands, CPG supply chain audit, supply chain cost audit, packaging cost audit, landed cost audit, operational audit consumer brands',
   alternates: {
@@ -93,11 +94,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What a Supply Chain Audit Actually Finds',
     description: 'A practical supply chain audit guide for CPG brands: landed cost gaps, supplier risk, freight waste, inventory issues, packaging cost leaks, and next steps.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

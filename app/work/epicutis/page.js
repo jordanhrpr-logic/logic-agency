@@ -30,7 +30,7 @@ const caseStudySchema = {
   '@type': 'Article',
   headline: 'How Logic Helped Epicutis Build the Packaging System Behind a Larger Growth Plan',
   description: 'Epicutis came to Logic with a narrow packaging need. Over time, the relationship expanded into packaging development, managed inventory, warehouse operations, and logistics normalization.',
-  author: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
+  author: { '@type': 'Person', name: 'Jordan Harper', jobTitle: 'Founder & CEO', url: 'https://www.logicagencyinc.com' },
   publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
   mainEntityOfPage: 'https://www.logicagencyinc.com/work/epicutis',
   datePublished: '2026-06-16',
@@ -59,7 +59,7 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: 'Epicutis Case Study | Logic Agency',
+  title: 'Epicutis Case Study — Logic Agency Inc.',
   description: 'How Logic Agency helped Epicutis build the packaging system behind a multi-year growth plan: managed inventory, normalized logistics, and operational lift across 3 to 21+ SKUs.',
   keywords: 'Epicutis case study, packaging operations management, managed inventory program, CPG packaging supply chain, fractional supply chain operations',
   alternates: {

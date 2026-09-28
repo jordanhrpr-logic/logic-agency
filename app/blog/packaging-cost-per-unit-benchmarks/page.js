@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Cost Per Unit Benchmarks by Category | Logic Agency',
+  title: 'Packaging Cost Per Unit Benchmarks by Category — Logic Agency Inc.',
   description: 'Packaging cost per unit benchmarks by category: beauty, food, supplements, electronics, spirits, and jewelry. Real cost ranges, COGS percentages, and when cheap packaging costs more.',
   keywords: 'packaging cost per unit benchmark, how much should packaging cost per unit, packaging budget percentage, beauty packaging cost ranges, CPG packaging spend benchmarks',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-packaging-cost-per-unit-benchmarks.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Packaging Cost Per Unit Benchmarks by Product Category',
     description: 'Packaging cost per unit benchmarks by category: beauty, food, supplements, electronics, spirits, and jewelry. Real cost ranges, COGS percentages, and when cheap packaging costs more.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-packaging-cost-per-unit-benchmarks.jpg'],
   },
 };
 
@@ -134,7 +137,7 @@ export default function Page() {
           </div>
           <span className="b-tag">Packaging Operations</span>
           <h1>Packaging Cost Per Unit Benchmarks by Product Category</h1>
-          <p className="b-lede">A practical packaging cost per unit benchmark is $1.50&ndash;$8.00 for beauty and skincare, $0.30&ndash;$3.00 for food and beverage, $0.80&ndash;$4.00 for supplements, $2.00&ndash;$12.00 for consumer electronics, $3.00&ndash;$15.00 for spirits and wine, and $3.00&ndash;$15.00 for jewelry &mdash; with most growing brands expecting packaging to represent an estimated 10&ndash;25% of COGS.</p>
+          <p className="b-lede">How much should your packaging cost per unit? Real benchmarks by category &mdash; with the hidden costs that turn a &ldquo;cheap&rdquo; package into an expensive mistake.</p>
           <div className="b-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Jun 2026</span>
@@ -164,9 +167,30 @@ export default function Page() {
             </ul>
           </div>
 
+          <div className="toc">
+            <h3>What&apos;s Inside</h3>
+            <ul className="toc-list">
+              <li><a href="#how-to-think-about-it">How Should Brands Think About Packaging Cost?</a></li>
+              <li><a href="#benchmarks-by-category">Benchmarks by Category</a></li>
+              <li><a href="#beauty">Beauty and Skincare Packaging</a></li>
+              <li><a href="#food">Food and Beverage Packaging</a></li>
+              <li><a href="#supplements">Supplements Packaging</a></li>
+              <li><a href="#electronics">Consumer Electronics Packaging</a></li>
+              <li><a href="#spirits-fragrance">Spirits, Wine, and Fragrance Packaging</a></li>
+              <li><a href="#jewelry">Jewelry Packaging</a></li>
+              <li><a href="#too-expensive">When Is Packaging Too Expensive?</a></li>
+              <li><a href="#cheap-costs-more">When Does Cheap Packaging Cost More?</a></li>
+              <li><a href="#packaging-layers">Primary, Secondary, and Tertiary Packaging</a></li>
+              <li><a href="#volume-effect">How Volume Changes Benchmarks</a></li>
+              <li><a href="#using-benchmarks">Using Benchmarks in a Real Quote Review</a></li>
+            </ul>
+          </div>
+
           <p>Benchmarks are starting points. The right packaging cost is the one that protects margin and supports the brand promise at the same time.</p>
 
           <h2 id="how-to-think-about-it">How Should Brands Think About Packaging Cost?</h2>
+
+          <div className="callout"><p><strong>Three layers of cost.</strong> Direct unit cost, landed cost (freight + duties + storage), and business impact (damage, returns, shelf presence). The benchmark only matters when you know which layer you&apos;re measuring.</p></div>
 
           <p>Packaging cost has three layers.</p>
 
@@ -318,6 +342,8 @@ export default function Page() {
 
           <p>Cheap packaging gets expensive when it creates downstream costs. Common examples:</p>
 
+          <div className="callout"><p><strong>The real test.</strong> A $0.40 savings is not a savings if it creates a $6 return, a damaged retail relationship, or a customer who never reorders. The best packaging cost model includes unit cost, landed cost, damage risk, shelf performance, and brand role.</p></div>
+
           <ul>
             <li>Higher damage rates</li>
             <li>More returns</li>
@@ -347,6 +373,8 @@ export default function Page() {
 
           <p>Volume changes almost every packaging benchmark. At low volume, setup costs dominate. Tooling, print setup, material minimums, and freight get spread across fewer units. At higher volume, the unit cost improves, but inventory risk can rise.</p>
 
+          <div className="callout"><p><strong>Stage matters.</strong> A launch SKU, retail test, and replenishment SKU should not be judged the same way. Launch packaging needs flexibility. Replenishment packaging needs efficiency. Retail packaging needs consistency and compliance.</p></div>
+
           <p>Example: 1,000 units at $3.20 may be the right test order; 5,000 units at $1.85 may be the better production order; 20,000 units at $1.10 may be efficient only if sell-through is proven. The best benchmark is not always the lowest quote. It is the number that matches the stage of the product.</p>
 
           <p>A launch SKU, retail test, and replenishment SKU should not be judged the same way. Launch packaging needs flexibility. Replenishment packaging needs efficiency. Retail packaging needs consistency and compliance.</p>
@@ -358,26 +386,6 @@ export default function Page() {
           <p>Ask what is included. Primary packaging, secondary packaging, tertiary packaging, freight, duties, storage, and waste are often quoted separately. A clean benchmark compares the same scope across suppliers.</p>
 
           <p>The strongest quote review separates three questions: is the package right for the brand, is the cost right for the margin, and is the supplier set up to repeat it reliably?</p>
-
-          <h2 id="faq" className="b-faq-h">FAQ</h2>
-
-          <h3>What percentage of COGS should packaging be?</h3>
-          <p>Most growing CPG brands should expect packaging to represent an estimated 10&ndash;25% of COGS. The right range depends on category, channel, price point, fragility, and brand positioning.</p>
-
-          <h3>How much should beauty packaging cost per unit?</h3>
-          <p>Beauty and skincare packaging usually costs $1.50&ndash;$8.00 per unit, with luxury rigid boxes, fragrance coffrets, and premium gift sets often reaching $15&ndash;$25+.</p>
-
-          <h3>What is a normal packaging cost for food products?</h3>
-          <p>Food and beverage packaging often lands around $0.30&ndash;$3.00 per unit, depending on pouches, bottles, cartons, labels, barrier needs, and retail case-pack requirements. Food packaging typically represents an estimated 8&ndash;18% of COGS.</p>
-
-          <h3>Is cheaper packaging always better?</h3>
-          <p>No. Cheaper packaging can increase damage, returns, freight cost, retail compliance issues, or brand erosion. A $0.40 savings is not a savings if it creates a $6 return, a damaged retail relationship, or a customer who never reorders.</p>
-
-          <h3>How do I know if I am overpaying for packaging?</h3>
-          <p>Look for packaging that exceeds 25% of COGS with no luxury or protection rationale, unnecessary finishes stacked without a clear signature moment, oversized structures that inflate freight, supplier markups, and MOQs that force excess inventory.</p>
-
-          <h3>How does volume affect packaging cost per unit?</h3>
-          <p>Volume changes almost every packaging benchmark. At low volume, setup costs dominate. At 1,000 units a box might cost $3.20; at 5,000 units it might fall to $1.85; at 20,000 units to $1.10. The best benchmark is the number that matches the stage of the product, not always the lowest quote.</p>
 
         </div>
       </div>

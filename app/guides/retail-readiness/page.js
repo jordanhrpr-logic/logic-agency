@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "The Retail Readiness Bible: Everything You Need to Launch and Scale in Retail",
   "description": "A comprehensive operational playbook for brands entering retail — covering packaging systems, supply chain infrastructure, inventory forecasting, retailer compliance, cost modeling, and a phased checklist from first PO through scale.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -77,6 +78,9 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/retail-readiness',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-02-01',
+    authors: ['Jordan Harper'],
     title: 'The Retail Readiness Bible',
     description: 'The complete operational playbook for launching into retail. Packaging, supply chain, compliance, and a 60-point checklist.',
     url: 'https://www.logicagencyinc.com/guides/retail-readiness',

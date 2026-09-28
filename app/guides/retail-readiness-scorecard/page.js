@@ -8,7 +8,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: '40-Point Retail Readiness Scorecard for CPG Brands',
   description: 'A 40-point self-audit covering packaging, sourcing, fulfillment, operations, team, and investor-grade readiness. Score yourself before your first retail PO or fundraise.',
-  author: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
+  author: { '@type': 'Person', name: 'Jordan Harper', jobTitle: 'Founder & CEO', url: 'https://www.logicagencyinc.com' },
   publisher: { '@type': 'Organization', name: 'Logic Agency Inc.' },
   mainEntityOfPage: 'https://www.logicagencyinc.com/guides/retail-readiness-scorecard',
   datePublished: '2026-06-23',
@@ -91,17 +91,20 @@ const breadcrumbSchema = {
 };
 
 export const metadata = {
-  title: '40-Point Retail Readiness Scorecard | Logic Agency',
+  title: '40-Point Retail Readiness Scorecard — Logic Agency Inc.',
   description: 'Score your packaging, sourcing, fulfillment, and operations readiness before your first retail PO or fundraise. Free 40-point self-audit for CPG brands.',
   keywords: 'retail readiness scorecard, CPG retail readiness checklist, DTC to retail checklist, retail operations audit, retail launch checklist CPG, ops readiness scorecard, packaging readiness checklist',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/retail-readiness-scorecard',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-23',
+    authors: ['Jordan Harper'],
     title: '40-Point Retail Readiness Scorecard for CPG Brands',
     description: 'Score your packaging, sourcing, fulfillment, and operations readiness before your first retail PO or fundraise.',
     url: 'https://www.logicagencyinc.com/guides/retail-readiness-scorecard',
-    images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-readiness.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "How to Source Packaging Without Getting Burned",
   "description": "A sourcing guide from an agency with 20 years of global packaging sourcing experience: how to choose between domestic and international suppliers, vet factories, avoid MOQ traps, and run the landed cost math that most brands skip.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -70,13 +71,16 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Sourcing Guide | Logic Agency',
+  title: 'Packaging Sourcing Guide — Logic Agency Inc.',
   description: 'Packaging sourcing requires supplier type clarity, MOQ math, factory vetting, landed cost comparison, quality control, and backup capacity.',
   keywords: 'packaging suppliers, where to source packaging, custom packaging sourcing, domestic vs overseas packaging, packaging manufacturer, packaging supplier for cosmetics, how to find packaging supplier, packaging sourcing China, packaging MOQ, packaging factory audit',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-sourcing',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-02-01',
+    authors: ['Jordan Harper'],
     title: 'How to Source Packaging Without Getting Burned',
     description: 'Domestic vs. international, brokers vs. manufacturers, factory vetting, MOQ traps, landed cost math, and red flags.',
     url: 'https://www.logicagencyinc.com/guides/packaging-sourcing',

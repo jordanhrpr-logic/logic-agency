@@ -9,9 +9,10 @@ const articleSchema = {
   "headline": "The CPG Working Capital Playbook",
   "description": "How CPG brands fund growth without dilution: the diagnostic question (loss vs. working capital), the 90-180 day cash conversion cycle, gross-to-net deduction math, revolving credit lines, PO/AR financing, and when equity IS the right tool.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",

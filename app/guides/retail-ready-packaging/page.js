@@ -8,7 +8,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Getting Your Packaging Retail-Ready: What Brands Need to Know Before Their First PO",
   "description": "A comprehensive guide to retail packaging requirements including case packs, pallet configurations, retailer compliance specs, and the real timeline for getting shelf-ready.",
-  "author": { "@type": "Organization", "name": "Logic Agency Inc.", "url": "https://www.logicagencyinc.com" },
+  "author": { "@type": "Person", "name": "Jordan Harper", "jobTitle": "Founder & CEO", "url": "https://www.logicagencyinc.com" },
   "publisher": { "@type": "Organization", "name": "Logic Agency Inc." },
   "mainEntityOfPage": "https://www.logicagencyinc.com/guides/retail-ready-packaging",
   "datePublished": "2025-02-01",
@@ -43,11 +43,14 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail-Ready Packaging Guide | Logic Agency',
+  title: 'Retail-Ready Packaging Guide — Logic Agency Inc.',
   description: 'Retail-ready packaging means compliant case packs, pallet specs, barcode placement, labels, and timelines before the first PO ships.',
   keywords: 'retail packaging requirements, retail-ready packaging, case pack requirements, pallet configuration, Target packaging requirements, Walmart packaging compliance, retail packaging compliance, DTC to retail packaging',
   alternates: { canonical: 'https://www.logicagencyinc.com/guides/retail-ready-packaging' },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-02-01',
+    authors: ['Jordan Harper'],
     title: 'Getting Your Packaging Retail-Ready',
     description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
     url: 'https://www.logicagencyinc.com/guides/retail-ready-packaging',

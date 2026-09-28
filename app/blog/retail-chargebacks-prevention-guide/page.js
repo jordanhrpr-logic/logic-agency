@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail Chargeback Prevention Guide for CPG Brands | Logic Agency',
+  title: 'Retail Chargeback Prevention Guide for CPG Brands — Logic Agency Inc.',
   description: 'Stop chargebacks before they happen. A pre-shipment audit checklist covering routing guides, labels, case packs, ASNs, and the dispute-vs-absorb framework.',
   keywords: 'retail chargeback prevention CPG, how to prevent retail chargebacks, retail routing guide compliance checklist, pre-shipment audit CPG brand, chargeback dispute framework retail, ASN compliance checklist retail',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-retail-chargebacks-prevention-guide.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Retail Chargeback Prevention: The Pre-Shipment Audit Every CPG Brand Needs',
     description: 'Stop chargebacks before they happen. A pre-shipment audit checklist covering routing guides, labels, case packs, ASNs, and the dispute-vs-absorb framework.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-retail-chargebacks-prevention-guide.jpg'],
   },
 };
 
@@ -181,6 +184,8 @@ export default function Page() {
           <h2 id="audit-checklist">The Pre-Shipment Audit Checklist</h2>
 
           <p>Run this audit before every PO ships. The categories mirror the most common chargeback reason codes. Check every item. Flag any that cannot be confirmed. Do not ship until the flags are resolved.</p>
+
+          <p className="b-note">&rarr; Before running this audit, confirm your packaging and logistics meet retailer standards with our <a href="/guides/retail-readiness-scorecard">Retail Readiness Scorecard</a>.</p>
 
           <h3>Category 1: Item Setup and PO Alignment</h3>
 
@@ -312,6 +317,8 @@ export default function Page() {
           <p><strong>Update the checklist when routing guides change.</strong> Pull the current guide at the start of every new PO cycle. If anything changed, flag it in the audit before shipment.</p>
 
           <p><strong>Brief 3PLs every quarter.</strong> A quarterly 30-minute touchpoint on compliance performance and process keeps them calibrated.</p>
+
+          <p className="b-note">&rarr; For a step-by-step process to onboard distributors and align them with your compliance standards, see our <a href="/guides/distributor-onboarding-playbook">Distributor Onboarding Playbook</a>.</p>
 
           <h3>How Logic Agency Manages This for Client Brands</h3>
 

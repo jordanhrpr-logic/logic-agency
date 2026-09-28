@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "DTC to Retail Supply Chain: What Most Brands Get Wrong Before Their First PO",
   "description": "A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -66,16 +67,20 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'DTC to Retail Supply Chain Guide | Logic Agency',
+  title: 'DTC to Retail Supply Chain Guide — Logic Agency Inc.',
   description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
   keywords: 'DTC to retail supply chain, retail launch supply chain, scaling supply chain CPG, retail compliance CPG, retail readiness checklist, retail launch preparation',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-15',
+    authors: ['Jordan Harper'],
     title: 'DTC to Retail Supply Chain Transition Guide',
     description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
     url: 'https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-dtc-to-retail-supply-chain.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

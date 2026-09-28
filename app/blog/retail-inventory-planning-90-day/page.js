@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -80,7 +81,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail Inventory Planning for CPG Brands | Logic Agency',
+  title: 'Retail Inventory Planning for CPG Brands — Logic Agency Inc.',
   description: 'A practical retail inventory planning guide for CPG brands: pipeline fill, safety stock, reorder triggers, production lead times, and 90-day forecasting.',
   keywords: 'retail inventory planning CPG, retail inventory forecast, first retail PO inventory planning, CPG inventory planning, safety stock retail launch, reorder point calculation CPG',
   alternates: {
@@ -93,11 +94,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Retail Inventory Planning: Building the 90-Day Forecast Before Your First PO',
     description: 'A practical retail inventory planning guide for CPG brands: pipeline fill, safety stock, reorder triggers, production lead times, and 90-day forecasting.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

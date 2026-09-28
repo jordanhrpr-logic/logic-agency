@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'EDI Setup for Small Brands: Cost & Guide | Logic Agency',
+  title: 'EDI Setup for Small Brands: Cost & Guide — Logic Agency Inc.',
   description: 'EDI setup for small brands costs $150–$500/month and takes 4–8 weeks. A plain-English guide to transactions, providers, costs, and what to do first.',
   keywords: 'EDI setup small brand, EDI for small business, EDI ecommerce brand, EDI requirements retail, EDI setup cost',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-edi-setup-small-brands.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'EDI Setup for Small Brands: A Plain-English Guide to Getting Retail-Ready',
     description: 'EDI setup for small brands costs $150–$500/month and takes 4–8 weeks. A plain-English guide to transactions, providers, costs, and what to do first.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-edi-setup-small-brands.jpg'],
   },
 };
 

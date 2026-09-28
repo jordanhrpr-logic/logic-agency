@@ -1,6 +1,46 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Supply Chain & Packaging Guides",
+  "description": "Operational guides for scaling consumer product brands: retail readiness, packaging, supply chain, operations, and growth economics.",
+  "url": "https://www.logicagencyinc.com/guides",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 26,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "https://www.logicagencyinc.com/guides/retail-readiness", "name": "The Retail Readiness Bible" },
+      { "@type": "ListItem", "position": 2, "url": "https://www.logicagencyinc.com/guides/first-90-days-in-retail", "name": "First 90 Days in Retail" },
+      { "@type": "ListItem", "position": 3, "url": "https://www.logicagencyinc.com/guides/retail-ready-packaging", "name": "Getting Your Packaging Retail-Ready" },
+      { "@type": "ListItem", "position": 4, "url": "https://www.logicagencyinc.com/guides/packaging-cost-reduction", "name": "Packaging Cost Reduction Without Sacrificing Brand" },
+      { "@type": "ListItem", "position": 5, "url": "https://www.logicagencyinc.com/guides/packaging-system-that-scales", "name": "Building a Packaging System That Scales" },
+      { "@type": "ListItem", "position": 6, "url": "https://www.logicagencyinc.com/guides/packaging-sourcing", "name": "How to Source Packaging Without Getting Burned" },
+      { "@type": "ListItem", "position": 7, "url": "https://www.logicagencyinc.com/guides/ai-for-cpg-operations", "name": "The Operator's Guide to AI for CPG Operations" },
+      { "@type": "ListItem", "position": 8, "url": "https://www.logicagencyinc.com/guides/fractional-supply-chain-operations", "name": "Fractional Supply Chain Operations" },
+      { "@type": "ListItem", "position": 9, "url": "https://www.logicagencyinc.com/guides/fractional-coo-vs-full-time-hire", "name": "Fractional COO vs. Full-Time Hire" },
+      { "@type": "ListItem", "position": 10, "url": "https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain", "name": "DTC to Retail Supply Chain" },
+      { "@type": "ListItem", "position": 11, "url": "https://www.logicagencyinc.com/guides/retail-chargebacks", "name": "Retail Chargebacks for CPG Brands" },
+      { "@type": "ListItem", "position": 12, "url": "https://www.logicagencyinc.com/guides/3pl-selection-guide", "name": "3PL Selection Guide" },
+      { "@type": "ListItem", "position": 13, "url": "https://www.logicagencyinc.com/guides/retail-readiness-scorecard", "name": "40-Point Retail Readiness Scorecard" },
+      { "@type": "ListItem", "position": 14, "url": "https://www.logicagencyinc.com/guides/cpg-working-capital-playbook", "name": "The CPG Working Capital Playbook" },
+      { "@type": "ListItem", "position": 15, "url": "https://www.logicagencyinc.com/guides/landed-cost-playbook", "name": "Landed Cost Playbook" },
+      { "@type": "ListItem", "position": 16, "url": "https://www.logicagencyinc.com/guides/co-manufacturer-selection", "name": "Co-Manufacturer Selection" },
+      { "@type": "ListItem", "position": 17, "url": "https://www.logicagencyinc.com/guides/cpg-demand-forecasting", "name": "Demand Forecasting for CPG Brands" },
+      { "@type": "ListItem", "position": 18, "url": "https://www.logicagencyinc.com/guides/cpg-gross-margin-playbook", "name": "The CPG Gross Margin Playbook" },
+      { "@type": "ListItem", "position": 19, "url": "https://www.logicagencyinc.com/guides/cpg-broker-selection-playbook", "name": "CPG Broker Selection Playbook" },
+      { "@type": "ListItem", "position": 20, "url": "https://www.logicagencyinc.com/guides/co-manufacturer-contracts-risk", "name": "Co-Manufacturer Contracts and Risk" },
+      { "@type": "ListItem", "position": 21, "url": "https://www.logicagencyinc.com/guides/regional-to-national-retail-expansion", "name": "From Regional to National Retail" },
+      { "@type": "ListItem", "position": 22, "url": "https://www.logicagencyinc.com/guides/distributor-onboarding-playbook", "name": "Distributor Onboarding Playbook" },
+      { "@type": "ListItem", "position": 23, "url": "https://www.logicagencyinc.com/guides/cpg-channel-economics", "name": "Channel Economics" },
+      { "@type": "ListItem", "position": 24, "url": "https://www.logicagencyinc.com/guides/sustainable-packaging-cpg", "name": "Sustainable Packaging for CPG Brands" },
+      { "@type": "ListItem", "position": 25, "url": "https://www.logicagencyinc.com/guides/cpg-operations-kpis", "name": "CPG Operations KPI Dashboard" },
+      { "@type": "ListItem", "position": 26, "url": "https://www.logicagencyinc.com/guides/ops-team-without-hiring", "name": "How to Build an Ops Team Without Hiring One" }
+    ]
+  }
+};
+
 export const metadata = {
   title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
   description: 'In-depth operational guides for scaling consumer product brands: retail readiness, packaging cost reduction, 3PL selection, retail chargebacks, DTC-to-retail transition, fractional operations, working capital, and landed cost.',
@@ -23,6 +63,7 @@ export const metadata = {
 export default function GuidesIndex() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <Nav />
 
       <section className="gl" style={{ padding: '80px 0 40px' }}>

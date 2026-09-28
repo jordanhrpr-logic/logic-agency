@@ -31,8 +31,9 @@ const caseStudySchema = {
   "headline": "How Logic Helped Audio Enhancement Remove a Supplier Bottleneck and Protect Product Growth",
   "description": "Audio Enhancement had outgrown the supplier behind a small but highly visible product component. Logic stabilized quality in the interim and managed the transition to a larger-scale manufacturing partner.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -96,7 +97,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Audio Enhancement Case Study | Logic Agency',
+  title: 'Audio Enhancement Case Study — Logic Agency Inc.',
   description: 'How Logic Agency helped Audio Enhancement qualify a new manufacturing partner and protect product quality through a supplier transition — keeping growth on track.',
   keywords: 'supply chain supplier transition, packaging manufacturer qualification, product quality management CPG, fractional supply chain operations',
   alternates: {
@@ -109,11 +110,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-audio-enhancement.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Logic Helped Audio Enhancement Protect Product Growth',
     description: 'Audio Enhancement had outgrown their supplier. Logic stabilized quality, managed the transition, and kept growth on track.',
+    images: ['https://www.logicagencyinc.com/images/og-audio-enhancement.jpg'],
   },
 };
 

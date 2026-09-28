@@ -262,7 +262,7 @@ export default function HomePage() {
           <p className="ss">From first retail PO to enterprise operations, here&apos;s what embedded partnership looks like.</p>
           <FadeIn className="cg">
             <div className="cc">
-              <div className="cm"><img src="/images/epicutis.jpg" alt="Epicutis premium skincare packaging by Logic Agency" /></div>
+              <div className="cm"><img src="/images/epicutis.jpg" alt="Epicutis premium skincare packaging by Logic Agency" loading="lazy" /></div>
               <div className="cb">
                 <div className="cn">Retail Packaging + Operations &middot; Enterprise Tier</div>
                 <h3>From 3 SKUs to 21+ With Full Packaging Operations</h3>
@@ -272,7 +272,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm"><img src="/images/audio-enhancement.jpg" alt="Audio enhancement classroom microphone packaging by Logic Agency" /></div>
+              <div className="cm"><img src="/images/audio-enhancement.jpg" alt="Audio enhancement classroom microphone packaging by Logic Agency" loading="lazy" /></div>
               <div className="cb">
                 <div className="cn">B2B Commercial Packaging &middot; Growth Tier</div>
                 <h3>Packaging System That Serves as a Product Hub</h3>
@@ -282,7 +282,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm"><img src="/images/gesine.jpg" alt="Gesine pre-seed brand packaging by Logic Agency" /></div>
+              <div className="cm"><img src="/images/gesine.jpg" alt="Gesine pre-seed brand packaging by Logic Agency" loading="lazy" /></div>
               <div className="cb">
                 <div className="cn">Packaging + Operations &middot; Growth Tier</div>
                 <h3>Packaging Built for Launch and Built to Scale</h3>
@@ -291,7 +291,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
-              <div className="cm"><img src="/images/haldirams.jpg" alt="Haldiram's US retail packaging by Logic Agency" /></div>
+              <div className="cm"><img src="/images/haldirams.jpg" alt="Haldiram's US retail packaging by Logic Agency" loading="lazy" /></div>
               <div className="cb">
                 <div className="cn">Supply Chain + Market Entry &middot; Enterprise Tier</div>
                 <h3>US Mainstream Retail Entry for Global Snack Brand</h3>

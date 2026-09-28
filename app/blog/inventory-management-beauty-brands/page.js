@@ -11,6 +11,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -94,11 +95,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-inventory-management-beauty-brands.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Inventory Management for Beauty Brands: From Spreadsheets to Retail-Ready Systems',
     description: 'Beauty inventory is harder than most CPG categories — shade proliferation, expiration dates, 12–16 week lead times, and multi-channel demand. Here\'s the framework that actually works.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-inventory-management-beauty-brands.jpg'],
   },
 };
 
@@ -128,7 +131,7 @@ export default function Page() {
           </div>
           <span className="b-tag">Operations</span>
           <h1>Inventory Management for Beauty Brands</h1>
-          <p className="b-lede">Inventory management for beauty brands comes down to two failure modes — and most brands are stuck in one of them. You either tie up too much cash in safety stock you don't need, or you run out of your best-sellers at the worst possible moment. The unique challenges of beauty inventory — shade proliferation, expiration dates, batch tracking, retailer-specific packaging, and 12–16 week production lead times — make this harder than in most CPG categories. This guide covers the frameworks, formulas, and technology decisions that move beauty brands from reactive inventory management to a system that supports DTC, retail, and wholesale simultaneously.</p>
+          <p className="b-lede">Beauty inventory comes down to two failure modes &mdash; and most brands are stuck in one of them. Here&apos;s the framework that actually works across DTC, retail, and wholesale.</p>
           <div className="b-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Jun 2026</span>
@@ -158,6 +161,20 @@ export default function Page() {
             </ul>
           </div>
 
+          <div className="toc">
+            <h3>What&apos;s Inside</h3>
+            <ul className="toc-list">
+              <li><a href="#why-beauty-inventory-is-uniquely-difficult">Why Beauty Inventory Is Uniquely Difficult</a></li>
+              <li><a href="#the-reorder-point-formula-for-beauty-products">The Reorder Point Formula for Beauty Products</a></li>
+              <li><a href="#demand-planning-without-historical-retail-data">Demand Planning Without Historical Retail Data</a></li>
+              <li><a href="#inventory-velocity-benchmarks-for-beauty">Inventory Velocity Benchmarks for Beauty</a></li>
+              <li><a href="#the-technology-stack-by-revenue-stage">The Technology Stack by Revenue Stage</a></li>
+              <li><a href="#managing-expiration-risk">Managing Expiration Risk</a></li>
+            </ul>
+          </div>
+
+          <div className="callout"><p><strong>The core problem.</strong> Beauty brands carry 40&ndash;60% more SKUs than comparable CPG brands. Every new shade adds a forecasting problem, a MOQ to manage, and a potential dead-stock liability.</p></div>
+
           <p>Inventory management for beauty brands comes down to two failure modes &mdash; and most brands are stuck in one of them. You either tie up too much cash in safety stock you don&apos;t need, or you run out of your best-sellers at the worst possible moment. The unique challenges of beauty inventory &mdash; shade proliferation, expiration dates, batch tracking, retailer-specific packaging, and 12&ndash;16 week production lead times &mdash; make this harder than in most CPG categories.</p>
 
           <p>This guide covers the frameworks, formulas, and technology decisions that move beauty brands from reactive inventory management to a system that supports DTC, retail, and wholesale simultaneously.</p>
@@ -177,6 +194,8 @@ export default function Page() {
           <p><strong>Long production lead times.</strong> Most beauty products sourced internationally require 12&ndash;16 weeks from production order to warehouse receipt. Domestically sourced products run 6&ndash;10 weeks. These lead times mean every inventory decision is made months before the demand it&apos;s meant to serve &mdash; and every forecasting error is locked in for the duration of the production cycle.</p>
 
           <h2 id="the-reorder-point-formula-for-beauty-products">The Reorder Point Formula for Beauty Products</h2>
+
+          <div className="callout"><p><strong>The formula.</strong> Reorder Point = (Average Daily Demand &times; Lead Time in Days) + Safety Stock. Simple formula &mdash; the difficulty is in the inputs.</p></div>
 
           <p>The reorder point formula tells you when to place your next production order. It&apos;s the most important calculation in inventory management, and most beauty brands either don&apos;t use it or use it with bad inputs.</p>
 
@@ -238,6 +257,8 @@ export default function Page() {
 
           <p><strong>Build a demand model, not a demand guess.</strong> The model should include: retailer&apos;s door count × estimated weekly units per door × sell-through rate assumption. Start with 0.5&ndash;1.0 units per door per week for a new beauty brand &mdash; that&apos;s a realistic baseline for the first 90 days.</p>
 
+          <p className="b-note">&rarr; For a deeper dive into demand planning frameworks, see our <a href="/guides/cpg-demand-forecasting">CPG Demand Forecasting Guide</a>.</p>
+
           <h2 id="inventory-velocity-benchmarks-for-beauty">Inventory Velocity Benchmarks for Beauty</h2>
 
           <p>Inventory velocity &mdash; how quickly your inventory sells through and replenishes &mdash; is the health metric that ties together demand planning, production scheduling, and cash management.</p>
@@ -293,6 +314,8 @@ export default function Page() {
               <li><strong>For limited editions:</strong> A problem. Limited editions should sell through within one to two seasons. If they&apos;re turning slowly, the production run was too large for the demand, and markdown or promotional sell-through is the next move.</li>
           </ul>
 
+          <p className="b-note">&rarr; Our <a href="/guides/cpg-operations-kpis">CPG Operations KPIs Guide</a> covers the full set of operational metrics &mdash; including inventory turns, fill rate, and forecast accuracy &mdash; that high-performing brands track.</p>
+
           <h2 id="the-technology-stack-by-revenue-stage">The Technology Stack by Revenue Stage</h2>
 
           <p>Most beauty brands are still managing inventory in spreadsheets. That works until it doesn&apos;t &mdash; and the point where it stops working is often a stockout that costs a retail account or a cash trap that strains working capital.</p>
@@ -340,6 +363,8 @@ export default function Page() {
 
           <p>Expiration is the silent killer of beauty brand profitability. Unlike most consumer goods, beauty products have regulatory shelf life requirements and retailer minimum-remaining-life thresholds that create a hard deadline on sellability.</p>
 
+          <div className="callout"><p><strong>The takeaway.</strong> Inventory produced today has an 18-month window to sell through retail and a 20.5-month window for DTC. Any unit unsold after that is dead stock.</p></div>
+
           <p><strong>The expiration math:</strong></p>
 
           <ul>
@@ -361,33 +386,11 @@ export default function Page() {
 
           <p className="b-note">&rarr; Our guide on <a href="/guides/packaging-system-that-scales">building a packaging system that scales</a> covers how packaging decisions (MOQs, shared components, variant management) directly impact inventory risk.</p>
 
-          <h2 id="frequently-asked-questions" className="b-faq-h">Frequently Asked Questions</h2>
-
-          <p><strong>How much safety stock should a beauty brand carry?</strong></p>
-
-          <p>For brands with historical sales data, safety stock should cover 95% of demand variability &mdash; typically 3&ndash;6 weeks of demand for core SKUs and 2&ndash;4 weeks for secondary SKUs. For brands without historical data (new retail launches), start at 4&ndash;6 weeks and reduce by 25% after each complete sell-through cycle. Over-stocking ties up cash. Under-stocking loses revenue. The goal is a 95&ndash;97% in-stock rate, not 100%.</p>
-
-          <p><strong>What&apos;s the biggest inventory mistake beauty brands make?</strong></p>
-
-          <p>Ordering based on optimistic demand forecasts without adjusting for lead time reality. A brand that orders based on the supplier&apos;s quoted lead time of 8 weeks when actual lead time is 13 weeks will stock out repeatedly &mdash; and then over-correct by ordering too much, creating an inventory cash trap. Track actual lead times religiously.</p>
-
-          <p><strong>How do I manage inventory across DTC and retail simultaneously?</strong></p>
-
-          <p>Maintain a single inventory pool with channel-specific allocation rules. Reserve a defined percentage for retail commitments (typically the PO quantity + safety stock), allocate the remainder to DTC, and set a decision threshold for when to redirect aging retail-allocated inventory to DTC. This requires inventory visibility by batch date and channel allocation &mdash; which means you need at least a dedicated inventory tool, not just Shopify&apos;s built-in tracking.</p>
-
-          <p><strong>When should I stop adding shades or variants?</strong></p>
-
-          <p>When the incremental revenue from a new shade doesn&apos;t exceed the carrying cost of the additional inventory. Every new shade adds MOQ commitment, safety stock, warehousing cost, and management complexity. For most beauty brands, the revenue curve from additional shades flattens after the top 60&ndash;70% of demand is covered. A 12-shade foundation line that covers 85% of skin tones generates more profit than a 24-shade line that covers 95% &mdash; because the additional 12 shades carry inventory cost that their revenue doesn&apos;t justify.</p>
-
-          <p><strong>How do I forecast for my first retail season?</strong></p>
-
-          <p>Model three scenarios using the retailer&apos;s door count as your base: conservative (0.3&ndash;0.5 units/door/week), expected (0.5&ndash;1.0 units/door/week), and aggressive (1.0&ndash;1.5 units/door/week). Set your production order against the expected scenario. Set safety stock to cover the gap between conservative and expected. Don&apos;t order against the aggressive scenario for your first season &mdash; let the data from the first 8&ndash;12 weeks guide your reorder.</p>
-
           <h2 id="what-s-next">What&apos;s Next</h2>
 
           <p>Inventory management separates beauty brands that scale from beauty brands that stall. The brands that get it right don&apos;t just avoid stockouts and cash traps &mdash; they build the operational foundation that makes retail expansion, international growth, and SKU proliferation possible without proportional increases in complexity.</p>
 
-          <p>If your inventory system is held together by spreadsheets and instinct, <a href="/services">start a conversation</a> with our team. We help beauty brands build inventory systems that match their growth stage &mdash; from first-PO forecasting models to multi-channel ERP implementation.</p>
+          <p>If your inventory system is held together by spreadsheets and instinct, <a href="/#services">start a conversation</a> with our team. We help beauty brands build inventory systems that match their growth stage &mdash; from first-PO forecasting models to multi-channel ERP implementation.</p>
 
           <p><em>About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. He has managed supply chains across 15 countries and helped brands scale from DTC-only to Target, Walmart, Costco, and Sephora.</em></p>
 

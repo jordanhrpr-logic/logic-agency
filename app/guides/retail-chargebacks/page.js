@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "Retail Chargebacks Explained: The CPG Brand’s Guide",
   "description": "Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -73,9 +74,13 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/retail-chargebacks',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2026-06-15',
+    authors: ['Jordan Harper'],
     title: 'Retail Chargebacks for CPG Brands: Prevention Guide',
     description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
     url: 'https://www.logicagencyinc.com/guides/retail-chargebacks',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-chargebacks.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

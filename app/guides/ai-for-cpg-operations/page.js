@@ -9,8 +9,9 @@ const articleSchema = {
   "headline": "The Operator's Guide to AI That Actually Works for CPG Operations",
   "description": "A practical guide for CPG operators on using LLMs and AI agents for supply chain, inventory, sourcing, and operations — with a prompt library, hallucination warnings, and guidance on when AI isn't enough.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -85,6 +86,9 @@ export const metadata = {
     canonical: 'https://www.logicagencyinc.com/guides/ai-for-cpg-operations',
   },
   openGraph: {
+    type: 'article',
+    publishedTime: '2025-03-01',
+    authors: ['Jordan Harper'],
     title: 'The Operator\'s Guide to AI That Actually Works',
     description: 'Landed cost models, safety stock, RFQs, tech packs. Here\'s what AI can actually do for CPG operations today, where it fails, and where you still need a human.',
     url: 'https://www.logicagencyinc.com/guides/ai-for-cpg-operations',

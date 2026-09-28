@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'How to Source Packaging Overseas | Logic Agency',
+  title: 'How to Source Packaging Overseas — Logic Agency Inc.',
   description: 'The real process for sourcing packaging internationally — RFQ through customs, quality control, IP protection, and when to stay domestic. Real cost data.',
   keywords: 'how to source packaging overseas, overseas packaging supplier, international packaging sourcing, packaging factory China, CPG packaging sourcing guide, domestic vs overseas packaging, packaging cost savings overseas',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-17',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-global-packaging-sourcing.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "How to Source Packaging Overseas: A CPG Brand's Practical Guide",
     description: 'The real process for sourcing packaging internationally — RFQ through customs, quality control, IP protection, and when to stay domestic. Real cost data.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-global-packaging-sourcing.jpg'],
   },
 };
 
@@ -134,7 +137,7 @@ export default function Page() {
           </div>
           <span className="b-tag">Packaging Sourcing</span>
           <h1>How to Source Packaging Overseas: A CPG Brand&apos;s Practical Guide</h1>
-          <p className="b-lede">Sourcing packaging overseas &mdash; primarily from China, Vietnam, or South Korea &mdash; typically reduces unit costs by an estimated 30&ndash;60% compared to domestic production for most rigid and folding carton packaging. The landed cost gap is real and large. But the process is longer, more documentation-heavy, and less forgiving than domestic sourcing.</p>
+          <p className="b-lede">International packaging sourcing can cut unit costs 30&ndash;60% &mdash; but the process is longer, less forgiving, and more documentation-heavy than most brands expect.</p>
           <div className="b-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
             <span>Jun 2026</span>
@@ -161,6 +164,19 @@ export default function Page() {
               <li>Quality control is a process, not a conversation: pre-production samples, inline inspections, and third-party QC audits are non-negotiable above $20K in spend.</li>
               <li>IP protection is contractual and operational, not just a trust decision &mdash; NDAs, design registration, and non-exclusivity clauses govern the relationship.</li>
               <li>The decision to source domestically or internationally depends on revenue stage, product complexity, lead time tolerance, and volume &mdash; not just unit price.</li>
+            </ul>
+          </div>
+
+          <div className="toc">
+            <h3>What&apos;s Inside</h3>
+            <ul className="toc-list">
+              <li><a href="#cost-gap">The Cost Gap: What You&apos;re Actually Saving</a></li>
+              <li><a href="#when-it-makes-sense">When International Sourcing Makes Sense</a></li>
+              <li><a href="#sourcing-process">The Sourcing Process, Step by Step</a></li>
+              <li><a href="#ip-protection">IP Protection: Contractual and Operational</a></li>
+              <li><a href="#where-to-source">Where to Source: China, Vietnam, or South Korea</a></li>
+              <li><a href="#timeline">Building the Timeline Into Your Calendar</a></li>
+              <li><a href="#how-logic-manages">How Logic Agency Manages International Sourcing</a></li>
             </ul>
           </div>
 
@@ -195,6 +211,10 @@ export default function Page() {
             <li>Asia-sourced landed cost: $0.05&ndash;$0.15/unit</li>
             <li>Estimated gap: 30&ndash;40%</li>
           </ul>
+
+          <div className="callout"><p><strong>Landed cost formula.</strong> Factory price + ocean freight + customs duty + drayage to warehouse + inspection costs. Brands that quote only the factory price underestimate total spend by an estimated 20&ndash;35%.</p></div>
+
+          <p className="b-note">&rarr; For a step-by-step framework for calculating true landed cost across freight, duties, and drayage, see our <a href="/guides/landed-cost-playbook">Landed Cost Playbook</a>.</p>
 
           <p>The savings compress at lower volumes. At 1,000 units, domestic and international landed costs are often comparable once you factor in ocean freight, drayage, and customs duties. At 10,000 units, the gap becomes structurally significant. At 50,000+ units, the gap defines margin.</p>
 
@@ -250,6 +270,8 @@ export default function Page() {
           </ol>
 
           <p>For orders above $20,000, a factory audit &mdash; either in-person or via a third-party auditor &mdash; is worth the cost before placing the first purchase order.</p>
+
+          <p className="b-note">&rarr; For a complete framework for evaluating and selecting overseas manufacturing partners, see our <a href="/guides/co-manufacturer-selection">Co-Manufacturer Selection Guide</a>.</p>
 
           <h3>Step 4: Sampling</h3>
 
@@ -309,6 +331,8 @@ export default function Page() {
 
           <p>IP protection for packaging designs requires both contract terms and operational practice. Trust is not a strategy.</p>
 
+          <div className="callout"><p><strong>The rule.</strong> IP protection for packaging designs requires both contract terms and operational practice. Trust is not a strategy.</p></div>
+
           <p><strong>Contractual:</strong></p>
           <ul>
             <li><strong>NDA:</strong> Before sharing artwork, specifications, or structural designs, have a signed NDA with the factory.</li>
@@ -333,6 +357,8 @@ export default function Page() {
           <p><strong>South Korea</strong> is the appropriate sourcing market for: high-precision glass packaging, aluminum closures, and premium coated boards that require tight color consistency. South Korean factories typically command an estimated 10&ndash;20% higher prices than Chinese equivalents but deliver more consistent quality on precision-sensitive specifications.</p>
 
           <p>The practical question for most brands is not &ldquo;which country&rdquo; but &ldquo;which factory.&rdquo; The right factory in China outperforms the wrong factory in Vietnam. Country selection matters less than specific factory vetting.</p>
+
+          <div className="callout"><p><strong>Factory over country.</strong> The right factory in China outperforms the wrong factory in Vietnam. Country selection matters less than specific factory vetting.</p></div>
 
           <h2 id="timeline">Building the Timeline Into Your Calendar</h2>
 
@@ -384,26 +410,6 @@ export default function Page() {
           <p>We maintain relationships with vetted packaging factories across China, Vietnam, and South Korea &mdash; relationships built over 20 years of production management. When a client needs overseas sourcing, they are not introducing themselves to a factory directory. They are accessing existing relationships with factories we have already audited, whose QC infrastructure we know, and whose documentation practices we trust.</p>
 
           <p>The practical advantage is time. A first-time importer working through factory identification and vetting independently adds 8&ndash;16 weeks to the timeline. We compress that phase to days.</p>
-
-          <h2 id="faq" className="b-faq-h">FAQ</h2>
-
-          <h3>How much do I actually save sourcing packaging from overseas versus domestic?</h3>
-          <p>Unit cost savings run an estimated 30&ndash;60% for most rigid and folding carton packaging when comparing factory prices. Landed cost &mdash; after ocean freight, customs duties, and drayage &mdash; reduces the gap to an estimated 20&ndash;45% depending on volume and category. The savings are real and significant above $15,000 in order value.</p>
-
-          <h3>How long does it take to source packaging from China?</h3>
-          <p>The full cycle from first factory contact to goods in your US warehouse typically runs 18&ndash;34 weeks for a new packaging program. Sampling alone runs 6&ndash;10 weeks for a 3-round process. Plan 20&ndash;24 weeks as a realistic working estimate for first-time programs.</p>
-
-          <h3>What is the minimum order quantity for overseas packaging sourcing?</h3>
-          <p>MOQs vary by category: folding cartons typically run 3,000&ndash;5,000 units minimum; rigid setup boxes run 500&ndash;1,000 units; custom molded components run 1,000&ndash;2,000 units. Brands with volumes below these thresholds often find that shared tooling programs or stock packaging options are more economical.</p>
-
-          <h3>How do I protect my packaging design when working with overseas factories?</h3>
-          <p>The core tools are: an NDA before sharing any artwork or specifications, design registration in China for structurally unique elements, and a non-exclusivity clause in the purchase agreement. Operational practices &mdash; watermarked sampling files, compartmentalized specification sharing &mdash; reduce additional risk.</p>
-
-          <h3>Do I need a customs broker for packaging imports?</h3>
-          <p>Yes. A licensed customs broker files entry, calculates and pays duties, and manages port release. For packaging imports from China, Section 301 tariffs add complexity that a specialist broker handles more efficiently. Fees run $150&ndash;$350 per shipment entry &mdash; a straightforward cost.</p>
-
-          <h3>When should a brand source domestically instead of overseas?</h3>
-          <p>Domestic sourcing makes more sense when: order value is below $15,000, lead time requirements are 8&ndash;10 weeks or less, product involves complex formulation compatibility, or the brand lacks the operational infrastructure to manage an international sourcing process.</p>
 
         </div>
       </div>

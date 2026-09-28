@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -80,7 +81,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Partner vs Vendor for CPG Brands | Logic Agency',
+  title: 'Packaging Partner vs Vendor for CPG Brands — Logic Agency Inc.',
   description: 'Packaging partner vs vendor for CPG brands — compare costs, control, timelines, and why integrated partnerships often compress product launches by 4-8 weeks.',
   keywords: 'packaging partner vs packaging vendor, packaging partner selection, packaging vendor management, strategic packaging partner, packaging supplier vs partner',
   alternates: {
@@ -93,11 +94,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-default.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Packaging Partner vs. Packaging Vendor: Why the Distinction Determines Your Margins',
     description: 'Packaging partner vs vendor for CPG brands — compare costs, control, timelines, and why integrated partnerships often compress product launches by 4-8 weeks.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
 

@@ -10,6 +10,7 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
     "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
@@ -88,7 +89,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'How to Get Products Into Retail Stores | Logic Agency',
+  title: 'How to Get Products Into Retail Stores — Logic Agency Inc.',
   description: 'Getting products into retail stores takes 12-18 months. The brands that make it through Target, Walmart, and Costco prepare operations before the pitch.',
   keywords: 'how to get products into retail stores, how to sell to Target, getting products into Walmart, Costco vendor requirements, retail buyer meeting preparation',
   alternates: {
@@ -101,11 +102,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-16',
     authors: ['Jordan Harper'],
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-blog-how-to-get-products-into-retail-stores.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Get Your Products Into Target, Walmart, and Costco',
     description: 'Getting products into retail stores takes 12-18 months. The brands that make it through Target, Walmart, and Costco prepare operations before the pitch.',
+    images: ['https://www.logicagencyinc.com/images/og-blog-how-to-get-products-into-retail-stores.jpg'],
   },
 };
 

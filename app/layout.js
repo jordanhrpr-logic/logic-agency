@@ -2,6 +2,7 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { organizationJsonLd, websiteJsonLd } from '@/lib/metadata';
+import GA4Events from '@/components/GA4Events';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-WWFEYSH2M3';
 
@@ -37,10 +38,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
         {GA_ID && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
@@ -58,6 +55,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <GA4Events />
         <Analytics />
         <SpeedInsights />
       </body>

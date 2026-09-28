@@ -9,9 +9,10 @@ const articleSchema = {
   "headline": "Landed Cost Playbook for CPG Brands",
   "description": "A line-by-line breakdown of the 6-line landed cost stack for CPG imports — freight, duties, MPF/HMF, brokerage, DIM overage, tooling amortization, and warehousing — plus what the July 2026 USPS DIM divisor change is already costing you.",
   "author": {
-    "@type": "Organization",
-    "name": "Logic Agency Inc.",
-    "url": "https://logicagencyinc.com"
+    "@type": "Person",
+    "name": "Jordan Harper",
+    "jobTitle": "Founder & CEO",
+    "url": "https://www.logicagencyinc.com"
   },
   "publisher": {
     "@type": "Organization",
