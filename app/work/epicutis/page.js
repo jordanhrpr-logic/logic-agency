@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import CaseStudyFaqAccordion from '@/components/CaseStudyFaqAccordion';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -86,7 +87,17 @@ export const metadata = {
 export default function EpicutisCaseStudy() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...caseStudySchema,
+          image: caseStudySchema.image || metadata.openGraph?.images?.[0]?.url || metadata.openGraph?.images?.[0] || 'https://www.logicagencyinc.com/images/og-homepage.jpg',
+          publisher: {
+            ...caseStudySchema.publisher,
+            logo: caseStudySchema.publisher?.logo || { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
+          },
+        }) }}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Nav variant="guide" />
@@ -107,7 +118,7 @@ export default function EpicutisCaseStudy() {
             <div className="cs-meta-pill">Multi-Year Partnership</div>
           </div>
           <div className="cs-hero-img cs-photo">
-            <img src="/images/work/epicutis/epicutis-kits-group-grey.jpg" alt="Epicutis skincare packaging system supported by Logic Agency" />
+            <Image src="/images/work/epicutis/epicutis-kits-group-grey.jpg" alt="Epicutis skincare packaging system supported by Logic Agency" width={2500} height={1875} sizes="100vw" priority />
             <div className="cs-hero-img-badge">Epicutis</div>
           </div>
         </div>
@@ -145,7 +156,7 @@ export default function EpicutisCaseStudy() {
           </div>
 
           <div className="case-photo">
-            <img src="/images/work/epicutis/epicutis-gradient.jpg" alt="Epicutis packaging range across skincare SKUs" />
+            <Image src="/images/work/epicutis/epicutis-gradient.jpg" alt="Epicutis packaging range across skincare SKUs" width={2500} height={1875} sizes="(max-width: 800px) 100vw, 50vw" />
           </div>
 
           <h2>What Logic Did</h2>
@@ -225,7 +236,7 @@ export default function EpicutisCaseStudy() {
           <p>The managed inventory program removed the planning friction that had been driving urgent air freight and replenishment gaps. The normalized ordering cycle gave the business more predictable logistics. The landed cost structure gave Finance cleaner data as the SKU portfolio grew.</p>
 
           <div className="case-photo">
-            <img src="/images/work/epicutis/recovery-care-set.jpg" alt="Epicutis recovery care set packaging and product presentation" />
+            <Image src="/images/work/epicutis/recovery-care-set.jpg" alt="Epicutis recovery care set packaging and product presentation" width={1721} height={2048} sizes="(max-width: 800px) 100vw, 50vw" />
           </div>
 
           <div className="callout">

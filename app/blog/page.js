@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
+import Image from 'next/image';
 
 const collectionSchema = {
   "@context": "https://schema.org",
@@ -10,12 +11,13 @@ const collectionSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://www.logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com",
+    "logo": { "@type": "ImageObject", "url": "https://www.logicagencyinc.com/images/og-homepage.jpg" }
   }
 };
 
 export const metadata = {
-  title: 'Blog — Supply Chain & Retail Operations for CPG Brands — Logic Agency Inc.',
+  title: 'CPG Supply Chain & Retail Operations Blog — Logic Agency Inc.',
   description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for consumer product brands doing $5M–$20M in revenue.',
   alternates: { canonical: 'https://www.logicagencyinc.com/blog' },
   openGraph: {
@@ -23,11 +25,13 @@ export const metadata = {
     description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for scaling consumer product brands.',
     url: 'https://www.logicagencyinc.com/blog',
     type: 'website',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Logic Agency Blog — Supply Chain & Retail Operations',
     description: 'Operational advice on retail launch, supply chain, packaging economics, and fractional operations for scaling consumer product brands.',
+    images: ['https://www.logicagencyinc.com/images/og-homepage.jpg'],
   },
 };
 
@@ -71,6 +75,27 @@ const posts = [
   { href: '/blog/fractional-coo-vs-full-time-hire', img: '/images/port-launch.jpg', alt: 'Founder evaluating when to hire operations leadership', tag: 'Founder Decision', time: '7 min read', title: 'The Hidden Cost of Hiring Ops Too Early', desc: 'Hiring a VP of Operations too early can create six months of cleanup, wrong-level scope, and fixed cost before a CPG brand knows the role.' },
 ];
 
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "numberOfItems": posts.length,
+  "itemListElement": posts.map((post, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "url": `https://www.logicagencyinc.com${post.href}`,
+    "name": post.title
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" }
+  ]
+};
+
 export default function BlogIndex() {
   return (
     <>
@@ -78,6 +103,8 @@ export default function BlogIndex() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Nav />
 
       {/* HERO */}
@@ -94,7 +121,7 @@ export default function BlogIndex() {
         {posts.map(p => (
           <a key={p.href} href={p.href} className="blog-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={p.img} alt={p.alt} className="blog-card-img" />
+            <Image src={p.img} alt={p.alt} className="blog-card-img" width={600} height={400} sizes="(max-width: 700px) 100vw, (max-width: 1050px) 50vw, 33vw" />
             <div className="blog-card-body">
               <div className="blog-card-tag">{p.tag} &middot; {p.time}</div>
               <h2>{p.title}</h2>

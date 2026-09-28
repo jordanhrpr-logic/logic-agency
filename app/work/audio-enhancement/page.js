@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import FooterHome from '@/components/FooterHome';
 import CaseStudyFaqAccordion from '@/components/CaseStudyFaqAccordion';
+import Image from 'next/image';
 
 const faqs = [
   {
@@ -125,7 +126,14 @@ export default function AudioEnhancementCaseStudy() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...caseStudySchema,
+          image: caseStudySchema.image || metadata.openGraph?.images?.[0]?.url || metadata.openGraph?.images?.[0] || 'https://www.logicagencyinc.com/images/og-homepage.jpg',
+          publisher: {
+            ...caseStudySchema.publisher,
+            logo: caseStudySchema.publisher?.logo || { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
+          },
+        }) }}
       />
       <script
         type="application/ld+json"
@@ -152,7 +160,7 @@ export default function AudioEnhancementCaseStudy() {
           </div>
 
           <div className="cs-hero-img cs-photo">
-            <img src="/images/work/audio-enhancement/teacher-box-blue-bg.jpg" alt="Audio Enhancement redesigned teacher microphone packaging by Logic Agency" />
+            <Image src="/images/work/audio-enhancement/teacher-box-blue-bg.jpg" alt="Audio Enhancement redesigned teacher microphone packaging by Logic Agency" width={2400} height={1800} sizes="100vw" priority />
             <div className="cs-hero-img-badge">Project Image</div>
           </div>
         </div>
@@ -193,11 +201,11 @@ export default function AudioEnhancementCaseStudy() {
 
           <div className="image-compare">
             <div>
-              <img src="/images/work/audio-enhancement/old-packaging-1.jpeg" alt="Audio Enhancement legacy teacher microphone packaging before supplier transition" />
+              <Image src="/images/work/audio-enhancement/old-packaging-1.jpeg" alt="Audio Enhancement legacy teacher microphone packaging before supplier transition" width={1600} height={1600} sizes="(max-width: 800px) 100vw, 50vw" />
               <span>Before / Legacy Packaging</span>
             </div>
             <div>
-              <img src="/images/work/audio-enhancement/updated-packaging-interior.jpg" alt="Audio Enhancement updated teacher microphone packaging interior after supplier transition" />
+              <Image src="/images/work/audio-enhancement/updated-packaging-interior.jpg" alt="Audio Enhancement updated teacher microphone packaging interior after supplier transition" width={1276} height={1276} sizes="(max-width: 800px) 100vw, 50vw" />
               <span>After / Updated Packaging</span>
             </div>
           </div>

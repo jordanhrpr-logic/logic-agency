@@ -118,7 +118,14 @@ export default function Page() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...articleSchema,
+          image: articleSchema.image || metadata.openGraph?.images?.[0]?.url || metadata.openGraph?.images?.[0] || 'https://www.logicagencyinc.com/images/og-homepage.jpg',
+          publisher: {
+            ...articleSchema.publisher,
+            logo: articleSchema.publisher?.logo || { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
+          },
+        }) }}
       />
       <script
         type="application/ld+json"

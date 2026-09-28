@@ -1,10 +1,10 @@
 /* Self-hosted Poppins */
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-ExtraBold.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("/fonts/Poppins-Black.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
 
 /* === VARIABLES === */
 :root{--o:#FF600A;--od:#E55509;--bl:#0055FF;--bk:#212121;--gr:#3E3E3E;--dk:#2A2A2A;--lt:#DFDFDF;--ow:#F3F3F3;--w:#FFF}
@@ -535,6 +535,11 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 
 /* Table of Contents */
 .toc{background:#fff;border-radius:16px;padding:32px 36px;margin:0 auto 60px;max-width:800px;border:1px solid rgba(0,0,0,.04)}
+.guide-takeaways{background:#fff;border:1px solid rgba(255,96,10,.18);border-left:4px solid var(--o);border-radius:8px;padding:24px 28px;margin:0 0 48px}
+.guide-takeaways h2{font-size:13px;text-transform:uppercase;letter-spacing:1.8px;color:var(--o);margin:0 0 14px}
+.guide-takeaways ul{margin:0;padding-left:20px}
+.guide-takeaways li{font-size:15.5px;line-height:1.6;color:var(--bk);margin-bottom:10px}
+.guide-takeaways li:last-child{margin-bottom:0}
 .toc h3{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--o);margin-bottom:16px}
 .toc-list{list-style:none;counter-reset:toc}
 .toc-list li{counter-increment:toc}

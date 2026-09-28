@@ -120,7 +120,14 @@ export default function LandedCostPlaybook() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...articleSchema,
+          image: articleSchema.image || metadata.openGraph?.images?.[0]?.url || metadata.openGraph?.images?.[0] || 'https://www.logicagencyinc.com/images/og-homepage.jpg',
+          publisher: {
+            ...articleSchema.publisher,
+            logo: articleSchema.publisher?.logo || { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
+          },
+        }) }}
       />
       <script
         type="application/ld+json"
@@ -365,7 +372,7 @@ export default function LandedCostPlaybook() {
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
             <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
           </div>
-          <a href="/Logic-Agency-Readiness-Scorecard.pdf" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/guides/retail-readiness-scorecard" className="cta-dl">Use the free 40-Point Readiness Scorecard &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>

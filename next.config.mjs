@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/fonts/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+    ];
+  },
   async redirects() {
     return [
+      {
+        source: '/guides/ops-team-without-hiring',
+        destination: '/guides/ai-for-cpg-operations',
+        permanent: true,
+      },
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'logicagencyinc.com' }],

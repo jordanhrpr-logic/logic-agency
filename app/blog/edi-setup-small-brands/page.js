@@ -16,8 +16,13 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Logic Agency Inc.",
-    "url": "https://www.logicagencyinc.com"
+    "url": "https://www.logicagencyinc.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.logicagencyinc.com/images/og-homepage.jpg"
+    }
   },
+  "image": "https://www.logicagencyinc.com/images/og-blog-edi-setup-small-brands.jpg",
   "mainEntityOfPage": "https://www.logicagencyinc.com/blog/edi-setup-small-brands",
   "datePublished": "2026-06-16",
   "dateModified": "2026-06-16"
@@ -117,7 +122,14 @@ export default function Page() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...articleSchema,
+          image: articleSchema.image || metadata.openGraph?.images?.[0]?.url || metadata.openGraph?.images?.[0] || 'https://www.logicagencyinc.com/images/og-homepage.jpg',
+          publisher: {
+            ...articleSchema.publisher,
+            logo: articleSchema.publisher?.logo || { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
+          },
+        }) }}
       />
       <script
         type="application/ld+json"
@@ -149,7 +161,7 @@ export default function Page() {
       {/* FEATURED IMAGE */}
       <div className="b-feat">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/port-retail.jpg" alt="Small brand setting up EDI for retail compliance" className="b-feat-img" />
+        <img src="/images/port-retail.jpg" alt="Small brand setting up EDI for retail compliance" className="b-feat-img" width="1200" height="630" decoding="async" />
       </div>
 
       {/* ARTICLE */}
@@ -173,7 +185,7 @@ export default function Page() {
 
           <h2 id="what-edi-actually-is">What EDI Actually Is (and Why Retailers Require It)</h2>
 
-          <p>EDI stands for Electronic Data Interchange. In plain terms, it&apos;s a standardized system for sending business documents &mdash; purchase orders, shipping notices, invoices &mdash; electronically between trading partners. Instead of emailing a PDF purchase order, the retailer&apos;s system sends a structured electronic document that your system can read, process, and respond to automatically.</p>
+          <p>EDI stands for Electronic Data Interchange. In plain terms, it&apos;s a standardized system for sending business documents &mdash; purchase orders, shipping notices, invoices &mdash; electronically between trading partners. Instead of emailing a PDF purchase order, the retailer&apos;s system sends a structured electronic document that your system can read, process, and respond to automatically. <a href="https://www.gs1.org/standards/edi" target="_blank" rel="noopener noreferrer">GS1&apos;s EDI standards overview</a> documents the order, delivery, settlement, transport, and warehouse messages used across supply chains.</p>
 
           <p>Retailers require EDI for one reason: scale. A retailer managing 5,000+ vendors can&apos;t process purchase orders by email. They can&apos;t manually track shipment notifications. They can&apos;t reconcile invoices from 5,000 different formats. EDI standardizes these transactions so the retailer&apos;s system can process them without human intervention.</p>
 
@@ -300,7 +312,7 @@ export default function Page() {
 
           <h2 id="edi-cost-breakdown">What EDI Setup Actually Costs for Small Brands</h2>
 
-          <p>Here&apos;s a realistic cost breakdown for a small brand setting up EDI for one retail trading partner:</p>
+          <p>Here&apos;s a realistic cost breakdown for a small brand setting up EDI for one retail trading partner. These are Logic Agency planning benchmarks based on the implementation ranges we encounter in small-brand retail operations; actual provider quotes and retailer requirements control your final cost.</p>
 
           <table>
             <thead>
@@ -347,13 +359,13 @@ export default function Page() {
 
           <p>The retailer says yes. The PO is coming. You start your EDI setup on Day 1 post-PO. But the PO ships in 6 weeks and EDI takes 4&ndash;8 weeks to configure. You&apos;re behind before you start.</p>
 
-          <p>Start EDI setup when you begin pursuing the retail account &mdash; not when the deal closes. If the account doesn&apos;t materialize, you&apos;ve lost $500 in implementation fees. If it does and your EDI isn&apos;t ready, you&apos;ve lost $5,000+ in first-shipment chargebacks.</p>
+          <p>Start EDI setup when you begin pursuing the retail account &mdash; not when the deal closes. Use the <a href="/guides/retail-readiness-scorecard">40-point retail readiness scorecard</a> to sequence EDI alongside packaging, fulfillment, inventory, and financial checks. If the account doesn&apos;t materialize, you&apos;ve lost $500 in implementation fees. If it does and your EDI isn&apos;t ready, you&apos;ve lost $5,000+ in first-shipment chargebacks.</p>
 
           <h3>Mistake 2: Manual ASN Creation</h3>
 
           <p>Web-EDI portals are fine for receiving POs. They&apos;re dangerous for ASN creation. The 856 must be transmitted within hours of shipment &mdash; sometimes within 30 minutes. A manual process requires someone available, accurate, and timely every single shipment. People get sick. People make typos. People forget.</p>
 
-          <p>Automated ASN generation &mdash; where the 856 is triggered by the shipping event in your WMS or 3PL system &mdash; eliminates the most common and most expensive EDI-related chargeback.</p>
+          <p>Automated ASN generation &mdash; where the 856 is triggered by the shipping event in your WMS or 3PL system &mdash; eliminates the most common and most expensive EDI-related chargeback. The <a href="/blog/retail-chargebacks-prevention-guide">retail chargeback prevention guide</a> maps the broader pre-shipment controls around ASN timing, labels, routing, and invoice accuracy.</p>
 
           <h3>Mistake 3: Not Testing With the Specific Retailer</h3>
 
@@ -369,7 +381,7 @@ export default function Page() {
 
           <p>EDI systems go down. Servers fail. Your provider has an outage. If you have no backup process for transmitting an ASN during downtime, every shipment during the outage generates chargebacks.</p>
 
-          <p>Document a backup process &mdash; even if it&apos;s &ldquo;log into the retailer&apos;s web portal and manually submit the ASN.&rdquo; Know the process before you need it.</p>
+          <p>Document a backup process &mdash; even if it&apos;s &ldquo;log into the retailer&apos;s web portal and manually submit the ASN.&rdquo; Know the process before you need it. If the 3PL owns transmission, confirm that responsibility during selection using the <a href="/guides/3pl-selection-guide">3PL selection guide</a>.</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
 

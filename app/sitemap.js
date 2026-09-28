@@ -81,6 +81,5 @@ export default function sitemap() {
     { url: `${baseUrl}/guides/cpg-channel-economics`, lastModified: new Date('2026-09-24') },
     { url: `${baseUrl}/guides/sustainable-packaging-cpg`, lastModified: new Date('2026-09-24') },
     { url: `${baseUrl}/guides/cpg-operations-kpis`, lastModified: new Date('2026-09-24') },
-    { url: `${baseUrl}/guides/ops-team-without-hiring`, lastModified: new Date('2026-09-28') },
   ];
 }

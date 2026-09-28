@@ -4,14 +4,16 @@ import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 
 function schemaFor(guide) {
   const url = `https://www.logicagencyinc.com/guides/${guide.slug}`;
+  const image = `https://www.logicagencyinc.com${guide.ogImage || '/images/og-homepage.jpg'}`;
   const schemas = {
     article: {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: guide.title,
       description: guide.description,
+      image,
       author: { '@type': 'Person', name: 'Jordan Harper', jobTitle: 'Founder & CEO', url: 'https://www.logicagencyinc.com' },
-      publisher: { '@type': 'Organization', name: 'Logic Agency Inc.' },
+      publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com', logo: { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' } },
       mainEntityOfPage: url,
       datePublished: guide.datePublished,
       dateModified: guide.dateModified,
@@ -110,6 +112,12 @@ export default function EvergreenGuidePage({ guide }) {
       </section>
       <div className="article gl">
         <div className="article-inner">
+          {guide.tldr?.length > 0 && (
+            <section className="guide-takeaways" aria-labelledby="key-takeaways">
+              <h2 id="key-takeaways">Key Takeaways</h2>
+              <ul>{guide.tldr.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}</ul>
+            </section>
+          )}
           <div className="toc"><h3>What&apos;s Inside</h3><ul className="toc-list">{guide.sections.map((section) => <li key={section.id}><a href={`#${section.id}`}>{section.heading}</a></li>)}</ul></div>
           {guide.sections.map((section) => <GuideSection key={section.id} section={section} />)}
         </div>

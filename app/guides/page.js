@@ -9,7 +9,7 @@ const itemListSchema = {
   "url": "https://www.logicagencyinc.com/guides",
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 26,
+    "numberOfItems": 25,
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "url": "https://www.logicagencyinc.com/guides/retail-readiness", "name": "The Retail Readiness Bible" },
       { "@type": "ListItem", "position": 2, "url": "https://www.logicagencyinc.com/guides/first-90-days-in-retail", "name": "First 90 Days in Retail" },
@@ -35,15 +35,14 @@ const itemListSchema = {
       { "@type": "ListItem", "position": 22, "url": "https://www.logicagencyinc.com/guides/distributor-onboarding-playbook", "name": "Distributor Onboarding Playbook" },
       { "@type": "ListItem", "position": 23, "url": "https://www.logicagencyinc.com/guides/cpg-channel-economics", "name": "Channel Economics" },
       { "@type": "ListItem", "position": 24, "url": "https://www.logicagencyinc.com/guides/sustainable-packaging-cpg", "name": "Sustainable Packaging for CPG Brands" },
-      { "@type": "ListItem", "position": 25, "url": "https://www.logicagencyinc.com/guides/cpg-operations-kpis", "name": "CPG Operations KPI Dashboard" },
-      { "@type": "ListItem", "position": 26, "url": "https://www.logicagencyinc.com/guides/ops-team-without-hiring", "name": "How to Build an Ops Team Without Hiring One" }
+      { "@type": "ListItem", "position": 25, "url": "https://www.logicagencyinc.com/guides/cpg-operations-kpis", "name": "CPG Operations KPI Dashboard" }
     ]
   }
 };
 
 export const metadata = {
   title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
-  description: 'In-depth operational guides for scaling consumer product brands: retail readiness, packaging cost reduction, 3PL selection, retail chargebacks, DTC-to-retail transition, fractional operations, working capital, and landed cost.',
+  description: 'Practical CPG supply chain and packaging guides covering retail readiness, cost reduction, 3PL selection, working capital, and landed cost.',
   keywords: 'supply chain guides CPG, packaging guides brand, retail readiness guide, 3PL selection guide, retail chargebacks guide, DTC to retail guide, fractional supply chain, CPG working capital, landed cost CPG',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides',
@@ -52,18 +51,29 @@ export const metadata = {
     title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
     description: 'Operational guides for scaling brands: retail readiness, packaging cost, 3PL selection, retail chargebacks, and more.',
     url: 'https://www.logicagencyinc.com/guides',
+    images: [{ url: 'https://www.logicagencyinc.com/images/og-homepage.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Supply Chain & Packaging Guides — Logic Agency Inc.',
     description: 'Operational guides for scaling brands: retail readiness, packaging cost, 3PL selection, retail chargebacks, and more.',
+    images: ['https://www.logicagencyinc.com/images/og-homepage.jpg'],
   },
 };
 
 export default function GuidesIndex() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.logicagencyinc.com/guides" }
+    ]
+  };
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Nav />
 
       <section className="gl" style={{ padding: '80px 0 40px' }}>
@@ -175,6 +185,14 @@ export default function GuidesIndex() {
                 <h2>3PL Selection Guide for Consumer Product Brands</h2>
                 <p>How to evaluate fulfillment partners on channel fit, retail compliance, pricing structure, and red flags — before signing a long-term contract.</p>
                 <span className="guide-link">Read the guide &rarr;</span>
+              </div>
+            </a>
+            <a href="/guides/retail-readiness-scorecard" className="guide-card">
+              <div className="guide-card-inner">
+                <p className="guide-meta">12 min read</p>
+                <h2>40-Point Retail Readiness Scorecard</h2>
+                <p>Score your packaging, supply chain, fulfillment, compliance, and financial readiness before the first retail purchase order arrives.</p>
+                <span className="guide-link">Use the scorecard &rarr;</span>
               </div>
             </a>
             <a href="/guides/cpg-working-capital-playbook" className="guide-card">
