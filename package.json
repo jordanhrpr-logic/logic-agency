@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/verify-guide-render.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "verify:guides": "node scripts/verify-guide-render.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
