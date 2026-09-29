@@ -35,7 +35,7 @@ const caseStudySchema = {
   publisher: { '@type': 'Organization', name: 'Logic Agency Inc.', url: 'https://www.logicagencyinc.com' },
   mainEntityOfPage: 'https://www.logicagencyinc.com/work/epicutis',
   datePublished: '2026-06-16',
-  dateModified: '2026-06-22',
+  dateModified: '2026-09-28',
   keywords: ['packaging operations', 'managed inventory', 'fractional supply chain', 'CPG scaling', 'logistics normalization'],
 };
 
@@ -72,7 +72,7 @@ export const metadata = {
     url: 'https://www.logicagencyinc.com/work/epicutis',
     type: 'article',
     publishedTime: '2026-06-16',
-    modifiedTime: '2026-06-22',
+    modifiedTime: '2026-09-28',
     authors: ['Jordan Harper'],
     images: [{ url: 'https://www.logicagencyinc.com/images/work/epicutis/epicutis-kits-group-grey.jpg', width: 1200, height: 630 }],
   },
@@ -112,7 +112,7 @@ export default function EpicutisCaseStudy() {
           <p className="cs-lede">Epicutis came to Logic with a box to hold two things. The relationship expanded into packaging development, managed inventory, and logistics infrastructure that let the brand grow its SKU line and unit volume without growing its operations team.</p>
           <div className="cs-meta">
             <div><strong>Jordan Harper</strong>, Logic Agency Inc.</div>
-            <div>Updated Jun 2026</div>
+            <div>Updated Sep 2026</div>
             <div className="cs-meta-pill">Packaging &amp; Supply Chain</div>
             <div className="cs-meta-pill">Beauty / Skincare</div>
             <div className="cs-meta-pill">Multi-Year Partnership</div>
@@ -166,28 +166,28 @@ export default function EpicutisCaseStudy() {
             <div className="step">
               <div className="step-n">1</div>
               <div>
-                <h4>Packaging Development</h4>
+                <h3>Packaging Development</h3>
                 <p>Packaging design and sourcing across new SKUs, displays, primary packaging, and secondary packaging, executed through Logic&apos;s global supplier network and managed through a consistent quality and timeline framework.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-n">2</div>
               <div>
-                <h4>Managed Inventory Program</h4>
+                <h3>Managed Inventory Program</h3>
                 <p>Logic created a managed inventory program out of its Salt Lake City warehouse. Logic purchased packaging, landed it, held it, and released it as the business needed, so Epicutis could pull inventory within days rather than triggering a new procurement cycle each time.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-n">3</div>
               <div>
-                <h4>Landed Cost Clarity</h4>
+                <h3>Landed Cost Clarity</h3>
                 <p>As SKU count grew, Finance had increasing difficulty tracking which packaging costs belonged to which items. Logic helped create cleaner landed-cost visibility across the packaging portfolio, reducing allocation confusion and improving cost accountability.</p>
               </div>
             </div>
             <div className="step">
               <div className="step-n">4</div>
               <div>
-                <h4>Logistics Normalization</h4>
+                <h3>Logistics Normalization</h3>
                 <p>Logic supported a normalized packaging ordering cycle that reduced dependence on urgent air shipments driven by planning constraints. Packaging moved through a predictable logistics model instead of urgent freight becoming the fallback when inventory tightened.</p>
               </div>
             </div>

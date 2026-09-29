@@ -389,14 +389,14 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 .tl-item{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--lt)}
 .tl-item:last-child{border-bottom:none}
 .tl-dur{flex-shrink:0;width:120px;font-size:24px;font-weight:800;color:var(--o);letter-spacing:-1px}
-.tl-detail h4{font-size:16px;font-weight:700;margin-bottom:6px}
+.tl-detail h3,.tl-detail h4{font-size:16px;font-weight:700;margin-bottom:6px}
 .tl-detail p{font-size:14px;line-height:1.6;color:var(--gr);margin-bottom:0}
 
 /* Checklist Table */
 .check-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0}
 .check-item{background:#fff;border-radius:12px;padding:24px;border:1px solid rgba(0,0,0,.04)}
-.check-item h4{font-size:15px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:10px}
-.check-item h4::before{content:'';width:20px;height:20px;border-radius:4px;border:2px solid var(--o);flex-shrink:0}
+.check-item h3,.check-item h4{font-size:15px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.check-item h3::before,.check-item h4::before{content:'';width:20px;height:20px;border-radius:4px;border:2px solid var(--o);flex-shrink:0}
 .check-item p{font-size:13px;line-height:1.6;color:var(--gr);margin-bottom:0}
 
 /* =============================================
@@ -414,14 +414,14 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 .save-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0}
 .save-item{background:#fff;border-radius:12px;padding:28px;border:1px solid rgba(0,0,0,.04)}
 .save-pct{font-size:32px;font-weight:800;color:var(--o);letter-spacing:-1px;margin-bottom:4px}
-.save-item h4{font-size:15px;font-weight:700;margin-bottom:8px}
+.save-item h3,.save-item h4{font-size:15px;font-weight:700;margin-bottom:8px}
 .save-item p{font-size:13px;line-height:1.6;color:var(--gr);margin-bottom:0}
 
 /* Audit Steps */
 .audit-step{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid var(--lt)}
 .audit-step:last-child{border-bottom:none}
 .audit-n{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:rgba(255,96,10,.08);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:var(--o)}
-.audit-step h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.audit-step h3,.audit-step h4{font-size:16px;font-weight:700;margin-bottom:4px}
 .audit-step p{font-size:14px;line-height:1.6;color:var(--gr);margin-bottom:0}
 
 /* Inline Case Study */
@@ -933,7 +933,11 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
 .step{display:flex;gap:20px;padding:18px 0;border-bottom:1px solid var(--lt)}
 .step:last-child{border-bottom:none}
 .step-n{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:rgba(255,96,10,.1);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--o)}
-.article .step h4{font-size:15px;font-weight:700;margin:0 0 4px;color:var(--bk)}
+.article .step h3,.article .step h4{font-size:15px;font-weight:700;margin:0 0 4px;color:var(--bk)}
+
+.evidence-note{font-size:13px;color:#666;line-height:1.7;margin:28px 0;padding:18px 20px;border-left:3px solid var(--o);background:#f7f7f5}
+.evidence-note strong{color:var(--bk)}
+.evidence-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .article .step p{font-size:14px;line-height:1.65;color:var(--gr);margin:0}
 .img-placeholder{width:100%;height:260px;background:linear-gradient(135deg,#f0ede8 0%,#e8e4de 100%);border-radius:10px;margin:28px 0;display:flex;align-items:center;justify-content:center;border:1.5px dashed rgba(0,0,0,.12)}
 .img-placeholder span{font-size:13px;color:rgba(0,0,0,.3);font-style:italic;text-align:center;padding:0 20px}

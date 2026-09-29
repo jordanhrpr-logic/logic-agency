@@ -12,7 +12,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "name": "Logic Agency Inc." },
   "mainEntityOfPage": "https://www.logicagencyinc.com/guides/retail-ready-packaging",
   "datePublished": "2025-02-01",
-  "dateModified": "2026-05-26"
+  "dateModified": "2026-09-28"
 };
 
 const faqSchema = {
@@ -50,6 +50,7 @@ export const metadata = {
   openGraph: {
     type: 'article',
     publishedTime: '2025-02-01',
+    modifiedTime: '2026-09-28',
     authors: ['Jordan Harper'],
     title: 'Getting Your Packaging Retail-Ready',
     description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
@@ -114,7 +115,7 @@ export default function RetailReadyPackaging() {
           <p className="a-lede">Retail-ready packaging means your primary pack, case pack, pallet configuration, barcode placement, labels, and shipment documentation all meet the retailer&apos;s receiving rules before the first PO ships. Your DTC packaging usually is not enough.</p>
           <div className="a-meta">
             <span><strong>Jordan Harper, Logic Agency Inc.</strong></span>
-            <span>Updated May 2026</span>
+            <span>Updated Sep 2026</span>
             <span>15 min read</span>
             <span>Guides</span>
           </div>
@@ -173,35 +174,39 @@ export default function RetailReadyPackaging() {
 
           <div className="check-grid">
             <div className="check-item">
-              <h4>UPC / Barcode Placement</h4>
+              <h3>UPC / Barcode Placement</h3>
               <p>Specific size, placement zone, quiet zone spacing, and scan angle requirements. A barcode that scans fine on your phone may fail a retailer&apos;s automated system.</p>
             </div>
             <div className="check-item">
-              <h4>Case Pack Configuration</h4>
+              <h3>Case Pack Configuration</h3>
               <p>Inner pack count, outer case count, case dimensions, case weight limits. The math between your unit size and case size determines pallet efficiency.</p>
             </div>
             <div className="check-item">
-              <h4>Pallet Specifications</h4>
+              <h3>Pallet Specifications</h3>
               <p>Standard GMA pallet (48&quot; x 40&quot;), maximum height (typically 48-60&quot;), Ti x Hi stacking pattern, stretch wrap requirements, and corner board specs.</p>
             </div>
             <div className="check-item">
-              <h4>Labeling Requirements</h4>
+              <h3>Labeling Requirements</h3>
               <p>Country of origin, net weight/volume, ingredient lists, nutritional panels (if food/supplement), lot codes, and retailer-specific label formats.</p>
             </div>
             <div className="check-item">
-              <h4>EDI &amp; ASN Compliance</h4>
+              <h3>EDI &amp; ASN Compliance</h3>
               <p>Electronic data interchange for purchase orders and advance ship notices. Most major retailers require EDI. Without it, your shipment may not be received.</p>
             </div>
             <div className="check-item">
-              <h4>Shelf-Ready Packaging (SRP)</h4>
+              <h3>Shelf-Ready Packaging (SRP)</h3>
               <p>Some retailers require packaging that converts directly to a shelf display without individual stocking. This changes your secondary packaging design entirely.</p>
             </div>
           </div>
+
+          <p className="evidence-note"><strong>Primary standard:</strong> GS1 defines barcode size, quality, placement, and quiet-zone requirements by scanning environment. Review the <a href="https://www.gs1.org/standards/barcodes/10-steps-to-barcode-your-product/english" target="_blank" rel="noopener noreferrer">GS1 barcode implementation steps</a> and the retailer&apos;s current routing guide before approving production artwork.</p>
 
           <div className="callout">
             <p><strong>What do chargebacks actually cost?</strong></p>
             <p>It depends on the retailer and the violation. Incorrect case quantities can run $200-500 per incident. Wrong pallet configurations can mean $500-2,000. Late shipments caused by packaging delays can trigger penalties of $5,000-10,000+. One brand we spoke with absorbed $40,000 in chargebacks in their first quarter at a major retailer because their case packs didn&apos;t match the PO specs.</p>
           </div>
+
+          <p className="evidence-note"><strong>Logic Agency operating benchmark:</strong> The chargeback ranges above come from Logic&apos;s client work and retailer-compliance reviews, not a third-party industry average. Actual deductions are controlled by each retailer&apos;s current agreement, routing guide, violation type, and shipment value.</p>
 
           <h2>Retailer-Specific Nuances</h2>
 
@@ -227,39 +232,41 @@ export default function RetailReadyPackaging() {
             <div className="tl-item">
               <div className="tl-dur">3-4 wks</div>
               <div className="tl-detail">
-                <h4>Structural Design &amp; Prototyping</h4>
+                <h3>Structural Design &amp; Prototyping</h3>
                 <p>Dieline development, material specification, structural testing, prototype production, and retailer spec alignment. If you need shelf-ready packaging or custom inserts, add another 1-2 weeks.</p>
               </div>
             </div>
             <div className="tl-item">
               <div className="tl-dur">2-3 wks</div>
               <div className="tl-detail">
-                <h4>Supplier Sourcing &amp; Quoting</h4>
+                <h3>Supplier Sourcing &amp; Quoting</h3>
                 <p>Getting production quotes, comparing suppliers, negotiating MOQs, and securing production slots. If you&apos;re working with a new supplier, add time for factory vetting and sample approval.</p>
               </div>
             </div>
             <div className="tl-item">
               <div className="tl-dur">4-8 wks</div>
               <div className="tl-detail">
-                <h4>Production</h4>
+                <h3>Production</h3>
                 <p>Tooling (if custom dies are needed), print proofing, production run, quality control inspection, and packaging. Complexity and volume determine whether you&apos;re at 4 weeks or 8.</p>
               </div>
             </div>
             <div className="tl-item">
               <div className="tl-dur">4-6 wks</div>
               <div className="tl-detail">
-                <h4>Ocean Freight (if international)</h4>
+                <h3>Ocean Freight (if international)</h3>
                 <p>Container booking, port handling, ocean transit, customs clearance, and drayage to your warehouse. Domestic sourcing eliminates this but typically costs 20-40% more.</p>
               </div>
             </div>
             <div className="tl-item">
               <div className="tl-dur">1-2 wks</div>
               <div className="tl-detail">
-                <h4>Receiving &amp; Distribution Prep</h4>
+                <h3>Receiving &amp; Distribution Prep</h3>
                 <p>Warehouse receiving, quality check, palletization to retailer specs, ASN generation, and shipment scheduling within the retailer&apos;s delivery window.</p>
               </div>
             </div>
           </div>
+
+          <p className="evidence-note"><strong>Logic Agency planning benchmark:</strong> The 14-22 week range reflects the sequence Logic uses for custom retail packaging programs. It is directional, not a guaranteed lead time. Material availability, tooling, approval rounds, production capacity, origin country, freight mode, and retailer testing can move the schedule.</p>
 
           <div className="callout">
             <p><strong>Total: 14-22 weeks.</strong> That&apos;s 3.5 to 5.5 months. If your retailer gives you 60-90 days from PO to delivery, the math doesn&apos;t work unless you&apos;ve already started. The brands that enter retail smoothly are the ones that develop retail-ready packaging before they have a PO &mdash; not after.</p>

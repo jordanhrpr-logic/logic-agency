@@ -78,7 +78,7 @@ function GuideSection({ section }) {
           {section.steps.map((step, index) => (
             <div className="audit-step" key={step.title}>
               <div className="audit-n">{index + 1}</div>
-              <div><h4>{step.title}</h4><p>{step.body}</p></div>
+              <div><h3>{step.title}</h3><p>{step.body}</p></div>
             </div>
           ))}
         </div>
@@ -118,6 +118,7 @@ export default function EvergreenGuidePage({ guide }) {
               <ul>{guide.tldr.map((item, index) => <li key={index} dangerouslySetInnerHTML={{ __html: item }} />)}</ul>
             </section>
           )}
+          <p className="evidence-note"><strong>Evidence note:</strong> Linked external claims point to the named primary source where available. Unattributed cost, margin, timing, and operating ranges are Logic Agency planning benchmarks drawn from client work, supplier quotes, and operating models. They are directional, not guaranteed market averages; validate them against current contracts, quotes, regulations, and channel requirements.</p>
           <div className="toc"><h3>What&apos;s Inside</h3><ul className="toc-list">{guide.sections.map((section) => <li key={section.id}><a href={`#${section.id}`}>{section.heading}</a></li>)}</ul></div>
           {guide.sections.map((section) => <GuideSection key={section.id} section={section} />)}
         </div>
