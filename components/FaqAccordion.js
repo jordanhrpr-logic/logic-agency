@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback } from 'react';
+import { trackFaqExpand } from '@/lib/analytics';
 
 const faqData = [
   {
@@ -48,7 +49,12 @@ const faqData = [
 export default function FaqAccordion() {
   const handleClick = useCallback((e) => {
     const fi = e.currentTarget;
+    const wasOpen = fi.classList.contains('op');
     fi.classList.toggle('op');
+    if (!wasOpen) {
+      const q = fi.querySelector('h3')?.textContent || '';
+      trackFaqExpand({ question: q, ctaLocation: 'home-faq' });
+    }
   }, []);
 
   return (
