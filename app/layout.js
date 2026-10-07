@@ -1,6 +1,7 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import AnalyticsListener from '@/components/AnalyticsListener';
 import { organizationJsonLd, websiteJsonLd } from '@/lib/metadata';
 import GA4Events from '@/components/GA4Events';
 
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
         {GA_ID && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}');` }} />
+            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA_ID}',{linker:{domains:['logic-pac.com','www.logic-pac.com','logicagencyinc.com','www.logicagencyinc.com']}});` }} />
           </>
         )}
         <script
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <AnalyticsListener />
         {children}
         <GA4Events />
         <Analytics />

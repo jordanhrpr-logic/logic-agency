@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackFaqExpand } from '@/lib/analytics';
 
 export default function CaseStudyFaqAccordion({ items }) {
   const [openIndex, setOpenIndex] = useState(0);
@@ -17,7 +18,11 @@ export default function CaseStudyFaqAccordion({ items }) {
               type="button"
               className="faq-q"
               aria-expanded={isOpen}
-              onClick={() => setOpenIndex(isOpen ? -1 : index)}
+              onClick={() => {
+                const nowOpen = !isOpen;
+                setOpenIndex(nowOpen ? index : -1);
+                if (nowOpen) trackFaqExpand({ question: item.question, ctaLocation: 'case-study-faq' });
+              }}
             >
               <h3>{item.question}</h3>
               <span className="faq-toggle">+</span>

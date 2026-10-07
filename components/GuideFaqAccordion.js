@@ -1,11 +1,17 @@
 'use client';
 
 import { useCallback } from 'react';
+import { trackFaqExpand } from '@/lib/analytics';
 
 export default function GuideFaqAccordion({ items }) {
   const handleClick = useCallback((e) => {
     const item = e.currentTarget;
+    const wasOpen = item.classList.contains('gf-op');
     item.classList.toggle('gf-op');
+    if (!wasOpen) {
+      const q = item.querySelector('h3')?.textContent || '';
+      trackFaqExpand({ question: q, ctaLocation: 'guide-faq' });
+    }
   }, []);
 
   return (
