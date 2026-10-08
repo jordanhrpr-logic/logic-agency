@@ -25,7 +25,7 @@ Logic Agency is an outsourced packaging and supply chain ops team on a monthly r
 ## Site Architecture
 
 ```
-/                                    → Homepage (conversion page with tiers)
+/                                    → Homepage (conversion page)
 /guides/retail-ready-packaging       → Guide: Getting Your Packaging Retail-Ready
 /guides/packaging-cost-reduction     → Guide: Packaging Cost Reduction Without Sacrificing Brand
 /guides/packaging-system-that-scales → Guide: Building a Packaging System That Scales
@@ -95,7 +95,9 @@ White background, 16-20px border-radius, 1px border at 4% black opacity, hover l
 ## Page Templates
 
 ### Homepage
-Full marketing page with sections: Hero → Situations (problem cards) → How It Works → Pricing Tiers → Metrics → Case Studies → Industries → FAQ (accordion) → CTA → Footer.
+Full marketing page with sections: Hero → Situations (problem cards) → How It Works → Metrics → Case Studies → Industries → FAQ (accordion) → CTA → Footer.
+
+**Note (2026-10-08):** The homepage pricing tiers block was removed per Jordan's request pending the full Agency site rework. The retainer-tier structure documented under "Company Context" above is still accurate internally — it is not currently surfaced on the homepage. Guide-page CTAs still point at `/#pricing` as a soft fallback and silently land users at the top of the homepage; they will be re-pointed during the forthcoming site rework.
 
 ### Guide Pages
 Article layout: Nav → Hero (breadcrumb, h1, lede paragraph, meta bar) → Article body (800px max-width, prose with embedded components) → CTA Band → Related Guides → Footer.
@@ -124,7 +126,7 @@ Direct, operational, expert. No marketing fluff. Writes like someone who's done 
 - JSON-LD FAQ schema with 4-5 questions per guide (tuned for LLM discoverability)
 - Meta descriptions target primary search queries
 - Canonical URLs set on all pages
-- Internal links: every guide links to homepage pricing section and to other guides via Related Guides section
+- Internal links: guides link back to the homepage (currently via `/#pricing` anchor as a soft fallback — will be re-pointed during the site rework) and to other guides via the Related Guides section
 
 ### Search Intent Mapping
 - Retail-Ready → "retail packaging requirements", "case pack requirements", "packaging for Target/Walmart"
@@ -195,7 +197,7 @@ Direct, operational, expert. No marketing fluff. Writes like someone who's done 
 
 ## Key Principles
 
-1. **Pricing is the centerpiece.** The tiers should be visible and clear on the homepage. Every guide page funnels back to pricing.
+1. **The homepage converts to a conversation, not a checkout.** The homepage pricing tiers were removed on 2026-10-08 pending the full Agency site rework. Until the rework ships, every guide page and homepage CTA should route the reader toward "Book a Call" (Calendly) or "Start a Conversation" (email) — not a visible-pricing destination.
 2. **Search intent first.** Guide pages exist to capture organic search traffic. Write for the person typing the query, not for the brand.
 3. **No blog.** Guides are evergreen reference content at `/guides/`, not dated blog posts.
 4. **Show expertise through specificity.** Real numbers, real timelines, real scenarios. Never generic.

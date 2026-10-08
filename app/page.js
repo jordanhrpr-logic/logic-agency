@@ -56,7 +56,6 @@ export default function HomePage() {
           <p className="hero-sub">Packaging, supply chain, and operations for brands selling into retail, B2B, and direct to consumer. We embed into your team with 20 years of execution experience and AI-powered systems that make your operations permanently better.</p>
           <div className="hb">
             <EmailButton subject="Let's Talk — Packaging & Supply Chain" className="bt bo">Start a Conversation &rarr;</EmailButton>
-            <a href="#pricing" className="bt bg">See Pricing</a>
           </div>
           <a href="/guides/retail-readiness-scorecard" className="hero-dl">Or download the free 40-Point Readiness Scorecard &rarr;</a>
           <div className="trust">
@@ -196,49 +195,6 @@ export default function HomePage() {
               <p>Generic AI gives generic answers. It doesn&apos;t know your 3PL&apos;s lead times, your manufacturer&apos;s production cycle, or the difference between a KeHE routing guide and a UNFI routing guide. We build operational AI trained on real packaging data, freight patterns, and retail compliance rules &mdash; because we&apos;ve lived them. Your tools should know your business. Ours do.</p>
             </div>
           </FadeIn>
-        </div>
-      </section>
-
-      {/* PRICING TIERS */}
-      <section id="pricing" className="sc dks gd">
-        <div className="si">
-          <div className="sl">Plans</div>
-          <div className="or"></div>
-          <h2 className="sh">Start with what you need. <span className="o">Scale when you&apos;re ready.</span></h2>
-          <p className="ss">Month-to-month. No long-term contracts. Every engagement is custom-scoped to your business. Most clients start with Advisory and expand as we prove the value.</p>
-          <FadeIn className="tiers">
-            {/* ADVISORY */}
-            <div className="tier tier-s">
-              <span className="tier-badge">Advisory</span>
-              <p className="tier-sub">We guide. You execute.</p>
-              <h3>Advisory</h3>
-              <span className="tier-price"><strong>$2.5-3K</strong> /month</span>
-              <p className="tier-desc">An expert in your corner. We assess your operations, identify the gaps, and give you a clear plan built by operators who&apos;ve done this hundreds of times. You execute with confidence knowing the playbook was built from real experience, not theory.</p>
-              <p className="tier-for">Best for: Brands preparing for first production runs, first retail conversations, or needing expert eyes on a specific challenge.</p>
-            </div>
-            {/* ACTIVE MANAGEMENT */}
-            <div className="tier tier-g">
-              <span className="tier-badge">Most Popular</span>
-              <p className="tier-sub">We own a workstream. You focus on the business.</p>
-              <h3>Active Management</h3>
-              <span className="tier-price"><strong>$5-7K</strong> /month</span>
-              <p className="tier-desc">We take direct ownership of one or two operational areas and run them. You stop managing the day-to-day and start getting weekly updates on what we handled. This is where most clients land after seeing what Advisory uncovers.</p>
-              <p className="tier-for">Best for: Brands doing 50K-500K+ units with active retail or commercial relationships. You&apos;ve outgrown managing everything yourself.</p>
-            </div>
-            {/* EMBEDDED */}
-            <div className="tier tier-e">
-              <span className="tier-badge">Embedded</span>
-              <p className="tier-sub">We are your ops team.</p>
-              <h3>Embedded Operations</h3>
-              <span className="tier-price"><strong>$10K+</strong> /month</span>
-              <p className="tier-desc">Full operational ownership with a dedicated ops lead, custom AI systems, and infrastructure that makes your business permanently better. The capability of a full ops department without the $800K+ annual cost of building one.</p>
-              <p className="tier-for">Best for: Brands at scale, entering major retail, or replacing an in-house ops team.</p>
-            </div>
-          </FadeIn>
-          <p className="tier-custom">Every tier has access to our full capabilities. What changes is how much we own and how deeply we embed. Most clients start with Advisory and expand as we prove the value.</p>
-          <div style={{textAlign:'center',marginTop:'20px'}}>
-            <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
-          </div>
         </div>
       </section>
 
