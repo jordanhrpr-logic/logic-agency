@@ -153,7 +153,6 @@ export default function HomePage() {
               <p>Retail compliance, inventory planning, go-to-market execution, 3PL coordination, demand forecasting, and EDI integration. This is where AI compounds the most &mdash; custom forecasting models, automated compliance checking, and operational dashboards built on your actual data.</p>
             </HwAccordion>
           </FadeIn>
-          <p className="hw-diff">Traditional agencies advise and hand off. We embed and execute. That&apos;s the difference between a vendor and a partner.</p>
         </div>
       </section>
       {/* UNIFIED CAPABILITIES */}
@@ -203,6 +202,11 @@ export default function HomePage() {
       {/* METRICS */}
       <section className="sc dks gd">
         <div className="si">
+          <div className="m-head">
+            <div className="sl">The Difference</div>
+            <div className="or"></div>
+            <p className="m-statement">Traditional agencies advise and hand off. <span className="o">We embed and execute.</span> That&apos;s the difference between a vendor and a partner.</p>
+          </div>
           <FadeIn className="m-grid">
             <div className="mi"><div className="mn">7x</div><div className="ml">SKU Growth</div><div className="md">Scaled Epicutis from 3 to 21+ SKUs</div></div>
             <div className="mi"><div className="mn">20%</div><div className="ml">Shipping Saved</div><div className="md">Smaller footprints, better pallet efficiency</div></div>
