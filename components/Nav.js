@@ -42,7 +42,6 @@ export default function Nav({ variant = 'guide' }) {
         {isHome ? (
           <>
             <a href="#situations" onClick={close}>Who We Help</a>
-            <a href="#pricing" onClick={close}>Pricing</a>
             <a href="#results" onClick={close}>Results</a>
             {guidesDropdown}
             <a href="/blog" onClick={close}>Blog</a>
@@ -52,7 +51,6 @@ export default function Nav({ variant = 'guide' }) {
         ) : (
           <>
             <a href="/" onClick={close}>Home</a>
-            <a href="/#pricing" onClick={close}>Pricing</a>
             <a href="/#results" onClick={close}>Results</a>
             {guidesDropdown}
             <a href="/blog" onClick={close}>Blog</a>
