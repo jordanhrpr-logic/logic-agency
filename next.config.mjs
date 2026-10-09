@@ -54,18 +54,23 @@ const nextConfig = {
       { source: '/client-work-signum-biosciences', destination: '/#results', permanent: true },
       { source: '/client-work-iuno', destination: '/#results', permanent: true },
       { source: '/adidas-case-study', destination: '/#results', permanent: true },
+      { source: '/adidas', destination: '/#results', permanent: true },
       // Legacy Wix page URLs
       { source: '/services', destination: '/#services', permanent: true },
       { source: '/contact', destination: 'https://calendly.com/jordan-harper-packaging/logic-agency-readiness', permanent: false },
       { source: '/about', destination: '/', permanent: true },
       { source: '/about-us', destination: '/', permanent: true },
       { source: '/about-1-1', destination: '/', permanent: true },
+      { source: '/contact-us', destination: 'https://calendly.com/jordan-harper-packaging/logic-agency-readiness', permanent: false },
       { source: '/projects', destination: '/#results', permanent: true },
       { source: '/collaboration', destination: '/', permanent: true },
       { source: '/home-1', destination: '/', permanent: true },
       { source: '/home', destination: '/', permanent: true },
       // Legacy Wix blog post URLs
       { source: '/post/:slug*', destination: '/blog', permanent: true },
+      // Legacy blog slugs with no direct match
+      { source: '/blog/landed-cost-model-by-sku', destination: '/guides/landed-cost-playbook', permanent: true },
+      { source: '/blog/mothers-market-toolkit', destination: '/blog', permanent: true },
       // Legacy category/tag pages
       { source: '/blog/categories/:slug*', destination: '/blog', permanent: true },
       { source: '/blog/tags/:slug*', destination: '/blog', permanent: true },
@@ -76,6 +81,13 @@ const nextConfig = {
       { source: '/beauty-cosmetic-skincare-packaging-examples', destination: '/guides', permanent: true },
       { source: '/free-sustainable-packaging-audit', destination: '/guides/sustainable-packaging-cpg', permanent: true },
       { source: '/certifications', destination: '/', permanent: true },
+      // Garbled/encoded legacy URLs
+      { source: '/guides/cmV0YWlsLW', destination: '/guides/retail-readiness', permanent: true },
+      // Legacy guide/misc slugs
+      { source: '/guides/pricing', destination: '/', permanent: true },
+      { source: '/guides/mothers-market-toolkit', destination: '/guides', permanent: true },
+      { source: '/mothers-market-toolkit', destination: '/guides', permanent: true },
+      { source: '/violet-frequency', destination: '/#results', permanent: true },
       // French-language legacy pages
       { source: '/a-propos', destination: '/', permanent: true },
       { source: '/activites', destination: '/', permanent: true },
