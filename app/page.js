@@ -129,8 +129,10 @@ export default function HomePage() {
           <div className="sl">What We Do</div>
           <div className="or"></div>
           <h2 className="sh">Experience that builds systems. <span className="o">Systems that build leverage.</span></h2>
-          <p className="ss" style={{maxWidth:'720px'}}>Every capability below is delivered by operators who have lived these problems for 20 years, now backed by AI systems and workflows we build specifically for your business. You get the expertise of an embedded ops team and the compounding leverage of custom-built operational intelligence.</p>
-          <p className="hw-exp" style={{marginTop:'0',marginBottom:'56px'}}>We know where AI accelerates &mdash; forecasting, compliance checks, inventory modeling, supplier tracking &mdash; and where humans are irreplaceable: design, negotiation, relationships, and the judgment calls that require context no model has. You get both. That&apos;s how we stay leaner than agencies twice our size and pass that efficiency directly to you.</p>
+          <div className="hw-intro">
+            <p className="hw-intro-primary">Every capability below is delivered by operators who have lived these problems for 20 years, now backed by AI systems and workflows we build specifically for your business. You get the expertise of an embedded ops team and the compounding leverage of custom-built operational intelligence.</p>
+            <p className="hw-intro-ai">We know where AI accelerates &mdash; forecasting, compliance checks, inventory modeling, supplier tracking &mdash; and where humans are irreplaceable: design, negotiation, relationships, and the judgment calls that require context no model has. You get both. That&apos;s how we stay leaner than agencies twice our size and pass that efficiency directly to you.</p>
+          </div>
           <FadeIn className="hw-grid">
             <HwAccordion>
               <div className="hw-n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="28" height="28"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg></div>

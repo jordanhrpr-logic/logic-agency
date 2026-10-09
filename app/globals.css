@@ -101,11 +101,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 40px;height:72px;
 .sit p{font-size:14px;line-height:1.65;color:var(--gr)}
 
 /* === HOW IT WORKS (HOMEPAGE) === */
+.hw-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:32px;margin-bottom:56px;max-width:1100px}
+.hw-intro-primary{font-size:17px;line-height:1.7;color:var(--bk);margin:0}
+.hw-intro-ai{font-size:15px;line-height:1.7;color:var(--gr);margin:0;padding-left:24px;border-left:2px solid rgba(255,96,10,.25)}
 .hw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
-.hw{text-align:center}
-.hw-n{width:64px;height:64px;border-radius:50%;background:rgba(255,96,10,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px;font-weight:800;color:var(--o)}
+.hw{text-align:left}
+.hw-n{width:56px;height:56px;border-radius:50%;background:rgba(255,96,10,.08);display:flex;align-items:center;justify-content:center;margin:0 0 20px;font-size:24px;font-weight:800;color:var(--o)}
 .hw h3{font-size:18px;font-weight:700;margin-bottom:10px}
-.hw p{font-size:14px;line-height:1.65;color:var(--gr);max-width:300px;margin:0 auto}
+.hw p{font-size:14px;line-height:1.65;color:var(--gr);margin:0}
 .hw-diff{text-align:center;font-size:16px;font-weight:500;font-style:italic;color:var(--gr);max-width:640px;margin:48px auto 0;line-height:1.7}
 .hw-exp{text-align:center;font-size:15px;color:var(--gr);max-width:680px;margin:12px auto 0;line-height:1.7}
 
@@ -618,6 +621,8 @@ footer.guide-footer .fti p{font-size:13px;color:rgba(255,255,255,.5)}
   .tiers{grid-template-columns:1fr}
   .m-grid{grid-template-columns:repeat(2,1fr);gap:32px}
   .cg{grid-template-columns:1fr}
+  .hw-intro{grid-template-columns:1fr;gap:24px;max-width:none}
+  .hw-intro-ai{padding-left:16px}
   .hw-grid{grid-template-columns:1fr;gap:0}
   .hw{text-align:left;cursor:pointer;padding:24px 0;border-bottom:1px solid var(--lt);position:relative}
   .hw:first-child{border-top:1px solid var(--lt)}
