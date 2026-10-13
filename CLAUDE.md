@@ -97,7 +97,7 @@ White background, 16-20px border-radius, 1px border at 4% black opacity, hover l
 ### Homepage
 Full marketing page with sections: Hero → Situations (problem cards) → How It Works → Metrics → Case Studies → Industries → FAQ (accordion) → CTA → Footer.
 
-**Note (2026-10-08):** The homepage pricing tiers block was removed per Jordan's request pending the full Agency site rework. The retainer-tier structure documented under "Company Context" above is still accurate internally — it is not currently surfaced on the homepage. Guide-page CTAs still point at `/#pricing` as a soft fallback and silently land users at the top of the homepage; they will be re-pointed during the forthcoming site rework.
+**Note (2026-10-08, updated 2026-10-13):** The homepage pricing tiers block was removed per Jordan's request pending the full Agency site rework. The retainer-tier structure documented under "Company Context" above is still accurate internally — it is not currently surfaced on the homepage. Guide-page CTAs were re-pointed on 2026-10-13: the "See Plans & Pricing" button was replaced with "Download the Readiness Scorecard" linking to `/guides/retail-readiness-scorecard`, and the scorecard text-link below was replaced with "Browse all 26 guides" linking to `/guides`.
 
 ### Guide Pages
 Article layout: Nav → Hero (breadcrumb, h1, lede paragraph, meta bar) → Article body (800px max-width, prose with embedded components) → CTA Band → Related Guides → Footer.
@@ -126,7 +126,7 @@ Direct, operational, expert. No marketing fluff. Writes like someone who's done 
 - JSON-LD FAQ schema with 4-5 questions per guide (tuned for LLM discoverability)
 - Meta descriptions target primary search queries
 - Canonical URLs set on all pages
-- Internal links: guides link back to the homepage (currently via `/#pricing` anchor as a soft fallback — will be re-pointed during the site rework) and to other guides via the Related Guides section
+- Internal links: guide CTA bands route to the Readiness Scorecard download and Calendly conversation booking. Related Guides section links to other guides.
 
 ### Search Intent Mapping
 - Retail-Ready → "retail packaging requirements", "case pack requirements", "packaging for Target/Walmart"

@@ -7,7 +7,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Fractional Supply Chain Operations: What It Is and When It Works",
-  "description": "Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.",
+  "description": "Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.",
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
@@ -68,7 +68,7 @@ const faqSchema = {
 
 export const metadata = {
   title: 'Fractional Supply Chain Operations for CPG Brands — Logic Agency Inc.',
-  description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
+  description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
   keywords: 'fractional supply chain operations, outsourced supply chain management, fractional COO CPG, supply chain consultant vs full-time hire, operations team cost CPG',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
@@ -78,14 +78,14 @@ export const metadata = {
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],
     title: 'Fractional Supply Chain Operations for CPG Brands',
-    description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
+    description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
     url: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
     images: [{ url: 'https://www.logicagencyinc.com/images/og-fractional-supply-chain-operations.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Fractional Supply Chain Operations for CPG Brands',
-    description: 'Fractional supply chain operations explained: real cost ranges, what the team owns, when to choose it over a full-time hire, and how it works for scaling CPG brands.',
+    description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
   },
 };
 
@@ -225,9 +225,9 @@ export default function Page() {
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
-            <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bw">Download the Readiness Scorecard</a>
           </div>
-          <a href="/guides/retail-readiness-scorecard" className="cta-dl">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/guides" className="cta-dl">Browse all 26 guides &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>

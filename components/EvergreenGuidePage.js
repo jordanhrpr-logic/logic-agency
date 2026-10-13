@@ -554,7 +554,7 @@ export default function EvergreenGuidePage({ guide }) {
           <p>{guide.ctaCopy || 'Logic Agency gives scaling consumer brands senior supply chain and packaging operations without forcing an early full-time hire.'}</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation →</a>
-            <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bw">Download the Readiness Scorecard</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. · Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>

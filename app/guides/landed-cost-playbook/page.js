@@ -370,7 +370,7 @@ export default function LandedCostPlaybook() {
           <p>Landed cost modeling is the first thing we build into every retainer. We map every cost line between the supplier quote and your warehouse, identify the gaps in your margin model, and show you where the money is actually going.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
-            <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bw">Download the Readiness Scorecard</a>
           </div>
           <a href="/guides/retail-readiness-scorecard" className="cta-dl">Use the free 40-Point Readiness Scorecard &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
