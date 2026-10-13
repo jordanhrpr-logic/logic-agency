@@ -335,9 +335,9 @@ export default function PackagingCostReduction() {
           <p>Cost optimization is built into every tier we offer. At Starter level we advise on sourcing strategy. At Growth and Enterprise we actively manage the cost reduction roadmap as your packaging program partner. Tell us what you&apos;re dealing with.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
-            <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bw">Download the Readiness Scorecard</a>
           </div>
-          <a href="/guides/retail-readiness-scorecard" className="cta-dl">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/guides" className="cta-dl">Browse all 26 guides &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>

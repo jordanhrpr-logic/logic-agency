@@ -559,9 +559,9 @@ export default function RetailReadinessBible() {
           <p>This is exactly what our Growth and Enterprise tiers are built for &mdash; the operational infrastructure that gets you into retail and keeps you there. We&apos;ve taken brands through every phase of this checklist. Tell us where you are and we&apos;ll tell you what comes next.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>
-            <a href="/#pricing" className="bt bw">See Plans &amp; Pricing</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bw">Download the Readiness Scorecard</a>
           </div>
-          <a href="/guides/retail-readiness-scorecard" className="cta-dl">Download the free 40-Point Readiness Scorecard &rarr;</a>
+          <a href="/guides" className="cta-dl">Browse all 26 guides &rarr;</a>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
       </section>

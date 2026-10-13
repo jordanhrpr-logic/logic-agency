@@ -230,7 +230,7 @@ export default function GuidesIndex() {
           <h2>Need ops support, not <span className="o">just reading material?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. We&apos;ll tell you in 30 minutes whether a retainer makes sense.</p>
           <div className="cta-btns">
-            <a href="/#pricing" className="bt bo">See Plans &amp; Pricing &rarr;</a>
+            <a href="/guides/retail-readiness-scorecard" className="bt bo">Download the Readiness Scorecard &rarr;</a>
           </div>
           <span className="cta-sub">Logic Agency Inc. &middot; Packaging &amp; Supply Chain Ops on a Monthly Retainer</span>
         </div>
