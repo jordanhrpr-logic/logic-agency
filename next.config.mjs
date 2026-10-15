@@ -23,12 +23,12 @@ const nextConfig = {
       },
       {
         source: '/blog/what-fractional-operations-team-does',
-        destination: '/blog/fractional-supply-chain-operations',
+        destination: '/guides/fractional-supply-chain-operations',
         permanent: true,
       },
       {
         source: '/blog/when-to-hire-vp-operations-cpg',
-        destination: '/blog/fractional-coo-vs-full-time-hire',
+        destination: '/guides/fractional-coo-vs-full-time-hire',
         permanent: true,
       },
       {
@@ -46,6 +46,10 @@ const nextConfig = {
         destination: '/blog/supplier-transition-strategy-scaling-brands',
         permanent: true,
       },
+      // Blog/guide duplicate consolidation — guide is the canonical version
+      { source: '/blog/fractional-supply-chain-operations', destination: '/guides/fractional-supply-chain-operations', permanent: true },
+      { source: '/blog/fractional-coo-vs-full-time-hire', destination: '/guides/fractional-coo-vs-full-time-hire', permanent: true },
+      { source: '/blog/dtc-to-retail-supply-chain', destination: '/guides/dtc-to-retail-supply-chain', permanent: true },
       // Legacy Wix case study URLs
       { source: '/kiki-world', destination: '/work/epicutis', permanent: true },
       { source: '/vans-case-study', destination: '/#results', permanent: true },
@@ -88,6 +92,9 @@ const nextConfig = {
       { source: '/guides/mothers-market-toolkit', destination: '/guides', permanent: true },
       { source: '/mothers-market-toolkit', destination: '/guides', permanent: true },
       { source: '/violet-frequency', destination: '/#results', permanent: true },
+      // GSC-reported 404s (Oct 2026)
+      { source: '/accessibility-statement', destination: '/', permanent: true },
+      { source: '/scale', destination: '/', permanent: true },
       // French-language legacy pages
       { source: '/a-propos', destination: '/', permanent: true },
       { source: '/activites', destination: '/', permanent: true },

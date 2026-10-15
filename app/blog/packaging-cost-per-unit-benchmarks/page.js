@@ -93,7 +93,7 @@ export const metadata = {
   description: 'Packaging cost per unit benchmarks by category: beauty, food, supplements, electronics, spirits, and jewelry. Real cost ranges, COGS percentages, and when cheap packaging costs more.',
   keywords: 'packaging cost per unit benchmark, how much should packaging cost per unit, packaging budget percentage, beauty packaging cost ranges, CPG packaging spend benchmarks',
   alternates: {
-    canonical: 'https://www.logicagencyinc.com/blog/packaging-cost-per-unit-benchmarks',
+    canonical: 'https://logic-pac.com/blog/packaging-cost-per-unit-benchmarks',
   },
   openGraph: {
     title: 'Packaging Cost Per Unit Benchmarks by Product Category',
