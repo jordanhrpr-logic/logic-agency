@@ -43,8 +43,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail-Ready Packaging Guide — Logic Agency Inc.',
-  description: 'Retail-ready packaging means compliant case packs, pallet specs, barcode placement, labels, and timelines before the first PO ships.',
+  title: 'Retail-Ready Packaging: Case Packs, Compliance & First PO Guide',
+  description: 'What retailers actually require before your first PO ships. Case-pack specs, pallet configuration, GS1 barcodes, labeling, and the timeline from DTC to shelf.',
   keywords: 'retail packaging requirements, retail-ready packaging, case pack requirements, pallet configuration, Target packaging requirements, Walmart packaging compliance, retail packaging compliance, DTC to retail packaging',
   alternates: { canonical: 'https://www.logicagencyinc.com/guides/retail-ready-packaging' },
   openGraph: {
@@ -52,15 +52,15 @@ export const metadata = {
     publishedTime: '2025-02-01',
     modifiedTime: '2026-09-28',
     authors: ['Jordan Harper'],
-    title: 'Getting Your Packaging Retail-Ready',
-    description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
+    title: 'Retail-Ready Packaging: Case Packs, Compliance & First PO Guide',
+    description: 'What retailers actually require before your first PO ships. Case-pack specs, pallet configuration, GS1 barcodes, labeling, and the timeline from DTC to shelf.',
     url: 'https://www.logicagencyinc.com/guides/retail-ready-packaging',
     images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-ready-packaging.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Getting Your Packaging Retail-Ready',
-    description: 'Case pack specs, pallet configurations, retailer compliance, labeling requirements, and the timeline nobody talks about.',
+    title: 'Retail-Ready Packaging: Case Packs, Compliance & First PO Guide',
+    description: 'What retailers actually require before your first PO ships. Case-pack specs, pallet configuration, GS1 barcodes, labeling, and the timeline from DTC to shelf.',
     images: ['https://www.logicagencyinc.com/images/og-retail-ready-packaging.jpg'],
   },
 };

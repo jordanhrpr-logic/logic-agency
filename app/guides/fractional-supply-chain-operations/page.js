@@ -6,8 +6,8 @@ import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Fractional Supply Chain Operations: What It Is and When It Works",
-  "description": "Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.",
+  "headline": "Fractional Supply Chain Ops: What It Costs vs. a Full-Time VP Hire",
+  "description": "Fractional supply chain operations for scaling CPG brands. What the team owns, what it costs vs. a VP hire, and how it works from month one. No annual contract.",
   "author": {
     "@type": "Person",
     "name": "Jordan Harper",
@@ -67,8 +67,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Fractional Supply Chain Operations for CPG Brands — Logic Agency Inc.',
-  description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
+  title: 'Fractional Supply Chain Ops: What It Costs vs. a Full-Time VP Hire',
+  description: 'Fractional supply chain operations for scaling CPG brands. What the team owns, what it costs vs. a VP hire, and how it works from month one. No annual contract.',
   keywords: 'fractional supply chain operations, outsourced supply chain management, fractional COO CPG, supply chain consultant vs full-time hire, operations team cost CPG',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
@@ -77,15 +77,15 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],
-    title: 'Fractional Supply Chain Operations for CPG Brands',
-    description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
+    title: 'Fractional Supply Chain Ops: What It Costs vs. a Full-Time VP Hire',
+    description: 'Fractional supply chain operations for scaling CPG brands. What the team owns, what it costs vs. a VP hire, and how it works from month one. No annual contract.',
     url: 'https://www.logicagencyinc.com/guides/fractional-supply-chain-operations',
     images: [{ url: 'https://www.logicagencyinc.com/images/og-fractional-supply-chain-operations.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fractional Supply Chain Operations for CPG Brands',
-    description: 'Fractional supply chain operations for CPG brands: what the team owns, real cost vs a full-time VP Ops hire, and how it works from month one. No long-term contract.',
+    title: 'Fractional Supply Chain Ops: What It Costs vs. a Full-Time VP Hire',
+    description: 'Fractional supply chain operations for scaling CPG brands. What the team owns, what it costs vs. a VP hire, and how it works from month one. No annual contract.',
   },
 };
 

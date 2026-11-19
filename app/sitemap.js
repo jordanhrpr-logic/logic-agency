@@ -7,6 +7,7 @@ const modifiedByPath = {
   '/': '2026-09-28',
   '/work/audio-enhancement': '2026-06-20',
   '/work/epicutis': '2026-09-28',
+  '/work/artilect': '2026-11-19',
   '/blog': '2026-09-28',
   '/blog/retail-operations-audit': '2026-06-22',
   '/blog/retail-fill-rate-scorecard': '2026-06-22',
@@ -40,6 +41,8 @@ const modifiedByPath = {
   '/blog/retail-chargebacks-prevention-guide': '2026-06-17',
   '/blog/reduce-packaging-costs-without-sacrificing-quality': '2026-06-17',
   '/blog/global-packaging-sourcing': '2026-06-17',
+  '/blog/retail-chargeback-recovery-cpg': '2026-11-19',
+  '/blog/cpg-broker-vs-direct-to-retail': '2026-11-19',
   '/blog/supply-chain-technology-stack': '2026-06-17',
   '/blog/packaging-cost-per-unit-benchmarks': '2026-06-17',
   '/guides': '2026-09-28',
@@ -68,6 +71,7 @@ const modifiedByPath = {
   '/guides/cpg-channel-economics': '2026-09-24',
   '/guides/sustainable-packaging-cpg': '2026-09-24',
   '/guides/cpg-operations-kpis': '2026-09-24',
+  '/guides/cpg-supply-chain-operations': '2026-11-19',
 };
 
 export default function sitemap() {

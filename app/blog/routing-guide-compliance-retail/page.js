@@ -5,7 +5,7 @@ import GuideFaqAccordion from '@/components/GuideFaqAccordion';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Retail Routing Guide Compliance: What Every Brand Gets Wrong",
+  "headline": "Retail Routing Guide Compliance: ASN, Carriers & Chargebacks",
   "description": "A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.",
   "author": {
     "@type": "Person",
@@ -29,7 +29,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Logic Agency", "item": "https://www.logicagencyinc.com" },
     { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.logicagencyinc.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Retail Routing Guide Compliance: What Every Brand Gets Wrong", "item": "https://www.logicagencyinc.com/blog/routing-guide-compliance-retail" }
+    { "@type": "ListItem", "position": 3, "name": "Retail Routing Guide Compliance: ASN, Carriers & Chargebacks", "item": "https://www.logicagencyinc.com/blog/routing-guide-compliance-retail" }
   ]
 };
 
@@ -81,15 +81,15 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail Routing Guide Compliance for CPG Brands — Logic Agency Inc.',
-  description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
+  title: 'Routing Guide Compliance: ASN, Carriers & Chargeback Prevention',
+  description: 'How to comply with retail routing guides and avoid chargebacks. ASN timing, carrier rules, pallet specs, appointments, and the mistakes that trigger fines.',
   keywords: 'retail routing guide compliance, routing guide compliance, retail chargeback prevention, CPG routing guide, ASN timing retail, retail shipment compliance',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/blog/routing-guide-compliance-retail',
   },
   openGraph: {
-    title: 'Retail Routing Guide Compliance: What Every Brand Gets Wrong',
-    description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
+    title: 'Routing Guide Compliance: ASN, Carriers & Chargeback Prevention',
+    description: 'How to comply with retail routing guides and avoid chargebacks. ASN timing, carrier rules, pallet specs, appointments, and the mistakes that trigger fines.',
     url: 'https://www.logicagencyinc.com/blog/routing-guide-compliance-retail',
     type: 'article',
     publishedTime: '2026-06-17',
@@ -98,8 +98,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Retail Routing Guide Compliance: What Every Brand Gets Wrong',
-    description: 'A practical guide to retail routing guide compliance: ASN timing, carrier rules, pallet specs, case packs, delivery appointments, and chargeback prevention.',
+    title: 'Routing Guide Compliance: ASN, Carriers & Chargeback Prevention',
+    description: 'How to comply with retail routing guides and avoid chargebacks. ASN timing, carrier rules, pallet specs, appointments, and the mistakes that trigger fines.',
     images: ['https://www.logicagencyinc.com/images/og-blog-default.jpg'],
   },
 };
