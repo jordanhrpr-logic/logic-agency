@@ -339,7 +339,7 @@ export default function Page() {
 
           <p>This is why the 90-day forecast needs finance in the room. The question is not only &ldquo;how many units do we need?&rdquo; It is &ldquo;how much cash is tied up before replenishment proves itself?&rdquo;</p>
 
-          <p>If the answer is uncomfortable, solve it before the PO arrives. Negotiate payment terms, stage production, reduce SKU count, or adjust launch allocation. Do not discover the cash gap after the warehouse is empty.</p>
+          <p>If the answer is uncomfortable, solve it before the PO arrives. Negotiate payment terms, stage production, reduce SKU count, or adjust launch allocation. Do not discover the cash gap after the warehouse is empty. For the full demand-planning framework with formulas, see the <a href="/guides/cpg-demand-forecasting">CPG Demand Forecasting guide</a>. For working capital planning, see the <a href="/guides/cpg-working-capital-playbook">Working Capital Playbook</a>.</p>
 
           <h2 id="three-cases">What Not to Forecast</h2>
 
@@ -376,7 +376,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is retail inventory planning for a CPG brand?', a: 'Retail inventory planning is the process of forecasting initial pipeline fill, safety stock, reorder triggers, and production lead time before the first retail PO ships.' },
             { q: 'Why does DTC inventory planning not work for retail?', a: 'DTC demand is daily and direct. Retail demand arrives in larger blocks, with longer replenishment cycles, retailer systems, and less room to recover from a late reorder.' },
@@ -390,7 +390,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Want to Pressure-Test<br /><em>Your Forecast?</em></h2>
+          <h2 id="want-to-pressure-testyour-forecast">Want to Pressure-Test<br /><em>Your Forecast?</em></h2>
           <p>Book a 30-minute call. We&apos;ll review your retail inventory plan before the first PO ships.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

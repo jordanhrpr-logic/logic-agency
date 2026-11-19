@@ -214,7 +214,7 @@ export default function Page() {
           <p>Most packaging failures at retail are not structural &mdash; they are dimensional. Wrong case count. Wrong pallet config. Wrong label placement. Wrong barcode position. These are operational errors that the brand controls.</p>
 
           <ul>
-            <li><strong>Confirm case pack quantity matches the buyer&apos;s PO specification, in writing, before production starts.</strong> If the buyer ordered product in cases of 12 and you built cases of 6, every case on the shipment is wrong.</li>
+            <li><strong>Confirm case pack quantity matches the buyer&apos;s PO specification, in writing, before production starts.</strong> If the buyer ordered product in cases of 12 and you built cases of 6, every case on the shipment is wrong. See the <a href="/guides/retail-ready-packaging">Retail-Ready Packaging guide</a> for the full case-pack and pallet specification process.</li>
             <li><strong>Confirm master carton dimensions and weight with your 3PL&apos;s inbound receiving team before committing to production.</strong> Some warehouses have weight limits per carton (50 lbs is common).</li>
             <li><strong>Confirm pallet Ti/Hi (units per layer &times; layers per pallet) matches retailer requirement.</strong> Ti/Hi affects product per pallet, pallet height, and freight density. If your Ti/Hi is wrong, pallet height may exceed DC receiving limits (typically 72 inches from ground).</li>
             <li><strong>Verify GS1-128 carton label format with the retailer&apos;s vendor guide.</strong> The GS1-128 carton label contains shipment-specific data: PO number, destination DC, SSCC (serial shipping container code), item, quantity, and expiration date where relevant.</li>
@@ -287,7 +287,7 @@ export default function Page() {
 
           <p>The brands that navigate the transition cleanly are not the ones with the best products or the biggest buyer relationships. They are the ones that assigned a clear owner to each category, started the operational work 90 days before the first PO, and treated the buyer meeting as the milestone that triggered operations &mdash; not the milestone that completed it.</p>
 
-          <p>The brands that get hit with $40,000 in first-year chargebacks, lose shelf space, and do not get reordered are usually not bad brands. They are operationally unprepared brands. The checklist above is the difference.</p>
+          <p>The brands that get hit with $40,000 in first-year chargebacks, lose shelf space, and do not get reordered are usually not bad brands. They are operationally unprepared brands. The checklist above is the difference. For the full readiness framework, see the <a href="/guides/retail-readiness">Retail Readiness guide</a>, and use the <a href="/guides/retail-readiness-scorecard">40-Point Scorecard</a> to audit your position before the PO lands.</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
 
@@ -315,7 +315,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What should a DTC-to-retail transition checklist include?', a: 'A complete DTC-to-retail transition checklist covers six areas: GS1 and product data registration, EDI and retailer technology setup, packaging compliance and palletization, 3PL readiness and routing guide compliance, wholesale margin modeling and financial documentation, and inventory planning for the first 90 days.' },
             { q: 'How long before a first PO should a brand start the retail readiness checklist?', a: 'Most brands need 60-120 days to prepare the operational systems for a first retail shipment. EDI setup and testing typically takes 2-4 weeks. Packaging changes can take 4-8 weeks depending on production cycles.' },
@@ -330,7 +330,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Ready to Pressure-Test<br /><em>Your Retail Readiness?</em></h2>
+          <h2 id="ready-to-pressure-testyour-retail-readiness">Ready to Pressure-Test<br /><em>Your Retail Readiness?</em></h2>
           <p>Book a 30-minute call. We&apos;ll work through the checklist with you before the buyer says yes.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

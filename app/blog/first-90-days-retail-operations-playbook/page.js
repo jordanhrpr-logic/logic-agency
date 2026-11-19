@@ -292,7 +292,7 @@ export default function Page() {
 
           <h3>Document Every Exception</h3>
 
-          <p>If a shipment arrives late, log why. If a chargeback appears, log the reason code. If a buyer flags packaging, log the detail. If the DC says the carton labels are wrong, save the message.</p>
+          <p>If a shipment arrives late, log why. If a <a href="/guides/retail-chargebacks">chargeback</a> appears, log the reason code. If a buyer flags packaging, log the detail. If the DC says the carton labels are wrong, save the message.</p>
 
           <p>The goal is not blame. The goal is pattern recognition. One error can be a miss. Three errors in the same category are a system.</p>
 
@@ -454,7 +454,7 @@ export default function Page() {
 
           <p>The Day-90 review should produce a short action list: fix these three issues before the next PO, start this reorder by this date, change this packaging spec, update this forecast, dispute these deductions, and send this buyer update.</p>
 
-          <p>Retail improves when every cycle produces a cleaner next cycle. That is how a first PO becomes a channel, not just a launch event.</p>
+          <p>Retail improves when every cycle produces a cleaner next cycle. That is how a first PO becomes a channel, not just a launch event. For the complete pre-launch framework, see the <a href="/guides/retail-readiness">Retail Readiness guide</a>, or use the <a href="/guides/retail-readiness-scorecard">40-Point Readiness Scorecard</a> to audit your position.</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
 
@@ -488,7 +488,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What should a brand do before Day 1 in retail?', a: 'Before Day 1, confirm EDI, item setup, packaging compliance, routing guide requirements, 3PL readiness, inventory, and first-shipment documentation.' },
             { q: 'What are the most important retail launch metrics?', a: 'Track fill rate, on-time delivery, chargebacks as a percent of revenue, sell-through rate, and weeks of supply from the first shipment.' },
@@ -503,7 +503,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

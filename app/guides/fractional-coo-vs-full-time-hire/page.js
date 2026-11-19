@@ -156,7 +156,7 @@ export default function Page() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
-          <h2>The Real Cost of a Full-Time Operations Hire</h2>
+          <h2 id="the-real-cost-of-a-full-time-operations-hire">The Real Cost of a Full-Time Operations Hire</h2>
           <p>Most founders start with salary. That is the wrong first question. The better question is: what operating function are we trying to build, and how many capabilities does that require?</p>
           <p>A senior operations hire for a scaling CPG brand can cost $180,000&ndash;$250,000 in base salary. Add benefits, payroll taxes, bonus, equity, recruiting fees, onboarding, software, and management time, and the all-in cost can reach $220,000&ndash;$350,000. That is for one person.</p>
           <p>But one person rarely covers the full scope. A brand moving from DTC into retail may need supply chain leadership, vendor sourcing, packaging engineering, 3PL coordination, inventory planning, retail compliance, freight optimization, and chargeback management. That is not one job. That is a function.</p>
@@ -172,7 +172,7 @@ export default function Page() {
             </tbody>
           </table>
           <div className="callout"><p><strong>The gap:</strong> A $40M brand may need that structure. A $7M brand entering its first retail accounts usually does not. It needs the capability, but not the fixed overhead.</p></div>
-          <h2>Side-by-Side Cost Comparison</h2>
+          <h2 id="side-by-side-cost-comparison">Side-by-Side Cost Comparison</h2>
           <table>
             <thead><tr><th>Category</th><th>Full-Time COO / VP Ops</th><th>Fractional Operations Team</th></tr></thead>
             <tbody>
@@ -184,14 +184,14 @@ export default function Page() {
               <tr><td>Best fit</td><td>Stable, permanent, clearly defined role</td><td>Fast-changing operations needs before org chart is mature</td></tr>
             </tbody>
           </table>
-          <h2>Hidden Costs Most Brands Miss</h2>
+          <h2 id="hidden-costs-most-brands-miss">Hidden Costs Most Brands Miss</h2>
           <div className="cd-grid">
             <div className="cd-card"><div className="cd-num">1</div><h3>Recruiting drag (90&ndash;180 days)</h3><p>During the search, vendors keep missing dates, inventory keeps aging, and retail requirements keep stacking up. The cost is not only the recruiting fee&mdash;it is operational drift while the seat is empty.</p></div>
             <div className="cd-card"><div className="cd-num">2</div><h3>Ramp time (90&ndash;180 days)</h3><p>Even a great hire needs 90 days before they are truly useful and 180 days before they are fully effective. They are learning vendors, freight patterns, 3PL performance, and SKU economics from scratch.</p></div>
             <div className="cd-card"><div className="cd-num">3</div><h3>Wrong-level hire risk</h3><p>Too senior: the person wants strategy but the business needs execution. Too junior: can manage tasks but cannot build the system. Both mistakes are expensive.</p></div>
             <div className="cd-card"><div className="cd-num">4</div><h3>Founder time cost</h3><p>If a founder spends 10 hours a week managing operational issues, that is 520 hours a year not spent on product, growth, retail relationships, or team leadership. Operations cannot be treated as background work.</p></div>
           </div>
-          <h2>When Full-Time Makes Sense vs. When to Go Fractional</h2>
+          <h2 id="when-full-time-makes-sense-vs-when-to-go-fractional">When Full-Time Makes Sense vs. When to Go Fractional</h2>
           <div className="save-grid">
             <div className="save-item"><div className="save-pct">Hire Full-Time</div><h4>Stable, permanent, clearly defined</h4><p>Operations complexity is permanent. The brand has enough recurring work for one senior leader every day. The role is clearly defined and the budget can absorb the cost without starving growth.</p></div>
             <div className="save-item"><div className="save-pct">Go Fractional</div><h4>Cross-functional, changing needs</h4><p>The founder still owns supplier escalation. The brand is preparing for retail but has not built the operating system. Problems are spread across sourcing, packaging, freight, inventory, and retail compliance simultaneously.</p></div>
@@ -207,14 +207,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'How much does a fractional COO cost for a CPG brand?', a: 'A fractional COO or fractional operations team typically costs $30,000-$120,000 per year. The range depends on whether the work is advisory, active management, or embedded execution.' }, { q: 'How much does a full-time VP of Operations cost?', a: 'A senior VP of Operations can cost $220,000-$350,000 all-in. A full operations function with supporting roles can reach $600,000-$830,000+ per year.' }, { q: 'Is a fractional COO the same as a consultant?', a: 'No. A consultant usually diagnoses and recommends. A fractional COO or operations team should own execution, manage vendors, build systems, and stay accountable to outcomes.' }, { q: 'When should a brand hire full-time instead of fractional?', a: 'Hire full-time when the role is permanent, clearly defined, and large enough for one person to own every day. Use fractional support when the scope is cross-functional or still changing.' }, { q: 'Can a fractional team help us hire a full-time operations leader later?', a: 'Yes. A fractional team can define the role, document systems, and stabilize the operating environment so the eventual hire starts with structure instead of cleanup.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

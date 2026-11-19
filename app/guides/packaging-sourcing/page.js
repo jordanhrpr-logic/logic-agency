@@ -71,8 +71,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Sourcing Guide — Logic Agency Inc.',
-  description: 'Packaging sourcing requires supplier type clarity, MOQ math, factory vetting, landed cost comparison, quality control, and backup capacity.',
+  title: 'Packaging Sourcing: Domestic vs. Overseas, MOQs & Red Flags — Logic Agency Inc.',
+  description: 'How to source packaging without getting burned. Factory vetting, MOQ math, landed cost comparison, broker vs. manufacturer, and when to go domestic vs. overseas.',
   keywords: 'packaging suppliers, where to source packaging, custom packaging sourcing, domestic vs overseas packaging, packaging manufacturer, packaging supplier for cosmetics, how to find packaging supplier, packaging sourcing China, packaging MOQ, packaging factory audit',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-sourcing',
@@ -173,7 +173,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 1 */}
-          <h2>Know Who You&apos;re Actually Talking To</h2>
+          <h2 id="know-who-you-re-actually-talking-to">Know Who You&apos;re Actually Talking To</h2>
 
           <p>The first mistake most brands make isn&apos;t choosing the wrong supplier. It&apos;s not understanding what kind of supplier they&apos;re talking to. There are three types of players in packaging sourcing, and they operate very differently.</p>
 
@@ -202,7 +202,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 2 */}
-          <h2>Domestic vs. International: The Real Decision Framework</h2>
+          <h2 id="domestic-vs-international-the-real-decision-framework">Domestic vs. International: The Real Decision Framework</h2>
 
           <p>This is the first question every brand asks, and most answer it wrong because they compare the wrong numbers. A domestic supplier quoting $1.50 per unit looks more expensive than an overseas supplier quoting $0.70 per unit. But unit price is a fraction of the total cost, and the total cost comparison often tells a completely different story.</p>
 
@@ -261,7 +261,7 @@ export default function PackagingSourcingGuide() {
           <p>The mistake isn&apos;t choosing one over the other. The mistake is making the choice based on unit price instead of landed cost.</p>
 
           {/* SECTION 3 */}
-          <h2>The Landed Cost Math Nobody Runs</h2>
+          <h2 id="the-landed-cost-math-nobody-runs">The Landed Cost Math Nobody Runs</h2>
 
           <p>A brand gets two quotes. Domestic: $1.40/unit. Overseas: $0.65/unit. The overseas quote looks like a 54% savings. They place the order. Twelve weeks later, the actual cost looks nothing like the quote.</p>
 
@@ -311,7 +311,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 4 */}
-          <h2>How to Vet a Supplier (Before You Send Them Money)</h2>
+          <h2 id="how-to-vet-a-supplier-before-you-send-them-money">How to Vet a Supplier (Before You Send Them Money)</h2>
 
           <p>Getting a competitive quote is easy. Finding a supplier who will deliver consistent quality, on time, at scale, for years &mdash; that&apos;s the actual job. Here&apos;s the vetting process we use across 15+ countries:</p>
 
@@ -359,7 +359,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 5 */}
-          <h2>Seven Red Flags in Supplier Quoting</h2>
+          <h2 id="seven-red-flags-in-supplier-quoting">Seven Red Flags in Supplier Quoting</h2>
 
           <p>After evaluating thousands of packaging quotes, these are the patterns that reliably predict problems:</p>
 
@@ -395,7 +395,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 6 */}
-          <h2>Your First Supplier Is Almost Never Your Scale Supplier</h2>
+          <h2 id="your-first-supplier-is-almost-never-your-scale-supplier">Your First Supplier Is Almost Never Your Scale Supplier</h2>
 
           <p>This is the part nobody tells you at the beginning, and it trips up almost every growing brand.</p>
 
@@ -414,7 +414,7 @@ export default function PackagingSourcingGuide() {
           </div>
 
           {/* SECTION 7 */}
-          <h2>What Good Sourcing Actually Looks Like</h2>
+          <h2 id="what-good-sourcing-actually-looks-like">What Good Sourcing Actually Looks Like</h2>
 
           <p>Good sourcing isn&apos;t finding the cheapest supplier. It&apos;s building a supply chain that delivers consistent quality, predictable cost, and reliable timing &mdash; and that adapts as your business grows.</p>
 
@@ -431,14 +431,14 @@ export default function PackagingSourcingGuide() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'Should I source packaging domestically or overseas?', a: 'It depends on volume, timeline, and complexity. Domestic sourcing is better for small runs under 10,000 units, fast turnarounds under 4 weeks, and simple structures. International sourcing (particularly Asia) is better for volumes above 25,000 units, complex structures like rigid boxes or custom molded inserts, premium finishes at lower cost, and when you have 8-12 weeks of lead time. Most brands at scale use both — domestic for fast-turn and low-volume SKUs, international for high-volume primary packaging. The decision should be based on a full landed cost comparison, not just unit price.' }, { q: 'What is the difference between a packaging broker and a manufacturer?', a: 'A manufacturer owns the factory and production equipment. A broker sources from manufacturers on your behalf and adds a margin. A trading company in Asia operates similarly to a broker but may represent multiple factories. The key question is how many layers are between you and the factory floor. Each layer adds cost and reduces your control over quality and timing. Direct manufacturer relationships give you better pricing and quality control but require more sourcing expertise. Brokers offer convenience but obscure the true cost structure.' }, { q: 'What is a typical MOQ for custom packaging?', a: 'MOQs vary dramatically by packaging type, material, and region. Domestic folding cartons typically start at 1,000-5,000 units. Domestic corrugated can go as low as 500. International (Asia) folding cartons typically start at 5,000-10,000 units, with rigid boxes at 3,000-5,000. Custom molded packaging often requires 10,000+ units. These are starting points — pricing improves significantly at 25,000 and 50,000 unit tiers. Be cautious of suppliers with unusually low MOQs, as they may be quoting stock packaging with minimal customization.' }, { q: 'How do I calculate the true landed cost of packaging?', a: 'Landed cost includes unit production cost, tooling amortized across the order, freight (ocean, air, or ground), customs duties and tariffs, customs brokerage fees, drayage from port to warehouse, inspection and quality control costs, warehousing, and insurance. For international sourcing, freight and duties typically add 15-30% on top of the unit price. The only accurate comparison between domestic and international suppliers is a full landed cost calculation — comparing unit prices alone is misleading.' }, { q: 'What are red flags when choosing a packaging supplier?', a: 'Key red flags include: quoting without asking about your product specifications or supply chain requirements, unable or unwilling to provide factory audit documentation or certifications, pricing that is dramatically lower than all other quotes (suggesting hidden fees, bait-and-switch, or quality shortcuts), no clear quality control process or inspection protocols, requiring full payment upfront with no milestone structure, unwillingness to provide client references, and vague lead time estimates without production scheduling detail.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Need sourcing expertise <span className="o">without the learning curve?</span></h2>
+          <h2 id="need-sourcing-expertise-without-the-learning-curve">Need sourcing expertise <span className="o">without the learning curve?</span></h2>
           <p>We source packaging across 15+ countries with direct factory relationships, ISO/FAMA/FSC/FDA certified supply chains, and 20 years of doing this. Our Starter tier gives you sourcing advisory from day one. Tell us what you&apos;re looking for.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

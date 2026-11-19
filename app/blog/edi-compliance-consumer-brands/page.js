@@ -174,7 +174,7 @@ export default function Page() {
             </ul>
           </div>
 
-          <p>The cost of letting compliance slip is direct and measurable. ASN errors alone run $200&ndash;$1,500 per incident at most national retailers. Routing guide violations run $250&ndash;$750. Late ASNs can trigger receiving delays that compound into markdown allowances, lost shelf space, and buyer meetings nobody wants. A brand shipping 40 POs per year with a 10% non-compliance rate absorbs roughly $8,000&ndash;$25,000 in avoidable deductions annually before the conversation about partnership health even starts.</p>
+          <p>The cost of letting compliance slip is direct and measurable. ASN errors alone run $200&ndash;$1,500 per incident at most national retailers. <a href="/blog/routing-guide-compliance-retail">Routing guide violations</a> run $250&ndash;$750. Late ASNs can trigger receiving delays that compound into markdown allowances, lost shelf space, and buyer meetings nobody wants. A brand shipping 40 POs per year with a 10% non-compliance rate absorbs roughly $8,000&ndash;$25,000 in avoidable deductions annually before the conversation about partnership health even starts.</p>
 
           <p>This guide covers what breaks after go-live, how to run a monthly compliance audit, and how to decide when to dispute a chargeback and when to absorb it.</p>
 
@@ -318,7 +318,7 @@ export default function Page() {
             <li><strong>EDI provider error:</strong> Document and escalate to the provider. Dispute the chargeback while the escalation is in progress.</li>
           </ul>
 
-          <p>The documentation matters because disputes require evidence: the original ASN with transmission timestamp, the corresponding physical shipment documentation, and the retailer&apos;s requirement specification from the routing guide.</p>
+          <p>The documentation matters because disputes require evidence: the original ASN with transmission timestamp, the corresponding physical shipment documentation, and the retailer&apos;s requirement specification from the routing guide. For the full dispute framework, see our <a href="/guides/retail-chargebacks">Retail Chargebacks guide</a>.</p>
 
           <h3>Variable 3: Relationship Context</h3>
 
@@ -373,7 +373,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is the most common cause of EDI chargebacks after go-live?', a: 'ASN timing errors — specifically, ASNs that are transmitted late or that don\'t match the physical shipment because the 3PL changed the shipment after the document was generated. Most of these are preventable with a warehouse handoff protocol that confirms final shipment data before ASN transmission.' },
             { q: 'How often should we audit EDI compliance?', a: 'Monthly. The 6-check framework takes two to four hours for most brands and catches the categories that generate the most chargeback exposure. A quarterly audit misses too many cycles — by the time you find a recurring problem, it has already cost you three months of chargebacks.' },
@@ -388,7 +388,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>EDI Compliance Costing<br /><em>More Than It Should?</em></h2>
+          <h2 id="edi-compliance-costingmore-than-it-should">EDI Compliance Costing<br /><em>More Than It Should?</em></h2>
           <p>Book a 30-minute call. We&apos;ll map your compliance gaps and tell you exactly where the chargebacks are coming from &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

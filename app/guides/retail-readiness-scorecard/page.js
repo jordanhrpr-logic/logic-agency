@@ -168,7 +168,7 @@ export default function RetailReadinessScorecard() {
           </div>
 
           {/* HOW TO SCORE */}
-          <h2>How to Use This Scorecard</h2>
+          <h2 id="how-to-use-this-scorecard">How to Use This Scorecard</h2>
 
           <p>Each item represents a key operational milestone. If the statement is fully true today, give yourself 1 point. If it is a &ldquo;sort of&rdquo; or &ldquo;we are working on it,&rdquo; that is a zero for now. Be honest &mdash; the gaps are more valuable than the score.</p>
 
@@ -401,7 +401,7 @@ export default function RetailReadinessScorecard() {
           </div>
 
           {/* WHAT NEXT */}
-          <h2>What to Do With Your Score</h2>
+          <h2 id="what-to-do-with-your-score">What to Do With Your Score</h2>
 
           <p>The gaps you found are your priority list. Every unchecked item falls into one of three categories: fix it before the first PO, fix it during the first 90 days of retail, or accept it as a tracked risk with a mitigation plan.</p>
 
@@ -410,7 +410,7 @@ export default function RetailReadinessScorecard() {
           <p>The cheapest version is running this scorecard six months before retail entry and building the remediation timeline into your launch plan.</p>
 
           {/* RELATED GUIDES */}
-          <h2>Related Guides</h2>
+          <h2 id="related-guides">Related Guides</h2>
 
           <div className="guide-link-card">
             <h4><a href="/guides/retail-readiness">The Retail Readiness Bible</a></h4>
@@ -456,7 +456,7 @@ export default function RetailReadinessScorecard() {
       {/* FAQ ACCORDION */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'Who should use the retail readiness scorecard?', a: 'VC-backed and bootstrapped founders preparing for retail expansion, growth-stage brands under investor pressure, heads of ops building internal systems or deciding to outsource, and brands building due diligence materials for fundraising or retail placement.' },
             { q: 'What score means a brand is retail-ready?', a: 'A score of 35–40 indicates retail-ready, investor-attractive operations. Scores of 28–34 indicate scale-readiness with minor blind spots. Scores below 21 indicate high fragility — stabilize before entering retail.' },
@@ -470,7 +470,7 @@ export default function RetailReadinessScorecard() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Ready to Fix <span className="o">the Gaps?</span></h2>
+          <h2 id="ready-to-fix-the-gaps">Ready to Fix <span className="o">the Gaps?</span></h2>
           <p>Book a 30-minute call. We&apos;ll review your score and give you a straight answer on what to address first.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
           <a href="https://drive.google.com/file/d/1v78gxZkoNjz4sk5bO-MCFMx6sob5jROp/view" className="cta-dl" target="_blank" rel="noopener noreferrer">Download the PDF Scorecard &rarr;</a>

@@ -245,6 +245,16 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cc">
+              <div className="cm"><Image src="/images/work/artilect-packaging.jpg" alt="Artilect performance apparel packaging cost reduction by Logic Agency" width={800} height={500} sizes="(max-width: 800px) 100vw, 50vw" /></div>
+              <div className="cb">
+                <div className="cn">Packaging Cost Engineering &middot; Growth Tier</div>
+                <h3>Packaging Cost Engineering for Artilect</h3>
+                <p>20% cost reduction. 95% material reduction. 3-phase transition from rigid box to engineered carton &mdash; without compromising brand.</p>
+                <div className="cx"><div className="cz"><strong>20%</strong><span>Cost Reduction</span></div><div className="cz"><strong>95%</strong><span>Material Reduction</span></div><div className="cz"><strong>3-Phase</strong><span>Transition</span></div></div>
+                <a href="/work/artilect" className="case-card-link">View Case Study &rarr;</a>
+              </div>
+            </div>
+            <div className="cc">
               <div className="cm"><Image src="/images/gesine.jpg" alt="Gesine pre-seed brand packaging by Logic Agency" width={800} height={500} sizes="(max-width: 800px) 100vw, 50vw" /></div>
               <div className="cb">
                 <div className="cn">Packaging + Operations &middot; Growth Tier</div>

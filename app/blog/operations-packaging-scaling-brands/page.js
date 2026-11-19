@@ -298,7 +298,7 @@ export default function Page() {
 
           <h3>What does a fractional packaging and operations model cost?</h3>
 
-          <p>For most brands in the $5&ndash;20M range, a fractional model runs $30,000&ndash;$120,000/year versus $600,000&ndash;$830,000 for equivalent in-house hires. The fractional team manages supplier relationships, coordinates timelines, optimizes costs, and handles retail compliance across both packaging and operations &mdash; with a shared view that makes integrated decisions possible.</p>
+          <p>For most brands in the $5&ndash;20M range, a fractional model runs $30,000&ndash;$120,000/year versus $600,000&ndash;$830,000 for equivalent in-house hires. The fractional team manages supplier relationships, coordinates timelines, optimizes costs, and handles retail compliance across both packaging and operations &mdash; with a shared view that makes integrated decisions possible. See the <a href="/guides/fractional-supply-chain-operations">Fractional Supply Chain Operations guide</a> for the full cost comparison and operating model.</p>
 
           <h3>How do I start integrating my packaging and operations if they are currently siloed?</h3>
 
@@ -310,7 +310,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'How much can integrated packaging and operations management actually save?', a: 'Across the brands we work with, total cost reduction from integrated management typically runs an estimated 15-25% within the first 12 months. The savings come from freight optimization through better case pack design, eliminated redesign costs, and material optimization that accounts for operational factors.' },
             { q: 'We already have a good packaging supplier and a good 3PL. Why would we change?', a: 'You might not need to change either. The gap isn\'t usually supplier quality — it\'s the coordination layer between them. Many brands solve this by adding an integration function that has visibility into both relationships and ensures packaging decisions account for operational impact and vice versa.' },
@@ -325,7 +325,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

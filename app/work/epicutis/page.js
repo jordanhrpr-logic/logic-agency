@@ -146,7 +146,7 @@ export default function EpicutisCaseStudy() {
 
       <div className="article">
         <div className="article-inner">
-          <h2>The Challenge</h2>
+          <h2 id="the-challenge">The Challenge</h2>
           <p>Epicutis did not start as a broad operations engagement. The original ask was simple: make a box to hold two things. That was the door.</p>
           <p>Behind it was a much bigger operating problem. As Epicutis grew, packaging complexity grew with it. More SKUs. More displays. More primary and secondary packaging. More inventory decisions. More packaging needed to be positioned before launches, replenishment windows, and co-manufacturer needs could move.</p>
           <p>The brand was still running lean, which was part of its strength. But that same lean structure created pressure as the SKU footprint expanded. Every packaging decision now touched more workflows: procurement, landed cost, co-manufacturer coordination, and freight timing.</p>
@@ -159,7 +159,7 @@ export default function EpicutisCaseStudy() {
             <Image src="/images/work/epicutis/epicutis-gradient.jpg" alt="Epicutis packaging range across skincare SKUs" width={2500} height={1875} sizes="(max-width: 800px) 100vw, 50vw" />
           </div>
 
-          <h2>What Logic Did</h2>
+          <h2 id="what-logic-did">What Logic Did</h2>
           <p>Logic&apos;s role expanded as Epicutis grew. The work included packaging development across SKUs, displays, primary packaging, and secondary packaging. But the deeper value was operational: Logic helped manage more complexity, improve packaging availability, and support growth without the brand having to build a larger internal team around it.</p>
 
           <div className="step-list">
@@ -215,7 +215,7 @@ export default function EpicutisCaseStudy() {
             <div>Co-Manufacturer</div>
           </div>
 
-          <h2>The Impact</h2>
+          <h2 id="the-impact">The Impact</h2>
           <p>The outcome across the Epicutis relationship is that Logic helped the brand support a significantly larger packaging footprint: more SKUs, more packaging complexity, larger unit volume, without requiring the internal team to grow proportionally around it.</p>
 
           <div className="inline-stats">
@@ -243,7 +243,7 @@ export default function EpicutisCaseStudy() {
             <p>The value was not just that Logic could design or source packaging. The value was that Logic could carry part of the operating load <em>behind</em> packaging: inventory, landed cost, replenishment, freight timing, and supplier coordination.</p>
           </div>
 
-          <h2>Why This Matters for Similar Brands</h2>
+          <h2 id="why-this-matters-for-similar-brands">Why This Matters for Similar Brands</h2>
           <p>Packaging becomes more complicated as a brand grows. At the beginning, the problem is usually simple: make the box, hit the launch, get product out the door. At scale, packaging becomes an inventory problem, a co-manufacturer problem, a replenishment problem, and a launch calendar problem.</p>
           <p>The brands that navigate this well are the ones that recognize the shift early and find a partner who can carry the operating load, not just the design work. Logic&apos;s role with Epicutis was to turn packaging from a recurring urgent problem into a system the brand could grow through instead of around.</p>
           <p>If your packaging system still depends on urgent orders, air freight, unclear landed costs, and co-manufacturers holding excess inventory, the packaging is not just expensive. It is slowing growth down.</p>
@@ -254,7 +254,7 @@ export default function EpicutisCaseStudy() {
 
       <section className="cta-band">
         <div className="cta-inner">
-          <h2>Is your packaging system <span>ready for the next stage?</span></h2>
+          <h2 id="is-your-packaging-system-ready-for-the-next-stage">Is your packaging system <span>ready for the next stage?</span></h2>
           <p>Most brands find out it isn&apos;t during a launch or a retail PO. Tell us where the friction is and we&apos;ll be honest about what it takes to fix it.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>

@@ -133,12 +133,12 @@ export default function Page() {
 
           <p>The broader DTC-to-retail supply chain has five systems: inventory planning, packaging compliance, EDI, 3PL operations, and vendor management. This article focuses on the piece that fails fastest: the 3PL.</p>
 
-          <h2>Why DTC Fulfillment Does Not Prove Retail Readiness</h2>
+          <h2 id="why-dtc-fulfillment-does-not-prove-retail-readiness">Why DTC Fulfillment Does Not Prove Retail Readiness</h2>
           <p>DTC fulfillment is built around individual orders. Pick one unit, pack it, ship it, track it. A good ecommerce 3PL can be excellent at that work and still be the wrong partner for retail.</p>
           <p>Retail fulfillment is built around compliance. The shipment has to move the way the retailer says it moves. That means the right case pack, right label, right pallet configuration, right carrier routing, right ASN timing, and right documentation.</p>
           <p>The work is less glamorous than launch strategy. It is also where the first PO can lose money before the product reaches the shelf.</p>
 
-          <h2>The Four Questions to Ask Your 3PL Before the PO</h2>
+          <h2 id="the-four-questions-to-ask-your-3pl-before-the-po">The Four Questions to Ask Your 3PL Before the PO</h2>
           <h3>1. Which retailers do you already ship to?</h3>
           <p>Do not ask, "Can you ship retail?" Every 3PL will say yes. Ask which retailer accounts they currently support, what volume they manage, and whether they can share a reference from a brand shipping into a similar channel.</p>
           <p>A warehouse that ships to specialty boutiques is not automatically ready for Target, Walmart, Costco, Whole Foods, Sephora, or Ulta. Each retailer has its own operating language.</p>
@@ -155,16 +155,16 @@ export default function Page() {
           <p>This is the cleanest diagnostic question. A retail-ready 3PL should know its chargeback rate by account or at least by client type. If they cannot answer, they are probably not tracking the operating metric that matters most.</p>
           <p>A low chargeback rate does not guarantee success. But no chargeback visibility is a warning sign.</p>
 
-          <h2>When to Keep the Current 3PL</h2>
+          <h2 id="when-to-keep-the-current-3pl">When to Keep the Current 3PL</h2>
           <p>Keep the current 3PL if they can prove retail capability, not promise it. That means they already support similar retailers, have EDI working, can explain their ASN process, understand routing guides, and have a clear escalation path when shipments fail compliance.</p>
           <p>If they are strong on DTC and light on retail, the decision depends on risk. A small regional retail test may be manageable. A major national PO is not the moment to learn together.</p>
 
-          <h2>When to Switch Before Retail</h2>
-          <p>Switch before signing the PO if the current 3PL cannot support retailer labeling, palletization, routing guide execution, EDI transactions, or ASN timing. Switching after the PO is signed means moving inventory under deadline pressure.</p>
+          <h2 id="when-to-switch-before-retail">When to Switch Before Retail</h2>
+          <p>Switch before signing the PO if the current 3PL cannot support retailer labeling, palletization, routing guide execution, EDI transactions, or ASN timing. Switching after the PO is signed means moving inventory under deadline pressure. For the full 3PL evaluation framework, see our <a href="/guides/3pl-selection-guide">3PL Selection Guide</a>.</p>
           <p>That is when brands pay twice: once for the operational migration and again for the mistakes created by rushing it.</p>
 
-          <h2>The Point</h2>
-          <p>Retail readiness is not only about the buyer meeting. It is about whether the operating system behind the brand can receive, process, ship, document, and defend the order.</p>
+          <h2 id="the-point">The Point</h2>
+          <p>Retail readiness is not only about the buyer meeting. It is about whether the operating system behind the brand can receive, process, ship, document, and defend the order. See the <a href="/guides/retail-readiness">Retail Readiness guide</a> for the complete framework.</p>
           <p>If the 3PL is not ready, the brand is not ready.</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
@@ -179,14 +179,14 @@ export default function Page() {
 
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={faqs} />
         </div>
       </section>
 
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

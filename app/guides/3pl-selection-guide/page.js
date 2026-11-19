@@ -156,7 +156,7 @@ export default function Page() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
-          <h2>When You Need a 3PL and When You Don&apos;t</h2>
+          <h2 id="when-you-need-a-3pl-and-when-you-don-t">When You Need a 3PL and When You Don&apos;t</h2>
           <p>You do not need a 3PL the moment you launch. Early-stage brands can often self-fulfill while order volume is low. But self-fulfillment breaks when the business outgrows the operating model.</p>
           <div className="cd-grid">
             <div className="cd-card"><div className="cd-num">1</div><h3>Leadership time going into daily fulfillment</h3><p>If the founder or core team is managing tracking numbers, packing exceptions, and carrier problems, the business is paying executive rates for warehouse work.</p></div>
@@ -164,7 +164,7 @@ export default function Page() {
             <div className="cd-card"><div className="cd-num">3</div><h3>Retail or wholesale entering the channel mix</h3><p>B2B fulfillment requires case packs, routing guides, pallet labels, ASNs, and compliance discipline that DTC fulfillment rarely demands.</p></div>
             <div className="cd-card"><div className="cd-num">4</div><h3>Inventory accuracy slipping</h3><p>If the system says 600 units and the shelf has 420, the current process is no longer reliable. Inaccurate inventory creates stockouts, overselling, and returns that compound quickly.</p></div>
           </div>
-          <h2>What to Look for in a 3PL</h2>
+          <h2 id="what-to-look-for-in-a-3pl">What to Look for in a 3PL</h2>
           <h3>Channel Fit</h3>
           <p>A DTC-only 3PL may be strong at Shopify orders and weak at retail shipments. A retail-focused 3PL may handle pallets and EDI well but struggle with branded unboxing or subscription kits. Hybrid brands need both&mdash;and should confirm both before signing.</p>
           <h3>Technology</h3>
@@ -184,14 +184,14 @@ export default function Page() {
               <tr><td>Minimum monthly fees</td><td>Common. Understand the break-even volume before you pay minimums on a low-volume month</td></tr>
             </tbody>
           </table>
-          <h2>Red Flags in a 3PL Evaluation</h2>
+          <h2 id="red-flags-in-a-3pl-evaluation">Red Flags in a 3PL Evaluation</h2>
           <div className="cd-grid">
             <div className="cd-card"><div className="cd-num">!</div><h3>Vague retail capability claims</h3><p>&quot;We can handle retail&quot; without naming specific retailers, chargeback rates, or EDI trading partner experience is a warning sign.</p></div>
             <div className="cd-card"><div className="cd-num">!</div><h3>No dedicated client rep</h3><p>If your primary contact during a problem is a general support queue, your operational issues will be deprioritized.</p></div>
             <div className="cd-card"><div className="cd-num">!</div><h3>Inventory accuracy below 99.5%</h3><p>Ask for the current cycle count accuracy rate. Anything below 99.5% at a modern 3PL is a sign of WMS or process problems that will create ongoing headaches.</p></div>
             <div className="cd-card"><div className="cd-num">!</div><h3>No visibility into SLA performance</h3><p>You should be able to see order fill rates, ship time, damage rates, and return processing time in a dashboard. If they cannot show you these metrics for existing clients, you will not be able to hold them accountable.</p></div>
           </div>
-          <h2>Switching 3PLs: What It Actually Costs</h2>
+          <h2 id="switching-3pls-what-it-actually-costs">Switching 3PLs: What It Actually Costs</h2>
           <p>Switching 3PLs is not plug-and-play. Brands that underestimate the switching cost often find themselves managing two fulfillment operations simultaneously during the transition, which is expensive and operationally risky.</p>
           <div className="audit-step"><div className="audit-n">60&ndash;90 days</div><div><h4>Minimum transition timeline</h4><p>From signed contract to clean handoff, 60-90 days is the minimum for a reasonably smooth transition. That includes integration setup, inventory transfer, parallel operation, and compliance testing with retail trading partners.</p></div></div>
           <div className="audit-step"><div className="audit-n">2x storage</div><div><h4>Dual inventory cost during transition</h4><p>You will carry inventory at both locations during the overlap period. Plan for 4&ndash;8 weeks of dual storage cost, especially if the transition spans a seasonal period.</p></div></div>
@@ -206,14 +206,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What should I look for in a 3PL for a CPG brand?', a: 'Evaluate channel fit (DTC vs. retail), technology (WMS capabilities, real-time inventory, ASN filing), geography, retail compliance experience with your target retailers, pricing structure, and value-added services. The cheapest fulfillment quote can become expensive if it creates chargebacks, inventory errors, or poor customer experience.' }, { q: 'How long does it take to switch 3PLs?', a: 'Switching 3PLs takes 60-90 days minimum for a smooth transition. That includes integration setup, inventory transfer, parallel operation, and compliance testing with retail trading partners.' }, { q: 'What is the difference between DTC and retail fulfillment?', a: 'DTC fulfillment picks individual orders. Retail fulfillment builds case packs, generates compliant pallet labels, files advance shipping notices (ASN) to retailer portals, and adheres to routing guide requirements. Not all DTC 3PLs have retail capability.' }, { q: 'What inventory accuracy rate should I require from a 3PL?', a: 'Require at least 99.5% inventory accuracy. Modern 3PLs with proper WMS systems should be able to demonstrate this. Anything lower will create consistent discrepancies between system counts and actual inventory.' }, { q: 'What is a 3PL minimum monthly fee?', a: 'Most 3PLs charge a minimum monthly fee regardless of your volume. This is the floor you pay even in a slow month. Understand the break-even order volume before signing, especially for brands with seasonal demand.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

@@ -72,7 +72,7 @@ const faqSchema = {
 
 export const metadata = {
   title: 'Landed Cost Playbook for CPG Brands — Logic Agency Inc.',
-  description: 'The 6-line landed cost stack for CPG imports: freight, duties, MPF/HMF, brokerage, DIM weight overage, tooling amortization, and warehousing — plus what the July 2026 USPS DIM divisor change is already costing you.',
+  description: 'The 6-line landed cost stack for CPG imports: freight, duties, MPF/HMF, brokerage, DIM weight, tooling amortization, and the 2026 USPS DIM changes.',
   keywords: 'landed cost CPG, landed cost per SKU, unit cost vs landed cost, DIM weight CPG, USPS DIM weight changes 2026, packaging freight cost, customs duties CPG, import cost breakdown',
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/landed-cost-playbook',
@@ -160,7 +160,7 @@ export default function LandedCostPlaybook() {
         <div className="article-inner">
 
           {/* SECTION 1 */}
-          <h2>Unit Cost Is Not Landed Cost</h2>
+          <h2 id="unit-cost-is-not-landed-cost">Unit Cost Is Not Landed Cost</h2>
 
           <p>When CPG founders compare supplier quotes, they compare unit prices. The supplier says $0.65/unit. The P&amp;L says $1.28/unit. The gap is real, and it&apos;s not an error &mdash; it&apos;s every cost between the supplier&apos;s invoice and the product sitting sellable in your warehouse.</p>
 
@@ -171,7 +171,7 @@ export default function LandedCostPlaybook() {
           <p>The landed cost stack has six lines. Each one adds cost that doesn&apos;t appear on the supplier&apos;s invoice. Some are fixed, some fluctuate with global markets, and some &mdash; particularly DIM weight &mdash; changed materially two weeks ago when USPS rewrote its dimensional pricing rules. Here&apos;s what you&apos;re actually paying.</p>
 
           {/* SECTION 2 */}
-          <h2>The 6-Line Landed Cost Stack</h2>
+          <h2 id="the-6-line-landed-cost-stack">The 6-Line Landed Cost Stack</h2>
 
           <div className="cd-grid">
             <div className="cd-card">
@@ -211,7 +211,7 @@ export default function LandedCostPlaybook() {
           </div>
 
           {/* SECTION 3 */}
-          <h2>What Changed on July&nbsp;12 &mdash; USPS DIM Weight Rules</h2>
+          <h2 id="what-changed-on-july-12-usps-dim-weight-rules">What Changed on July&nbsp;12 &mdash; USPS DIM Weight Rules</h2>
 
           <p>Two weeks ago, USPS changed the math on every oversized package in the country. Two rules changed simultaneously on July&nbsp;12, 2026, and they compound on every shipment.</p>
 
@@ -256,7 +256,7 @@ export default function LandedCostPlaybook() {
           </div>
 
           {/* SECTION 4 */}
-          <h2>The Post-Change Diagnostic</h2>
+          <h2 id="the-post-change-diagnostic">The Post-Change Diagnostic</h2>
 
           <p>If you haven&apos;t audited your shipping costs since July&nbsp;12, you&apos;re operating on stale math. Here&apos;s what to check &mdash; in order.</p>
 
@@ -297,7 +297,7 @@ export default function LandedCostPlaybook() {
           </div>
 
           {/* SECTION 5 */}
-          <h2>How to Model Landed Cost Before Signing a Supplier</h2>
+          <h2 id="how-to-model-landed-cost-before-signing-a-supplier">How to Model Landed Cost Before Signing a Supplier</h2>
 
           <p>This is the entire point of this guide in one framework. Before you commit to a supplier, build a per-SKU landed cost model that accounts for all six lines. Don&apos;t sign based on unit cost alone.</p>
 
@@ -359,14 +359,14 @@ export default function LandedCostPlaybook() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What is landed cost in CPG?', a: 'Landed cost is the total cost of getting a product from your supplier to your warehouse, sellable. It includes the unit price plus ocean freight, duties, customs brokerage, DIM weight overages, tooling amortization, and warehousing — typically 40-50% above the quoted unit price for CPG imports from Asia.' }, { q: 'How much does DIM weight add to shipping costs?', a: 'DIM weight overages typically add $0.05-$0.15 per unit for CPG brands. As of July 12, 2026, USPS changed its DIM divisor from 166 to 139 and began rounding dimensions up instead of to the nearest inch, increasing billable weight by 25-35% on oversized packages.' }, { q: 'What is the USPS DIM divisor change?', a: 'Effective July 12, 2026, USPS changed its dimensional weight divisor from 166 to 139 and began rounding each package dimension up to the next whole inch. Both changes compound: same box, higher cubic inch calculation, divided by a smaller number. Packages exceeding 1,728 cubic inches (1 cubic foot) are affected.' }, { q: 'How do I calculate landed cost per SKU?', a: 'Start with the supplier\'s quoted unit price. Add ocean freight and drayage, duties and CBP fees (MPF + HMF), customs brokerage, DIM weight overage, tooling amortization (spread over MOQ), and warehousing/handling. The total is your landed cost — the number your gross margin should be based on.' }, { q: 'What is MPF and HMF on imports?', a: 'MPF (Merchandise Processing Fee) is a US Customs fee of 0.3464% of declared cargo value with a minimum of $33.58 and maximum of $651.50 per entry. HMF (Harbor Maintenance Fee) is 0.125% of cargo value. Both are charged on every formal customs entry and are often overlooked in supplier cost comparisons.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Paying more than your <span className="o">supplier quoted?</span></h2>
+          <h2 id="paying-more-than-your-supplier-quoted">Paying more than your <span className="o">supplier quoted?</span></h2>
           <p>Landed cost modeling is the first thing we build into every retainer. We map every cost line between the supplier quote and your warehouse, identify the gaps in your margin model, and show you where the money is actually going.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

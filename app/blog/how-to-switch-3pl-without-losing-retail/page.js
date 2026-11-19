@@ -413,7 +413,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'How long does it take to switch 3PLs?', a: 'Most CPG brands need 60-90 days for a controlled 3PL switch. Complex retail accounts, EDI integrations, or lot-controlled inventory can push the timeline longer.' },
             { q: 'Should a brand run two 3PLs during the transition?', a: 'Yes. A parallel run protects retail commitments while the new 3PL proves receiving, inventory accuracy, order flow, and compliance.' },
@@ -427,7 +427,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Planning a<br /><em>3PL Transition?</em></h2>
+          <h2 id="planning-a3pl-transition">Planning a<br /><em>3PL Transition?</em></h2>
           <p>Book a 30-minute call. We&apos;ll help you evaluate 3PL fit and protect your retail accounts during the move.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

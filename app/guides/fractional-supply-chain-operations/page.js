@@ -156,13 +156,13 @@ export default function Page() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
-          <h2>What Fractional Supply Chain Operations Actually Is</h2>
+          <h2 id="what-fractional-supply-chain-operations-actually-is">What Fractional Supply Chain Operations Actually Is</h2>
           <p>Fractional supply chain operations means using an embedded operations team to manage sourcing, packaging, logistics, fulfillment, inventory, and retail execution&mdash;without hiring the full in-house team. For a scaling CPG brand, that usually means paying $30,000&ndash;$120,000 per year instead of building a $600,000&ndash;$830,000 operations department before the business is ready for it.</p>
           <p>This is not consulting. A consultant gives advice. A fractional operations team owns execution, manages vendors, fixes systems, and stays accountable month after month.</p>
           <div className="callout">
             <p><strong>The cost difference is real:</strong> $30K&ndash;$120K per year for a fractional retainer versus $600K&ndash;$830K for a senior in-house operations bench. The fractional model gives the brand the capability before the org chart catches up.</p>
           </div>
-          <h2>Who Fractional Operations Is For</h2>
+          <h2 id="who-fractional-operations-is-for">Who Fractional Operations Is For</h2>
           <p>The strongest fit is a founder-led or lean executive team with real demand and increasing operational complexity. Usually a brand in beauty, wellness, consumer electronics, food, or CPG in the $5M&ndash;$20M revenue range.</p>
           <div className="cd-grid">
             <div className="cd-card"><div className="cd-num">1</div><h3>SKU count growing faster than the team</h3><p>New products and variants demand supplier management, packaging development, and inventory planning no single founder can absorb alone.</p></div>
@@ -170,7 +170,7 @@ export default function Page() {
             <div className="cd-card"><div className="cd-num">3</div><h3>Inventory is either out of stock or overstocked</h3><p>No clean middle. Reactive reordering, wrong safety stock calculations, and no 90-day plan.</p></div>
             <div className="cd-card"><div className="cd-num">4</div><h3>Founder still managing suppliers directly</h3><p>Every vendor escalation, every missed date, every production issue lands on the founder because nobody else owns the system.</p></div>
           </div>
-          <h2>What a Fractional Operations Team Actually Does</h2>
+          <h2 id="what-a-fractional-operations-team-actually-does">What a Fractional Operations Team Actually Does</h2>
           <p>At Logic Agency, the operating categories fall into six areas. All six are concrete&mdash;not advisory strategy decks.</p>
           <div className="audit-step"><div className="audit-n">1</div><div><h4>Supply chain leadership</h4><p>Which suppliers to keep, replace, or qualify as backups. What the next 12 months of production actually requires. Where the brand is overpaying because nobody owns the system.</p></div></div>
           <div className="audit-step"><div className="audit-n">2</div><div><h4>Global sourcing and vendor management</h4><p>RFQs, sample tracking, MOQ negotiations, lead time validation, production communication, scorecards, and backup supplier planning. Logic has manufacturing relationships across 15+ countries.</p></div></div>
@@ -178,7 +178,7 @@ export default function Page() {
           <div className="audit-step"><div className="audit-n">4</div><div><h4>Logistics and fulfillment</h4><p>3PL selection, warehouse workflows, cartonization, freight planning, routing guide compliance, and fulfillment cost control across DTC, Amazon, wholesale, and retail replenishment channels.</p></div></div>
           <div className="audit-step"><div className="audit-n">5</div><div><h4>Inventory planning and analytics</h4><p>Reorder points, demand planning, SKU-level visibility, sell-through tracking, and a realistic 90-day inventory plan that prevents stockouts and cash traps.</p></div></div>
           <div className="audit-step"><div className="audit-n">6</div><div><h4>Retail readiness and compliance</h4><p>Routing guides, label specs, EDI, ASN timing, carton configuration, pallet requirements, chargebacks, and vendor portals. See <a href="/guides/first-90-days-in-retail">First 90 Days in Retail</a> for what changes once retail execution begins.</p></div></div>
-          <h2>What Fractional Supply Chain Operations Costs</h2>
+          <h2 id="what-fractional-supply-chain-operations-costs">What Fractional Supply Chain Operations Costs</h2>
           <p>Fractional supply chain operations typically costs $30,000&ndash;$120,000 per year. Compare that to an in-house operating function:</p>
           <table>
             <thead><tr><th>Model</th><th>Typical Cost</th><th>Best Fit</th></tr></thead>
@@ -199,7 +199,7 @@ export default function Page() {
               <tr><td><strong>Total function</strong></td><td><strong>$600K&ndash;$830K+</strong></td></tr>
             </tbody>
           </table>
-          <h2>When to Go Fractional vs. Hire Full-Time</h2>
+          <h2 id="when-to-go-fractional-vs-hire-full-time">When to Go Fractional vs. Hire Full-Time</h2>
           <p>Fractional supply chain operations makes sense when the work is important, recurring, and cross-functional&mdash;but not yet stable enough for one full-time role.</p>
           <div className="save-grid">
             <div className="save-item"><div className="save-pct">Go Fractional</div><h4>Cross-functional, changing needs</h4><p>Sourcing, packaging, freight, inventory, and retail compliance all need attention&mdash;and none of them belong to a single job description yet.</p></div>
@@ -214,14 +214,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What is fractional supply chain operations?', a: 'Fractional supply chain operations is an embedded operating model where a brand uses an outside team to manage sourcing, packaging, logistics, inventory, fulfillment, and retail execution without hiring a full in-house operations department.' }, { q: 'How much does fractional supply chain operations cost?', a: 'Most fractional supply chain retainers range from $30,000-$120,000 per year. A full in-house operations function can cost $600,000-$830,000+ per year once salary, benefits, recruiting, tools, and supporting roles are included.' }, { q: 'Is fractional operations the same as supply chain consulting?', a: 'No. Consulting usually diagnoses problems and recommends a plan. Fractional operations should own execution, manage vendors, build systems, and stay accountable for results.' }, { q: 'When should a CPG brand use a fractional operations team?', a: 'A CPG brand should consider fractional operations when it is growing SKUs, entering retail, managing multiple suppliers, struggling with inventory, or relying on the founder to handle operational problems directly.' }, { q: 'What should happen in the first 30 days with a fractional team?', a: 'The first 30 days should include an operational audit, vendor review, inventory and fulfillment assessment, cost baseline, quick-win identification, and a clear operating plan for the next 60-90 days.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

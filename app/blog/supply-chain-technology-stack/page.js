@@ -306,7 +306,7 @@ export default function Page() {
             <li>The software requires a dedicated administrator to maintain.</li>
           </ul>
 
-          <p>The rule: buy software for the problem you have today, not the problem you&apos;re afraid of having in three years.</p>
+          <p>The rule: buy software for the problem you have today, not the problem you&apos;re afraid of having in three years. For the demand planning side of the stack, see the <a href="/guides/cpg-demand-forecasting">CPG Demand Forecasting guide</a>. For EDI implementation specifics, see <a href="/blog/edi-setup-small-brands">EDI Setup for Small Brands</a>.</p>
 
           <p>The specific signs you&apos;re ready for each tool:</p>
 
@@ -355,7 +355,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What supply chain software does a CPG brand need at $5M?', a: 'At $5M, a CPG brand typically needs an OMS if they\'re running two or more sales channels, an EDI provider if they have retail accounts, and a basic inventory forecasting tool. WMS and supplier portals are typically not needed until $8M+.' },
             { q: 'How much does supply chain software cost for a small brand?', a: 'The five core systems — OMS, WMS, EDI, forecasting, supplier portal — run $1,000-$6,500/month combined at full deployment. A brand at $5M with retail accounts typically needs $500-$1,500/month covering EDI and OMS.' },
@@ -370,7 +370,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Not Sure Which Systems<br /><em>You Actually Need?</em></h2>
+          <h2 id="not-sure-which-systemsyou-actually-need">Not Sure Which Systems<br /><em>You Actually Need?</em></h2>
           <p>Book a 30-minute call. We&apos;ll audit your current tech stack and tell you exactly what&apos;s missing, what&apos;s redundant, and what to add first &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

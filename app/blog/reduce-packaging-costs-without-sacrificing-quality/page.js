@@ -330,7 +330,7 @@ export default function Page() {
           <p>DIM weight right-sizing. Pull the last 90 days of freight invoices, calculate the percentage of shipments billed at dimensional weight rather than actual weight, and measure the interior void in the current packaging. If either number is above 30%, a structural resize pays back in the first production cycle &mdash; no brand changes required.</p>
 
           <h3>How much can a CPG brand realistically reduce packaging costs without changing the brand experience?</h3>
-          <p>An estimated 15&ndash;30% is typically achievable across the seven levers above. Brands that have never done a systematic packaging audit typically find more savings than those that have run partial optimizations. The exact number depends on which levers have already been applied.</p>
+          <p>An estimated 15&ndash;30% is typically achievable across the seven levers above. Brands that have never done a systematic packaging audit typically find more savings than those that have run partial optimizations. The exact number depends on which levers have already been applied. The <a href="/work/artilect">Artilect case study</a> demonstrates a real 20% cost reduction using this methodology, and the <a href="/guides/packaging-cost-reduction">Packaging Cost Reduction guide</a> covers the full framework.</p>
 
           <h3>Is it worth switching packaging suppliers to reduce costs?</h3>
           <p>Rarely. Switching suppliers is almost never the primary cost lever. Vendor consolidation &mdash; moving more volume to existing suppliers &mdash; typically generates better pricing than starting a new supplier relationship at lower initial volume.</p>
@@ -347,7 +347,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is the fastest way to reduce packaging costs for a CPG brand?', a: 'DIM weight right-sizing. Pull the last 90 days of freight invoices, calculate the percentage of shipments billed at dimensional weight rather than actual weight, and measure the interior void in the current packaging. If either number is above 30%, a structural resize pays back in the first production cycle — no brand changes required.' },
             { q: 'How much can a CPG brand realistically reduce packaging costs without changing the brand experience?', a: 'An estimated 15-30% is typically achievable across the seven levers. Brands that have never done a systematic packaging audit typically find more savings than those that have run partial optimizations.' },
@@ -362,7 +362,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Packaging Costs Higher<br /><em>Than They Should Be?</em></h2>
+          <h2 id="packaging-costs-higherthan-they-should-be">Packaging Costs Higher<br /><em>Than They Should Be?</em></h2>
           <p>Book a 30-minute call. We&apos;ll walk through your current packaging cost structure and identify which of the seven levers apply &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

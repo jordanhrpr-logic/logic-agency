@@ -63,8 +63,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging Cost Reduction Guide — Logic Agency Inc.',
-  description: 'Packaging cost reduction starts with landed cost, DIM weight, materials, supplier markup, rework, and emergency freight before cutting quality.',
+  title: 'Packaging Cost Reduction: Save 15-30% Without Cutting Quality — Logic Agency Inc.',
+  description: 'Where packaging margin actually leaks and how CPG brands save 15-30%. Landed cost, DIM weight, materials, supplier markup, rework, and freight.',
   keywords: 'reduce packaging costs, packaging cost optimization, DIM weight optimization, packaging COGS reduction, cheaper packaging without looking cheap, packaging cost per unit, packaging cost audit, landed cost packaging',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-cost-reduction',
@@ -166,7 +166,7 @@ export default function PackagingCostReduction() {
           </div>
 
           {/* SECTION 1 */}
-          <h2>The Five Hidden Cost Drivers</h2>
+          <h2 id="the-five-hidden-cost-drivers">The Five Hidden Cost Drivers</h2>
 
           <p>When brands tell us their packaging is &ldquo;too expensive,&rdquo; they&apos;re almost always looking at the wrong number. The unit price on your supplier&apos;s invoice is typically 40-60% of your real packaging cost. The rest hides in places most teams never audit.</p>
 
@@ -206,7 +206,7 @@ export default function PackagingCostReduction() {
           </div>
 
           {/* SECTION 2 */}
-          <h2>How to Run a Packaging Cost Audit</h2>
+          <h2 id="how-to-run-a-packaging-cost-audit">How to Run a Packaging Cost Audit</h2>
 
           <p>A proper cost audit doesn&apos;t start with calling new suppliers for quotes. It starts with mapping what you&apos;re actually spending today. Most brands have never done this comprehensively because the data lives in five different places &mdash; supplier invoices, freight bills, 3PL charges, returns reports, and someone&apos;s email thread about that rework issue three months ago.</p>
 
@@ -249,7 +249,7 @@ export default function PackagingCostReduction() {
           </div>
 
           {/* SECTION 3 */}
-          <h2>Where Brands Typically Save 15-30%</h2>
+          <h2 id="where-brands-typically-save-15-30">Where Brands Typically Save 15-30%</h2>
 
           <p>Once the audit is done, the savings usually cluster in a few predictable areas. These ranges are Logic Agency operating benchmarks from packaging audits and supplier comparisons across beauty, CPG, and tech-wearables work. They are directional; a current quote and SKU-level landed-cost model should control the decision.</p>
 
@@ -292,7 +292,7 @@ export default function PackagingCostReduction() {
           </div>
 
           {/* SECTION 4 */}
-          <h2>The &ldquo;Premium at Launch, Optimize at Scale&rdquo; Strategy</h2>
+          <h2 id="the-premium-at-launch-optimize-at-scale-strategy">The &ldquo;Premium at Launch, Optimize at Scale&rdquo; Strategy</h2>
 
           <p>There are two approaches to packaging cost. Most brands start cheap and try to upgrade later when they can &ldquo;afford&rdquo; better packaging. This sounds logical but creates a trap: cheap packaging becomes your brand identity, customers associate you with the experience, and upgrading later means re-educating a market that&apos;s already formed an opinion.</p>
 
@@ -307,7 +307,7 @@ export default function PackagingCostReduction() {
           </div>
 
           {/* SECTION 5 */}
-          <h2>The Cost Conversation You Should Actually Be Having</h2>
+          <h2 id="the-cost-conversation-you-should-actually-be-having">The Cost Conversation You Should Actually Be Having</h2>
 
           <p>When a brand calls a packaging supplier and says &ldquo;our packaging costs too much,&rdquo; the supplier hears &ldquo;find me a cheaper option.&rdquo; They&apos;ll quote a thinner material, a smaller box, a different print method. The cost goes down. So does the quality. The brand compromises, ships it, and the cycle restarts in six months when they realize the &ldquo;savings&rdquo; created new problems &mdash; higher damage rates, weaker shelf presence, customer complaints about the unboxing experience.</p>
 
@@ -324,14 +324,14 @@ export default function PackagingCostReduction() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'How much can you save on packaging costs without reducing quality?', a: 'Logic Agency commonly finds 15-30% directional savings opportunities through DIM weight optimization, material right-sizing, supplier consolidation, and landed cost analysis. This is an operating benchmark from Logic client and supplier work, not a guaranteed industry average. The achievable result depends on the current specification, volume, geography, and freight profile.' }, { q: 'What is DIM weight and why does it increase packaging costs?', a: 'DIM (dimensional) weight is a shipping pricing method based on package volume. Carriers compare dimensional weight with actual weight and generally rate the shipment using the greater value. The divisor depends on carrier, service, rate type, and contract. UPS, for example, publishes 139 for Daily Rates and 166 for Retail Rates.' }, { q: 'What is a packaging cost audit?', a: 'A packaging cost audit maps every component of your packaging and calculates true landed cost per unit, including materials, tooling amortization, freight, DIM charges, damage, rework, handling, and warehousing. Logic often finds that supplier unit price omits material parts of this cost; the exact gap must be calculated from the brand\'s own invoices and operating data.' }, { q: 'Can you get premium packaging manufactured overseas at the same cost as domestic?', a: 'Yes, in some cases. The comparison must include tooling, production, freight, customs, drayage, quality control, inventory, and lead-time risk rather than unit price alone. Logic Agency achieved a premium overseas upgrade at no additional landed cost for Audio Enhancement; that client result is not a universal guarantee.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Know your packaging costs <span className="o">more than it should?</span></h2>
+          <h2 id="know-your-packaging-costs-more-than-it-should">Know your packaging costs <span className="o">more than it should?</span></h2>
           <p>Cost optimization is built into every tier we offer. At Starter level we advise on sourcing strategy. At Growth and Enterprise we actively manage the cost reduction roadmap as your packaging program partner. Tell us what you&apos;re dealing with.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

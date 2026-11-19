@@ -133,36 +133,36 @@ export default function Page() {
 
           <p>The guide to fractional supply chain operations explains the model. This post is narrower: what should actually happen once a fractional team starts working inside the business?</p>
 
-          <h2>Week 1: Build the Operating Map</h2>
+          <h2 id="week-1-build-the-operating-map">Week 1: Build the Operating Map</h2>
           <p>Most scaling brands do not have an operations problem in one place. They have small problems spread across suppliers, packaging specs, 3PL handoffs, inventory, freight, and reporting. The first job is to make the system visible.</p>
           <p>That means collecting the supplier list, open purchase orders, SKU-level inventory, packaging specs, 3PL agreements, freight invoices, retail requirements, chargeback history, and current reporting cadence.</p>
           <p>This is not paperwork for its own sake. It shows where the brand is operating from memory instead of from a system.</p>
 
-          <h2>Week 2: Find the Urgent Risks</h2>
+          <h2 id="week-2-find-the-urgent-risks">Week 2: Find the Urgent Risks</h2>
           <p>After the map exists, the next step is triage. Which production run is late? Which SKU is at stockout risk? Which supplier has no backup? Which shipment is being expedited because a reorder point was missed?</p>
           <p>A strong fractional ops partner should be able to separate noise from risk quickly. Not every issue deserves immediate work. Some are annoying. Some are expensive. Some are existential for the next 60 days.</p>
           <p>The first month should produce a short risk list that leadership can understand without a 40-slide deck.</p>
 
-          <h2>Week 3: Establish Ownership</h2>
+          <h2 id="week-3-establish-ownership">Week 3: Establish Ownership</h2>
           <p>Operational problems compound when nobody owns them. A supplier issue becomes an inventory issue. An inventory issue becomes a rush freight issue. A rush freight issue becomes a margin issue. Everyone saw part of it. Nobody owned the system.</p>
           <p>By week three, ownership should be explicit. Who manages supplier communication? Who approves packaging changes? Who tracks reorder points? Who owns the 3PL relationship? Who reviews freight invoices? Who escalates retail compliance issues?</p>
           <p>If the answer is still "the founder," the operating model has not changed.</p>
 
-          <h2>Week 4: Set the 60-Day Fix List</h2>
+          <h2 id="week-4-set-the-60-day-fix-list">Week 4: Set the 60-Day Fix List</h2>
           <p>The first 30 days should end with a practical operating plan. Not a theoretical roadmap. A prioritized fix list.</p>
           <p>That list usually includes a few fast moves: update SKU-level reorder points, verify actual supplier lead times, clean packaging specs, move recurring freight review onto a cadence, document 3PL escalation paths, and identify the highest-risk supplier or packaging component.</p>
           <p>Some work takes longer. But the business should leave the first month with less ambiguity than it had when the engagement started.</p>
 
-          <h2>What Good Looks Like</h2>
+          <h2 id="what-good-looks-like">What Good Looks Like</h2>
           <p>Good fractional operations creates calm through clarity. The founder stops being the only person who knows which supplier is late. The 3PL relationship stops living in email threads. Packaging decisions stop moving without landed-cost visibility.</p>
           <p>The team can see the system. Then it can improve the system.</p>
 
-          <h2>What Bad Looks Like</h2>
+          <h2 id="what-bad-looks-like">What Bad Looks Like</h2>
           <p>Bad fractional operations looks like consulting with a retainer. Lots of meetings. Lots of language. Very little movement.</p>
           <p>If the first 30 days produce only observations, the model is too passive. The work should move from audit to execution quickly.</p>
 
-          <h2>The Point</h2>
-          <p>The first month is not about solving every supply chain problem. It is about replacing operational fog with a visible system and a sequenced plan.</p>
+          <h2 id="the-point">The Point</h2>
+          <p>The first month is not about solving every supply chain problem. It is about replacing operational fog with a visible system and a sequenced plan. For the full model and cost comparison, see the <a href="/guides/fractional-supply-chain-operations">Fractional Supply Chain Operations guide</a>.</p>
           <p>That is the real test of fractional ops: does the business become easier to see, easier to manage, and easier to improve?</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
@@ -177,14 +177,14 @@ export default function Page() {
 
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={faqs} />
         </div>
       </section>
 
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

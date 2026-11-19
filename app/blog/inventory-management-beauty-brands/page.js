@@ -408,14 +408,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'How much safety stock should a beauty brand carry?', a: 'For brands without historical retail data, set safety stock at 4–6 weeks of projected demand and adjust after three sell-through cycles. The formula is: safety stock = (max daily demand × max lead time) minus (avg daily demand × avg lead time). Beauty brands should use actual production run lead times, not supplier quotes, which typically understate real timelines by 2–4 weeks.' }, { q: 'Why is beauty inventory management harder than other CPG categories?', a: 'Beauty brands carry 40–60% more SKUs than comparable CPG brands due to shade and variant proliferation. Each variant needs its own safety stock calculation, reorder point, and expiration date tracking. Add 12–16 week production lead times and multi-channel demand (DTC, retail, wholesale) and the planning complexity compounds significantly.' }, { q: 'What is a reorder point and how do you calculate it for beauty brands?', a: 'Reorder point = (average daily demand × lead time in days) + safety stock. For a beauty brand selling 50 units per day with a 90-day lead time and 2-week safety stock, the reorder point is (50 × 90) + 700 = 5,200 units. When on-hand inventory hits 5,200, you trigger the next production order.' }, { q: 'How do you manage inventory across DTC, retail, and wholesale simultaneously?', a: 'You need a single source of truth for inventory — one system that shows real-time units across all locations, not separate spreadsheets per channel. Allocate inventory by channel based on committed orders first (retail POs), then reserve safety stock for retail replenishment, then allocate the remainder to DTC and wholesale. Review weekly.' }, { q: 'When should a beauty brand stop managing inventory in spreadsheets?', a: 'The trigger is usually one of three things: more than 20 active SKUs, a retail account requiring EDI and ASN documentation, or two or more stockouts in a single quarter. At that point, spreadsheets can no longer handle the complexity of multi-channel inventory planning and you need a proper inventory management system.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>
