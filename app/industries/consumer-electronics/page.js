@@ -80,7 +80,7 @@ export default function ConsumerElectronicsPage() {
       <div className="article gl">
         <div className="article-inner">
 
-          <h2 id="the-post-raise-gap">The Gap Between Prototype and First Production Run</h2>
+          <h2 id="the-prototype-to-production-gap">The Gap Between Prototype and First Production Run</h2>
 
           <p>Most funded hardware companies hit the same operational wall after their raise. The product is engineered. The contract manufacturer can build it. What does not exist:</p>
 
@@ -124,7 +124,7 @@ export default function ConsumerElectronicsPage() {
             <li><strong>Supplier qualification and transition.</strong> When a brand outgrows its prototype manufacturer, Logic qualifies new production partners, manages pilot runs with 100% QC, and bridges the transition without disrupting product availability. See the <a href="/work/audio-enhancement">Audio Enhancement case study</a> for how this works.</li>
             <li><strong>Production QC.</strong> Pre-shipment inspection, golden-sample programs, run-to-run conformity tracking, and supplier scorecards. 100% inspection on pilot runs; statistical sampling at scale. Independent of your CM&apos;s self-reporting.</li>
             <li><strong>Retail compliance.</strong> EDI setup, ASN workflows, routing-guide compliance, retailer-specific labeling, and documentation for Best Buy, Amazon, Target, and specialty channels. See our <a href="/guides/retail-chargebacks">retail chargebacks guide</a> for the cost of non-compliance.</li>
-            <li><strong>Cost engineering.</strong> <a href="/guides/packaging-cost-reduction">Packaging cost optimization</a> across the product lifecycle. DIM weight right-sizing, material substitution, format consolidation, and freight optimization. The Artilect program achieved 20% cost reduction and 95% material reduction &mdash; <a href="/work/artilect">read the case study</a>.</li>
+            <li><strong>Cost engineering.</strong> <a href="/guides/packaging-cost-reduction">Packaging cost reduction</a> across the product lifecycle. DIM weight right-sizing, material substitution, format consolidation, and freight optimization. The Artilect program achieved 20% cost reduction and 95% material reduction &mdash; <a href="/work/artilect">read the case study</a>.</li>
             <li><strong>DTC + retail fulfillment coordination.</strong> Kitting, assembly, warehouse operations for shipping to both retail DCs and direct-to-consumer from the same inventory.</li>
             <li><strong>Investor-grade ops metrics.</strong> Your board wants to know COGS trajectory, inventory turns, supplier concentration risk, and production lead time reliability. We build the reporting that makes your ops story legible to investors.</li>
           </ul>
@@ -198,8 +198,12 @@ export default function ConsumerElectronicsPage() {
               <div><h4>Retail-Ready Packaging</h4><p>Case packs, compliance, and what retailers actually require.</p></div>
               <div className="guide-link-arrow">&rarr;</div>
             </a>
-            <a href="/guides/3pl-selection-guide" className="guide-link-card">
-              <div><h4>3PL Selection Guide</h4><p>How to evaluate fulfillment partners for retail and DTC.</p></div>
+            <a href="/guides/prototype-to-production-hardware" className="guide-link-card">
+              <div><h4>Prototype to Production</h4><p>The 6&ndash;9 month operational playbook for funded hardware brands.</p></div>
+              <div className="guide-link-arrow">&rarr;</div>
+            </a>
+            <a href="/guides/logic-vs-vp-operations" className="guide-link-card">
+              <div><h4>Logic vs. Hiring a VP Ops</h4><p>Direct cost comparison: outsourced retainer vs. full-time hire.</p></div>
               <div className="guide-link-arrow">&rarr;</div>
             </a>
             <a href="/guides/packaging-cost-reduction" className="guide-link-card">

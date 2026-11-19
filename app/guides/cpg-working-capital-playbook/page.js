@@ -359,7 +359,7 @@ export default function Page() {
 
           <p>Hardware production runs 8&ndash;20 weeks (vs. 4&ndash;8 for most CPG). Tooling deposits run $5,000&ndash;$50,000 per SKU before a single unit exists. Certifications (FCC, UL, battery, Prop 65) add 6&ndash;16 weeks and $10,000&ndash;$40,000 in testing fees. And retail packaging for electronics is structurally more complex &mdash; custom foam inserts, compartmentalized accessory trays, anti-theft requirements &mdash; which means higher per-unit packaging cost and longer lead times.</p>
 
-          <p>The result: a post-seed hardware brand can burn through $200,000&ndash;$500,000 in production, tooling, certification, and packaging costs before shipping a single unit to retail. The cash conversion cycle stretches to 180&ndash;270 days.</p>
+          <p>The result: a post-seed hardware brand with 2&ndash;5 SKUs can burn through $150,000&ndash;$500,000 in production, tooling, certification, and packaging costs before shipping a single unit to retail. Even a single-SKU product typically commits $50,000&ndash;$150,000. The cash conversion cycle stretches to 180&ndash;270 days.</p>
 
           <div className="callout">
             <p><strong>The hardware trap:</strong> Many founders raise equity specifically to fund this production ramp, treating it as a capital need. But if the product is validated, unit economics are positive, and retail POs exist, the production ramp is a timing problem &mdash; not a loss problem. PO financing, asset-based lending against inventory, and supplier payment terms can bridge the gap without dilution.</p>

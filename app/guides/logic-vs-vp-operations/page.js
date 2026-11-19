@@ -300,9 +300,9 @@ export default function LogicVsVpOpsPage() {
               <h4>Fractional Supply Chain Operations</h4>
               <p>What the retainer team actually does week to week. Costs, coverage, and when it beats a full-time hire.</p>
             </a>
-            <a href="/guides/fractional-coo-vs-full-time-hire" className="related-link">
-              <h4>Fractional COO vs. Full-Time Hire</h4>
-              <p>The general cost comparison with a decision framework for scaling consumer brands.</p>
+            <a href="/guides/prototype-to-production-hardware" className="related-link">
+              <h4>Prototype to Production: Hardware Playbook</h4>
+              <p>The 6&ndash;9 month operational sequence from working prototype to retail-ready production.</p>
             </a>
             <a href="/industries/consumer-electronics" className="related-link">
               <h4>Consumer Electronics &amp; Hardware</h4>

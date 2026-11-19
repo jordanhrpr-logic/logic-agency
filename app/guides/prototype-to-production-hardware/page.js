@@ -405,9 +405,9 @@ export default function PrototypeToProductionPage() {
               <h4>Consumer Electronics &amp; Hardware</h4>
               <p>The full industry page for venture-backed hardware brands.</p>
             </a>
-            <a href="/guides/packaging-sourcing" className="related-link">
-              <h4>Packaging Sourcing</h4>
-              <p>Domestic vs. overseas, MOQs, factory vetting, and landed cost math.</p>
+            <a href="/guides/logic-vs-vp-operations" className="related-link">
+              <h4>Logic vs. Hiring a VP of Operations</h4>
+              <p>Direct cost comparison: outsourced retainer vs. full-time hire for funded brands.</p>
             </a>
             <a href="/work/audio-enhancement" className="related-link">
               <h4>Audio Enhancement Case Study</h4>
