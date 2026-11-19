@@ -72,6 +72,10 @@ const modifiedByPath = {
   '/guides/sustainable-packaging-cpg': '2026-09-24',
   '/guides/cpg-operations-kpis': '2026-09-24',
   '/guides/cpg-supply-chain-operations': '2026-11-19',
+  '/guides/prototype-to-production-hardware': '2026-11-19',
+  '/guides/logic-vs-vp-operations': '2026-11-19',
+  '/industries/beauty-personal-care': '2026-11-19',
+  '/industries/consumer-electronics': '2026-11-19',
 };
 
 export default function sitemap() {

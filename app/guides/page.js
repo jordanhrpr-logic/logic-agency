@@ -9,7 +9,7 @@ const itemListSchema = {
   "url": "https://www.logicagencyinc.com/guides",
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 26,
+    "numberOfItems": 28,
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "url": "https://www.logicagencyinc.com/guides/retail-readiness", "name": "The Retail Readiness Bible" },
       { "@type": "ListItem", "position": 2, "url": "https://www.logicagencyinc.com/guides/first-90-days-in-retail", "name": "First 90 Days in Retail" },
@@ -36,7 +36,9 @@ const itemListSchema = {
       { "@type": "ListItem", "position": 23, "url": "https://www.logicagencyinc.com/guides/cpg-channel-economics", "name": "Channel Economics" },
       { "@type": "ListItem", "position": 24, "url": "https://www.logicagencyinc.com/guides/sustainable-packaging-cpg", "name": "Sustainable Packaging for CPG Brands" },
       { "@type": "ListItem", "position": 25, "url": "https://www.logicagencyinc.com/guides/cpg-operations-kpis", "name": "CPG Operations KPI Dashboard" },
-      { "@type": "ListItem", "position": 26, "url": "https://www.logicagencyinc.com/guides/cpg-supply-chain-operations", "name": "CPG Supply Chain Operations" }
+      { "@type": "ListItem", "position": 26, "url": "https://www.logicagencyinc.com/guides/cpg-supply-chain-operations", "name": "CPG Supply Chain Operations" },
+      { "@type": "ListItem", "position": 27, "url": "https://www.logicagencyinc.com/guides/logic-vs-vp-operations", "name": "Logic vs. Hiring a VP of Operations" },
+      { "@type": "ListItem", "position": 28, "url": "https://www.logicagencyinc.com/guides/prototype-to-production-hardware", "name": "Prototype to Production: Hardware Playbook" }
     ]
   }
 };
@@ -223,6 +225,8 @@ export default function GuidesIndex() {
             <a href="/guides/cpg-channel-economics" className="guide-card"><div className="guide-card-inner"><p className="guide-meta">15 min read</p><h2>Amazon vs. DTC vs. Retail: Channel Economics</h2><p>Worked side-by-side of DTC, Amazon FBA, and wholesale — gross margin, contribution margin, and the operating implications of channel choice.</p><span className="guide-link">Read the guide &rarr;</span></div></a>
             <a href="/guides/cpg-operations-kpis" className="guide-card"><div className="guide-card-inner"><p className="guide-meta">13 min read</p><h2>The CPG Operations KPI Dashboard</h2><p>15 metrics that matter, formulas, target ranges by growth stage, and where each number actually lives in your systems.</p><span className="guide-link">Read the guide &rarr;</span></div></a>
             <a href="/guides/cpg-supply-chain-operations" className="guide-card"><div className="guide-card-inner"><p className="guide-meta">12 min read</p><h2>CPG Supply Chain Operations</h2><p>Outsourced supply chain operations for scaling CPG brands &mdash; packaging, sourcing, QC, logistics, and retail compliance on a monthly retainer.</p><span className="guide-link">Read the guide &rarr;</span></div></a>
+            <a href="/guides/logic-vs-vp-operations" className="guide-card"><div className="guide-card-inner"><p className="guide-meta">14 min read</p><h2>Logic vs. Hiring a VP of Operations</h2><p>Direct comparison: outsourced ops retainer vs. a full-time VP hire. Cost, timeline, scope, risk, and when each path fits a funded brand.</p><span className="guide-link">Read the guide &rarr;</span></div></a>
+            <a href="/guides/prototype-to-production-hardware" className="guide-card"><div className="guide-card-inner"><p className="guide-meta">14 min read</p><h2>Prototype to Production: Hardware Playbook</h2><p>The 6&ndash;9 month operational sequence for funded hardware brands. Manufacturer qualification, certifications, packaging engineering, QC, and unit economics.</p><span className="guide-link">Read the guide &rarr;</span></div></a>
           </div>
         </div>
       </section>
