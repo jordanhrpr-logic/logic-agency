@@ -1,0 +1,73 @@
+# Logic Agency Inc.
+
+> Fractional packaging and supply chain operations for scaling consumer brands. Monthly retainers starting at $2,500/month. No annual contracts.
+
+Logic Agency is an outsourced packaging, supply chain, and operations team for brands selling into retail, B2B, and direct to consumer. Founded by Jordan Harper with 20+ years of execution experience across 15+ countries.
+
+## What We Do
+
+- Packaging sourcing, engineering, and production management
+- Supply chain operations: supplier coordination, freight, QC, inventory
+- Retail compliance: EDI, ASN, routing guides, chargebacks, scorecards
+- Demand forecasting and inventory planning
+- Manufacturer qualification and transition management
+- Cost engineering: landed cost modeling, DIM optimization, material substitution
+
+## Who We Serve
+
+- Beauty, wellness, and personal care brands
+- Consumer packaged goods (food, beverage, household)
+- Consumer electronics, hardware, and wearable device brands
+- Early-stage venture-backed companies through $20M+ revenue
+- Brands transitioning from DTC to retail
+
+## Pricing
+
+- Advisory: $2,500-$3,000/month
+- Active Management: $5,000-$7,000/month (most common)
+- Embedded Operations: $10,000+/month
+- All tiers month-to-month, no annual contract
+
+## Case Studies
+
+- [Epicutis](https://www.logicagencyinc.com/work/epicutis): Scaled from 3 to 21+ SKUs with 15% cost savings and 90-day rolling inventory plan
+- [Audio Enhancement](https://www.logicagencyinc.com/work/audio-enhancement): Supplier transition with 100% pilot-run QC and zero customer disruption
+- [Artilect](https://www.logicagencyinc.com/work/artilect): 20% packaging cost reduction and 95% material reduction
+
+## Guides
+
+- [Retail Readiness Bible](https://www.logicagencyinc.com/guides/retail-readiness): Complete retail launch operations playbook
+- [Prototype to Production: Hardware Playbook](https://www.logicagencyinc.com/guides/prototype-to-production-hardware): 6-9 month timeline for funded hardware brands
+- [Logic vs. Hiring a VP of Operations](https://www.logicagencyinc.com/guides/logic-vs-vp-operations): Direct cost and scope comparison
+- [Fractional Supply Chain Operations](https://www.logicagencyinc.com/guides/fractional-supply-chain-operations): What the retainer covers, costs, and when it beats a full-time hire
+- [Packaging Sourcing](https://www.logicagencyinc.com/guides/packaging-sourcing): Factory vetting, MOQ math, landed cost, domestic vs overseas
+- [CPG Working Capital Playbook](https://www.logicagencyinc.com/guides/cpg-working-capital-playbook): Cash conversion cycle, PO financing, and when equity is the right tool
+- [3PL Selection Guide](https://www.logicagencyinc.com/guides/3pl-selection-guide): How to evaluate fulfillment partners for retail and DTC
+- [Demand Forecasting](https://www.logicagencyinc.com/guides/cpg-demand-forecasting): Safety stock formulas, S&OP rhythm, MAPE tracking
+- [Landed Cost Playbook](https://www.logicagencyinc.com/guides/landed-cost-playbook): The 6-line cost stack for imports including DIM weight
+- [Retail Chargebacks](https://www.logicagencyinc.com/guides/retail-chargebacks): Prevention, dispute process, and deduction management
+- [Co-Manufacturer Selection](https://www.logicagencyinc.com/guides/co-manufacturer-selection): Scorecard, vetting process, and total-cost comparison
+- [Packaging Cost Reduction](https://www.logicagencyinc.com/guides/packaging-cost-reduction): Where margin leaks and how to save 15-30%
+- [Retail-Ready Packaging](https://www.logicagencyinc.com/guides/retail-ready-packaging): Case packs, compliance, and what retailers require
+- [40-Point Retail Readiness Scorecard](https://www.logicagencyinc.com/guides/retail-readiness-scorecard): Self-audit before your first retail PO
+- [Sustainable Packaging for CPG](https://www.logicagencyinc.com/guides/sustainable-packaging-cpg): PCR, mono-material, EPR compliance, retailer requirements
+- [All 28 guides](https://www.logicagencyinc.com/guides)
+
+## Industry Pages
+
+- [Beauty & Personal Care](https://www.logicagencyinc.com/industries/beauty-personal-care): Shade-level inventory, retailer compliance, and packaging programs for beauty brands
+- [Consumer Electronics & Hardware](https://www.logicagencyinc.com/industries/consumer-electronics): Prototype to production for venture-backed hardware brands
+
+## Hardware-Specific Content
+
+- [FCC Certification Timeline & Cost](https://www.logicagencyinc.com/blog/fcc-certification-consumer-electronics)
+- [Contract Manufacturer vs. EMS Provider](https://www.logicagencyinc.com/blog/contract-manufacturer-vs-ems-electronics)
+- [Board-Ready Ops Metrics for Hardware Startups](https://www.logicagencyinc.com/blog/board-ready-ops-metrics-hardware)
+- [Hardware Packaging That Survives Amazon FBA](https://www.logicagencyinc.com/blog/hardware-packaging-amazon-fba)
+
+## Contact
+
+- Website: https://www.logicagencyinc.com
+- Book a call: https://calendly.com/jordan-harper-packaging/logic-agency-readiness
+- Email: jordan@logicagencyinc.com
+- Location: Orange County, CA and Salt Lake City, UT

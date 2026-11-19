@@ -77,6 +77,14 @@ const faqSchema = {
         text: 'Yes. A PDF version of the full 40-point scorecard is available for download from Logic Agency.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Is there a hardware-specific version of the scorecard?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The core 40-point scorecard applies to all consumer product brands including hardware. Consumer electronics, wearables, and hardware brands should also complete the 6-point Hardware Readiness Addendum, which covers FCC/UL certification status, anti-theft packaging formats, lithium battery documentation, warranty/returns processes, serial number tracking, and retailer planogram confirmation.',
+      },
+    },
   ],
 };
 
@@ -432,6 +440,27 @@ export default function RetailReadinessScorecard() {
             <p>What fractional ops covers, what it costs, and when it makes more sense than building a full in-house team.</p>
           </div>
 
+          {/* HARDWARE ADDENDUM */}
+          <h2 id="hardware-readiness-addendum">Hardware Readiness Addendum <span className="o">(6 points)</span></h2>
+
+          <p>If your brand sells consumer electronics, hardware, or wearable devices, add these 6 items to your assessment. These cover the certification, compliance, and operational requirements specific to electronics retail.</p>
+
+          <div className="b-takeaways" style={{ background: '#f9f9f9' }}>
+            <p style={{ color: 'var(--bk)', textTransform: 'none', fontSize: '13px', letterSpacing: 0, fontWeight: 600 }}>Score 1 point for each item that is true today</p>
+            <ul>
+              <li><strong>FCC and UL certifications are complete or in progress with a confirmed timeline.</strong> FCC testing takes 8&ndash;12 weeks; UL listing takes 10&ndash;16 weeks. If neither has started and your target ship date is within 6 months, the timeline is already at risk.</li>
+              <li><strong>Anti-theft packaging format is confirmed with each target retailer.</strong> Best Buy requires clamshell or keeper-box-compatible formats. Target has planogram-specific dimensional constraints. These requirements affect packaging structure and must be locked before tooling.</li>
+              <li><strong>Lithium battery documentation is complete.</strong> UN38.3 transport test report, MSDS/SDS on file, shipping declarations, 3PL storage compliance confirmed, and retailer-specific battery labeling (Amazon requires lithium battery exemption documentation for FBA).</li>
+              <li><strong>Warranty and returns process is documented and your 3PL can execute it.</strong> Electronics return rates run 5&ndash;15%. Your 3PL must be able to receive returns, inspect and test units, classify as resaleable or defective, and manage disposition. If this process is not built, returns will create inventory accuracy problems within 90 days of launch.</li>
+              <li><strong>Serial number tracking is active from production through fulfillment.</strong> Every unit must carry a serial number that is scanned at manufacturing, again at 3PL receiving, and again at shipment. This is required for warranty traceability, recall capability, and channel-specific reporting.</li>
+              <li><strong>Retailer-specific planogram dimensions are confirmed and packaging fits.</strong> A package that is 2mm too deep does not get placed. Confirm exact dimensional requirements with each retail buyer before finalizing packaging structure.</li>
+            </ul>
+          </div>
+
+          <div className="callout">
+            <p><strong>Hardware brands:</strong> A combined score of 35+ on the core scorecard with 5+ on this addendum means you are operationally ready for electronics retail. Below 4 on the addendum means certification or compliance gaps that will block your first PO regardless of your core readiness. See our <a href="/guides/prototype-to-production-hardware">Prototype to Production guide</a> and <a href="/industries/consumer-electronics">Consumer Electronics industry page</a> for the full operational framework.</p>
+          </div>
+
           {/* FAQ */}
           <h2 id="faq" className="b-faq-h">FAQ</h2>
 
@@ -463,6 +492,7 @@ export default function RetailReadinessScorecard() {
             { q: 'How long does the scorecard take?', a: 'Completing all 40 points takes 15–20 minutes if your ops documentation is accessible. Partial progress counts as zero, which surfaces real gaps faster than optimistic scoring.' },
             { q: 'What are the most common gaps?', a: 'Backup suppliers not secured, landed cost not fully mapped, 3PL not evaluated for retail fulfillment, and routing/labeling requirements not confirmed. These are the gaps that create the most expensive first-year retail problems.' },
             { q: 'Is there a downloadable PDF version?', a: 'Yes. The full 40-point PDF scorecard is available for download from Logic Agency.' },
+            { q: 'Is there a hardware-specific version of the scorecard?', a: 'The core 40-point scorecard applies to all consumer product brands. Hardware and electronics brands should also complete the 6-point Hardware Readiness Addendum covering FCC/UL certifications, anti-theft packaging, lithium battery documentation, warranty/returns, serial number tracking, and retailer planogram confirmation.' },
           ]} />
         </div>
       </section>
