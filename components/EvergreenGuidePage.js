@@ -543,14 +543,14 @@ export default function EvergreenGuidePage({ guide }) {
 
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={guide.faq} />
         </div>
       </section>
 
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>{guide.ctaHeading || (<>Need to turn the framework into <span className="o">operating rhythm?</span></>)}</h2>
+          <h2 id="start-a-conversation">{guide.ctaHeading || (<>Need to turn the framework into <span className="o">operating rhythm?</span></>)}</h2>
           <p>{guide.ctaCopy || 'Logic Agency gives scaling consumer brands senior supply chain and packaging operations without forcing an early full-time hire.'}</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation →</a>
