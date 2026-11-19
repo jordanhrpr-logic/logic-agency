@@ -66,6 +66,14 @@ const faqSchema = {
         "@type": "Answer",
         "text": "MPF (Merchandise Processing Fee) is a US Customs fee of 0.3464% of declared cargo value with a minimum of $33.58 and maximum of $651.50 per entry. HMF (Harbor Maintenance Fee) is 0.125% of cargo value. Both are charged on every formal customs entry and are often overlooked in supplier cost comparisons."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "How is landed cost different for consumer electronics vs. CPG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electronics landed cost has three layers CPG typically does not: certification amortization (FCC, UL, battery testing costs $10,000-$40,000 spread across your first production run), higher tooling amortization ($5,000-$50,000 for injection molds and custom inserts), and different HTS duty structures (Chapter 85 electronic apparatus vs. Chapter 33/34 cosmetics). Electronics also face Section 301 tariff exposure for China-origin products at 7.5-25% on top of base duties. The net effect: electronics landed cost can run 50-70% above the supplier quote, vs. 40-50% for typical CPG imports."
+      }
     }
   ]
 };
@@ -348,6 +356,47 @@ export default function LandedCostPlaybook() {
             <p><strong>The founders who model landed cost per SKU before signing a supplier protect margin before the P&amp;L does.</strong> Every supplier comparison should be a landed cost comparison. If you&apos;re comparing unit prices, you&apos;re comparing the wrong numbers.</p>
           </div>
 
+          {/* HARDWARE SECTION */}
+          <h2 id="electronics-and-hardware-the-duty-and-certification-layer">Electronics and Hardware: The Duty and Certification Layer</h2>
+
+          <p>The 6-line landed cost stack above applies to hardware imports. But electronics add three cost layers that most CPG brands never encounter.</p>
+
+          <h3>HTS classification and duty rates</h3>
+
+          <p>Consumer electronics fall under HTS Chapter 85 (electrical machinery and equipment). Duty rates for finished electronic devices range from 0% to 6.5% depending on product classification. That sounds lower than some CPG categories (cosmetics in Chapter 33 can hit 6.5%, food products in Chapter 20&ndash;21 can hit 15%). But the base duty is not the whole story.</p>
+
+          <p><strong>Section 301 tariffs on China-origin electronics</strong> add 7.5&ndash;25% on top of base duties. If your contract manufacturer is in China, your effective duty rate may be 10&ndash;30%. This is the single largest landed-cost variable for hardware brands importing from Asia. Vietnam, Thailand, and India do not carry Section 301 exposure for most electronics categories &mdash; but their production capability for complex electronics is narrower than China&apos;s.</p>
+
+          <h3>Certification cost amortization</h3>
+
+          <p>FCC testing runs $5,000&ndash;$15,000 per product variant. UL listing runs $10,000&ndash;$25,000 for products with mains power or lithium batteries. Battery-specific testing (UN38.3) adds $3,000&ndash;$8,000. Retailer-specific packaging certifications (Amazon SIOC, Best Buy anti-theft) add $1,000&ndash;$3,000 each.</p>
+
+          <p>Total certification cost for a typical consumer electronics product: <strong>$10,000&ndash;$40,000</strong>. Spread across a first production run of 5,000 units, that adds $2&ndash;$8 per unit to landed cost. At 50,000 units, it drops to $0.20&ndash;$0.80. This is why unit economics at prototype scale look fundamentally different from production scale.</p>
+
+          <table>
+            <thead><tr><th>Certification</th><th>Typical Cost</th><th>Timeline</th><th>Per-Unit at 5K</th><th>Per-Unit at 50K</th></tr></thead>
+            <tbody>
+              <tr><td>FCC (intentional radiator)</td><td>$5,000&ndash;$15,000</td><td>8&ndash;12 weeks</td><td>$1.00&ndash;$3.00</td><td>$0.10&ndash;$0.30</td></tr>
+              <tr><td>UL / safety listing</td><td>$10,000&ndash;$25,000</td><td>10&ndash;16 weeks</td><td>$2.00&ndash;$5.00</td><td>$0.20&ndash;$0.50</td></tr>
+              <tr><td>UN38.3 (lithium battery)</td><td>$3,000&ndash;$8,000</td><td>4&ndash;6 weeks</td><td>$0.60&ndash;$1.60</td><td>$0.06&ndash;$0.16</td></tr>
+              <tr><td>Amazon SIOC / FFP</td><td>$1,000&ndash;$3,000</td><td>4&ndash;8 weeks</td><td>$0.20&ndash;$0.60</td><td>$0.02&ndash;$0.06</td></tr>
+            </tbody>
+          </table>
+
+          <h3>Tooling amortization</h3>
+
+          <p>Electronics packaging tooling (injection molds for custom inserts, foam tooling, clamshell dies) runs $5,000&ndash;$50,000. This is higher than most CPG packaging tooling because electronics packaging requires tighter tolerances for component fit, anti-theft features, and retail display compliance. Amortize across the realistic first-year production volume, not an aspirational number.</p>
+
+          <h3>DIM weight economics for electronics</h3>
+
+          <p>Electronics have an unusual DIM profile: the products are often heavy relative to their size. A 2-lb Bluetooth speaker in a retail box may have actual weight higher than DIM weight &mdash; meaning DIM surcharges do not apply. But a lightweight wearable in a large anti-theft clamshell has terrible DIM economics because the clamshell is sized for shelf presence and theft deterrence, not freight efficiency.</p>
+
+          <p>The packaging engineering decision (retail format × product weight × DIM economics) should be modeled before committing to a retail packaging structure. See our <a href="/guides/packaging-sourcing">packaging sourcing guide</a> for the full framework, and <a href="/guides/prototype-to-production-hardware">Prototype to Production</a> for the hardware-specific timeline.</p>
+
+          <div className="callout">
+            <p><strong>The hardware landed cost gap:</strong> Electronics brands importing from China with Section 301 exposure, first-run certification amortization, and packaging tooling can see landed cost 50&ndash;70% above the supplier quote &mdash; vs. 40&ndash;50% for typical CPG. Model it before you commit production. See our <a href="/guides/cpg-working-capital-playbook">Working Capital Playbook</a> for how to fund the gap.</p>
+          </div>
+
           <p style={{ fontSize: '14px', color: '#777', marginTop: '48px', borderTop: '1px solid #ddd', paddingTop: '24px' }}>
             <strong>Sources:</strong> FreightAmigo (USA Customs Fees &amp; Import Costs 2026, landed cost benchmarks) &middot; Peacock Tariff Consulting (2026 CBP fee schedule: MPF 0.3464%, HMF 0.125%) &middot; DCL Logistics / Hadleigh Reid (USPS DIM changes, June&nbsp;17, 2026) &middot; Packizon (UPS/FedEx DIM divisor 139, 2026) &middot; Ship.com (USPS rounding rule confirmation) &middot; Veridian (DIM weight impact analysis) &middot; 3PL Center (carrier DIM threshold confirmation)
           </p>
@@ -360,7 +409,7 @@ export default function LandedCostPlaybook() {
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
           <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-          <GuideFaqAccordion items={[{ q: 'What is landed cost in CPG?', a: 'Landed cost is the total cost of getting a product from your supplier to your warehouse, sellable. It includes the unit price plus ocean freight, duties, customs brokerage, DIM weight overages, tooling amortization, and warehousing — typically 40-50% above the quoted unit price for CPG imports from Asia.' }, { q: 'How much does DIM weight add to shipping costs?', a: 'DIM weight overages typically add $0.05-$0.15 per unit for CPG brands. As of July 12, 2026, USPS changed its DIM divisor from 166 to 139 and began rounding dimensions up instead of to the nearest inch, increasing billable weight by 25-35% on oversized packages.' }, { q: 'What is the USPS DIM divisor change?', a: 'Effective July 12, 2026, USPS changed its dimensional weight divisor from 166 to 139 and began rounding each package dimension up to the next whole inch. Both changes compound: same box, higher cubic inch calculation, divided by a smaller number. Packages exceeding 1,728 cubic inches (1 cubic foot) are affected.' }, { q: 'How do I calculate landed cost per SKU?', a: 'Start with the supplier\'s quoted unit price. Add ocean freight and drayage, duties and CBP fees (MPF + HMF), customs brokerage, DIM weight overage, tooling amortization (spread over MOQ), and warehousing/handling. The total is your landed cost — the number your gross margin should be based on.' }, { q: 'What is MPF and HMF on imports?', a: 'MPF (Merchandise Processing Fee) is a US Customs fee of 0.3464% of declared cargo value with a minimum of $33.58 and maximum of $651.50 per entry. HMF (Harbor Maintenance Fee) is 0.125% of cargo value. Both are charged on every formal customs entry and are often overlooked in supplier cost comparisons.' }]} />
+          <GuideFaqAccordion items={[{ q: 'What is landed cost in CPG?', a: 'Landed cost is the total cost of getting a product from your supplier to your warehouse, sellable. It includes the unit price plus ocean freight, duties, customs brokerage, DIM weight overages, tooling amortization, and warehousing — typically 40-50% above the quoted unit price for CPG imports from Asia.' }, { q: 'How much does DIM weight add to shipping costs?', a: 'DIM weight overages typically add $0.05-$0.15 per unit for CPG brands. As of July 12, 2026, USPS changed its DIM divisor from 166 to 139 and began rounding dimensions up instead of to the nearest inch, increasing billable weight by 25-35% on oversized packages.' }, { q: 'What is the USPS DIM divisor change?', a: 'Effective July 12, 2026, USPS changed its dimensional weight divisor from 166 to 139 and began rounding each package dimension up to the next whole inch. Both changes compound: same box, higher cubic inch calculation, divided by a smaller number. Packages exceeding 1,728 cubic inches (1 cubic foot) are affected.' }, { q: 'How do I calculate landed cost per SKU?', a: 'Start with the supplier\'s quoted unit price. Add ocean freight and drayage, duties and CBP fees (MPF + HMF), customs brokerage, DIM weight overage, tooling amortization (spread over MOQ), and warehousing/handling. The total is your landed cost — the number your gross margin should be based on.' }, { q: 'What is MPF and HMF on imports?', a: 'MPF (Merchandise Processing Fee) is a US Customs fee of 0.3464% of declared cargo value with a minimum of $33.58 and maximum of $651.50 per entry. HMF (Harbor Maintenance Fee) is 0.125% of cargo value. Both are charged on every formal customs entry and are often overlooked in supplier cost comparisons.' }, { q: 'How is landed cost different for consumer electronics vs. CPG?', a: 'Electronics landed cost has three layers CPG typically does not: certification amortization (FCC, UL, battery testing costs $10,000-$40,000 spread across your first production run), higher tooling amortization ($5,000-$50,000 for injection molds and custom inserts), and different HTS duty structures (Chapter 85 electronic apparatus). Section 301 tariffs on China-origin electronics add 7.5-25% on top of base duties. The net effect: electronics landed cost can run 50-70% above the supplier quote, vs. 40-50% for typical CPG imports.' }]} />
         </div>
       </section>
       {/* CTA */}

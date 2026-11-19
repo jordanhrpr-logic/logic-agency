@@ -74,6 +74,10 @@ const modifiedByPath = {
   '/guides/cpg-supply-chain-operations': '2026-11-19',
   '/guides/prototype-to-production-hardware': '2026-11-19',
   '/guides/logic-vs-vp-operations': '2026-11-19',
+  '/blog/fcc-certification-consumer-electronics': '2026-11-19',
+  '/blog/contract-manufacturer-vs-ems-electronics': '2026-11-19',
+  '/blog/board-ready-ops-metrics-hardware': '2026-11-19',
+  '/blog/hardware-packaging-amazon-fba': '2026-11-19',
   '/industries/beauty-personal-care': '2026-11-19',
   '/industries/consumer-electronics': '2026-11-19',
 };
