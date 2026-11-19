@@ -7,3 +7,7 @@ Disallow: /private/
 Disallow: /*?*
 
 Sitemap: https://www.logicagencyinc.com/sitemap.xml
+
+# AI crawler structured entry point
+# See https://llmstxt.org for specification
+# llms.txt: https://www.logicagencyinc.com/llms.txt

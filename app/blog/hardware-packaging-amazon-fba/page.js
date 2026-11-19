@@ -103,13 +103,13 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-11-19',
     authors: ['Jordan Harper'],
-    images: [{ url: 'https://www.logicagencyinc.com/images/work/audio-enhancement/updated-packaging-interior.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://www.logicagencyinc.com/images/work/audio-enhancement/old-packaging-2.jpeg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hardware Packaging That Survives Amazon FBA',
     description: 'SIOC certification, DIM weight, lithium battery compliance, and designing electronics packaging for Amazon and retail.',
-    images: ['https://www.logicagencyinc.com/images/work/audio-enhancement/updated-packaging-interior.jpg'],
+    images: ['https://www.logicagencyinc.com/images/work/audio-enhancement/old-packaging-2.jpeg'],
   },
 };
 
@@ -120,7 +120,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           ...articleSchema,
-          image: 'https://www.logicagencyinc.com/images/work/audio-enhancement/updated-packaging-interior.jpg',
+          image: 'https://www.logicagencyinc.com/images/work/audio-enhancement/old-packaging-2.jpeg',
           publisher: {
             ...articleSchema.publisher,
             logo: { '@type': 'ImageObject', url: 'https://www.logicagencyinc.com/images/og-homepage.jpg' },
@@ -156,7 +156,7 @@ export default function Page() {
 
       {/* FEATURED IMAGE */}
       <div className="b-feat">
-        <Image src="/images/work/audio-enhancement/updated-packaging-interior.jpg" alt="Interior packaging design for consumer electronics product showing component organization" width={1200} height={630} sizes="100vw" priority className="b-feat-img" />
+        <Image src="/images/work/audio-enhancement/old-packaging-2.jpeg" alt="Consumer electronics packaging before Amazon FBA optimization" width={1200} height={630} sizes="100vw" priority className="b-feat-img" />
       </div>
 
       {/* ARTICLE */}
