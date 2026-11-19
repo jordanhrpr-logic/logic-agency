@@ -424,7 +424,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'How much do I actually save sourcing packaging from overseas versus domestic?', a: 'Unit cost savings run an estimated 30-60% for most rigid and folding carton packaging when comparing factory prices. Landed cost — after ocean freight, customs duties, and drayage — reduces the gap to an estimated 20-45% depending on volume and category. The savings are real and significant above $15,000 in order value.' },
             { q: 'How long does it take to source packaging from China?', a: 'The full cycle from first factory contact to goods in your US warehouse typically runs 18-34 weeks for a new packaging program. Sampling alone runs 6-10 weeks for a 3-round process. Plan 20-24 weeks as a realistic working estimate for first-time programs.' },
@@ -439,7 +439,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Ready to Explore<br /><em>International Sourcing?</em></h2>
+          <h2 id="ready-to-exploreinternational-sourcing">Ready to Explore<br /><em>International Sourcing?</em></h2>
           <p>Book a 30-minute call. We&apos;ll walk through your packaging program and tell you whether international sourcing makes sense at your volume &mdash; and what it would actually cost.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

@@ -187,7 +187,7 @@ export default function AudioEnhancementCaseStudy() {
       <div className="article">
         <div className="article-inner">
 
-          <h2>The Problem: A Supplier That Worked &mdash; Until It Didn&apos;t</h2>
+          <h2 id="the-problem-a-supplier-that-worked-until-it-didn-t">The Problem: A Supplier That Worked &mdash; Until It Didn&apos;t</h2>
 
           <p>Audio Enhancement makes classroom audio systems used by educators across the country. The product is highly visible in its environment. Every teacher and student who interacts with it sees it up close, every day.</p>
 
@@ -211,7 +211,7 @@ export default function AudioEnhancementCaseStudy() {
           </div>
           <p className="img-caption">Before/After &mdash; product packaging and component presentation across the supplier transition.</p>
 
-          <h2>What Logic Did: Two Problems at the Same Time</h2>
+          <h2 id="what-logic-did-two-problems-at-the-same-time">What Logic Did: Two Problems at the Same Time</h2>
 
           <p>Logic handled the immediate situation and the structural one simultaneously &mdash; which is the only way supplier transitions at scale can work.</p>
 
@@ -260,7 +260,7 @@ export default function AudioEnhancementCaseStudy() {
             <div className="chart-note">[ Illustrative timeline &mdash; actual durations are client-specific. ]</div>
           </div>
 
-          <h2>The Outcome: Operational Continuity Through a Supplier Change</h2>
+          <h2 id="the-outcome-operational-continuity-through-a-supplier-change">The Outcome: Operational Continuity Through a Supplier Change</h2>
 
           <p>The strongest measure of this project&apos;s success isn&apos;t a defect rate. It&apos;s that Audio Enhancement moved from a factory that had reached its ceiling to a manufacturing base capable of supporting continued growth &mdash; and customers never felt the transition.</p>
 
@@ -271,7 +271,7 @@ export default function AudioEnhancementCaseStudy() {
             <div className="cs-quote-attr"><span>Jordan Harper</span> &mdash; Founder, Logic Agency Inc.</div>
           </div>
 
-          <h2>Why This Happens at Scaling Consumer Brands</h2>
+          <h2 id="why-this-happens-at-scaling-consumer-brands">Why This Happens at Scaling Consumer Brands</h2>
 
           <p>Most brands don&apos;t outgrow their product before they outgrow their suppliers. The first factory is chosen for access, speed, or low MOQ. That&apos;s often right at the start. But as volume increases, as customer expectations solidify, and as retail or institutional accounts start demanding consistency at scale, the same factory can stop being the right answer.</p>
 
@@ -312,7 +312,7 @@ export default function AudioEnhancementCaseStudy() {
 
       <section className="cta-band">
         <div className="cta-inner">
-          <h2>Supplier ceiling <span>limiting your growth?</span></h2>
+          <h2 id="supplier-ceiling-limiting-your-growth">Supplier ceiling <span>limiting your growth?</span></h2>
           <p>Most brands discover the problem after it&apos;s already customer-facing. We help you find and qualify the next supplier tier before you hit that ceiling.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>

@@ -63,8 +63,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Packaging System That Scales — Logic Agency Inc.',
-  description: 'A scalable packaging system standardizes specs, suppliers, documentation, cost controls, and retail readiness before SKU growth creates chaos.',
+  title: 'Build a Packaging System That Scales With SKU Growth — Logic Agency Inc.',
+  description: 'Three stages of packaging maturity, five decisions that lock you in or set you free, and when to stop managing packaging with spreadsheets and email.',
   keywords: 'packaging for startup, packaging development process, scaling packaging, DTC to retail packaging, packaging system for growing brand, when to hire packaging operations, packaging from prototype to production',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/packaging-system-that-scales',
@@ -165,7 +165,7 @@ export default function PackagingSystemThatScales() {
           </div>
 
           {/* SECTION 1 */}
-          <h2>What a &ldquo;Packaging System&rdquo; Actually Is</h2>
+          <h2 id="what-a-packaging-system-actually-is">What a &ldquo;Packaging System&rdquo; Actually Is</h2>
 
           <p>A packaging system isn&apos;t a box. It&apos;s the complete infrastructure that gets your product from factory to customer in one piece, looking the way you intended, at a cost you can sustain.</p>
 
@@ -180,7 +180,7 @@ export default function PackagingSystemThatScales() {
           </div>
 
           {/* SECTION 2 */}
-          <h2>The Three Stages of Packaging Maturity</h2>
+          <h2 id="the-three-stages-of-packaging-maturity">The Three Stages of Packaging Maturity</h2>
 
           <p>Every brand&apos;s packaging goes through three stages. The brands that scale well understand which stage they&apos;re in and what the next stage requires. The ones that struggle either try to skip stages or stay in Stage 1 far too long.</p>
 
@@ -218,7 +218,7 @@ export default function PackagingSystemThatScales() {
           </div>
 
           {/* SECTION 3 */}
-          <h2>Five Decisions That Lock You In (or Set You Free)</h2>
+          <h2 id="five-decisions-that-lock-you-in-or-set-you-free">Five Decisions That Lock You In (or Set You Free)</h2>
 
           <p>The choices you make in the first six months of your packaging program determine your cost structure, flexibility, and scaling options for the next two years. These are the five that matter most.</p>
 
@@ -261,7 +261,7 @@ export default function PackagingSystemThatScales() {
           </div>
 
           {/* SECTION 4 */}
-          <h2>When to Stop DIY-ing and Get Help</h2>
+          <h2 id="when-to-stop-diy-ing-and-get-help">When to Stop DIY-ing and Get Help</h2>
 
           <p>Most founders manage packaging themselves through Stage 1. It&apos;s a hands-on, scrappy phase and direct involvement makes sense. The problem is that most founders stay hands-on well into Stage 2, long past the point where their time on packaging is costing more than professional help would.</p>
 
@@ -318,7 +318,7 @@ export default function PackagingSystemThatScales() {
           </div>
 
           {/* SECTION 5 */}
-          <h2>Building It Right the First Time</h2>
+          <h2 id="building-it-right-the-first-time">Building It Right the First Time</h2>
 
           <p>We&apos;re currently building a packaging system for a pre-seed brand &mdash; from scratch, before their first production run. The system is designed for launch and engineered to scale into commercial volumes and retail distribution. Every structural choice, material selection, and supplier relationship is evaluated against the question: does this work at 10,000 units and 500,000 units?</p>
 
@@ -335,14 +335,14 @@ export default function PackagingSystemThatScales() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'When should a startup invest in professional packaging?', a: 'Before your first production run, not after. The decisions you make at launch — structural design, material selection, tooling, supplier choice — either scale with you or require expensive rework later. A packaging system designed for scale from the start costs marginally more upfront but avoids the retooling, redesign, and rebranding costs that catch most brands between 50K and 200K units.' }, { q: 'What is the difference between ordering packaging and building a packaging system?', a: 'Ordering packaging is transactional: you find a supplier, get a quote, place an order. A packaging system is the complete infrastructure — structural specs that survive production and transit, supplier relationships with backup options, scalable designs that work at 10K and 500K units without retooling, documentation (tech packs, BOMs, spec sheets) that any manufacturer can produce from, and retail-readiness built in from the start even if you\'re DTC today.' }, { q: 'How much does it cost to build an in-house packaging operations team?', a: 'A senior packaging or operations hire costs $150-200K in salary in major US markets, plus benefits, software, recruiting fees, and onboarding time — easily $250K+ all in for one person. That person likely won\'t have deep expertise across packaging engineering, global sourcing, retail compliance, and inventory management. An outsourced packaging operations retainer starts at $2,500 per month and provides access to all of those capabilities from day one.' }, { q: 'What are the stages of packaging maturity for growing brands?', a: 'Stage 1 (Survival, 0-50K units): Get packaging that works, ships, and represents the brand. Speed matters more than optimization. Stage 2 (Systematization, 50K-500K units): Lock in suppliers, formalize specs, start optimizing for cost and efficiency. This is where most brands stall. Stage 3 (Optimization, 500K+ units): Continuous cost reduction, DIM weight optimization, sustainability improvements, and multi-channel packaging variants.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to build packaging that <span className="o">grows with you?</span></h2>
+          <h2 id="ready-to-build-packaging-that-grows-with-you">Ready to build packaging that <span className="o">grows with you?</span></h2>
           <p>Whether you&apos;re pre-launch or scaling past 500K units, our tiers match where you are right now. Tell us your stage and we&apos;ll tell you exactly what the next step looks like.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

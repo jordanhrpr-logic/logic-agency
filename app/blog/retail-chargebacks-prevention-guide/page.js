@@ -358,7 +358,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is the most effective way to prevent retail chargebacks?', a: 'Run a documented pre-shipment audit before every PO. The four highest-impact categories are routing guide compliance, carton label accuracy, case pack configuration, and ASN timing. Checking these before the carrier picks up eliminates the vast majority of first-year deductions.' },
             { q: 'Which chargebacks should CPG brands dispute vs. absorb?', a: 'Dispute when the amount is material, the error is not yours, and you have documentation. Absorb when your team caused the violation, the amount is below your threshold, or you lack the evidence to win the dispute. Routing guide violations are almost always the vendor\'s error — absorb those and fix the process.' },
@@ -373,7 +373,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Chargebacks Higher<br /><em>Than They Should Be?</em></h2>
+          <h2 id="chargebacks-higherthan-they-should-be">Chargebacks Higher<br /><em>Than They Should Be?</em></h2>
           <p>Book a 30-minute call. We&apos;ll walk through your current pre-shipment process and tell you exactly where the deductions are coming from &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

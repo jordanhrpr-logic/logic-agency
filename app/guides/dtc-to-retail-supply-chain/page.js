@@ -67,8 +67,8 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'DTC to Retail Supply Chain Guide — Logic Agency Inc.',
-  description: 'A complete DTC-to-retail supply chain guide covering readiness systems, margin compression, EDI, packaging compliance, 3PL fit, and inventory timing.',
+  title: 'DTC to Retail: The Supply Chain Transition Guide — Logic Agency Inc.',
+  description: 'What your supply chain needs before the first retail PO. Margin compression, EDI, packaging compliance, 3PL fit, inventory timing, and common $50K+ mistakes.',
   keywords: 'DTC to retail supply chain, retail launch supply chain, scaling supply chain CPG, retail compliance CPG, retail readiness checklist, retail launch preparation',
   alternates: {
     canonical: 'https://www.logicagencyinc.com/guides/dtc-to-retail-supply-chain',
@@ -156,17 +156,17 @@ export default function Page() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
-          <h2>Why the DTC-to-Retail Transition Breaks Supply Chains</h2>
+          <h2 id="why-the-dtc-to-retail-transition-breaks-supply-chains">Why the DTC-to-Retail Transition Breaks Supply Chains</h2>
           <p>DTC supply chains are built for speed and flexibility. You get an order, you ship it. Your 3PL is probably ecommerce-optimized. Your packaging is designed for a customer who already made the purchase. Your inventory buffer is modest because you can reorder quickly.</p>
           <p>Retail supply chains are built for volume, compliance, and predictability. You commit to a PO before you&apos;ve sold a unit. Your 3PL needs EDI capability and retail distribution experience. Your packaging needs to survive palletization, warehouse handling, and shelf stocking. Your inventory buffer needs to cover 10&ndash;16 week lead times.</p>
           <div className="callout"><p><strong>These aren&apos;t minor variations on the same model.</strong> They are fundamentally different operational architectures. The brands that succeed at retail are the ones who built retail-ready operations before the buyer said yes.</p></div>
-          <h2>The 5 Supply Chain Systems You Need Before Signing a Retail PO</h2>
+          <h2 id="the-5-supply-chain-systems-you-need-before-signing-a-retail">The 5 Supply Chain Systems You Need Before Signing a Retail PO</h2>
           <div className="audit-step"><div className="audit-n">1</div><div><h4>Inventory forecasting built for 10&ndash;16 week lead times</h4><p>DTC brands reorder when inventory gets low. Retail brands reorder 10&ndash;16 weeks before they need inventory. You need verified average lead time data (not quoted lead time), a safety stock model that covers worst-case lead time variance, and a demand plan anchored to retailer sell-through data. See <a href="/guides/first-90-days-in-retail">First 90 Days in Retail</a> for a demand planning framework built around retail reorder cycles.</p></div></div>
           <div className="audit-step"><div className="audit-n">2</div><div><h4>Retail-compliant packaging before the first shipment</h4><p>Your DTC packaging is probably wrong for retail. Case pack configurations, pallet stacking height, barcode placement, label specs, and case label requirements vary by retailer and must be locked before production runs. Getting packaging wrong on the first shipment generates chargebacks. See <a href="/guides/retail-ready-packaging">Getting Your Packaging Retail-Ready</a> for the full spec checklist.</p></div></div>
           <div className="audit-step"><div className="audit-n">3</div><div><h4>EDI setup and compliance infrastructure</h4><p>Most major retailers require Electronic Data Interchange for purchase orders, advance shipping notices (ASN), and invoices. EDI setup takes 4&ndash;8 weeks minimum for simple integrations and longer for full compliance mapping. Brands that skip EDI setup often discover the requirement after the PO has been signed.</p></div></div>
           <div className="audit-step"><div className="audit-n">4</div><div><h4>A 3PL that can handle retail B2B shipments</h4><p>Your DTC fulfillment partner can probably pick and pack ecommerce orders. It may not be able to build pallets to retailer spec, generate compliant pallet labels, file ASNs, or route to retail DCs via the correct carriers. Confirm retail capability before signing a PO, not after a chargeback cycle. See <a href="/guides/3pl-selection-guide">3PL Selection Guide</a> for the evaluation checklist.</p></div></div>
           <div className="audit-step"><div className="audit-n">5</div><div><h4>A vendor compliance program built before your first PO ships</h4><p>Every major retailer publishes a vendor compliance guide. Read it before your first shipment, not after your first deduction. Common compliance requirements include routing guide adherence, specific carrier selection, delivery appointment windows, pallet weight maximums, and label placement standards.</p></div></div>
-          <h2>The Retail Margin Math Most DTC Brands Underestimate</h2>
+          <h2 id="the-retail-margin-math-most-dtc-brands-underestimate">The Retail Margin Math Most DTC Brands Underestimate</h2>
           <p>DTC economics and retail economics are fundamentally different. Running the math before your first PO is not optional.</p>
           <div className="cd-grid">
             <div className="cd-card"><div className="cd-num">1</div><h3>Wholesale pricing</h3><p>Retailers buy at 40&ndash;55% of retail price. A $40 product sells to the retailer at $16&ndash;$22. That is your revenue per unit before any additional costs.</p></div>
@@ -175,7 +175,7 @@ export default function Page() {
             <div className="cd-card"><div className="cd-num">4</div><h3>Retail-specific costs</h3><p>Case pack packaging, pallet stickers, routing compliance, and EDI setup all add cost that DTC operations do not require. Budget for them explicitly before they surprise you in the P&amp;L.</p></div>
           </div>
           <div className="callout"><p><strong>A product with 70% gross margin in DTC may have 25&ndash;40% gross margin through retail.</strong> Brands that do not model retail economics before committing to a retailer often discover this math after they have already invested in packaging, inventory, and onboarding.</p></div>
-          <h2>The Retail Readiness Timeline</h2>
+          <h2 id="the-retail-readiness-timeline">The Retail Readiness Timeline</h2>
           <p>Getting retail-ready typically takes 3&ndash;6 months of focused operational work before the first shipment arrives at a retailer DC. Brands that try to compress this timeline generate chargebacks and lose shelf placement faster than they earn it.</p>
           <table>
             <thead><tr><th>Phase</th><th>Timeline</th><th>Key Work</th></tr></thead>
@@ -197,14 +197,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'How long does the DTC to retail supply chain transition take?', a: 'Getting retail-ready typically takes 3-6 months of focused operational work. That includes packaging redesign for retail specs, EDI setup, 3PL evaluation, and vendor compliance infrastructure. Brands that compress this timeline generate chargebacks and lose shelf placement faster than they earn it.' }, { q: 'What does retail packaging compliance require?', a: 'Retailers require specific case pack configurations, pallet stacking heights, barcode placement, label specs, and case label formats. These vary by retailer and must be confirmed against each retailer\'s vendor compliance guide before production runs.' }, { q: 'What is a vendor compliance guide?', a: 'A vendor compliance guide is a document published by each major retailer that specifies their shipping, packaging, labeling, EDI, and logistics requirements. Violations generate automatic financial penalties called chargebacks.' }, { q: 'What does DTC to retail supply chain transition cost?', a: 'The cost of getting retail-ready (packaging updates, EDI setup, 3PL transition, compliance infrastructure) is typically 10-30x less than the cost of a failed first season from chargebacks, lost shelf placement, and emergency fixes.' }, { q: 'Can a DTC brand use the same 3PL for retail?', a: 'Maybe, but confirm before assuming. Retail B2B fulfillment requires case pack building, compliant pallet labeling, ASN filing, and carrier routing compliance that many DTC-focused 3PLs are not configured for.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

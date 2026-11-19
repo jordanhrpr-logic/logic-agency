@@ -135,7 +135,7 @@ export default function RetailReadyPackaging() {
             </ul>
           </div>
 
-          <h2>What &ldquo;Retail-Ready&rdquo; Actually Means</h2>
+          <h2 id="what-retail-ready-actually-means">What &ldquo;Retail-Ready&rdquo; Actually Means</h2>
 
           <p>In DTC, your packaging has one job: survive a single shipment from your warehouse (or 3PL) to a customer&apos;s doorstep. You control the box, the inserts, the experience. The consumer opens it at home, probably over a kitchen counter.</p>
 
@@ -166,7 +166,7 @@ export default function RetailReadyPackaging() {
 
           <p>Most DTC brands have only thought about the first dimension. Retail requires all three, and they have to work as a system.</p>
 
-          <h2>The Compliance Checklist Most Brands Miss</h2>
+          <h2 id="the-compliance-checklist-most-brands-miss">The Compliance Checklist Most Brands Miss</h2>
 
           <p>Every major retailer publishes a vendor compliance guide. Walmart&apos;s is over 200 pages. Target&apos;s is dense and updates regularly. These aren&apos;t suggestions &mdash; they&apos;re requirements, and violations come with chargebacks that range from a few hundred dollars to five figures per incident.</p>
 
@@ -208,7 +208,7 @@ export default function RetailReadyPackaging() {
 
           <p className="evidence-note"><strong>Logic Agency operating benchmark:</strong> The chargeback ranges above come from Logic&apos;s client work and retailer-compliance reviews, not a third-party industry average. Actual deductions are controlled by each retailer&apos;s current agreement, routing guide, violation type, and shipment value.</p>
 
-          <h2>Retailer-Specific Nuances</h2>
+          <h2 id="retailer-specific-nuances">Retailer-Specific Nuances</h2>
 
           <p>There is no universal &ldquo;retail packaging standard.&rdquo; Each retailer has its own compliance guide, its own tolerances, and its own expectations. What passes at one chain may get rejected at another.</p>
 
@@ -222,7 +222,7 @@ export default function RetailReadyPackaging() {
 
           <p>The point isn&apos;t to memorize every retailer&apos;s specs. The point is to understand that your packaging system needs to be adaptable, and that someone on your team needs to own the compliance relationship with each retailer you sell into.</p>
 
-          <h2>The Timeline Nobody Talks About</h2>
+          <h2 id="the-timeline-nobody-talks-about">The Timeline Nobody Talks About</h2>
 
           <p>Here&apos;s the conversation that happens at almost every brand entering retail for the first time: the buyer says yes, the PO comes in, and suddenly there&apos;s a deadline. The brand assumes they have time to figure out packaging. They don&apos;t.</p>
 
@@ -272,7 +272,7 @@ export default function RetailReadyPackaging() {
             <p><strong>Total: 14-22 weeks.</strong> That&apos;s 3.5 to 5.5 months. If your retailer gives you 60-90 days from PO to delivery, the math doesn&apos;t work unless you&apos;ve already started. The brands that enter retail smoothly are the ones that develop retail-ready packaging before they have a PO &mdash; not after.</p>
           </div>
 
-          <h2>The Real Decision: Fix It Once or Patch It Forever</h2>
+          <h2 id="the-real-decision-fix-it-once-or-patch-it-forever">The Real Decision: Fix It Once or Patch It Forever</h2>
 
           <p>Most brands entering retail try to adapt their existing DTC packaging. They resize the box, slap on a new barcode, and hope it passes. Sometimes it does &mdash; for the first order. Then chargebacks start. Cases arrive damaged because the structure wasn&apos;t designed for pallet stacking. Labels get flagged because the nutritional panel is 2mm too small. The case pack count doesn&apos;t optimize for the pallet, so you&apos;re paying freight on 30% air.</p>
 
@@ -287,13 +287,13 @@ export default function RetailReadyPackaging() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What does retail-ready packaging mean?', a: 'Retail-ready packaging is packaging that meets a specific retailer\'s compliance requirements for sale in their stores. This includes correct case pack configurations, pallet specifications, UPC/barcode placement, labeling requirements, and structural durability for retail supply chain handling. Requirements vary by retailer.' }, { q: 'How long does it take to get packaging retail-ready?', a: 'The full timeline from design to delivery is typically 14-22 weeks: 3-4 weeks for structural design and prototyping, 2-3 weeks for supplier sourcing, 4-8 weeks for production, and 4-6 weeks for ocean freight if sourcing internationally. Brands should start packaging development before receiving a PO, not after.' }, { q: 'What are common retailer packaging chargebacks?', a: 'Common chargebacks include incorrect case pack quantities, wrong pallet configurations, missing or incorrect UPC barcodes, non-compliant labeling, late shipments due to packaging delays, and packaging that doesn\'t survive retail distribution. Chargebacks typically range from $200 to $10,000+ per violation depending on the retailer.' }, { q: 'What is the difference between DTC packaging and retail packaging?', a: 'DTC packaging ships one unit directly to a consumer and prioritizes unboxing experience. Retail packaging must survive a multi-stage supply chain (warehouse to distribution center to store shelf), fit into standardized case packs and pallet configurations, include retail-compliant barcodes and labeling, and compete visually on shelf alongside competitors. Most DTC packaging fails retail requirements on structural durability, case pack fit, and barcode compliance.' }]} />
         </div>
       </section>
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Staring at a retail deadline and your packaging <span className="o">isn&apos;t ready?</span></h2>
+          <h2 id="staring-at-a-retail-deadline-and-your-packaging-isn-t-ready">Staring at a retail deadline and your packaging <span className="o">isn&apos;t ready?</span></h2>
           <p>This is exactly what our Growth and Enterprise tiers are built for. We&apos;ve taken brands from DTC-only to retail shelf in under 90 days. Tell us what you&apos;re dealing with and we&apos;ll be honest about whether we can help.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

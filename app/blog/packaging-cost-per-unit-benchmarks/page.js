@@ -392,7 +392,7 @@ export default function Page() {
 
           <p>Ask what is included. Primary packaging, secondary packaging, tertiary packaging, freight, duties, storage, and waste are often quoted separately. A clean benchmark compares the same scope across suppliers.</p>
 
-          <p>The strongest quote review separates three questions: is the package right for the brand, is the cost right for the margin, and is the supplier set up to repeat it reliably?</p>
+          <p>The strongest quote review separates three questions: is the package right for the brand, is the cost right for the margin, and is the supplier set up to repeat it reliably? The <a href="/guides/packaging-sourcing">Packaging Sourcing guide</a> covers how to evaluate suppliers, and the <a href="/guides/landed-cost-playbook">Landed Cost Playbook</a> builds the full cost model per SKU.</p>
 
         </div>
       </div>
@@ -400,7 +400,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What percentage of COGS should packaging be?', a: 'Most growing CPG brands should expect packaging to represent an estimated 10–25% of COGS. The right range depends on category, channel, price point, fragility, and brand positioning.' },
             { q: 'How much should beauty packaging cost per unit?', a: 'Beauty and skincare packaging usually costs $1.50–$8.00 per unit, with luxury rigid boxes, fragrance coffrets, and premium gift sets often reaching $15–$25+.' },
@@ -415,7 +415,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have a Packaging<br /><em>Question?</em></h2>
+          <h2 id="have-a-packagingquestion">Have a Packaging<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

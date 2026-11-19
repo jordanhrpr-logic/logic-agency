@@ -251,7 +251,7 @@ export default function Page() {
 
           <p>Material prices shift. Supplier capacity shifts. Regulatory requirements shift. Every shift creates a window where a different material, a different structure, or a different production schedule would save money. A vendor doesn&apos;t flag these windows because they&apos;re not tracking your business &mdash; they&apos;re tracking your orders.</p>
 
-          <p>We regularly see brands realize an estimated 15&ndash;20% cost reduction within the first two quarters of switching from a vendor model to a partner model &mdash; not because the old vendor was overcharging, but because nobody was looking at the system holistically.</p>
+          <p>We regularly see brands realize an estimated 15&ndash;20% cost reduction within the first two quarters of switching from a vendor model to a partner model &mdash; not because the old vendor was overcharging, but because nobody was looking at the system holistically. The <a href="/work/artilect">Artilect case study</a> shows this pattern: 20% cost reduction and 95% material reduction by engineering the packaging system, not just sourcing cheaper boxes. For the full framework, see the <a href="/guides/packaging-cost-reduction">Packaging Cost Reduction guide</a>.</p>
 
           <h3>Timeline Compression That Creates Premium Costs</h3>
 
@@ -285,7 +285,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'How do I transition from a packaging vendor to a packaging partner without disrupting production?', a: 'Start with the next new project, not by overhauling an existing production run. Bring the potential partner into the design and scoping phase of an upcoming SKU launch or redesign. Run the two relationships in parallel until the new partner has demonstrated capability on a completed project.' },
             { q: 'What should a packaging partner cost compared to a vendor?', a: 'The unit price from a partner may be equal to or slightly higher than a commodity vendor — typically within an estimated 3-8%. The total cost of ownership is typically an estimated 15-30% lower because partners reduce redesign cycles, optimize material usage, and prevent premium charges from timeline failures.' },
@@ -299,7 +299,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

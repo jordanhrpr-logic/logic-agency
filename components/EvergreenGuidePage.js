@@ -458,7 +458,7 @@ function Block({ block }) {
 function GuideSection({ section }) {
   return (
     <section id={section.id}>
-      <h2>{section.heading}</h2>
+      <h2 id={section.id}>{section.heading}</h2>
       {section.lead && <p className="section-lead" dangerouslySetInnerHTML={{ __html: section.lead }} />}
       {section.blocks?.map((block, i) => <Block block={block} key={i} />)}
     </section>

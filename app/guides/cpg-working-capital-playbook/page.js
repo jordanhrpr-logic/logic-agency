@@ -72,21 +72,21 @@ const faqSchema = {
 
 export const metadata = {
   title: 'The CPG Working Capital Playbook — Logic Agency Inc.',
-  description: 'How to fund CPG growth without dilution: the 90-180 day cash conversion cycle, gross-to-net deduction math, revolving credit lines, PO/AR financing, and when equity IS the right tool.',
+  description: 'Fund CPG growth without dilution. The 90-180 day cash conversion cycle, gross-to-net deductions, credit lines, PO/AR financing, and when equity is right.',
   keywords: 'CPG working capital, working capital vs equity CPG, cash conversion cycle CPG, fund CPG growth without dilution, CPG cash gap, revolving credit line CPG, PO financing CPG, trade spend deductions',
   alternates: {
     canonical: 'https://logicagencyinc.com/guides/cpg-working-capital-playbook',
   },
   openGraph: {
     title: 'The CPG Working Capital Playbook',
-    description: 'How to fund CPG growth without dilution: the 90-180 day cash conversion cycle, gross-to-net deduction math, revolving credit lines, PO/AR financing, and when equity IS the right tool.',
+    description: 'Fund CPG growth without dilution. The 90-180 day cash conversion cycle, gross-to-net deductions, credit lines, PO/AR financing, and when equity is right.',
     url: 'https://logicagencyinc.com/guides/cpg-working-capital-playbook',
     images: [{ url: 'https://logicagencyinc.com/images/og-cpg-working-capital-playbook.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The CPG Working Capital Playbook',
-    description: 'How to fund CPG growth without dilution: the 90-180 day cash conversion cycle, gross-to-net deduction math, revolving credit lines, PO/AR financing, and when equity IS the right tool.',
+    description: 'Fund CPG growth without dilution. The 90-180 day cash conversion cycle, gross-to-net deductions, credit lines, PO/AR financing, and when equity is right.',
     images: ['https://logicagencyinc.com/images/og-cpg-working-capital-playbook.jpg'],
   },
 };
@@ -160,7 +160,7 @@ export default function Page() {
         <div className="article-inner">
 
           {/* SECTION 1 */}
-          <h2>Loss Problem or Working Capital Problem?</h2>
+          <h2 id="loss-problem-or-working-capital-problem">Loss Problem or Working Capital Problem?</h2>
 
           <p>Most CPG brands that feel &ldquo;short on cash&rdquo; jump to equity as the solution. But equity and working capital solve two fundamentally different problems. Before you start pitching investors or negotiating term sheets, answer one diagnostic question: <strong>Are you losing money on every unit sold, or are you just waiting for money that&apos;s already owed?</strong></p>
 
@@ -184,7 +184,7 @@ export default function Page() {
           </div>
 
           {/* SECTION 2 */}
-          <h2>The 90&ndash;180 Day Cash Conversion Cycle</h2>
+          <h2 id="the-90-180-day-cash-conversion-cycle">The 90&ndash;180 Day Cash Conversion Cycle</h2>
 
           <p>If you&apos;re importing product and selling through retail, here is what your cash conversion cycle actually looks like. Every dollar of revenue ties up capital for 5&ndash;6 months before it returns to your bank account.</p>
 
@@ -236,7 +236,7 @@ export default function Page() {
           </div>
 
           {/* SECTION 3 */}
-          <h2>The Gross-to-Net Deduction Stack</h2>
+          <h2 id="the-gross-to-net-deduction-stack">The Gross-to-Net Deduction Stack</h2>
 
           <p>Most founders quote gross revenue. The P&amp;L feels net revenue&mdash;after trade spend, retailer deductions, and chargebacks strip 30&ndash;40% off the top before cash hits your bank account. Here is what actually comes out of a gross retail invoice.</p>
 
@@ -276,7 +276,7 @@ export default function Page() {
           </div>
 
           {/* SECTION 4 */}
-          <h2>Funding Instruments That Don&apos;t Dilute</h2>
+          <h2 id="funding-instruments-that-don-t-dilute">Funding Instruments That Don&apos;t Dilute</h2>
 
           <p>If the diagnostic says &ldquo;timing problem,&rdquo; there are three non-equity funding tools designed specifically for working capital gaps. Each has different cost structures, qualification criteria, and best-use scenarios.</p>
 
@@ -314,7 +314,7 @@ export default function Page() {
           </div>
 
           {/* SECTION 6 */}
-          <h2>When Equity IS the Right Tool</h2>
+          <h2 id="when-equity-is-the-right-tool">When Equity IS the Right Tool</h2>
 
           <p>Equity isn&apos;t wrong&mdash;it&apos;s wrong when applied to a timing problem. There are situations where equity is not just appropriate but necessary. The key is knowing the difference.</p>
 
@@ -353,7 +353,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What is a CPG cash conversion cycle?', a: 'The time from paying suppliers to collecting from retailers. For imported CPG products selling through retail, this cycle typically runs 90-180 days.' }, { q: 'How much of gross revenue do retailers actually pay?', a: 'After trade spend, deductions, chargebacks, and freight allowances, most CPG brands collect 55-70% of their gross invoice amount from retail channels.' }, { q: 'When should a CPG brand use debt vs equity?', a: 'Use debt (revolving credit, PO financing, AR factoring) when unit economics are positive and the problem is cash timing. Use equity when unit economics need fixing or you need runway to build before revenue.' }, { q: 'What is PO financing for CPG brands?', a: 'A funding tool where a lender advances cash against confirmed purchase orders from retailers. Typically costs 15-30% annualized and works for brands with strong retail POs but limited operating history.' }, { q: 'How did Epicutis fund growth without dilution?', a: 'Logic Agency helped Epicutis secure a $500K revolving credit facility backed by purchase orders and receivables, reducing inventory gap from 30-60 days to 7 days while scaling from 3 to 21+ SKUs with zero equity dilution.' }]} />
         </div>
       </section>
@@ -361,7 +361,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Running out of cash before your <span className="o">retailers pay?</span></h2>
+          <h2 id="running-out-of-cash-before-your-retailers-pay">Running out of cash before your <span className="o">retailers pay?</span></h2>
           <p>Working capital management is built into every retainer. Whether it&apos;s structuring PO financing, optimizing cash conversion cycles, or building the ops infrastructure that lenders want to see&mdash;we&apos;ve done it before.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

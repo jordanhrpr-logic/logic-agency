@@ -67,7 +67,7 @@ const faqSchema = {
 };
 
 export const metadata = {
-  title: 'Retail Chargebacks for CPG Brands: Prevention Guide — Logic Agency Inc.',
+  title: 'Retail Chargebacks: Costs, Prevention & Dispute Guide — Logic Agency Inc.',
   description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
   keywords: 'retail chargebacks CPG, retailer chargebacks explained, retail compliance penalties, chargeback prevention CPG, retailer deductions small brands',
   alternates: {
@@ -77,14 +77,14 @@ export const metadata = {
     type: 'article',
     publishedTime: '2026-06-15',
     authors: ['Jordan Harper'],
-    title: 'Retail Chargebacks for CPG Brands: Prevention Guide',
+    title: 'Retail Chargebacks: Costs, Prevention & Dispute Guide',
     description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
     url: 'https://www.logicagencyinc.com/guides/retail-chargebacks',
     images: [{ url: 'https://www.logicagencyinc.com/images/og-retail-chargebacks.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Retail Chargebacks for CPG Brands: Prevention Guide',
+    title: 'Retail Chargebacks: Costs, Prevention & Dispute Guide',
     description: 'Retail chargebacks for CPG brands explained: real cost ranges per violation, the most common deductions, a prevention framework, and dispute vs. absorb logic.',
   },
 };
@@ -156,11 +156,11 @@ export default function Page() {
       {/* ARTICLE */}
       <div className="article gl">
         <div className="article-inner">
-          <h2>What Retail Chargebacks Actually Are</h2>
+          <h2 id="what-retail-chargebacks-actually-are">What Retail Chargebacks Actually Are</h2>
           <p>A retail chargeback is a financial penalty that a retailer deducts from your payment for non-compliance with their vendor requirements. It is not an invoice they send you. It is money they take&mdash;subtracted from the check you were expecting.</p>
           <p>Here is how it works in practice: You ship a $12,000 PO to a retailer&apos;s distribution center. The shipment arrives 6 hours late. The ASN was transmitted 4 hours after pickup instead of within 2 hours. Two pallets are 3 inches over the height maximum. When payment arrives 30&ndash;60 days later, it is not $12,000. It is $10,200. The retailer deducted $1,800 in chargebacks with no warning letter and no negotiation.</p>
           <div className="callout"><p><strong>This is how every major retailer operates.</strong> Target, Walmart, Whole Foods, Sephora, Ulta, CVS, Kroger&mdash;all enforce compliance programs backed by automatic financial penalties. The specifics vary. The mechanism is the same.</p></div>
-          <h2>The Most Common Retail Chargebacks for CPG Brands</h2>
+          <h2 id="the-most-common-retail-chargebacks-for-cpg-brands">The Most Common Retail Chargebacks for CPG Brands</h2>
           <p>After 20+ years managing retail operations, the same violations appear repeatedly. The good news: they are all preventable. The bad news: most brands learn about them the hard way.</p>
           <h3>Shipping and Delivery Violations</h3>
           <div className="cd-grid">
@@ -174,14 +174,14 @@ export default function Page() {
             <div className="cd-card"><div className="cd-num">$250&ndash;$500+</div><h3>Missing or incorrect labels</h3><p>Carton labels, pallet labels, and GS1-128 barcodes must match the retailer&apos;s exact spec. Font size, placement, barcode density, and label format are all audited.</p></div>
             <div className="cd-card"><div className="cd-num">$150&ndash;$400/case</div><h3>Packaging non-compliance</h3><p>Case pack quantities that do not match the PO, wrong inner pack configuration, unapproved packaging materials. These are among the most expensive chargebacks because they can apply to every case in the shipment.</p></div>
           </div>
-          <h2>A Chargeback Prevention Framework</h2>
+          <h2 id="a-chargeback-prevention-framework">A Chargeback Prevention Framework</h2>
           <p>First-year CPG brands typically absorb 3&ndash;7% of their total retail revenue in chargebacks. Well-prepared brands keep it under 1%. The difference is system quality, not luck.</p>
           <div className="audit-step"><div className="audit-n">1</div><div><h4>Read every vendor compliance guide before your first shipment</h4><p>Every major retailer publishes one. Some are 50 pages. Read the whole thing. Pay particular attention to ASN timing, routing requirements, pallet configuration, and label specifications. The chargeback program is described explicitly, usually with dollar amounts per violation.</p></div></div>
           <div className="audit-step"><div className="audit-n">2</div><div><h4>Build compliance checklists for every shipment</h4><p>Create a per-shipment checklist that covers ASN transmission timing, carrier compliance, pallet configuration, label placement, and case pack accuracy. The checklist should be completed before the shipment leaves your 3PL.</p></div></div>
           <div className="audit-step"><div className="audit-n">3</div><div><h4>Audit your first three shipments intensively</h4><p>The first 90 days of a retail relationship set the compliance baseline. Have someone walk through the shipment before it leaves. Photograph pallet configurations. Confirm ASN transmission. First-shipment chargebacks are often the most preventable and the most expensive.</p></div></div>
           <div className="audit-step"><div className="audit-n">4</div><div><h4>Track chargebacks by category</h4><p>Not all chargebacks are equal. Categorize every deduction: late shipment, ASN failure, label issue, packaging error, routing violation. The pattern tells you where your system is breaking. Fix the category, not the incident.</p></div></div>
           <div className="audit-step"><div className="audit-n">5</div><div><h4>Dispute the ones worth disputing</h4><p>Some chargebacks can be disputed and recovered. Calculate the net recovery value: the deduction amount minus the time and documentation cost to dispute. Under $200, usually absorb. Over $500 with clear documentation, usually dispute. The retailer&apos;s vendor portal should have a dispute process.</p></div></div>
-          <h2>Budget Reality: What to Expect in Year One</h2>
+          <h2 id="budget-reality-what-to-expect-in-year-one">Budget Reality: What to Expect in Year One</h2>
           <div className="save-grid">
             <div className="save-item"><div className="save-pct">3&ndash;7%</div><h4>First-year chargeback rate (unprepared brands)</h4><p>Without a compliance program, documentation systems, or EDI setup, most brands absorb 3-7% of retail revenue in automatic deductions.</p></div>
             <div className="save-item"><div className="save-pct">&lt;1%</div><h4>Target chargeback rate by Year 2</h4><p>Brands with retail-ready packaging, compliant EDI, routing guide adherence, and a checklist process keep chargebacks under 1% of retail revenue.</p></div>
@@ -196,14 +196,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What are retail chargebacks?', a: 'Retail chargebacks are financial penalties that retailers subtract directly from your payment when a shipment violates their compliance requirements. They are automatic deductions, not invoices, and typically range from $100-$500+ per violation.' }, { q: 'How much do retail chargebacks cost CPG brands?', a: 'First-year brands commonly absorb 3-7% of their total retail revenue in preventable chargebacks. Well-prepared brands with compliance systems keep it under 1%.' }, { q: 'What causes most retail chargebacks?', a: 'The most common causes are late or missing ASN transmission, routing guide violations, pallet non-compliance, label errors, and late delivery. All are preventable with proper setup.' }, { q: 'How do you dispute a retail chargeback?', a: 'Most retailers have a dispute process in their vendor portal. Calculate the net recovery value (deduction minus time and documentation cost). Disputes under $200 are usually not worth the effort; disputes over $500 with clear documentation usually are.' }, { q: 'When should you absorb a chargeback vs. dispute it?', a: 'Absorb chargebacks when the recovery value is low, when the violation was your error, or when the dispute process is more expensive than the deduction. Dispute when there is clear documentation that the violation did not occur or the retailer made an error in applying the deduction.' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. Tell us where the gaps are.</p>
           <div className="cta-btns">
             <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Start a Conversation &rarr;</a>

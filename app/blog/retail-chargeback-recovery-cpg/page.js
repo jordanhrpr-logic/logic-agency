@@ -30,34 +30,34 @@ export default function ChargebackRecoveryPost() {
       <div className="article">
         <div className="article-inner">
 
-          <h2>What Retail Chargebacks Actually Are</h2>
+          <h2 id="what-retail-chargebacks-actually-are">What Retail Chargebacks Actually Are</h2>
           <p>A chargeback is not a refund. It is a deduction the retailer takes from your payment before you receive it. The retailer identifies a compliance failure &mdash; a late shipment, a wrong label, a damaged pallet, a missing ASN &mdash; and deducts a penalty amount from your next check. You do not approve it. You often do not even see it until your AP reconciliation.</p>
           <p>For CPG brands selling into Walmart, Target, Kroger, or other major retailers, chargebacks can quietly consume 2-5% of gross revenue. At $5M in annual retail revenue, that is $100K-$250K in deductions &mdash; often without the brand realizing the full scope until the annual audit.</p>
 
-          <h2>The 5 Most Common Chargeback Types for CPG Brands</h2>
+          <h2 id="the-5-most-common-chargeback-types-for-cpg-brands">The 5 Most Common Chargeback Types for CPG Brands</h2>
           <p><strong>1. Shipping and routing.</strong> Late shipments, wrong carrier, missed appointment windows, incorrect routing. This is the highest-volume category for most brands entering retail.</p>
           <p><strong>2. Labeling and barcodes.</strong> Wrong UPC, unreadable barcodes, missing case labels, incorrect GS1 formatting. The distribution center scanner rejects the shipment and the chargeback follows.</p>
           <p><strong>3. Packaging compliance.</strong> Wrong case-pack configuration, pallet overhang, stacking failures, incorrect case dimensions. See our <a href="/guides/retail-ready-packaging">retail-ready packaging guide</a> for the full spec requirements.</p>
           <p><strong>4. Quantity and documentation.</strong> Over-shipments, under-shipments, missing or incorrect ASNs, PO number mismatches. The retailer received something different from what the PO specified.</p>
           <p><strong>5. Promotional and trade deductions.</strong> Slotting fees, promotional allowances, volume discounts. These are contractual, not penalties &mdash; but they are frequently miscalculated or applied incorrectly.</p>
 
-          <h2>Which Chargebacks Are Disputable</h2>
+          <h2 id="which-chargebacks-are-disputable">Which Chargebacks Are Disputable</h2>
           <p>Not every chargeback is worth fighting. The economics of the dispute process matter as much as the principle.</p>
           <div className="callout"><p><strong>Dispute when:</strong> you have proof the compliance requirement was met (delivery receipts, carrier tracking, correct labels, photos), the chargeback amount exceeds $200-500, and you are within the dispute window. <strong>Accept when:</strong> the failure was genuine, the amount is small, and the documentation cost exceeds the recovery.</p></div>
           <p>The most commonly recoverable chargebacks are routing violations where the carrier (not the brand) caused the delay, quantity disputes where the POD (proof of delivery) shows correct quantities, and labeling chargebacks where the barcode verification report shows compliance.</p>
 
-          <h2>The Dispute Process: Documentation, Timelines, Evidence</h2>
+          <h2 id="the-dispute-process-documentation-timelines-evidence">The Dispute Process: Documentation, Timelines, Evidence</h2>
           <p><strong>Step 1: Identify the deduction within 7 days.</strong> Check your AP reconciliation weekly, not monthly. Every retailer portal (Retail Link, Partners Online, Kroger Vendor Portal) shows pending and posted deductions. The sooner you identify a chargeback, the more time you have to dispute.</p>
           <p><strong>Step 2: Pull the evidence.</strong> BOL (bill of lading), POD (proof of delivery), carrier tracking, ASN confirmation, barcode verification reports, pallet photos, case-pack weight tickets. The evidence must be specific to the PO and shipment in question.</p>
           <p><strong>Step 3: File within the window.</strong> Walmart: 60 days. Target: 30-45 days. Kroger: varies by deduction type. Missing the window means the deduction is permanent.</p>
           <p><strong>Step 4: Track the outcome.</strong> Retailers respond within 30-60 days. If denied, most allow one re-submission with additional evidence. Keep a dispute log with PO, deduction amount, dispute date, evidence submitted, and outcome.</p>
 
-          <h2>Retailer-Specific Notes</h2>
+          <h2 id="retailer-specific-notes">Retailer-Specific Notes</h2>
           <p><strong>Walmart (Retail Link).</strong> The highest volume and most systematic chargeback program. OTIF (On-Time In-Full) is the primary metric. Deductions are automated against the MABD (Must Arrive By Date). Disputes go through the APDP (Accounts Payable Dispute Process) in Retail Link.</p>
           <p><strong>Target (Partners Online).</strong> Target&apos;s vendor compliance program tracks shipping, labeling, and packaging separately. Chargebacks appear as deductions in Partners Online. The dispute process requires uploading evidence directly to the deduction record.</p>
           <p><strong>Kroger.</strong> Kroger&apos;s chargeback program varies by division. The Vendor Portal shows deductions, but dispute processes differ between divisions. Contact your Kroger buyer or vendor compliance team for division-specific timelines.</p>
 
-          <h2>How to Prevent Chargebacks Proactively</h2>
+          <h2 id="how-to-prevent-chargebacks-proactively">How to Prevent Chargebacks Proactively</h2>
           <p>The cheapest chargeback is the one that never happens. The upstream fixes:</p>
           <p><strong>Retail readiness before the first PO.</strong> See our <a href="/guides/retail-readiness">Retail Readiness guide</a> for the full checklist. Most chargebacks on first shipments come from requirements the brand did not know existed.</p>
           <p><strong>Carrier selection and routing compliance.</strong> Use the retailer&apos;s preferred carriers. Follow the routing guide exactly. See our <a href="/blog/routing-guide-compliance-retail">routing guide compliance post</a> for the specific requirements.</p>
@@ -65,7 +65,7 @@ export default function ChargebackRecoveryPost() {
           <p><strong>ASN accuracy.</strong> Send the ASN before the shipment arrives. Match the PO number, quantity, and case count exactly. Late or inaccurate ASNs are the second most common chargeback trigger.</p>
           <p>For the full framework on retail chargebacks &mdash; types, prevention, and the operational discipline that keeps them near zero &mdash; see our comprehensive <a href="/guides/retail-chargebacks">Retail Chargebacks guide</a>.</p>
 
-          <h2>When to Hire a Recovery Service</h2>
+          <h2 id="when-to-hire-a-recovery-service">When to Hire a Recovery Service</h2>
           <p>Third-party chargeback recovery services work on contingency &mdash; typically 15-25% of the recovered amount. They make sense when your annual chargebacks exceed $50K, your internal team cannot dispute within the retailer&apos;s window consistently, or the same chargeback types recur despite operational fixes (indicating a systemic issue the recovery service can diagnose).</p>
           <p>They do not make sense when your chargebacks are small, infrequent, and caused by genuine compliance failures. Paying someone to dispute legitimate penalties does not fix the underlying problem.</p>
         </div>
@@ -81,7 +81,7 @@ export default function ChargebackRecoveryPost() {
 
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Losing money to <em>chargebacks?</em></h2>
+          <h2 id="losing-money-to-chargebacks">Losing money to <em>chargebacks?</em></h2>
           <p>Tell us which retailers you sell through and what your annual chargeback volume looks like. We will tell you what is preventable and what is recoverable.</p>
           <div className="cta-btns"><EmailButton subject="Retail Chargeback Review" className="bt bo">Start a Conversation &rarr;</EmailButton></div>
         </div>

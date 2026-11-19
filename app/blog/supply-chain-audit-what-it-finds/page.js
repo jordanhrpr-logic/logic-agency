@@ -353,7 +353,7 @@ export default function Page() {
 
           <p>Do not turn every finding into a project. That is how audits die. If a freight leak is costing money now, fix it. If a supplier risk could stop production, qualify a backup. If an ERP issue is irritating but not blocking growth, leave it alone for the quarter.</p>
 
-          <p>The best audits create focus. They do not create a new layer of internal noise.</p>
+          <p>The best audits create focus. They do not create a new layer of internal noise. For the packaging-specific audit framework, see the <a href="/guides/packaging-cost-reduction">Packaging Cost Reduction guide</a>. For the full operating model that turns audit findings into ongoing execution, see the <a href="/guides/fractional-supply-chain-operations">Fractional Supply Chain Operations guide</a>.</p>
 
           <h2 id="faq" className="b-faq-h">FAQ</h2>
 
@@ -378,7 +378,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is a supply chain audit for a CPG brand?', a: 'A supply chain audit reviews landed cost, suppliers, packaging, freight, inventory, 3PL performance, and retail compliance to find the constraints blocking growth.' },
             { q: 'How long does a supply chain audit take?', a: 'Most focused audits take two to four weeks if the brand can provide supplier, freight, inventory, and sales data quickly.' },
@@ -392,7 +392,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Where Is Your Supply Chain<br /><em>Leaking Growth?</em></h2>
+          <h2 id="where-is-your-supply-chainleaking-growth">Where Is Your Supply Chain<br /><em>Leaking Growth?</em></h2>
           <p>Book a 30-minute call. We&apos;ll review your supply chain and find the constraints blocking your next stage.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

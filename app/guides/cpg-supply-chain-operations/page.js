@@ -144,14 +144,14 @@ export default function Page() {
       <div className="article gl">
         <div className="article-inner">
 
-          <h2>What CPG Supply Chain Operations Actually Means</h2>
+          <h2 id="what-cpg-supply-chain-operations-actually-means">What CPG Supply Chain Operations Actually Means</h2>
           <p>Supply chain operations is not consulting. Consulting delivers a diagnosis and a recommendation deck. Operations owns the execution: managing suppliers, running production QC, coordinating freight, tracking inventory, filing compliance documentation, and staying accountable for results every month.</p>
           <p>For a CPG brand doing $2M&ndash;$50M in revenue, supply chain operations covers six concrete areas. Each one requires recurring attention, vendor relationships, and institutional knowledge that does not transfer through a strategy document.</p>
           <div className="callout">
             <p><strong>The distinction matters:</strong> When a brand searches for &ldquo;CPG supply chain consulting,&rdquo; what they usually need is someone to <em>run</em> the supply chain&mdash;not someone to advise on it. The operating problems that hold back scaling brands are execution problems, not strategy problems. The strategy is usually obvious. The execution is where everything breaks.</p>
           </div>
 
-          <h2>The Six Operating Areas</h2>
+          <h2 id="the-six-operating-areas">The Six Operating Areas</h2>
           <p>At Logic Agency, every retainer covers some combination of these six areas. The mix depends on where the brand is and what is breaking.</p>
 
           <div className="audit-step"><div className="audit-n">1</div><div><h4>Packaging development and engineering</h4><p>Structural design, material selection, die-line engineering, finish specification, prototype development, and production-ready artwork. For brands entering retail, packaging must meet retailer-specific requirements for case-pack dimensions, barcode placement, labeling, and shelf presentation. This is not graphic design&mdash;it is structural and production engineering. See <a href="/guides/retail-ready-packaging">Retail-Ready Packaging</a> for the full compliance framework.</p></div></div>
@@ -166,7 +166,7 @@ export default function Page() {
 
           <div className="audit-step"><div className="audit-n">6</div><div><h4>Retail compliance and execution</h4><p>Routing guides, label specifications, EDI setup, ASN timing, case-pack configuration, pallet requirements, chargeback prevention, and vendor portal management. Every retailer has different requirements, and non-compliance results in chargebacks ($500&ndash;$5,000+ per violation), delayed shipments, or delisting. See <a href="/guides/retail-chargebacks">Retail Chargebacks Explained</a> for the cost breakdown.</p></div></div>
 
-          <h2>Who This Is For</h2>
+          <h2 id="who-this-is-for">Who This Is For</h2>
           <p>The strongest fit is a CPG brand in the $2M&ndash;$50M revenue range with 2&ndash;20+ SKUs, entering or already in retail, and without a full in-house operations department. The brand has real demand and increasing operational complexity&mdash;but the work does not yet justify a VP of Operations hire at $220K&ndash;$350K fully loaded.</p>
 
           <div className="cd-grid">
@@ -176,7 +176,7 @@ export default function Page() {
             <div className="cd-card"><div className="cd-num">4</div><h3>Costs are rising without explanation</h3><p>Packaging costs, fulfillment costs, and freight costs are increasing, but nobody can point to why or quantify the landed cost per SKU per channel.</p></div>
           </div>
 
-          <h2>How the Retainer Model Works</h2>
+          <h2 id="how-the-retainer-model-works">How the Retainer Model Works</h2>
           <p>Logic Agency operates on monthly retainers. No annual contracts. No lock-in. The retainer buys a defined scope of operating work, not hours.</p>
 
           <table>
@@ -192,7 +192,7 @@ export default function Page() {
 
           <p>For a deeper comparison of the fractional model vs. a full-time hire, see <a href="/guides/fractional-supply-chain-operations">Fractional Supply Chain Operations</a>.</p>
 
-          <h2>What the First 90 Days Look Like</h2>
+          <h2 id="what-the-first-90-days-look-like">What the First 90 Days Look Like</h2>
           <p>Every retainer starts the same way: an operational audit that maps the current state before changing anything.</p>
 
           <div className="audit-step"><div className="audit-n">1</div><div><h4>Days 1&ndash;30: Audit and baseline</h4><p>Map every supplier, every cost line, every fulfillment workflow, and every compliance gap. Identify the three highest-impact quick wins. Build the first cost baseline so every future improvement is measurable against a documented starting point.</p></div></div>
@@ -201,7 +201,7 @@ export default function Page() {
 
           <div className="audit-step"><div className="audit-n">3</div><div><h4>Days 61&ndash;90: Operating rhythm</h4><p>The recurring cadence is live: weekly vendor check-ins, monthly cost reviews, inventory reorder triggers, and reporting. The founder is no longer managing day-to-day supply chain decisions. The system runs.</p></div></div>
 
-          <h2>Proof Points</h2>
+          <h2 id="proof-points">Proof Points</h2>
           <p>Two examples of what outsourced supply chain operations looks like in practice.</p>
 
           <div className="callout win">
@@ -212,7 +212,7 @@ export default function Page() {
             <p><strong><a href="/work/epicutis">Epicutis</a></strong> &mdash; a premium skincare brand that grew from 3 SKUs to 21+ under Logic&rsquo;s managed program. The packaging operation scaled from under 100,000 to over 1 million units annually with 15% verified cost savings, 7-day replenishment from a Salt Lake City warehouse, and no additional headcount on the brand side. This is what a managed supply chain program looks like at scale.</p>
           </div>
 
-          <h2>Operations vs. Consulting: The Real Difference</h2>
+          <h2 id="operations-vs-consulting-the-real-difference">Operations vs. Consulting: The Real Difference</h2>
           <p>Most brands that search for &ldquo;CPG supply chain consulting&rdquo; do not actually need a consultant. They need someone to own the execution.</p>
 
           <table>
@@ -235,7 +235,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is CPG supply chain operations?', a: 'CPG supply chain operations covers the end-to-end execution that gets a consumer product from raw materials to the customer: packaging development, supplier management, production QC, logistics, inventory planning, fulfillment, and retail compliance. It is the operating layer between the product and the shelf.' },
             { q: 'What is the difference between supply chain consulting and supply chain operations?', a: 'Consulting diagnoses problems and delivers a recommendation. Operations owns execution: managing vendors, running QC, coordinating freight, tracking inventory, and staying accountable for results month over month.' },
@@ -250,7 +250,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-inner">
-          <h2>Ready to talk about <span className="o">your supply chain?</span></h2>
+          <h2 id="ready-to-talk-about-your-supply-chain">Ready to talk about <span className="o">your supply chain?</span></h2>
           <p>Every retainer starts with a conversation about what&apos;s actually breaking. No pitch deck. Just a straight answer on what it would take to fix.</p>
           <div className="cta-btns">
             <EmailButton subject="CPG Supply Chain Operations" className="bt bo">Start a Conversation &rarr;</EmailButton>

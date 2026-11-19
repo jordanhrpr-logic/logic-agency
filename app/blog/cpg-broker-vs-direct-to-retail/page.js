@@ -365,7 +365,7 @@ export default function Page() {
       {/* FAQ ACCORDION */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What does a CPG broker actually do?', a: 'A CPG broker represents your brand to retail buyers. They pitch products to category managers, manage retailer relationships, coordinate promotions, and monitor shelf performance. They earn a commission on wholesale revenue — typically 3 to 7 percent — rather than a fixed retainer.' },
             { q: 'How much does a CPG broker cost?', a: 'Most CPG brokers charge a commission of 3 to 7 percent of wholesale revenue. Some charge monthly retainers of $2,000 to $5,000 for smaller brands. Performance-based structures exist but are rare for emerging brands without proven velocity.' },
@@ -380,7 +380,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Preparing for<br /><em>Retail?</em></h2>
+          <h2 id="preparing-forretail">Preparing for<br /><em>Retail?</em></h2>
           <p>Whether you are evaluating brokers or going direct, we help brands get operationally ready for the first PO &mdash; packaging, compliance, fulfillment, and supply chain.</p>
           <EmailButton subject="Retail Readiness — Broker & Operations" className="bt bo">Start a Conversation &rarr;</EmailButton>
         </div>

@@ -415,7 +415,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'Do all retailers require EDI?', a: 'No. Smaller regional retailers, independent stores, specialty chains, and some natural grocers accept manual purchase orders and invoices by email or through their own ordering portal. But every major national retailer — Target, Walmart, Whole Foods, Sephora, Ulta, CVS, Kroger, Costco — requires EDI.' },
             { q: 'How long does EDI setup take for a small brand?', a: 'Plan for 4–8 weeks from provider selection to first live transaction. The fastest setups happen when your EDI provider has an existing connection with the retailer and you don\'t need ERP integration. The longest setups involve new trading partner connections, complex integrations, or retailers with slow EDI onboarding teams.' },
@@ -430,7 +430,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

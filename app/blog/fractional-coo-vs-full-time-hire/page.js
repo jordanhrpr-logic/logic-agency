@@ -133,36 +133,36 @@ export default function Page() {
 
           <p>The guide compares fractional COO support against a full-time hire. This article focuses on the harder founder question: what happens when you make the hire before the role is ready?</p>
 
-          <h2>The Real Problem Is Usually Scope</h2>
+          <h2 id="the-real-problem-is-usually-scope">The Real Problem Is Usually Scope</h2>
           <p>Founders often say, "We need a VP of Ops." Sometimes they do. More often, they need supplier cleanup, inventory planning, packaging cost control, 3PL management, retail compliance, and better reporting.</p>
           <p>Those are not the same thing.</p>
           <p>A VP of Operations can lead an operating system. But if the system does not exist yet, the hire spends the first six months building context, finding problems, designing workflows, and trying to figure out which work matters most.</p>
 
-          <h2>What an Early Hire Actually Inherits</h2>
+          <h2 id="what-an-early-hire-actually-inherits">What an Early Hire Actually Inherits</h2>
           <p>The job description usually sounds clean. Own operations. Improve supply chain. Support growth. Reduce chaos.</p>
           <p>The actual first month looks different. Supplier files live in email. Packaging specs are scattered. Landed cost is unclear. Inventory planning is reactive. The 3PL relationship has no scorecard. Retail requirements are handled only when the buyer asks for something.</p>
           <p>The hire is not stepping into a department. They are stepping into a backlog.</p>
 
-          <h2>The Six-Month Cost Nobody Models</h2>
+          <h2 id="the-six-month-cost-nobody-models">The Six-Month Cost Nobody Models</h2>
           <p>Salary is visible. Lost time is not.</p>
           <p>If it takes 90 to 180 days to recruit, then another 90 to 180 days for the hire to understand the operating reality, the brand can lose two planning cycles before the role has real leverage. During that time, supplier drift continues. Freight costs keep leaking. Packaging decisions keep moving. Inventory issues keep surfacing late.</p>
           <p>The hire may be good. The sequence may still be wrong.</p>
 
-          <h2>When Full-Time Is the Right Move</h2>
+          <h2 id="when-full-time-is-the-right-move">When Full-Time Is the Right Move</h2>
           <p>Hire full-time when the role is permanent and the lane is clear. The business knows what the person owns. The operating cadence exists. The company has enough complexity to justify a daily executive owner. The founder is ready to delegate authority, not just tasks.</p>
           <p>At that point, the hire has leverage. They can improve a system instead of creating one from fragments.</p>
 
-          <h2>When Fractional Should Come First</h2>
+          <h2 id="when-fractional-should-come-first">When Fractional Should Come First</h2>
           <p>Use fractional support first when the work is cross-functional and messy. That is common for CPG brands moving from founder-led operations into retail, broader SKU counts, or more complex supplier networks.</p>
-          <p>The fractional team can stabilize what is urgent, map what is unclear, document what has been living in people's heads, and turn the future role into something hireable.</p>
+          <p>The fractional team can stabilize what is urgent, map what is unclear, document what has been living in people's heads, and turn the future role into something hireable. See our <a href="/guides/fractional-supply-chain-operations">Fractional Supply Chain Operations guide</a> for the full model, cost comparison, and what the first 30 days should look like.</p>
           <p>This is not a permanent substitute for leadership. It is sequencing.</p>
 
-          <h2>The Better Path</h2>
+          <h2 id="the-better-path">The Better Path</h2>
           <p>Start by writing down the next 10 operating problems the business needs solved. Then group them by discipline: sourcing, packaging, logistics, inventory, retail compliance, reporting, team management.</p>
           <p>If most of the work sits in one lane, hire. If the work is spread across six lanes, do not ask one person to be the entire operating function.</p>
           <p>Clean up the system first. Hire into the role second.</p>
 
-          <h2>The Point</h2>
+          <h2 id="the-point">The Point</h2>
           <p>The question is not "fractional or full-time?" The question is "what operating work does the business actually need next?"</p>
           <p>Titles are easy. Scope is where the decision gets expensive.</p>
 
@@ -178,14 +178,14 @@ export default function Page() {
 
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={faqs} />
         </div>
       </section>
 
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

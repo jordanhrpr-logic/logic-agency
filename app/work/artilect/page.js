@@ -53,12 +53,12 @@ export default function ArtilectCaseStudy() {
 
       <div className="article">
         <div className="article-inner">
-          <h2>The Problem: Launch Packaging That Became the Wrong Packaging</h2>
+          <h2 id="the-problem-launch-packaging-that-became-the-wrong-packaging">The Problem: Launch Packaging That Became the Wrong Packaging</h2>
           <p>Artilect is a challenger performance apparel brand. At launch, a rigid box made sense. It signaled quality, differentiated from the polybag norm in apparel, and gave retail and wholesale partners a tangible reason to take the brand seriously. That box was a brand-building investment, not a packaging cost.</p>
           <p>But packaging strategy has to evolve with brand maturity. Once Artilect had established its position, the rigid box was no longer earning its cost premium &mdash; it was just consuming margin. The material cost, assembly labor, storage volume, and freight weight all compounded as order volume grew.</p>
           <div className="callout"><p><strong>The pattern is common across scaling brands:</strong> what is right at launch is not right at volume. The rigid box earned its cost when Artilect needed credibility. The question was whether it still earned that cost now that Artilect needed margin.</p></div>
 
-          <h2>The Approach: A 3-Phase Reduction Program</h2>
+          <h2 id="the-approach-a-3-phase-reduction-program">The Approach: A 3-Phase Reduction Program</h2>
           <p>Logic did not propose a cost cut. A cost cut removes value. What Artilect needed was cost <em>engineering</em> &mdash; restructuring the packaging so it delivered the same brand experience with fewer materials, simpler assembly, and more efficient storage and shipping.</p>
 
           <h3>Phase 1: Audit every layer by function</h3>
@@ -70,12 +70,12 @@ export default function ArtilectCaseStudy() {
           <h3>Phase 3: Phase the rollout and validate</h3>
           <p>A hard cutover from rigid to folding carton would risk brand perception and operational disruption. The 3-phase program captured straightforward wins first, then progressed to the structural transition. Each phase was reviewed against actual product handling, retail shelf presence, and unboxing experience before moving forward.</p>
 
-          <h2>The Result: 20% Less Cost. 95% Less Material.</h2>
+          <h2 id="the-result-20-less-cost-95-less-material">The Result: 20% Less Cost. 95% Less Material.</h2>
           <p>The Artilect program delivered 20% cost reduction and 95% material reduction by engineering out the packaging the customer did not value &mdash; without removing the packaging they did.</p>
           <p>The engineered carton maintained the brand&apos;s premium positioning while eliminating the rigid box&apos;s compounding costs in material, assembly, storage, and freight. Warehousing complexity dropped. Freight costs dropped. Per-unit cost dropped. The brand still looked like Artilect.</p>
           <div className="callout win"><p><strong>This is the pattern every scaling brand should understand:</strong> what is right at launch is not necessarily right at volume. The rigid box earned its cost when Artilect needed credibility. The engineered carton earns its cost now that Artilect needs margin.</p></div>
 
-          <h2>What This Means for Your Brand</h2>
+          <h2 id="what-this-means-for-your-brand">What This Means for Your Brand</h2>
           <p>If your per-unit packaging cost has stayed flat or increased as your volume has grown, you are likely over-specified for your current stage. The transition does not have to be dramatic &mdash; a phased approach lets you validate each change against real market response before committing to the next.</p>
           <p>Logic runs this same methodology for beauty, CPG, food and beverage, consumer electronics, and apparel brands. See our <a href="/guides/packaging-cost-reduction">Packaging Cost Reduction guide</a> for the full framework, or <a href="/work/audio-enhancement">the Audio Enhancement case study</a> for how the supplier transition discipline works in consumer electronics.</p>
         </div>
@@ -85,7 +85,7 @@ export default function ArtilectCaseStudy() {
 
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Spending too much on <em>packaging?</em></h2>
+          <h2 id="spending-too-much-on-packaging">Spending too much on <em>packaging?</em></h2>
           <p>Tell us your format, volume, and what you are paying. We will tell you what a cost-engineered alternative looks like.</p>
           <div className="cta-btns"><a href="mailto:jordan@logicagencyinc.com?subject=Packaging%20Cost%20Reduction" className="bt bo">Start a Conversation &rarr;</a></div>
         </div>

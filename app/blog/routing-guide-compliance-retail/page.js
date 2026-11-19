@@ -187,7 +187,7 @@ export default function Page() {
 
           <p>Most founders think the buyer meeting is the hard part. It is not. The hard part is getting the product received cleanly. A buyer can say yes, the PO can be real, and the shipment can still lose money because the carton label was wrong, the ASN was late, or the delivery appointment was missed.</p>
 
-          <p>We have seen three routing guide violations in one first PO that would have created $8,400 in chargebacks before the brand had even measured sell-through. The product was fine. The operating process was not.</p>
+          <p>We have seen three routing guide violations in one first PO that would have created $8,400 in chargebacks before the brand had even measured sell-through. The product was fine. The operating process was not. For the full chargeback framework, see our <a href="/guides/retail-chargebacks">Retail Chargebacks guide</a>.</p>
 
           <p>The issue is timing. By the time the warehouse is preparing the shipment, most expensive decisions have already been made. The carton size is set. The case pack is set. The pallet configuration is set. The routing window is closing.</p>
 
@@ -266,7 +266,7 @@ export default function Page() {
             <li>Retailer item setup</li>
           </ul>
 
-          <p>If any of those are wrong, the shipment is already at risk before the product exists.</p>
+          <p>If any of those are wrong, the shipment is already at risk before the product exists. Our <a href="/guides/retail-ready-packaging">Retail-Ready Packaging guide</a> covers the full case-pack and pallet specification process.</p>
 
           <h3>Stage 2: Before Booking Freight</h3>
 
@@ -372,7 +372,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'What is retail routing guide compliance?', a: 'Retail routing guide compliance is the process of shipping product according to a retailer\'s exact rules for carrier selection, ASN timing, labels, pallet configuration, delivery appointment, and documentation.' },
             { q: 'What are the most common routing guide violations?', a: 'The most common violations are late ASN, wrong carrier, missed delivery appointment, incorrect case pack, and carton or pallet label errors.' },
@@ -386,7 +386,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Ready to Ship<br /><em>Clean?</em></h2>
+          <h2 id="ready-to-shipclean">Ready to Ship<br /><em>Clean?</em></h2>
           <p>Book a 30-minute call. We&apos;ll review your first retail PO before it becomes a chargeback file.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

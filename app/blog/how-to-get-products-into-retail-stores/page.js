@@ -412,7 +412,7 @@ export default function Page() {
             <li>The first retail PO would consume all available inventory.</li>
           </ul>
 
-          <p>In those cases, the better move is to fix the operating model first. Reduce COGS. Confirm packaging. Build supplier reliability. Tighten inventory planning. Then go to retail.</p>
+          <p>In those cases, the better move is to fix the operating model first. Reduce COGS. Confirm packaging. Build supplier reliability. Tighten inventory planning. Then go to retail. The <a href="/guides/first-90-days-in-retail">First 90 Days in Retail guide</a> covers the full operational ramp, and the <a href="/blog/dtc-to-retail-transition-checklist">60-Point DTC-to-Retail Checklist</a> maps every category.</p>
 
           <p>Retail can accelerate a strong operation. It usually punishes a fragile one.</p>
 
@@ -448,7 +448,7 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[
             { q: 'How long does it take to get products into retail stores?', a: 'Most CPG brands should plan for 12–18 months from retail strategy to first shipment. Some move faster, but national retail onboarding, buyer calendars, packaging, and compliance take time.' },
             { q: 'How do you sell products to Target or Walmart?', a: 'Most brands enter through a broker, trade show relationship, distributor, or direct buyer outreach. The product needs sell-through proof, wholesale pricing, retail-ready packaging, and vendor onboarding capability.' },
@@ -463,7 +463,7 @@ export default function Page() {
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>

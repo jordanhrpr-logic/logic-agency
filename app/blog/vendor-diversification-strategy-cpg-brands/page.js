@@ -396,14 +396,14 @@ export default function Page() {
       {/* FAQ */}
       <section className="guide-faq-section">
         <div className="guide-faq-inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <GuideFaqAccordion items={[{ q: 'What\'s Next', a: 'Vendor diversification isn\'t a one-time project. It\'s an operational discipline that evolves as your brand scales, enters new channels, and expands into new geographies. The brands that build diversification into their supply chain early — before a disruption forces their hand — spend less, recover faster, and negotiate from a stronger position. If your supply chain depends on a single supplier for any critical component, the clock is running on a disruption you can\'t predict. [Start a conversation](https://www.logicagencyinc.com/services?utm_source=blog&utm_medium=organic&utm_campaign=seo_blog&utm_content=vendor_diversification_cta) with our team to evaluate your supplier risk and build a diversification plan that fits your scale and growth trajectory. *About the author: Jordan Harper is the founder of Logic Agency, a fractional supply chain and packaging operations firm serving consumer brands from pre-launch through $50M+. He has managed supply chains across 15 countries and helped brands scale from DTC-only to Target, Walmart, Costco, and Sephora.*' }]} />
         </div>
       </section>
       {/* CTA */}
       <section className="cta-band gd">
         <div className="cta-band-inner">
-          <h2>Have an Operations<br /><em>Question?</em></h2>
+          <h2 id="have-an-operationsquestion">Have an Operations<br /><em>Question?</em></h2>
           <p>Book a 30-minute call. We&apos;ll give you a straight answer &mdash; no sales pitch.</p>
           <a href="https://calendly.com/jordan-harper-packaging/logic-agency-readiness" className="bt bo" target="_blank" rel="noopener noreferrer">Book a Call &rarr;</a>
         </div>
