@@ -6,7 +6,7 @@ import Image from 'next/image';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "FCC Certification for Consumer Electronics: Timeline, Cost & Delays",
+  "headline": "FCC Certification for Consumer Electronics: Timeline, Cost, and What Delays It",
   "description": "FCC certification takes 8-12 weeks and costs $3,000-$15,000+. Here is the realistic timeline, the cost by product type, and the five failure modes that push hardware brands past their ship date.",
   "author": {
     "@type": "Person",
@@ -56,7 +56,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What is the difference between FCC verification and FCC certification?",
+      "name": "What is the difference between FCC verification and certification?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "FCC verification (Supplier's Declaration of Conformity or SDoC) applies to unintentional radiators — products that do not intentionally emit radio frequency energy, like a wired speaker or LED display. The manufacturer self-declares compliance after testing. FCC certification applies to intentional radiators — products with Wi-Fi, Bluetooth, NFC, Zigbee, or other wireless transmitters. These require testing at an accredited lab and an FCC ID grant before the product can be sold in the US."
@@ -64,7 +64,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What happens if a product fails FCC testing?",
+      "name": "What happens if my product fails FCC testing?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Failed FCC testing typically adds 4-8 weeks and $2,000-$10,000 to the timeline. The product goes back to engineering for design changes (shielding, filtering, antenna modification, grounding), then returns to the lab for re-testing. The cost depends on whether the fix is a minor component change or a PCB redesign. Pre-scan testing catches most issues early enough to fix before formal testing."
@@ -72,7 +72,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can I start FCC testing before final production tooling is ready?",
+      "name": "Can I start FCC testing before production tooling is ready?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, and you should. Run a pre-scan on a production-representative prototype to identify issues early. The formal test must be run on a sample that matches the production build — same PCB revision, same shielding, same antenna, same enclosure material. If your tooling changes the enclosure from 3D-printed to injection-molded, the RF characteristics can change enough to require re-testing."

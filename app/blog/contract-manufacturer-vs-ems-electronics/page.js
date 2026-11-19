@@ -6,7 +6,7 @@ import Image from 'next/image';
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Contract Manufacturer vs. EMS Provider for Hardware Brands",
+  "headline": "Contract Manufacturer vs. EMS Provider: Which Does Your Hardware Brand Need?",
   "description": "CM vs. EMS: what each does, the tier structure hardware startups should know, a decision framework across 8 dimensions, and when to transition.",
   "author": {
     "@type": "Person",
@@ -72,7 +72,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "What is an ODM and how is it different from CM and EMS?",
+      "name": "What is an ODM and how is it different?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "An ODM (Original Design Manufacturer) owns the product design and manufactures it. The brand applies its own branding and packaging to the ODM's product. This is fundamentally different from both CM and EMS: with a CM or EMS, you own the design and IP. With an ODM, they own the design. ODM works for brands that want to sell a product category without investing in product development. It does not work for brands with proprietary technology or differentiated product design."
@@ -80,7 +80,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Can Logic help manage the transition from a contract manufacturer to an EMS provider?",
+      "name": "Can Logic help manage the transition from a CM to an EMS provider?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Logic manages supplier transitions by qualifying new manufacturing partners, running pilot-run QC on the new provider's output, and bridging the transition without disrupting product availability. The Audio Enhancement case study demonstrates this model: 100% pilot-run QC, zero customer-facing disruption, and 2x manufacturing capacity after the transition."
@@ -328,7 +328,7 @@ export default function Page() {
             <li><strong>Cut over and monitor.</strong> First 3 production runs at the new partner get enhanced QC. Track yield, defect categories, and cycle time. Compare against the baseline from the old manufacturer.</li>
           </ol>
 
-          <p><strong>Proof point:</strong> When Logic managed a supplier transition for <a href="/work/audio-enhancement">Audio Enhancement</a>, every unit in the pilot run was individually inspected. 100% pilot-run QC, zero customer-facing disruption, and 2x manufacturing capacity after the transition. The process took 12 weeks from qualification to cutover.</p>
+          <p><strong>Proof point:</strong> When Logic managed a supplier transition for <a href="/work/audio-enhancement">Audio Enhancement</a>, every unit in the pilot run was individually inspected. 100% pilot-run QC, zero customer-facing disruption, and 2x manufacturing capacity after the transition. The transition ran from qualification to cutover without a single customer-facing disruption.</p>
 
           <p>For the full operational timeline from prototype to production scale, see our <a href="/guides/prototype-to-production-hardware">Prototype to Production guide</a>. For the broader operational model, see our <a href="/industries/consumer-electronics">consumer electronics industry page</a>.</p>
 
